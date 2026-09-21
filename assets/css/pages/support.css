@@ -1,0 +1,1722 @@
+/********** SPONSORSHIP PAGE **********/
+
+/* HERO SECTION */
+.sponsor-hero {
+    min-height: 240px;
+
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, .65),
+            rgba(0, 0, 0, .75)),
+        url('../../images/sponsor-hero.jpg');
+
+    background-size: cover;
+    background-position: center;
+}
+
+.sponsor-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sponsor-hero h1 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(3rem, 6vw, 5rem);
+
+    margin-bottom: 1rem;
+}
+
+.sponsor-hero p {
+    color: rgba(255, 255, 255, .85);
+
+    font-size: 1.1rem;
+
+    max-width: 700px;
+
+    margin: 0 auto 2rem;
+}
+
+/* Why Sponsor AC4TA Section */
+.sponsor-reasons {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 2rem;
+}
+
+.reason-card {
+    background: white;
+
+    padding: 2rem;
+
+    border-radius: 28px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, .08);
+}
+
+.reason-card i {
+    font-size: 2.5rem;
+    color: var(--accent);
+
+    margin-bottom: 1rem;
+}
+
+/* Hover Effects */
+.reason-card,
+.level-card {
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.reason-card:hover,
+.level-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, .12);
+}
+
+/* Sponsorship Opportunities Section */
+.opportunity-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 2rem;
+}
+
+.opportunity-card {
+    background: var(--bg-dark);
+    color: white;
+
+    border-radius: 28px;
+
+    padding: 2rem;
+}
+
+/* Sponsorship Levels Section */
+.level-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+
+    gap: 2rem;
+}
+
+.level-card {
+    background: white;
+
+    padding: 2.5rem;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, .08);
+}
+
+.level-card.featured {
+    background: var(--accent);
+    color: white;
+
+    transform: scale(1.05);
+}
+
+/* Current Sponsors Section */
+.featured-tier {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+/* Prevents sponsor logos from stretching */
+.featured-tier img {
+    width: 100%;
+    height: 180px;
+
+    object-fit: contain;
+
+    background: white;
+
+    border-radius: 24px;
+
+    padding: 2rem;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, .06);
+}
+
+.sponsor-tier {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+}
+
+.sponsor-tier img {
+    width: 100%;
+    height: 120px;
+
+    object-fit: contain;
+
+    background: white;
+
+    border-radius: 24px;
+
+    padding: 1.5rem;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, .06);
+}
+
+/* Community Impact Section */
+.impact-showcase {
+    background: var(--bg-dark);
+    color: white;
+    padding: 7rem 0;
+    text-align: center;
+}
+
+.impact-showcase h2 {
+    margin-bottom: 4rem;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+}
+
+.sponsor-impact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.sponsor-impact-stat h3 {
+    font-size: 4rem;
+    color: var(--gold);
+}
+
+/* Featured Sponsor Story Section */
+.sponsor-story {
+    padding: 6rem 0;
+}
+
+.sponsor-story-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background: white;
+
+    border-radius: 32px;
+    overflow: hidden;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, .08);
+}
+
+.sponsor-story-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.sponsor-story-content {
+    padding: 4rem;
+}
+
+.sponsor-story-tag {
+    display: inline-block;
+
+    color: var(--gold);
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    margin-bottom: 1rem;
+}
+
+.sponsor-story-content h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    margin-bottom: 1.5rem;
+}
+
+.sponsor-story-content p {
+    color: var(--muted);
+
+    margin-bottom: 1.5rem;
+
+    line-height: 1.7;
+}
+
+.sponsor-quote {
+    border-left: 4px solid var(--gold);
+
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+
+    font-style: italic;
+
+    color: var(--muted);
+}
+
+.sponsor-author {
+    font-weight: 700;
+
+    color: var(--accent);
+
+    margin-top: 1rem;
+}
+
+/*** MOBILE ***/
+
+
+@media (max-width: 900px) {
+
+    .sponsor-story-card {
+        grid-template-columns: 1fr;
+    }
+
+    .sponsor-story-content {
+        padding: 2rem;
+    }
+}
+
+/* Final Call To Action Section */
+
+.sponsor-cta {
+    width: min(1200px, 92%);
+
+    margin: 4rem auto;
+
+    padding: 5rem 2rem;
+
+    border-radius: 36px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(135deg,
+            #1a1a1a,
+            #2a2a2a);
+}
+
+.sponsor-cta h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size:
+        clamp(2.5rem, 4vw, 4rem);
+
+    margin-bottom: 1rem;
+}
+
+.sponsor-cta p {
+    max-width: 700px;
+
+    margin: 0 auto 2rem;
+
+    color:
+        rgba(255, 255, 255, .75);
+}
+
+.sponsor-cta .btn {
+    margin-top: 1rem;
+}
+
+/********** MEMBERSHIP PAGE **********/
+
+/* Hero Section */
+.membership-hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background:
+        linear-gradient(rgba(0, 0, 0, .65),
+            rgba(0, 0, 0, .75)),
+        url('../../images/membership-hero.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.membership-hero-content {
+    max-width: 800px;
+}
+
+.membership-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 6vw, 5rem);
+    margin-bottom: 1rem;
+}
+
+.membership-hero p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    color: rgba(255, 255, 255, .85);
+    font-size: 1.1rem;
+}
+
+/* Why Membership Matters Section */
+.membership-benefits {
+    padding: 6rem 0;
+}
+
+.membership-benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.membership-benefits-image img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 28px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .08);
+}
+
+.membership-benefits-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    margin-bottom: 1.5rem;
+}
+
+.membership-benefits-content p {
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+.membership-benefits-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.membership-benefits-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.membership-benefits-list i {
+    color: var(--gold);
+    margin-top: 0.2rem;
+}
+
+/* Member Benefits Section */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.benefit {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .06);
+}
+
+.benefit i {
+    color: var(--accent);
+    margin-right: .5rem;
+}
+
+/* Where Your Membership Makes A Difference Section */
+.membership-impact-path {
+    background: var(--bg-light);
+    padding: 6rem 0;
+}
+
+.impact-path {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.impact-level {
+    display: grid;
+    grid-template-columns:
+        120px 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.impact-amount {
+    background: var(--accent);
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(122, 31, 43, .25);
+}
+
+.impact-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .06);
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, .10);
+}
+
+.impact-card i {
+    color: var(--gold);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.impact-card h3 {
+    margin-bottom: .75rem;
+}
+
+/* Add a vertical connector line between each impact level */
+.impact-path {
+    position: relative;
+}
+
+.impact-path::before {
+    content: "";
+    position: absolute;
+    left: 58px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background:
+        linear-gradient(var(--gold),
+            var(--accent));
+    border-radius: 999px;
+    z-index: 0;
+}
+
+.impact-level {
+    position: relative;
+    z-index: 1;
+}
+
+/* Membership Levels Section */
+.membership-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 2rem;
+}
+
+.membership-card {
+    background: var(--bg-light);
+    padding: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 24px;
+    text-align: center;
+    transition: border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.membership-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .12);
+}
+
+.membership-card .price {
+    color: var(--gold);
+    transition: color .3s ease;
+}
+
+.membership-card:hover .price {
+    color: var(--accent);
+}
+
+/* Member Stories Section */
+.member-stories {
+    padding: 6rem 0;
+}
+
+.member-stories-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(320px, 1fr));
+
+    gap: 2rem;
+}
+
+.member-story-card {
+    background: white;
+
+    padding: 2rem;
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, .08);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.member-story-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, .12);
+}
+
+.member-story-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    margin-bottom: 1.5rem;
+}
+
+.member-story-header img {
+    width: 72px;
+    height: 72px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.member-story-header h3 {
+    margin: 0;
+
+    font-size: 1.2rem;
+}
+
+.member-story-role {
+    color: var(--gold);
+
+    font-size: 0.9rem;
+
+    font-weight: 600;
+}
+
+.member-story-card p {
+    color: var(--muted);
+
+    line-height: 1.7;
+
+    margin-bottom: 1.5rem;
+}
+
+.member-story-quote {
+    color: var(--accent);
+
+    font-size: 2rem;
+
+    line-height: 1;
+
+    margin-bottom: 0.5rem;
+}
+
+/* Impact of Membership Section */
+.membership-impact {
+    background: linear-gradient(to bottom,
+            var(--bg-light),
+            var(--white));
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.membership-impact h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(2.5rem, 4vw, 4rem);
+
+    margin-bottom: 1rem;
+}
+
+.membership-impact p {
+    max-width: 700px;
+
+    margin: 0 auto 4rem;
+
+    color: rgba(255, 255, 255, .75);
+}
+
+.membership-impact-grid {
+    display: grid;
+    grid-template-columns: 42% 58%;
+    gap: 2rem;
+    align-items: center;
+}
+
+.membership-impact-stat {
+    text-align: center;
+}
+
+.membership-impact-stat h3 {
+    font-size: 4rem;
+
+    color: var(--gold);
+
+    margin-bottom: 0.5rem;
+}
+
+.membership-impact-stat p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, .8);
+}
+
+/* FAQ Section */
+.membership-faq {
+    padding: 6rem 0;
+}
+
+.faq-container {
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: white;
+
+    border-radius: 20px;
+
+    margin-bottom: 1rem;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .06);
+}
+
+.faq-item summary {
+    list-style: none;
+
+    cursor: pointer;
+
+    padding: 1.5rem 2rem;
+
+    font-weight: 600;
+
+    font-size: 1.05rem;
+
+    position: relative;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+
+    position: absolute;
+
+    right: 2rem;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 1.5rem;
+
+    color: var(--accent);
+
+    transition: transform .3s ease;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-content {
+    padding: 0 2rem 2rem;
+
+    color: var(--muted);
+
+    line-height: 1.7;
+}
+
+/* Final CTA Section */
+.membership-cta {
+    width: min(1200px, 92%);
+
+    margin: 4rem auto;
+
+    padding: 5rem 2rem;
+
+    border-radius: 36px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(135deg,
+            #1a1a1a,
+            #2a2a2a);
+}
+
+.membership-cta h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size:
+        clamp(2.5rem, 4vw, 4rem);
+
+    margin-bottom: 1rem;
+}
+
+.membership-cta p {
+    max-width: 700px;
+
+    margin: 0 auto 2rem;
+
+    color:
+        rgba(255, 255, 255, .75);
+
+    font-size: 1.05rem;
+}
+
+.membership-cta .btn {
+    margin-top: 1rem;
+}
+
+/*** MOBILE ***/
+@media (max-width: 900px) {
+
+    .membership-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .membership-benefits-image img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .impact-level {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .impact-amount {
+        width: 100%;
+    }
+
+    .impact-path::before {
+        display: none;
+    }
+
+    .membership-impact-stat h3 {
+        font-size: 3rem;
+    }
+}
+
+/********** MEMBERSHIP APPEAL PAGE **********/
+
+
+
+/********** VOLUTEERS PAGE **********/
+
+/* Hero Section */
+.volunteer-hero {
+    min-height: 60vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, .65),
+            rgba(0, 0, 0, .75)),
+        url('../../images/volunteer-hero.jpg');
+
+    background-size: cover;
+    background-position: center;
+}
+
+.volunteer-hero-content {
+    max-width: 800px;
+}
+
+.volunteer-hero h1 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(3rem, 6vw, 5rem);
+
+    margin-bottom: 1rem;
+}
+
+.volunteer-hero p {
+    max-width: 700px;
+
+    margin: 0 auto 2rem;
+
+    color: rgba(255, 255, 255, .85);
+
+    font-size: 1.1rem;
+}
+
+/* Why Volunteer Section */
+.why-volunteer {
+    padding: 6rem 0;
+}
+
+.why-volunteer-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 4rem;
+
+    align-items: center;
+}
+
+.why-volunteer-image img {
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, .08);
+}
+
+.why-volunteer-content h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(2.5rem, 4vw, 4rem);
+
+    margin-bottom: 1.5rem;
+}
+
+.why-volunteer-content p {
+    color: var(--muted);
+
+    margin-bottom: 1.5rem;
+
+    line-height: 1.8;
+}
+
+.volunteer-highlights {
+    margin-top: 2rem;
+
+    display: grid;
+
+    gap: 1rem;
+}
+
+.volunteer-highlight {
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    background: white;
+
+    padding: 1rem 1.25rem;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .05);
+}
+
+.volunteer-highlight i {
+    color: var(--gold);
+
+    font-size: 1.25rem;
+}
+
+/* Volunteer Opportunities Section */
+.opportunity-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 2rem;
+}
+
+.volunteer-card {
+    background: white;
+
+    padding: 2rem;
+
+    border-radius: 28px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, .08);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.volunteer-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 25;
+}
+
+.volunteer-card i {
+    font-size: 2.5rem;
+    color: var(--accent);
+
+    margin-bottom: 1rem;
+}
+
+/* A Day in the Life Section */
+.day-life {
+    padding: 6rem 0;
+}
+
+.day-life-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 4rem;
+
+    align-items: center;
+}
+
+.day-life-content h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(2.5rem, 4vw, 4rem);
+
+    margin-bottom: 1.5rem;
+}
+
+.day-life-content p {
+    color: var(--muted);
+
+    margin-bottom: 1.5rem;
+
+    line-height: 1.8;
+}
+
+.day-life-timeline {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1.25rem;
+
+    margin-top: 2rem;
+}
+
+.day-step {
+    display: flex;
+
+    gap: 1rem;
+
+    align-items: flex-start;
+}
+
+.day-time {
+    min-width: 90px;
+
+    background: var(--accent);
+
+    color: white;
+
+    font-weight: 700;
+
+    text-align: center;
+
+    padding: 0.75rem;
+
+    border-radius: 16px;
+}
+
+.day-description {
+    flex: 1;
+
+    background: white;
+
+    padding: 1rem 1.25rem;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .05);
+}
+
+.day-life-image img {
+    width: 100%;
+
+    height: 600px;
+
+    object-fit: cover;
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, .08);
+}
+
+/* Volunteer Benefits Section */
+.volunteer-benefits {
+    padding: 6rem 0;
+}
+
+.volunteer-benefits-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 1.5rem;
+}
+
+.volunteer-benefit {
+    background: white;
+
+    padding: 1.5rem;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, .06);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.volunteer-benefit:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, .10);
+}
+
+.volunteer-benefit i {
+    color: var(--accent);
+
+    font-size: 2rem;
+
+    margin-bottom: 1rem;
+
+    display: block;
+}
+
+.volunteer-benefit h3 {
+    margin-bottom: .75rem;
+}
+
+.volunteer-benefit p {
+    color: var(--muted);
+}
+
+/* Volunteer Spotlight Section */
+.volunteer-spotlight {
+    padding: 6rem 0;
+}
+
+.spotlight-card {
+    display: grid;
+
+    grid-template-columns: 350px 1fr;
+
+    gap: 3rem;
+
+    align-items: center;
+
+    background: white;
+
+    border-radius: 32px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, .08);
+}
+
+.spotlight-card img {
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 450px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.spotlight-content {
+    padding: 3rem;
+}
+
+.spotlight-content h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    margin-bottom: 1rem;
+}
+
+.spotlight-content h3 {
+    color: var(--accent);
+
+    margin-bottom: 1rem;
+}
+
+.spotlight-content p {
+    color: var(--muted);
+
+    line-height: 1.8;
+
+    margin-bottom: 1.25rem;
+}
+
+.spotlight-quote {
+    font-style: italic;
+
+    color: var(--accent);
+
+    font-size: 1.1rem;
+
+    border-left: 4px solid var(--gold);
+
+    padding-left: 1rem;
+
+    margin-top: 2rem;
+}
+
+/* Volunteer FAQ Section */
+.volunteer-faq {
+    padding: 6rem 0;
+}
+
+.volunteer-faq-container {
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+.volunteer-faq-item {
+    background: white;
+
+    border-radius: 20px;
+
+    margin-bottom: 1rem;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .06);
+}
+
+.volunteer-faq-item summary {
+    list-style: none;
+
+    cursor: pointer;
+
+    padding: 1.5rem 2rem;
+
+    font-weight: 600;
+
+    font-size: 1.05rem;
+
+    position: relative;
+}
+
+.volunteer-faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.volunteer-faq-item summary::after {
+    content: "+";
+
+    position: absolute;
+
+    right: 2rem;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 1.5rem;
+
+    color: var(--accent);
+
+    transition: .3s ease;
+}
+
+.volunteer-faq-item[open] summary::after {
+    content: "−";
+}
+
+.volunteer-faq-content {
+    padding: 0 2rem 2rem;
+
+    color: var(--muted);
+
+    line-height: 1.7;
+}
+
+/* Accordion Cards Styling */
+.volunteer-faq-item {
+    background: white;
+
+    border-radius: 24px;
+
+    margin-bottom: 1rem;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(0, 0, 0, .05);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, .06);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.volunteer-faq-item:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, .10);
+}
+
+.volunteer-faq-item[open] {
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, .12);
+}
+
+.volunteer-faq-item summary {
+    list-style: none;
+
+    cursor: pointer;
+
+    padding: 1.5rem 2rem;
+
+    font-weight: 600;
+
+    font-size: 1.05rem;
+
+    position: relative;
+
+    transition: background .25s ease;
+}
+
+.volunteer-faq-item summary:hover {
+    background: rgba(122, 31, 43, .04);
+}
+
+.volunteer-faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.volunteer-faq-item summary::after {
+    content: "+";
+
+    position: absolute;
+
+    right: 2rem;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 1.6rem;
+
+    font-weight: 300;
+
+    color: var(--accent);
+
+    transition:
+        transform .3s ease,
+        color .3s ease;
+}
+
+.volunteer-faq-item[open] summary::after {
+    content: "−";
+
+    color: var(--gold);
+}
+
+.volunteer-faq-content {
+    padding: 0 2rem 2rem;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+}
+
+/* Volunteer Signup Section */
+.volunteer-signup {
+    padding: 6rem 0;
+}
+
+.signup-wrapper {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    background: white;
+
+    border-radius: 32px;
+
+    padding: 3rem;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, .08);
+}
+
+.signup-wrapper h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+
+    text-align: center;
+
+    margin-bottom: 1rem;
+}
+
+.signup-wrapper p {
+    text-align: center;
+
+    color: var(--muted);
+
+    max-width: 650px;
+
+    margin: 0 auto 2.5rem;
+}
+
+.signup-form {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1.5rem;
+}
+
+.signup-form .full-width {
+    grid-column: 1 / -1;
+}
+
+.signup-form input,
+.signup-form select,
+.signup-form textarea {
+    width: 100%;
+
+    padding: 1rem 1.25rem;
+
+    border: 1px solid rgba(0, 0, 0, .12);
+
+    border-radius: 16px;
+
+    font-size: 1rem;
+
+    font-family: inherit;
+
+    transition:
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.signup-form input:focus,
+.signup-form select:focus,
+.signup-form textarea:focus {
+    outline: none;
+
+    border-color: var(--accent);
+
+    box-shadow:
+        0 0 0 4px rgba(122, 31, 43, .12);
+}
+
+.signup-form textarea {
+    min-height: 160px;
+
+    resize: vertical;
+}
+
+.signup-submit {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    margin-top: 1rem;
+}
+
+/* Volunteer Photo Gallery Section */
+.volunteer-gallery {
+    padding: 6rem 0;
+}
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    grid-auto-rows: 260px;
+
+    gap: 1.5rem;
+}
+
+.gallery-item {
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, .08);
+}
+
+.gallery-item.large {
+    grid-column: span 2;
+}
+
+.gallery-item.tall {
+    grid-row: span 2;
+}
+
+.gallery-item img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform .5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+/* Gallery Overlay Styling */
+.gallery-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 2rem;
+
+    color: white;
+
+    background:
+        linear-gradient(transparent,
+            rgba(0, 0, 0, .85));
+
+    opacity: .85;
+
+    transition: .3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay h3 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 1.6rem;
+
+    margin-bottom: .5rem;
+}
+
+.gallery-overlay p {
+
+    font-size: .95rem;
+
+    color: rgba(255, 255, 255, .85);
+}
+
+/* Volunteer Statistics Banner Section */
+/* VOLUNTEER STATISTICS BANNER SECTION */
+
+.volunteer-stats {
+    background: var(--bg-dark);
+
+    color: white;
+
+    padding: 5rem 0;
+
+    text-align: center;
+}
+
+.volunteer-stats-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 2rem;
+
+    margin-top: 3rem;
+}
+
+.volunteer-stat {
+    background: rgba(255, 255, 255, .05);
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    border-radius: 24px;
+
+    padding: 2rem;
+
+    backdrop-filter: blur(10px);
+}
+
+.volunteer-stat h3 {
+    color: var(--gold);
+
+    font-size: clamp(2.5rem, 5vw, 4rem);
+
+    font-weight: 700;
+
+    margin-bottom: .5rem;
+
+    line-height: 1;
+}
+
+.volunteer-stat p {
+    color: rgba(255, 255, 255, .75);
+
+    font-size: 1rem;
+
+    margin: 0;
+}
+
+/*** MOBILE ***/
+@media (max-width: 900px) {
+
+    .why-volunteer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-volunteer-image img {
+        height: 400px;
+    }
+
+    .day-life-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .day-life-image img {
+        height: 400px;
+    }
+
+    .day-step {
+        flex-direction: column;
+    }
+
+    .day-time {
+        min-width: auto;
+        width: fit-content;
+    }
+
+    .spotlight-card {
+        grid-template-columns: 1fr;
+    }
+
+    .spotlight-card img {
+        min-height: 350px;
+    }
+
+    .spotlight-content {
+        padding: 2rem;
+    }
+
+    .gallery-grid {
+
+        grid-template-columns: 1fr;
+
+        grid-auto-rows: 250px;
+    }
+
+    .gallery-item.large,
+    .gallery-item.tall {
+
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .signup-wrapper {
+        padding: 2rem;
+    }
+
+    .signup-form {
+        grid-template-columns: 1fr;
+    }
+
+    .signup-form .full-width {
+        grid-column: auto;
+    }
+}

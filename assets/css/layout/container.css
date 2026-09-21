@@ -1,0 +1,25 @@
+ /* Controls site-wide structure */
+ /* Shared Layout Utilities */
+ /* Share Section Headers Used Throughout the Site */
+
+  .container {
+     width: min(1400px, 95%);
+     margin: 0 auto;
+ }
+
+ /* Optional future containers */
+
+.container-lg {
+    width: min(1600px, 95%);
+    margin: 0 auto;
+}
+
+.container-md {
+    width: min(1100px, 95%);
+    margin: 0 auto;
+}
+
+.container-sm {
+    width: min(800px, 95%);
+    margin: 0 auto;
+}

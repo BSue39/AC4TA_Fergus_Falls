@@ -1,0 +1,27 @@
+ body {
+     font-family: 'Inter', sans-serif;
+     background: var(--bg-light);
+     color: var(--text);
+     line-height: 1.6;
+     overflow-x: hidden;
+ }
+
+ a {
+     text-decoration: none;
+     color: inherit;
+ }
+
+ 
+
+ /* Later we'll probably add
+ h1
+h2
+h3
+h4
+h5
+h6
+p
+ul
+ol
+small
+blockquote */

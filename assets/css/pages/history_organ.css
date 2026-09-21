@@ -1,0 +1,1752 @@
+/*==========================================
+    ORGAN HERO
+==========================================*/
+
+.organ-hero {
+
+    min-height: 240px;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, .58),
+            rgba(0, 0, 0, .58)),
+        url("../../../images/AC4TA-Horizontal-Sign-Night.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+
+    color: var(--white);
+
+    position: relative;
+
+}
+
+
+/* HERO CONTENT */
+
+.organ-hero-content {
+
+    max-width: 850px;
+
+    padding: 6rem 0;
+
+    text-align: center;
+
+    margin: 0 auto;
+
+}
+
+
+/* SECTION TAG */
+
+.organ-hero .section-tag {
+
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+}
+
+
+/* HEADING */
+
+.organ-hero h1 {
+
+    max-width: 850px;
+
+    margin: 0 auto 1.25rem;
+
+    font-family: "Playfair Display", serif;
+
+    color: var(--white);
+
+    font-size: clamp(2.5rem, 5vw, 4rem);
+
+    line-height: 1.1;
+
+}
+
+
+/* DESCRIPTION */
+
+.organ-hero p {
+
+    max-width: 650px;
+
+    margin: 0 auto 2rem;
+
+    color: rgba(255, 255, 255, .88);
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+
+}
+
+
+/*==========================================
+    FADE-IN EFFECT
+==========================================*/
+
+.organ-hero-content {
+
+    animation: heroFadeIn .9s ease-out both;
+
+}
+
+
+@keyframes heroFadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(25px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/*==========================================
+    RESPONSIVE
+==========================================*/
+
+@media (max-width: 700px) {
+
+    .organ-hero {
+
+        min-height: 52vh;
+
+    }
+
+    .organ-hero-content {
+
+        padding: 5rem 1rem;
+
+    }
+
+    .organ-hero h1 {
+
+        font-size: clamp(2.2rem, 9vw, 3rem);
+
+    }
+
+    .organ-hero p {
+
+        font-size: 1rem;
+
+    }
+
+}
+
+/*==========================================
+    ORGAN OVERVIEW
+==========================================*/
+
+.organ-overview {
+
+    padding: 3rem 0;
+
+    background: var(--bg-light);
+
+}
+
+
+/* TWO-COLUMN LAYOUT */
+
+.organ-overview-grid {
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+    gap: 5rem;
+
+    align-items: center;
+
+}
+
+
+/* IMAGE */
+
+.organ-overview-image {
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    box-shadow: 0 18px 45px rgba(0, 0, 0, .12);
+
+}
+
+
+.organ-overview-image img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 520px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform .5s ease;
+
+}
+
+
+.organ-overview-image:hover img {
+
+    transform: scale(1.03);
+
+}
+
+
+/* CONTENT */
+
+.organ-overview-content {
+
+    max-width: 620px;
+
+}
+
+
+.organ-overview-content .section-tag {
+
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+}
+
+
+.organ-overview-content h2 {
+
+    font-family: var(--font-heading);
+
+    color: var(--accent);
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    line-height: 1.15;
+
+    margin-bottom: 1.5rem;
+
+}
+
+
+.organ-overview-content p {
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+    margin-bottom: 1.25rem;
+
+}
+
+
+/* ORGAN FACTS */
+
+.organ-facts {
+
+    display: grid;
+
+    gap: .75rem;
+
+    margin-top: 2rem;
+
+    padding-top: 1.5rem;
+
+    border-top: 1px solid rgba(0, 0, 0, .1);
+
+}
+
+
+.organ-fact {
+
+    padding: .85rem 1rem;
+
+    background: var(--white);
+
+    border-radius: 12px;
+
+    color: var(--muted);
+
+    line-height: 1.5;
+
+}
+
+
+.organ-fact strong {
+
+    color: var(--accent);
+
+    font-weight: 700;
+
+}
+
+
+/*==========================================
+    RESPONSIVE
+==========================================*/
+
+@media (max-width: 900px) {
+
+    .organ-overview-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 3rem;
+
+    }
+
+    .organ-overview-content {
+
+        max-width: 750px;
+
+        margin: 0 auto;
+
+        text-align: center;
+
+    }
+
+    .organ-overview-image img {
+
+        height: 450px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .organ-overview {
+
+        padding: 4.5rem 0;
+
+    }
+
+    .organ-overview-image img {
+
+        height: 350px;
+
+    }
+
+    .organ-overview-content h2 {
+
+        font-size: 2rem;
+
+    }
+
+    .organ-fact {
+
+        text-align: left;
+
+    }
+
+}
+
+/*==========================================
+    WHAT IS A THEATRE ORGAN
+==========================================*/
+
+.organ-explainer {
+
+    padding: 3rem 0;
+
+    background: var(--white);
+
+}
+
+
+/* FEATURES GRID */
+
+.organ-explainer .features-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 1.75rem;
+
+}
+
+
+/* FEATURE CARDS */
+
+.organ-explainer .feature-card {
+
+    padding: 2.25rem 1.75rem;
+
+    background: var(--bg-light);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    border: 1px solid rgba(0, 0, 0, .05);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .06);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+
+/* HOVER EFFECT */
+
+.organ-explainer .feature-card:hover {
+
+    transform: translateY(-7px);
+
+    border-color: var(--gold);
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .1);
+
+}
+
+
+/* HEADINGS */
+
+.organ-explainer .feature-card h3 {
+
+    margin-bottom: .85rem;
+
+    font-family: var(--font-heading);
+
+    font-size: 1.45rem;
+
+    color: var(--accent);
+
+}
+
+
+/* PARAGRAPHS */
+
+.organ-explainer .feature-card p {
+
+    margin: 0;
+
+    color: var(--muted);
+
+    line-height: 1.7;
+
+}
+
+
+/*==========================================
+    RESPONSIVE
+==========================================*/
+
+@media (max-width: 1000px) {
+
+    .organ-explainer .features-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .organ-explainer {
+
+        padding: 4.5rem 0;
+
+    }
+
+    .organ-explainer .features-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 1.25rem;
+
+    }
+
+    .organ-explainer .feature-card {
+
+        padding: 2rem 1.5rem;
+
+    }
+
+}
+
+/*==========================================
+    ORGAN STATS
+==========================================*/
+
+.organ-stats {
+
+    padding: 2rem 0;
+
+    background: var(--accent);
+
+}
+
+
+/* STATS GRID */
+
+.organ-stats .stats {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 2rem;
+
+    text-align: center;
+
+}
+
+
+/* STAT */
+
+.organ-stats .stat {
+
+    padding: 1.5rem;
+
+}
+
+
+/* STAT NUMBER */
+
+.organ-stats .stat h3 {
+
+    margin-bottom: .5rem;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+
+    line-height: 1;
+
+    color: var(--gold);
+
+}
+
+
+/* STAT LABEL */
+
+.organ-stats .stat p {
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, .85);
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    letter-spacing: .03em;
+
+}
+
+
+/*==========================================
+    RESPONSIVE
+==========================================*/
+
+@media (max-width: 800px) {
+
+    .organ-stats .stats {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 1rem;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .organ-stats {
+
+        padding: 4rem 0;
+
+    }
+
+    .organ-stats .stats {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .organ-stats .stat {
+
+        padding: 1rem .5rem;
+
+    }
+
+}
+
+/*==========================================
+    INTERACTIVE ORGAN EXPLORER
+==========================================*/
+
+.organ-explorer {
+
+    padding: 3rem 0;
+
+    background: var(--bg-light);
+
+}
+
+
+/* SECTION HEADING */
+
+.organ-explorer>.container>h2 {
+
+    max-width: 800px;
+
+    margin: 0 auto 3rem;
+
+    text-align: center;
+
+    font-family: var(--font-heading);
+
+    color: var(--accent);
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    line-height: 1.15;
+
+}
+
+
+/* ORGAN LAYOUT */
+
+.organ-layout {
+
+    display: grid;
+
+    grid-template-columns: 260px minmax(0, 1fr);
+
+    gap: 2rem;
+
+    max-width: 950px;
+
+    margin: 0 auto;
+
+}
+
+
+/* STOP BUTTONS */
+
+.stop-buttons {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: .75rem;
+
+    padding: 1.25rem;
+
+    background: var(--white);
+
+    border-radius: 20px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .07);
+
+}
+
+.stop-buttons button {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+
+    width: 100%;
+
+    padding: 1rem 1.25rem;
+
+    border: 1px solid rgba(0, 0, 0, .08);
+
+    border-radius: 12px;
+
+    background: var(--bg-light);
+
+    color: var(--text);
+
+    font-family: var(--font-body);
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        background .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        transform .25s ease;
+
+}
+
+/* PLAY / PAUSE ICON */
+
+.stop-icon {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 28px;
+
+    height: 28px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: rgba(200, 169, 107, .15);
+
+    color: var(--accent);
+
+    font-size: .75rem;
+
+    transition:
+        background .25s ease,
+        color .25s ease;
+
+}
+
+/* ACTIVE BUTTON ICON */
+
+.stop-buttons button.active .stop-icon {
+
+    background: var(--gold);
+
+    color: var(--white);
+
+}
+
+
+/* BUTTON TEXT */
+
+.stop-name {
+
+    flex: 1;
+
+}
+
+/* HOVER */
+
+.stop-buttons button:hover {
+
+    border-color: var(--gold);
+
+    transform: translateX(4px);
+
+}
+
+/* ACTIVE BUTTON */
+
+.stop-buttons button.active {
+
+    background: var(--accent);
+
+    border-color: var(--accent);
+
+    color: var(--white);
+
+}
+
+
+/* INFORMATION PANEL */
+
+.stop-info {
+
+    min-height: 300px;
+
+    padding: 3rem;
+
+    background: var(--white);
+
+    border-radius: 24px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+/* STOP PANELS */
+
+.stop-panel {
+
+    display: none;
+
+    width: 100%;
+
+}
+
+
+.stop-panel.active {
+
+    display: block;
+
+}
+
+
+.stop-panel h3 {
+
+    margin-bottom: 1rem;
+
+    font-family: var(--font-heading);
+
+    color: var(--accent);
+
+    font-size: 2rem;
+
+}
+
+
+.stop-panel p {
+
+    max-width: 600px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+    font-size: 1.05rem;
+
+}
+
+
+/*==========================================
+    RESPONSIVE
+==========================================*/
+
+@media (max-width: 800px) {
+
+    .organ-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .stop-buttons {
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .stop-buttons button {
+
+        text-align: center;
+
+    }
+
+    .stop-info {
+
+        min-height: 240px;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .organ-explorer {
+
+        padding: 4.5rem 0;
+
+    }
+
+    .stop-buttons {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .stop-info {
+
+        padding: 2rem 1.5rem;
+
+        min-height: 220px;
+
+    }
+
+    .stop-panel h3 {
+
+        font-size: 1.7rem;
+
+    }
+
+}
+
+/*==================================================
+    ORGAN MEDIA
+==================================================*/
+
+.organ-media {
+
+    padding: 3rem 0;
+
+    background: var(--white);
+
+}
+
+
+/* SECTION HEADING */
+
+.organ-media h2 {
+
+    max-width: 850px;
+
+    margin: 0 auto 3rem;
+
+    text-align: center;
+
+    font-family: var(--font-heading);
+
+    color: var(--accent);
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    line-height: 1.2;
+
+}
+
+
+/* MEDIA GRID */
+
+.organ-media .media-grid {
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+}
+
+
+/* VIDEO */
+
+.organ-media iframe {
+
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    border: none;
+
+    border-radius: 24px;
+
+    box-shadow: 0 18px 50px rgba(0, 0, 0, .12);
+
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .organ-media {
+
+        padding: 4.5rem 0;
+
+    }
+
+    .organ-media h2 {
+
+        margin-bottom: 2rem;
+
+    }
+
+    .organ-media iframe {
+
+        border-radius: 18px;
+
+    }
+
+}
+
+/*==================================================
+    ORGAN RESTORATION STORY
+==================================================*/
+
+.history-timeline {
+
+    padding: 3rem 0;
+
+    background: var(--bg-light);
+
+}
+
+
+/* SECTION HEADING */
+
+.history-timeline .section-heading {
+
+    max-width: 850px;
+
+    margin: 0 auto 4rem;
+
+    text-align: center;
+
+}
+
+
+/* TIMELINE */
+
+.history-timeline .timeline-history {
+
+    position: relative;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding-left: 2rem;
+
+}
+
+
+/* VERTICAL LINE */
+
+.history-timeline .timeline-history::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    bottom: 0;
+
+    width: 3px;
+
+    background: var(--gold);
+
+    border-radius: 3px;
+
+}
+
+
+/* TIMELINE ITEM */
+
+.history-timeline .history-item {
+
+    position: relative;
+
+    padding: 0 0 3.5rem 3rem;
+
+}
+
+
+/* REMOVE EXTRA SPACE FROM LAST ITEM */
+
+.history-timeline .history-item:last-child {
+
+    padding-bottom: 0;
+
+}
+
+
+/* TIMELINE DOT */
+
+.history-timeline .history-item::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: -8px;
+
+    top: 4px;
+
+    width: 19px;
+
+    height: 19px;
+
+    background: var(--white);
+
+    border: 4px solid var(--accent);
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 0 5px rgba(200, 169, 107, .18);
+
+}
+
+
+/* YEAR */
+
+.history-timeline .history-item span {
+
+    display: inline-block;
+
+    margin-bottom: .6rem;
+
+    padding: .35rem .85rem;
+
+    background: var(--accent);
+
+    color: var(--white);
+
+    border-radius: 999px;
+
+    font-size: .85rem;
+
+    font-weight: 700;
+
+    letter-spacing: .04em;
+
+}
+
+
+/* HEADING */
+
+.history-timeline .history-item h3 {
+
+    margin-bottom: .75rem;
+
+    font-family: var(--font-heading);
+
+    color: var(--accent);
+
+    font-size: 1.5rem;
+
+    line-height: 1.3;
+
+}
+
+
+/* DESCRIPTION */
+
+.history-timeline .history-item p {
+
+    max-width: 700px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+}
+
+
+/* HOVER EFFECT */
+
+.history-timeline .history-item {
+
+    transition: transform .3s ease;
+
+}
+
+.history-timeline .history-item:hover {
+
+    transform: translateX(6px);
+
+}
+
+
+/*=======================
+    RESPONSIVE 
+    =========================*/
+
+@media (max-width: 768px) {
+
+    .history-timeline {
+
+        padding: 4.5rem 0;
+
+    }
+
+    .history-timeline .section-heading {
+
+        margin-bottom: 3rem;
+
+    }
+
+    .history-timeline .timeline-history {
+
+        padding-left: 1.5rem;
+
+    }
+
+    .history-timeline .history-item {
+
+        padding-left: 2rem;
+
+        padding-bottom: 3rem;
+
+    }
+
+    .history-timeline .history-item h3 {
+
+        font-size: 1.35rem;
+
+    }
+
+    .history-timeline .history-item p {
+
+        line-height: 1.7;
+
+    }
+
+}
+
+/*==================================================
+    EXPERIENCE THE ORGAN
+==================================================*/
+
+.organ-experiences {
+
+    padding: 3rem 0;
+
+    background: var(--white);
+
+}
+
+
+/* SECTION HEADING */
+
+.organ-experiences .section-heading {
+
+    max-width: 800px;
+
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+
+}
+
+.organ-experiences .section-heading p {
+
+    max-width: 680px;
+
+    margin: 0 auto;
+
+}
+
+
+/* GRID */
+
+.organ-experience-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 2rem;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+}
+
+
+/* CARDS */
+
+.organ-experience-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 2.75rem 2rem;
+
+    background: var(--bg-light);
+
+    border: 1px solid rgba(0, 0, 0, .06);
+
+    border-radius: 24px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .07);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+
+/* HOVER */
+
+.organ-experience-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: var(--gold);
+
+    box-shadow: 0 25px 55px rgba(0, 0, 0, .11);
+
+}
+
+
+/* ICON */
+
+.organ-experience-icon {
+
+    width: 72px;
+
+    height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 1.5rem;
+
+    background: rgba(200, 169, 107, .15);
+
+    border-radius: 20px;
+
+    font-size: 2rem;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+
+}
+
+.organ-experience-icon i {
+    font-size: 1.8rem;
+    color: var(--accent);
+}
+
+
+/* ICON HOVER */
+
+.organ-experience-card:hover .organ-experience-icon {
+
+    background: var(--white);
+
+    transform: scale(1.08);
+
+}
+
+
+/* HEADINGS */
+
+.organ-experience-card h3 {
+
+    margin-bottom: 1rem;
+
+    font-family: var(--font-heading);
+
+    color: var(--accent);
+
+    font-size: 1.5rem;
+
+    line-height: 1.3;
+
+}
+
+
+/* DESCRIPTION */
+
+.organ-experience-card p {
+
+    flex: 1;
+
+    max-width: 320px;
+
+    margin: 0 auto 1.5rem;
+
+    color: var(--muted);
+
+    line-height: 1.75;
+
+}
+
+
+/* LINKS */
+
+.organ-experience-card a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: .5rem;
+
+    color: var(--accent);
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        color .25s ease,
+        gap .25s ease;
+
+}
+
+
+/* LINK HOVER */
+
+.organ-experience-card a:hover {
+
+    color: var(--gold);
+
+    gap: .8rem;
+
+}
+
+
+/*==================================================
+    RESPONSIVE
+==================================================*/
+
+@media (max-width: 900px) {
+
+    .organ-experience-grid {
+
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .organ-experiences {
+
+        padding: 4.5rem 0;
+
+    }
+
+    .organ-experiences .section-heading {
+
+        margin-bottom: 2.5rem;
+
+    }
+
+    .organ-experience-card {
+
+        padding: 2.5rem 1.75rem;
+
+        border-radius: 22px;
+
+    }
+
+}
+
+/*==================================================
+    ORGAN FUN FACTS
+==================================================*/
+
+.building-facts {
+
+    padding: 3rem 0;
+
+    background: var(--bg-light);
+
+}
+
+
+/* FACTS BOX */
+
+.building-facts .facts-box {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 3.5rem 4rem;
+
+    background: var(--white);
+
+    border-radius: 28px;
+
+    box-shadow: 0 18px 50px rgba(0, 0, 0, .08);
+
+    border-top: 4px solid var(--gold);
+
+}
+
+
+/* HEADING */
+
+.building-facts .facts-box h2 {
+
+    margin-bottom: 2rem;
+
+    font-family: var(--font-heading);
+
+    color: var(--accent);
+
+    font-size: clamp(2rem, 4vw, 2.75rem);
+
+    line-height: 1.2;
+
+    text-align: center;
+
+}
+
+
+/* FACT LIST */
+
+.building-facts .facts-box ul {
+
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    padding: 0;
+
+    list-style: none;
+
+}
+
+
+/* FACT ITEM */
+
+.building-facts .facts-box li {
+
+    position: relative;
+
+    padding: 1.25rem 0 1.25rem 2.25rem;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+}
+
+
+/* GOLD BULLET */
+
+.building-facts .facts-box li::before {
+
+    content: "♪";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 1.2rem;
+
+    color: var(--gold);
+
+    font-size: 1.2rem;
+
+    font-weight: 700;
+
+}
+
+
+/* DIVIDERS */
+
+.building-facts .facts-box li + li {
+
+    border-top: 1px solid rgba(0, 0, 0, .08);
+
+}
+
+
+/*===============
+    RESPONSIVE
+=======================*/
+
+@media (max-width: 768px) {
+
+    .building-facts {
+
+        padding: 4.5rem 0;
+
+    }
+
+    .building-facts .facts-box {
+
+        padding: 2.5rem 1.75rem;
+
+        border-radius: 22px;
+
+    }
+
+    .building-facts .facts-box h2 {
+
+        margin-bottom: 1.5rem;
+
+    }
+
+    .building-facts .facts-box li {
+
+        padding-left: 2rem;
+
+        line-height: 1.7;
+
+    }
+
+}
+
+/*==================================================
+    SUPPORT THE ORGAN
+==================================================*/
+
+.organ-support {
+
+    padding: 3rem 2rem;
+
+    background: var(--white);
+
+    text-align: center;
+
+}
+
+
+/* CTA CARD */
+
+.organ-support .container {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 4rem 3rem;
+
+    background: var(--bg-dark);
+
+    border-radius: 28px;
+
+    box-shadow: 0 18px 50px rgba(0, 0, 0, .12);
+
+    position: relative;
+
+}
+
+
+/* GOLD ACCENT */
+
+.organ-support .container::before {
+
+    content: "";
+
+    display: block;
+
+    width: 70px;
+
+    height: 4px;
+
+    margin: 0 auto 1.5rem;
+
+    background: var(--gold);
+
+    border-radius: 2px;
+
+}
+
+
+/* HEADING */
+
+.organ-support h2 {
+
+    margin-bottom: 1.25rem;
+
+    font-family: var(--font-heading);
+
+    color: var(--white);
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    line-height: 1.15;
+
+}
+
+
+/* DESCRIPTION */
+
+.organ-support p {
+
+    max-width: 600px;
+
+    margin: 0 auto 2rem;
+
+    color: rgba(255, 255, 255, .7);
+
+    line-height: 1.8;
+
+}
+
+
+/* BUTTON */
+
+.organ-support .btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/*=========================
+    RESPONSIVE
+==========================*/
+
+@media (max-width: 600px) {
+
+    .organ-support {
+
+        padding: 4.5rem 1rem;
+
+    }
+
+    .organ-support .container {
+
+        padding: 3rem 1.5rem;
+
+        border-radius: 22px;
+
+    }
+
+}

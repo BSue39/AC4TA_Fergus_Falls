@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images\favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ Base ------>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/typography.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!------ Layout ------>
+    <link rel="stylesheet" href="../assets/css/layout/container.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/layout/footer.css">
+
+    <!------ Components ------>
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/section-heading.css">
+
+    <!------ Page ------>
+    <link rel="stylesheet" href="../assets/css/pages/volunteers.css">
+
+    <!-- ==========================
+     RESPONSIVE
+========================== -->
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="../index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="../images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="../events/announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta">Calendar</a>
+                    <a href="membership_appeal.html">Membership Appeal</a>
+                    <a href="curtain_appeal.html">Curtain Appeal</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../events/featured_events.html">Featured Events</a>
+                    <a href="../events/list_events.html">List of Events</a>
+                    <a href="../events/ticket_policies.html">Ticketing Policies</a>
+                    <a href="../events/plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href="../about/mission_vision.html">Mission/Vision</a>
+                    <a href="../about/staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="../about/history.html">History <i
+                                class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="../about/history_building.html">Building</a>
+                            <a href="../about/history_organ.html">Theatre Organ</a>
+                            <a href="../about/history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="sponsorship.html">Sponsorship</a>
+                    <a href="membership.html">Membership</a>
+                    <a href="volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--Rentals-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="../rentals/rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="../rentals/rental_rates.html">Rental Rates</a>
+                            <a href="../rentals/rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="../rentals/bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates/Merchandise-->
+            <div class="nav-item">
+                <a class="dropbtn" href="../store/gift_certificates.html">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="../contact/contact_info.html">Address & Contact Information</a>
+                    <a href="../contact/box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="../contact/email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VOLUNTEERS HERO -->
+    <section class="volunteers-hero">
+        <div class="container volunteers-hero-content">
+
+            <span class="section-tag">Join Our Volunteer Team</span>
+
+            <h1>Help Bring the Arts to Life</h1>
+
+            <p>
+                From welcoming guests to assisting
+                behind the scenes, volunteers help make
+                every performance and community event possible.
+            </p>
+
+            <div class="volunteers-hero-buttons">
+
+                <a href="#opportunities" class="btn btn-primary">
+                    Explore Opportunities
+                </a>
+
+                <a href="#signup" class="btn">
+                    Volunteer Today
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WHY VOLUNTEER -->
+    <section class="volunteer-purpose">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Why Volunteer?</h2>
+            </div>
+
+            <div class="purpose-grid">
+
+                <div class="purpose-card">
+                    <i class="fa fa-users"></i>
+
+                    <h3>Build Community</h3>
+
+                    <p>
+                        Meet people who share a passion
+                        for arts and culture.
+                    </p>
+                </div>
+
+                <div class="purpose-card">
+                    <i class="fa fa-star"></i>
+
+                    <h3>Create Experiences</h3>
+
+                    <p>
+                        Help guests enjoy unforgettable
+                        performances and events.
+                    </p>
+                </div>
+
+                <div class="purpose-card">
+                    <i class="fa fa-heart"></i>
+
+                    <h3>Make a Difference</h3>
+
+                    <p>
+                        Support programs that enrich
+                        lives throughout the region.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VOLUNTEER OPPORTUNITIES -->
+    <section id="opportunities" class="volunteer-opportunities">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Volunteer Opportunities</h2>
+            </div>
+
+            <div class="opportunity-grid">
+
+                <div class="volunteer-card">
+
+                    <i class="fa fa-ticket"></i>
+
+                    <h3>Ushering</h3>
+
+                    <p>
+                        Welcome patrons, assist with seating,
+                        and help create a great guest experience.
+                    </p>
+
+                </div>
+
+                <div class="volunteer-card">
+
+                    <i class="fa fa-users"></i>
+
+                    <h3>Special Events</h3>
+
+                    <p>
+                        Assist during fundraisers,
+                        festivals, and community programs.
+                    </p>
+
+                </div>
+
+                <div class="volunteer-card">
+
+                    <i class="fa fa-music"></i>
+
+                    <h3>Performance Support</h3>
+
+                    <p>
+                        Help artists, performers,
+                        and event staff behind the scenes.
+                    </p>
+
+                </div>
+
+                <div class="volunteer-card">
+
+                    <i class="fa fa-building"></i>
+
+                    <h3>Facility Projects</h3>
+
+                    <p>
+                        Support beautification and
+                        preservation efforts.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VOLUNTEER PHOTO GALLERY -->
+    <section class="volunteer-gallery">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-tag">
+                    Volunteer Moments
+                </span>
+
+                <h2>See Our Volunteers In Action</h2>
+
+                <p>
+                    Every performance, fundraiser, educational program,
+                    and community event is made possible through the
+                    dedication of volunteers.
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+
+                <!-- IMAGE 1 -->
+                <div class="gallery-item large">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Volunteer ushers">
+
+                    <div class="gallery-overlay">
+
+                        <h3>Front of House</h3>
+
+                        <p>
+                            Greeting guests and helping patrons
+                            enjoy an exceptional experience.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- IMAGE 2 -->
+                <div class="gallery-item large">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Youth theatre volunteers">
+
+                    <div class="gallery-overlay">
+
+                        <h3>Youth Theatre</h3>
+
+                    </div>
+
+                </div>
+
+                <!-- IMAGE 3 -->
+                <div class="gallery-item">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Concert volunteers">
+
+                    <div class="gallery-overlay">
+
+                        <h3>Concert Events</h3>
+
+                    </div>
+
+                </div>
+
+                <!-- IMAGE 4 -->
+                <div class="gallery-item">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Fundraising volunteers">
+
+                    <div class="gallery-overlay">
+
+                        <h3>Fundraising Events</h3>
+
+                        <p>
+                            Supporting special events
+                            that strengthen the arts.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- IMAGE 5 -->
+                <div class="gallery-item">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Backstage support">
+
+                    <div class="gallery-overlay">
+
+                        <h3>Behind The Scenes</h3>
+
+                    </div>
+
+                </div>
+
+                <!-- IMAGE 6 -->
+                <div class="gallery-item">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Community volunteers">
+
+                    <div class="gallery-overlay">
+
+                        <h3>Community Outreach</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- VOLUNTEER STATISTICS BANNER -->
+    <section class="volunteer-impact">
+
+        <div class="container">
+
+            <div class="impact-stat">
+                <h3>150+</h3>
+                <p>Active Volunteers</p>
+            </div>
+
+            <div class="impact-stat">
+                <h3>4,000+</h3>
+                <p>Volunteer Hours Annually</p>
+            </div>
+
+            <div class="impact-stat">
+                <h3>150+</h3>
+                <p>Events Supported Each Year</p>
+            </div>
+
+            <div class="impact-stat">
+                <h3>25+</h3>
+                <p>Years of Volunteer Service from Some Team Members</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- A DAY IN THE LIFE -->
+    <section class="volunteer-day">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>A Day in the Life of a Volunteer</h2>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <h4>Arrive & Check In</h4>
+                    <p>Meet staff and receive assignments.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Prepare the Venue</h4>
+                    <p>Welcome guests and assist with setup.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Enjoy the Event</h4>
+                    <p>Help create memorable experiences.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Celebrate Success</h4>
+                    <p>Connect with fellow volunteers.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VOLUNTEER BENEFITS -->
+    <section class="volunteer-benefits">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Volunteer Benefits</h2>
+            </div>
+
+            <div class="benefits-grid">
+
+                <div class="benefit">
+                    Flexible Scheduling
+                </div>
+
+                <div class="benefit">
+                    Meet Artists & Patrons
+                </div>
+
+                <div class="benefit">
+                    Community Connections
+                </div>
+
+                <div class="benefit">
+                    Support Local Arts
+                </div>
+
+                <div class="benefit">
+                    Special Volunteer Events
+                </div>
+
+                <div class="benefit">
+                    Behind-the-Scenes Experiences
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VOLUNTEER SPOTLIGHT -->
+    <section class="volunteer-spotlight">
+
+        <div class="container">
+
+            <div class="spotlight-card">
+
+                <img src="../images/Photo Coming Soon.png" alt="Volunteer Spotlight">
+
+                <div>
+
+                    <h2>Volunteer Spotlight</h2>
+
+                    <h3>Jane Doe</h3>
+
+                    <p>
+
+                        "I started ushering five years ago
+                        and quickly became part of the AC4TA family.
+                        Every performance brings new friendships
+                        and memorable experiences."
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VOLUNTEER FAQ -->
+    <section class="volunteer-faq">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-list">
+
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>How do I become a volunteer?</span>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            You can sign up online through our website or
+                            visit the volunteer coordinator during business hours.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>Do I need experience?</span>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            No experience is necessary! We provide training
+                            and support for all our volunteers.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>How often can I volunteer?</span>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            You can volunteer as much or as little as your
+                            schedule allows. We welcome volunteers of all
+                            availability levels.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>What events need volunteers?</span>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            We have volunteer opportunities for a wide range
+                            of events, including performances, special events,
+                            and community programs.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>Can students volunteer?</span>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes, students are welcome to volunteer! We offer
+                            various opportunities for young people to get
+                            involved and gain experience in the arts.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>Can groups volunteer together?</span>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes, groups are welcome to volunteer! We encourage
+                            community involvement and teamwork.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VOLUNTEER SIGNUP -->
+    <section id="signup" class="volunteer-signup">
+
+        <div class="container">
+
+            <h2>
+                Ready to Get Involved?
+            </h2>
+
+            <p>
+                Complete the form below and we'll
+                contact you about upcoming opportunities.
+            </p>
+
+            <form class="volunteer-form">
+
+                <input type="text" placeholder="Full Name">
+
+                <input type="email" placeholder="Email Address">
+
+                <input type="tel" placeholder="Phone Number">
+
+                <textarea placeholder="Tell us about your interests"></textarea>
+
+                <button class="btn btn-primary">
+                    Submit Interest Form
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/volunteers.js"></script>
+
+</body>
+
+</html>

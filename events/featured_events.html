@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ Base ------>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/typography.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!------ Layout ------>
+    <link rel="stylesheet" href="../assets/css/layout/container.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/layout/footer.css">
+
+    <!------ Components ------>
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/section-heading.css">
+
+    <!------ PAGE ------>
+    <link rel="stylesheet" href="../assets/css/pages/featured_events.css">
+
+    <!------ RESPONSIVE ------>
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="../index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="../images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta" target="_blank"
+                        rel="noopener noreferrer">Calendar</a>
+                    <a href="../support/membership_appeal.html">Membership Appeal</a>
+                    <a href="../support/curtain_appeal.html">Curtain Appeal</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="featured_events.html">Featured Events</a>
+                    <a href="list_events.html">List of Events</a>
+                    <a href="ticket_policies.html">Ticketing Policies</a>
+                    <a href="plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href="../about/mission_vision.html">Mission/Vision</a>
+                    <a href="../about/staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="../about/history.html">History <i
+                                class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="../about/history_building.html">Building</a>
+                            <a href="../about/history_organ.html">Theatre Organ</a>
+                            <a href="../about/history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../support/sponsorship.html">Sponsorship</a>
+                    <a href="../support/membership.html">Membership</a>
+                    <a href="../support/volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--Rentals-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="../rentals/rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="../rentals/rental_rates.html">Rental Rates</a>
+                            <a href="../rentals/rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="../rentals/bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates/Merchandise-->
+            <div class="nav-item">
+                <a class="dropbtn" href="../store/gift_certificates.html">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="../contact/contact_info.html">Address & Contact Information</a>
+                    <a href="../contact/box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="../contact/email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEATURED EVENTS HERO -->
+    <section class="featured-events-hero">
+
+        <div class="container featured-events-hero-content">
+
+            <span class="section-tag">
+                Featured Events
+            </span>
+
+            <h1>
+                Extraordinary Experiences Await
+            </h1>
+
+            <p>
+                From nationally touring concerts to award-winning theatre productions, family entertainment, tribute
+                artists, and community favorites, there's always something happening at A Center for the Arts.
+            </p>
+
+            <a href="#spotlight-section" class="btn btn-primary">
+                Upcoming Featured Events
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURED EVENT SPOTLIGHT -->
+    <section class="featured-spotlight">
+
+        <div class="container">
+
+            <div class="featured-spotlight-card">
+
+                <!-- Image -->
+                <div class="featured-spotlight-image">
+
+                    <img src="../images/Performance Arts Package/UNEARTHED for big top flat (2).jpeg"
+                        alt="The Greatest Show Unearthed">
+
+                </div>
+
+                <!-- Content -->
+                <div class="featured-spotlight-content">
+
+                    <span class="event-tag">
+                        Featured Performance
+                    </span>
+
+                    <h2>
+                        The Greatest Show Unearthed
+                    </h2>
+
+                    <!-- Event Details -->
+                    <div class="spotlight-meta">
+
+                        <div class="meta-item">
+                            <i class="fa-solid fa-calendar"></i>
+                            October 31, 2026
+                        </div>
+
+                        <div class="meta-item">
+                            <i class="fa-solid fa-clock"></i>
+                            7:30 PM
+                        </div>
+
+                        <div class="meta-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Main Theatre
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Celebrate Halloween with an unforgettable theatrical
+                        production featuring Celtic music, mythical creatures,
+                        haunting stories, and breathtaking performances.
+                        A one-of-a-kind experience perfect for audiences
+                        looking for something truly different.
+                    </p>
+
+                    <div class="spotlight-actions">
+
+                        <a href="https://app.arts-people.com/index.php?show=317540" class="btn btn-primary"
+                            target="_blank" rel="noopener noreferrer">
+                            Get Tickets
+                        </a>
+
+                        <a href="list_events.html" class="btn btn-secondary">
+                            View All Events
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURED EVENTS -->
+    <section id="spotlight-section" class="featured-events-list">
+
+        <div class="container">
+
+            <div class="featured-events-heading">
+
+                <span class="section-tag">
+                    Upcoming Events
+                </span>
+
+                <h2>
+                    Featured Events This Season
+                </h2>
+
+                <p>
+                    Explore some of the most anticipated concerts,
+                    theatre productions, family performances,
+                    and special events taking place this season.
+                </p>
+
+            </div>
+
+            <div class="featured-events-grid">
+
+                <!-- Card 1 -->
+
+                <article class="featured-event-card">
+
+                    <img src="../images/Performance Arts Package/Harmonic-Hijinks.jpg"
+                        alt="Fergus Falls Community Orchestra Harmonic Hijinks">
+
+                    <div class="featured-event-content">
+
+                        <span class="event-tag">
+                            Performing Arts
+                        </span>
+
+                        <h3>
+                            Fergus Falls Civic Orchestra-
+                            Harmonic Hijinks
+                        </h3>
+
+                        <p>
+                            We all grew up with Bugs Bunny. Now we get to relive all the amazing classical pieces Bugs
+                            brought to life for us when we were kids. Enjoy music from Classical Looney Tunes and the
+                            comical PDQ Bach/Prof Peter Schickele.
+                        </p>
+
+                        <div class="event-meta">
+                            <span><i class="fa-solid fa-calendar"></i> Saturday, October 11</span>
+                            <span><i class="fa-solid fa-clock"></i> 2:00 PM</span>
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?show=317538" class="btn btn-primary"
+                            target="_blank" rel="noopener noreferrer">
+                            Event Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Card 2 -->
+
+                <article class="featured-event-card">
+
+                    <img src="../images/Performance Arts Package/UNEARTHED for big top flat (2).jpeg"
+                        alt="The Greatest Show Unearthed">
+
+                    <div class="featured-event-content">
+
+                        <span class="event-tag">
+                            Performing Arts
+                        </span>
+
+                        <h3>
+                            The Greatest Show Unearthed
+                        </h3>
+
+                        <p>
+                            Celebrate Halloween with an unforgettable theatrical production featuring Celtic music,
+                            mythical creatures, haunting stories, and breathtaking performances. A one-of-a-kind
+                            experience perfect for audiences looking for something truly different.
+                        </p>
+
+                        <div class="event-meta">
+                            <span><i class="fa-solid fa-calendar"></i> Saturday, October 31</span>
+                            <span><i class="fa-solid fa-clock"></i> 7:30 PM</span>
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?show=317540" class="btn btn-primary"
+                            target="_blank" rel="noopener noreferrer">
+                            Event Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Card 3 -->
+
+                <article class="featured-event-card">
+
+                    <img src="../images/Performance Arts Package/205817_TaikoArts_ConcertTour_Social_Final-01.jpg"
+                        alt="Taiko Arts Midwest">
+
+                    <div class="featured-event-content">
+
+                        <span class="event-tag">
+                            Performing Arts
+                        </span>
+
+                        <h3>
+                            Taiko Arts Midwest
+                        </h3>
+
+                        <p>
+                            Experience the vibrant energy of traditional Japanese drumming
+                            through this dynamic concert tour.
+                        </p>
+
+                        <div class="event-meta">
+                            <span><i class="fa-solid fa-calendar"></i> August 15</span>
+                            <span><i class="fa-solid fa-clock"></i> 7:00 PM</span>
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?show=317541" class="btn btn-primary"
+                            target="_blank" rel="noopener noreferrer">
+                            Event Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SEASON HIGHLIGHTS -->
+    <section class="season-highlights">
+
+        <div class="container">
+
+            <div class="season-highlights-heading">
+
+                <span class="section-tag">
+                    Season Preview
+                </span>
+
+                <h2>
+                    Highlights Throughout The Year
+                </h2>
+
+                <p>
+                    Every season offers exciting performances,
+                    returning favorites, and unforgettable
+                    experiences for audiences of every age.
+                </p>
+
+            </div>
+
+            <div class="season-highlights-timeline">
+
+                <article class="season-highlight-card">
+
+                    <span>
+                        <i class="fa-solid fa-leaf"></i>
+                        Fall Performing Arts
+                    </span>
+
+                    <h3>
+                        Music • Orchestra • International Performers
+                    </h3>
+                    <p>
+                        Experience an exciting lineup featuring the Fergus Falls Civic Orchestra, The Greatest Show
+                        Unearthed, and Taiko Arts Midwest
+                    </p>
+
+                </article>
+
+                <article class="season-highlight-card">
+
+                    <span>
+                        <i class="fa-solid fa-tree"></i>
+                        Holiday Celebrations
+                    </span>
+
+                    <h3>
+                        Seasonal Favorites • Community Events
+                    </h3>
+
+                    <p>
+                        Celebrate the holidays with Christmas with Elvis, Grand Ole Opry Christmas, and festive
+                        community performances.
+                    </p>
+
+                </article>
+
+                <article class="season-highlight-card">
+
+                    <span>
+                        <i class="fa-solid fa-seedling"></i>
+                        Spring Finale
+                    </span>
+
+                    <h3>
+                        Dance • Theatre • Tribute Shows
+                    </h3>
+
+                    <p>
+                        Close the season with Water Street Dance, John Denver Tribute, and The Looney Lutherans.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- WHY ATTEND -->
+    <section class="why-attend">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Why Audiences Love AC4TA
+                </span>
+
+                <h2>
+                    More Than Just A Performance
+                </h2>
+
+                <p>
+                    Every event at A Center for the Arts offers memorable
+                    entertainment, meaningful community connections,
+                    and exceptional live experiences.
+                </p>
+
+            </div>
+
+            <!-- Why Attend Cards -->
+
+            <div class="why-attend-grid">
+
+                <article class="why-attend-card">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-masks-theater"></i>
+                    </div>
+
+                    <h3>
+                        Professional Touring Artists
+                    </h3>
+
+                    <p>
+                        Experience acclaimed artists, musicians,
+                        and theatrical productions without leaving
+                        west-central Minnesota.
+                    </p>
+
+                </article>
+
+                <article class="why-attend-card">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-landmark"></i>
+                    </div>
+
+                    <h3>
+                        Historic Theatre
+                    </h3>
+
+                    <p>
+                        Enjoy performances inside one of Fergus Falls'
+                        most treasured cultural landmarks.
+                    </p>
+
+                </article>
+
+                <article class="why-attend-card">
+
+                    <div class="why-icon">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <h3>
+                        Entertainment For Everyone
+                    </h3>
+
+                    <p>
+                        From concerts and theatre to youth programs,
+                        family events, and special performances,
+                        there's something for everyone.
+                    </p>
+
+                </article>
+
+            </div>
+
+            <!-- Statistics -->
+
+            <div class="why-attend-grid stats-grid">
+
+                <article class="why-attend-card">
+
+                    <h3>150+</h3>
+
+                    <p>Events Annually</p>
+
+                </article>
+
+                <article class="why-attend-card">
+
+                    <h3>12K+</h3>
+
+                    <p>Visitors Each Year</p>
+
+                </article>
+
+                <article class="why-attend-card">
+
+                    <h3>60+</h3>
+
+                    <p>Years Serving Our Community</p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="featured-events-cta">
+
+        <div class="featured-events-cta-content">
+
+            <span class="section-tag">
+                Ready For Your Next Night Out?
+            </span>
+
+            <h2>
+                Don't Miss What's Next
+            </h2>
+
+            <p>
+                Whether you're attending your first performance or returning for another unforgettable evening, there's
+                always something new waiting on our stage.
+            </p>
+
+            <a href="https://app.arts-people.com/index.php?calendar=acfta" class="btn btn-primary" target="_blank"
+                rel="noopener noreferrer">
+                View Full Calendar
+            </a>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

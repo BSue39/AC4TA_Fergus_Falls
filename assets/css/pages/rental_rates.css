@@ -1,0 +1,1703 @@
+/* =========================================================
+   RENTAL RATES HERO SECTION
+   ========================================================= */
+
+.rental-rates-hero {
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 240px;
+
+    padding: 3rem 2rem;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    color: var(--white);
+
+    background:
+        linear-gradient(rgba(18, 18, 18, 0.60),
+            rgba(18, 18, 18, 0.60)),
+        url("../../../images/AC4TA-Horizontal-Sign-Night.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.rental-rates-hero .hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    opacity: 0;
+
+    transform: translateY(24px);
+
+    animation:
+        rentalRatesHeroFadeIn 0.9s ease-out 0.15s forwards;
+}
+
+
+/* =========================================================
+   HERO HEADING
+   ========================================================= */
+
+.rental-rates-hero h1 {
+
+    width: 100%;
+
+    margin: 0 0 1rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2.75rem, 5vw, 4.5rem);
+
+    line-height: 1.05;
+
+    font-weight: 600;
+
+    color: var(--white);
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+   ========================================================= */
+
+.rental-rates-hero p {
+
+    max-width: 750px;
+
+    margin: 0 auto 1.75rem;
+
+    font-size: 1.15rem;
+
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.88);
+}
+
+
+/* =========================================================
+   HERO BUTTON
+   ========================================================= */
+
+.rental-rates-hero .btn-primary {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 220px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.rental-rates-hero .btn-primary:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+   HERO ANIMATION
+   ========================================================= */
+
+@keyframes rentalRatesHeroFadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .rental-rates-hero h1 {
+        white-space: normal;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .rental-rates-hero {
+        padding: 3rem 1.5rem;
+    }
+
+    .rental-rates-hero h1 {
+        font-size: 2.5rem;
+    }
+
+}
+
+
+/* =========================================================
+   RENTAL OVERVIEW
+   ========================================================= */
+
+.rental-overview {
+    padding: 3rem 2rem;
+
+    background: var(--bg-light);
+    color: var(--text);
+}
+
+
+/* SECTION HEADING */
+
+.rental-overview .section-heading {
+    max-width: 760px;
+
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+
+.rental-overview .section-heading h2 {
+    margin: 0 0 1rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+.rental-overview .section-heading p {
+    margin: 0 auto;
+
+    font-size: 1rem;
+    line-height: 1.7;
+
+    color: var(--muted);
+}
+
+
+/* RENTAL GRID */
+
+.rental-overview-grid {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.5rem;
+}
+
+
+/* RENTAL CARD */
+
+.rental-card {
+    position: relative;
+
+    padding: 2.5rem 2rem;
+
+    text-align: center;
+
+    background: var(--white);
+
+    border: 1px solid rgba(200, 169, 107, 0.25);
+    border-radius: 8px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+/* GOLD ACCENT */
+
+.rental-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 55px;
+    height: 3px;
+
+    transform: translateX(-50%);
+
+    background: var(--gold);
+
+    transition: width 0.35s ease;
+}
+
+
+/* ICON */
+
+.rental-card i {
+    width: 64px;
+    height: 64px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 1.5rem;
+
+    border-radius: 50%;
+
+    background: rgba(200, 169, 107, 0.12);
+
+    color: var(--accent);
+
+    font-size: 1.5rem;
+
+    transition:
+        background 0.35s ease,
+        color 0.35s ease,
+        transform 0.35s ease;
+}
+
+
+/* CARD TITLE */
+
+.rental-card h3 {
+    margin: 0 0 0.75rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.45rem;
+    font-weight: 600;
+
+    color: var(--text);
+}
+
+
+/* CARD TEXT */
+
+.rental-card p {
+    margin: 0;
+
+    font-size: 0.95rem;
+    line-height: 1.65;
+
+    color: var(--muted);
+}
+
+
+/* HOVER */
+
+.rental-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(200, 169, 107, 0.55);
+
+    box-shadow:
+        0 18px 35px rgba(0, 0, 0, 0.1);
+}
+
+
+.rental-card:hover::before {
+    width: 100%;
+}
+
+
+.rental-card:hover i {
+    background: var(--gold);
+
+    color: var(--white);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   FERGUS THEATRE RENTAL RATES
+   ========================================================= */
+
+.rates-section {
+    padding: 3rem 2rem;
+
+    background: var(--white);
+    color: var(--text);
+}
+
+
+/* SECTION HEADING */
+
+.rates-section .section-heading {
+    max-width: 760px;
+
+    margin: 0 auto 3rem;
+
+    text-align: center;
+}
+
+
+.rates-section .section-tag {
+    display: inline-block;
+
+    margin-bottom: 0.75rem;
+
+    color: var(--accent);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+
+.rates-section .section-heading h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* TABLE WRAPPER */
+
+.rates-table-wrapper {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    overflow-x: auto;
+
+    background: var(--white);
+
+    border: 1px solid rgba(200, 169, 107, 0.35);
+    border-radius: 8px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+
+/* TABLE */
+
+.rates-table {
+    width: 100%;
+
+    min-width: 650px;
+
+    border-collapse: collapse;
+}
+
+
+/* TABLE HEADER */
+
+.rates-table thead {
+    background: var(--bg-dark);
+}
+
+
+.rates-table th {
+    padding: 1.25rem 1.5rem;
+
+    text-align: left;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: var(--white);
+
+    border-bottom: 3px solid var(--gold);
+}
+
+
+.rates-table th:not(:first-child) {
+    text-align: center;
+}
+
+
+/* TABLE BODY */
+
+.rates-table td {
+    padding: 1.35rem 1.5rem;
+
+    font-size: 0.95rem;
+
+    color: var(--text);
+
+    border-bottom:
+        1px solid rgba(0, 0, 0, 0.08);
+}
+
+
+.rates-table td:first-child {
+    font-weight: 600;
+
+    color: var(--accent);
+}
+
+
+.rates-table td:not(:first-child) {
+    text-align: center;
+
+    font-weight: 600;
+}
+
+
+/* ROWS */
+
+.rates-table tbody tr {
+    transition: background-color 0.25s ease;
+}
+
+
+.rates-table tbody tr:nth-child(even) {
+    background: rgba(247, 244, 238, 0.65);
+}
+
+
+.rates-table tbody tr:hover {
+    background: rgba(200, 169, 107, 0.10);
+}
+
+
+.rates-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* RATE NOTE */
+
+.rates-note {
+    max-width: 850px;
+
+    margin: 1.5rem auto 0;
+
+    padding: 1rem 1.25rem;
+
+    text-align: center;
+
+    border-left: 3px solid var(--gold);
+
+    background: var(--bg-light);
+}
+
+
+.rates-note p {
+    margin: 0;
+
+    font-size: 0.92rem;
+    line-height: 1.6;
+
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   ADDITIONAL FEES
+   ========================================================= */
+
+.additional-fees {
+    padding: 3rem 2rem;
+
+    background: var(--bg-light);
+}
+
+
+/* =========================================================
+   PERSONNEL FEES BOX
+   ========================================================= */
+
+.additional-fees .fees-box {
+    text-align: center;
+    position: relative;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 3rem;
+
+    background: var(--white);
+
+    border: 1px solid rgba(200, 169, 107, 0.35);
+    border-radius: 8px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.06);
+
+    overflow: hidden;
+}
+
+.additional-fees .fees-box::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: var(--gold);
+}
+
+
+/* STAFFING TAG */
+
+.additional-fees .fees-box .section-tag {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    padding: 0.45rem 1rem;
+    border: 1px solid rgba(200, 169, 107, 0.65);
+    border-radius: 999px;
+    background: rgba(200, 169, 107, 0.08);
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+
+/* HEADING */
+
+.additional-fees h2 {
+    margin: 0 0 1rem;
+
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* INTRO */
+
+.additional-fees .fees-intro {
+    max-width: 650px;
+
+    margin: 0 auto 2.5rem;
+
+    text-align: center;
+
+    font-size: 0.95rem;
+    line-height: 1.6;
+
+    color: var(--muted);
+}
+
+
+/* PERSONNEL GRID */
+
+.additional-fees .fees-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1rem;
+}
+
+
+/* FEE ITEM */
+
+.additional-fees .fee-item {
+    padding: 1.75rem 1.25rem;
+
+    text-align: center;
+
+    background: var(--bg-light);
+
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+
+.additional-fees .fee-item span {
+    display: block;
+    min-height: 4.35rem;
+    margin-bottom: 0.85rem;
+
+    font-size: 0.92rem;
+    font-weight: 600;
+    line-height: 1.45;
+
+    color: var(--text);
+}
+
+
+.additional-fees .fee-item p {
+    margin: 0;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.65;
+
+    color: var(--accent);
+}
+
+
+.additional-fees .fee-item:hover {
+    transform: translateY(-5px);
+
+    background: var(--white);
+
+    border-color: rgba(200, 169, 107, 0.55);
+
+    box-shadow:
+        0 10px 22px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   REDUCE SPACE BETWEEN ADDITIONAL FEES SECTIONS
+   ========================================================= */
+
+.additional-fees+.additional-fees {
+    padding-top: 1rem;
+}
+
+
+/* =========================================================
+   ADDITIONAL EQUIPMENT TABLE
+   ========================================================= */
+
+/*
+   Because this section also uses .additional-fees,
+   the section heading gets its own styling.
+*/
+
+.additional-fees .section-heading {
+    max-width: 760px;
+
+    margin: 0 auto 3rem;
+
+    text-align: center;
+}
+
+
+.additional-fees .section-heading h2 {
+    margin-bottom: 1rem;
+}
+
+
+.additional-fees .section-heading p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    font-size: 1rem;
+    line-height: 1.7;
+
+    color: var(--muted);
+}
+
+
+/* FEES TABLE WRAPPER */
+
+.fees-table-wrapper {
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    overflow-x: auto;
+
+    background: var(--white);
+
+    border: 1px solid rgba(200, 169, 107, 0.35);
+    border-radius: 8px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+
+/* FEES TABLE */
+
+.fees-table {
+    width: 100%;
+
+    min-width: 720px;
+
+    border-collapse: collapse;
+}
+
+
+/* HEADER */
+
+.fees-table thead {
+    background: var(--bg-dark);
+}
+
+
+.fees-table th {
+    padding: 1.2rem 1.5rem;
+
+    text-align: left;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: var(--white);
+
+    border-bottom: 3px solid var(--gold);
+}
+
+
+.fees-table th:not(:first-child) {
+    text-align: center;
+}
+
+
+/* TABLE CELLS */
+
+.fees-table td {
+    padding: 1.2rem 1.5rem;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    color: var(--text);
+
+    border-bottom:
+        1px solid rgba(0, 0, 0, 0.08);
+}
+
+
+.fees-table td:first-child {
+    width: 50%;
+
+    font-weight: 600;
+}
+
+
+.fees-table td:not(:first-child) {
+    text-align: center;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* ROWS */
+
+.fees-table tbody tr:nth-child(even) {
+    background: rgba(247, 244, 238, 0.65);
+}
+
+
+.fees-table tbody tr:hover {
+    background: rgba(200, 169, 107, 0.10);
+}
+
+
+.fees-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* TABLE NOTES */
+
+.table-note {
+    display: block;
+
+    margin-top: 0.4rem;
+
+    font-size: 0.82rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+    color: var(--muted);
+}
+
+
+/* ASSISTED LISTENING NOTE */
+
+.assisted-listening-note {
+    max-width: 1050px;
+
+    margin: 1.5rem auto 0;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 0.85rem;
+
+    padding: 1.25rem 1.5rem;
+
+    background: var(--white);
+
+    border-left: 4px solid var(--gold);
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+
+.assisted-listening-note i {
+    margin-top: 0.15rem;
+
+    color: var(--accent);
+
+    font-size: 1.1rem;
+}
+
+
+.assisted-listening-note p {
+    margin: 0;
+
+    font-size: 0.92rem;
+    line-height: 1.65;
+
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   BAKKEN BUILDING RENTAL RATES
+   ========================================================= */
+
+.bakken-rates {
+    padding: 3rem 2rem;
+
+    background: var(--white);
+    color: var(--text);
+}
+
+
+/* SECTION HEADING */
+
+.bakken-rates .section-heading {
+    max-width: 760px;
+
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+
+.bakken-rates .section-tag {
+    display: inline-block;
+
+    margin-bottom: 0.75rem;
+
+    color: var(--accent);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+
+.bakken-rates .section-heading h2 {
+    margin: 0 0 1rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+.bakken-rates .section-heading p {
+    margin: 0 auto;
+
+    font-size: 1rem;
+    line-height: 1.7;
+
+    color: var(--muted);
+}
+
+
+/* BAKKEN GRID */
+
+.bakken-grid {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1.5rem;
+}
+
+
+/* BAKKEN CARD */
+
+.bakken-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 2.5rem;
+
+    background: var(--bg-light);
+
+    border: 1px solid rgba(200, 169, 107, 0.3);
+    border-radius: 8px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.05);
+
+    overflow: hidden;
+}
+
+
+.bakken-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: var(--gold);
+}
+
+
+/* TITLE */
+
+.bakken-card h3 {
+    margin: 0 0 0.5rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+
+    color: var(--text);
+}
+
+
+/* SPACE DETAILS */
+
+.space-details {
+    margin: 0 0 1.5rem;
+
+    font-size: 0.92rem;
+    font-weight: 600;
+
+    color: var(--accent);
+}
+
+
+/* FEATURES LIST */
+
+.bakken-card ul {
+    margin: 0 0 2rem;
+
+    padding-left: 1.2rem;
+}
+
+
+.bakken-card li {
+    margin-bottom: 0.65rem;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    color: var(--muted);
+}
+
+
+.bakken-card li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* RATE BOXES */
+
+.space-rates {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 0.75rem;
+
+    margin-top: auto;
+}
+
+
+.space-rates div {
+    padding: 1rem;
+
+    text-align: center;
+
+    background: var(--white);
+
+    border: 1px solid rgba(200, 169, 107, 0.25);
+    border-radius: 6px;
+}
+
+
+.space-rates span {
+    display: block;
+
+    margin-bottom: 0.4rem;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: var(--muted);
+}
+
+
+.space-rates strong {
+    font-size: 1.35rem;
+
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   RENTAL REQUIREMENTS & POLICIES
+   ========================================================= */
+
+.rental-policies {
+    padding: 3rem 2rem;
+
+    background: var(--bg-light);
+    color: var(--text);
+}
+
+
+/* SECTION HEADING */
+
+.rental-policies .section-heading {
+    max-width: 760px;
+
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+
+.rental-policies .section-heading h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* POLICIES GRID */
+
+.rental-policies .policies-grid {
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.5rem;
+}
+
+
+/* POLICY CARD */
+
+.rental-policies .policy-card {
+    position: relative;
+
+    padding: 2rem 1.75rem 2rem 2rem;
+
+    background: var(--white);
+
+    border: 1px solid rgba(200, 169, 107, 0.25);
+    border-radius: 8px;
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.05);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+.rental-policies .policy-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 4px;
+    height: 100%;
+
+    background: var(--gold);
+
+    transition: width 0.35s ease;
+}
+
+
+.rental-policies .policy-card h3 {
+    margin: 0 0 0.75rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.25;
+
+    color: var(--text);
+}
+
+
+.rental-policies .policy-card p {
+    margin: 0;
+
+    font-size: 0.95rem;
+    line-height: 1.65;
+
+    color: var(--muted);
+}
+
+
+/* HOVER */
+
+.rental-policies .policy-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(200, 169, 107, 0.55);
+
+    box-shadow:
+        0 15px 32px rgba(0, 0, 0, 0.09);
+}
+
+
+.rental-policies .policy-card:hover::before {
+    width: 7px;
+}
+
+
+/* =========================================================
+   RENTAL INQUIRY CTA
+   ========================================================= */
+
+.rental-cta-section {
+    padding: 3rem 2rem;
+
+    background: var(--white);
+}
+
+
+/* CTA CARD */
+
+.rental-application {
+    position: relative;
+
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    padding: 4.5rem 3rem;
+
+    text-align: center;
+
+    background: var(--bg-dark);
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.12);
+
+    overflow: hidden;
+}
+
+
+/* GOLD ACCENT */
+
+.rental-application::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+
+    background: var(--gold);
+}
+
+
+/* CTA HEADING */
+
+.rental-application h2 {
+    margin: 0 0 1rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--white);
+}
+
+
+/* CTA TEXT */
+
+.rental-application p {
+    max-width: 650px;
+
+    margin: 0 auto 2rem;
+
+    font-size: 1rem;
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* CTA BUTTON */
+
+.rental-application .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.9rem 1.75rem;
+
+    background: var(--gold);
+
+    color: var(--bg-dark);
+
+    border: 2px solid var(--gold);
+
+    font-weight: 700;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.18);
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.rental-application .btn-primary:hover {
+    background: var(--white);
+
+    color: var(--accent);
+
+    border-color: var(--white);
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.22);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .rental-overview-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .rental-card:last-child {
+        grid-column: 1 / -1;
+
+        max-width: 500px;
+
+        width: 100%;
+
+        justify-self: center;
+    }
+
+
+    .additional-fees .fees-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .bakken-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 650px;
+    }
+
+
+    .rental-policies .policies-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 700px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET / SMALL SCREENS
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .rental-rates-hero {
+        min-height: 40vh;
+
+        padding: 4.5rem 1.5rem;
+    }
+
+
+    .rental-rates-hero h1 {
+        font-size: clamp(2.5rem, 8vw, 3.5rem);
+    }
+
+
+    .rates-section,
+    .additional-fees,
+    .bakken-rates,
+    .rental-policies,
+    .rental-cta-section {
+        padding: 4.5rem 1.5rem;
+    }
+
+
+    .rental-overview {
+        padding: 4.5rem 1.5rem;
+    }
+
+
+    .additional-fees .fees-box {
+        padding: 2.5rem 2rem;
+    }
+
+
+    .rates-table th,
+    .rates-table td,
+    .fees-table th,
+    .fees-table td {
+        padding: 1.1rem 1.15rem;
+    }
+
+
+    .rental-application {
+        padding: 4rem 2.25rem;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .rental-rates-hero {
+        min-height: 45vh;
+
+        padding: 4rem 1.25rem;
+    }
+
+
+    .rental-rates-hero h1 {
+        font-size: 2.5rem;
+    }
+
+
+    .rental-rates-hero p {
+        font-size: 0.95rem;
+
+        line-height: 1.65;
+    }
+
+
+    .rental-rates-hero .btn-primary {
+        width: 100%;
+
+        min-width: 0;
+    }
+
+
+    /* GENERAL SECTION SPACING */
+
+    .rental-overview,
+    .rates-section,
+    .additional-fees,
+    .bakken-rates,
+    .rental-policies,
+    .rental-cta-section {
+        padding: 4rem 1.25rem;
+    }
+
+
+    /* SECTION HEADINGS */
+
+    .rental-overview .section-heading,
+    .rates-section .section-heading,
+    .additional-fees .section-heading,
+    .bakken-rates .section-heading,
+    .rental-policies .section-heading {
+        margin-bottom: 2.5rem;
+    }
+
+
+    /* OVERVIEW */
+
+    .rental-overview-grid {
+        grid-template-columns: 1fr;
+
+        gap: 1.25rem;
+    }
+
+
+    .rental-card:last-child {
+        grid-column: auto;
+
+        max-width: none;
+    }
+
+
+    .rental-card {
+        padding: 2.25rem 1.75rem;
+    }
+
+
+    /* TABLES */
+
+    .rates-table-wrapper,
+    .fees-table-wrapper {
+        overflow-x: auto;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+
+    .rates-table {
+        min-width: 620px;
+    }
+
+
+    .fees-table {
+        min-width: 700px;
+    }
+
+
+    .rates-table th,
+    .rates-table td,
+    .fees-table th,
+    .fees-table td {
+        padding: 1rem;
+    }
+
+
+    .rates-table th,
+    .fees-table th {
+        font-size: 0.7rem;
+    }
+
+
+    .rates-table td,
+    .fees-table td {
+        font-size: 0.9rem;
+    }
+
+
+    /* PERSONNEL */
+
+    .additional-fees .fees-box {
+        padding: 2.5rem 1.25rem;
+    }
+
+
+    .additional-fees .fee-item {
+        padding: 1.5rem 1.25rem;
+    }
+
+
+    /* ASSISTED LISTENING NOTE */
+
+    .assisted-listening-note {
+        padding: 1.1rem 1.15rem;
+
+        gap: 0.7rem;
+    }
+
+
+    /* BAKKEN */
+
+    .bakken-card {
+        padding: 2rem 1.5rem;
+    }
+
+
+    .space-rates {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* POLICIES */
+
+    .rental-policies .policies-grid {
+        gap: 1rem;
+    }
+
+
+    .rental-policies .policy-card {
+        padding: 1.6rem 1.35rem 1.6rem 1.6rem;
+    }
+
+
+    .rental-policies .policy-card h3 {
+        font-size: 1.25rem;
+    }
+
+
+    /* CTA */
+
+    .rental-application {
+        padding: 3.5rem 1.5rem;
+
+        border-radius: 8px;
+    }
+
+
+    .rental-application h2 {
+        font-size: 2rem;
+    }
+
+
+    .rental-application p {
+        font-size: 0.92rem;
+    }
+
+
+    .rental-application .btn-primary {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .rental-rates-hero .hero-content {
+        opacity: 1;
+
+        transform: none;
+
+        animation: none;
+    }
+
+
+    .rental-rates-hero .btn-primary,
+    .rental-card,
+    .rental-card::before,
+    .rental-card i,
+    .additional-fees .fee-item,
+    .rental-policies .policy-card,
+    .rental-policies .policy-card::before,
+    .rental-application .btn-primary,
+    .rates-table tbody tr {
+        transition: none;
+    }
+
+
+    .rental-rates-hero .btn-primary:hover,
+    .rental-card:hover,
+    .rental-card:hover i,
+    .additional-fees .fee-item:hover,
+    .rental-policies .policy-card:hover,
+    .rental-application .btn-primary:hover {
+        transform: none;
+    }
+
+}

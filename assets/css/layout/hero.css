@@ -1,0 +1,25 @@
+/* =========================
+   HERO BASE
+========================= */
+
+.page-hero {
+    min-height: 60vh;
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    color: var(--white);
+    text-align: center;
+}
+
+.page-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page-hero h1 {
+    font-family: 'Playfair Display', serif;
+}

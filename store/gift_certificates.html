@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images\favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ Base ------>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/typography.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!------ Layout ------>
+    <link rel="stylesheet" href="../assets/css/layout/container.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/layout/footer.css">
+
+    <!------ Components ------>
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/section-heading.css">
+
+    <!------ Page ------>
+    <link rel="stylesheet" href="../assets/css/pages/gift_certificates.css">
+
+    <!-- ==========================
+     RESPONSIVE
+========================== -->
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="../index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="../images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="../events/announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta">Calendar</a>
+                    <a href="../support/membership_appeal.html">Membership Appeal</a>
+                    <a href="../support/curtain_appeal.html">Curtain Appeal</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../events/featured_events.html">Featured Events</a>
+                    <a href="../events/list_events.html">List of Events</a>
+                    <a href="../events/ticket_policies.html">Ticketing Policies</a>
+                    <a href="../events/plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href="../about/mission_vision.html">Mission/Vision</a>
+                    <a href="../about/staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="../about/history.html">History <i
+                                class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="../about/history_building.html">Building</a>
+                            <a href="../about/history_organ.html">Theatre Organ</a>
+                            <a href="../about/history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../support/sponsorship.html">Sponsorship</a>
+                    <a href="../support/membership.html">Membership</a>
+                    <a href="../support/volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--Rentals-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="../rentals/rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="../rentals/rental_rates.html">Rental Rates</a>
+                            <a href="../rentals/rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="../rentals/bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates/Merchandise-->
+            <div class="nav-item">
+                <a class="dropbtn" href="../store/gift_certificates.html">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="../contact/contact_info.html">Address & Contact Information</a>
+                    <a href="../contact/box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="../contact/email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GIFT CERTIFICATES/MERCHANDISE HERO -->
+    <header class="gift-hero">
+
+        <div class="container">
+
+            <div class="gift-hero-content">
+
+                <span class="section-tag">
+                    Support the Arts
+                </span>
+
+                <h1>Gift Certificates & Merchandise</h1>
+
+                <p>
+                    Give the gift of live entertainment,
+                    memorable experiences, and support
+                    for the arts in our community.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#gift-certificates" class="btn btn-primary">
+                        Purchase Gift Certificates
+                    </a>
+
+                    <a href="#merchandise" class="btn">
+                        Shop Merchandise
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- WHY GIFT CERTIFICATES -->
+    <section id="gift-certificates" class="gift-benefits">
+
+        <div class="container">
+
+            <div class="gift-grid">
+
+                <div class="gift-image">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Gift certificate from A Center for the Arts">
+
+                </div>
+
+                <div class="gift-content">
+
+                    <span class="section-tag">
+                        Give the Gift of the Arts
+                    </span>
+
+                    <h2>The Perfect Gift for Any Occasion</h2>
+
+                    <p>
+                        Gift certificates can be used toward
+                        performances, concerts, theatre productions,
+                        educational programs, and special events.
+                    </p>
+
+                    <ul>
+                        <li>Birthdays</li>
+                        <li>Holidays</li>
+                        <li>Anniversaries</li>
+                        <li>Employee Recognition</li>
+                        <li>Thank-You Gifts</li>
+                    </ul>
+
+                    <a href="https://app.arts-people.com/index.php?retail=acfta" class="btn btn-primary" target="_blank"
+                        rel="noopener noreferrer">
+                        Purchase a Gift Certificate
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GIFT CERTIFICATE VALUES -->
+    <section class="certificate-values">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Available Gift Certificate Values</h2>
+            </div>
+
+            <div class="certificate-grid">
+
+                <div class="certificate-card">
+                    <a href="https://app.arts-people.com/index.php?retail=acfta" target="_blank"
+                        rel="noopener noreferrer">
+                        <h3>$25</h3>
+                        <p>Great for youth programs and events.</p>
+                    </a>
+                </div>
+
+                <div class="certificate-card featured">
+                    <a href="https://app.arts-people.com/index.php?retail=acfta" target="_blank"
+                        rel="noopener noreferrer">
+                        <h3>$50</h3>
+                        <p>Perfect for most performances.</p>
+                    </a>
+                </div>
+
+                <div class="certificate-card">
+                    <a href="https://app.arts-people.com/index.php?retail=acfta" target="_blank"
+                        rel="noopener noreferrer">
+                        <h3>$100</h3>
+                        <p>A memorable gift for any arts lover.</p>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MERCHANDISE SHOWCASE -->
+    <section id="merchandise" class="merchandise-showcase">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Support AC4TA
+                </span>
+
+                <h2>Featured Merchandise</h2>
+
+                <p>
+                    Show your support for A Center for the Arts
+                    while taking home a piece of the experience.
+                </p>
+
+            </div>
+
+
+            <div class="merch-grid">
+
+                <!-- T-SHIRT -->
+                <div class="merch-card">
+
+                    <div class="merch-image">
+                        <img src="../images/Photo Coming Soon.png" alt="AC4TA logo T-shirt">
+                    </div>
+
+                    <div class="merch-content">
+
+                        <h3>AC4TA T-Shirt</h3>
+
+                        <p>
+                            Soft cotton tee featuring
+                            the AC4TA logo.
+                        </p>
+
+                        <span class="merch-price">$25</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MUG -->
+                <div class="merch-card">
+
+                    <div class="merch-image">
+                        <img src="../images/Photo Coming Soon.png" alt="AC4TA logo mug">
+                    </div>
+
+                    <div class="merch-content">
+
+                        <h3>Logo Mug</h3>
+
+                        <p>
+                            A perfect souvenir
+                            for theatre lovers.
+                        </p>
+
+                        <span class="merch-price">$15</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TOTE BAG -->
+                <div class="merch-card">
+
+                    <div class="merch-image">
+                        <img src="../images/Photo Coming Soon.png" alt="AC4TA canvas tote bag">
+                    </div>
+
+                    <div class="merch-content">
+
+                        <h3>Canvas Tote Bag</h3>
+
+                        <p>
+                            Carry the arts with you.
+                        </p>
+
+                        <span class="merch-price">$20</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SEASONAL & LIMITED EDITION ITEMS -->
+    <section class="seasonal-merch">
+
+        <div class="container">
+
+            <div class="seasonal-box">
+
+                <span class="section-tag">
+                    Limited Availability
+                </span>
+
+                <h2>Seasonal Merchandise</h2>
+
+                <p>
+                    Special event posters,
+                    show memorabilia,
+                    holiday gift bundles,
+                    and limited-edition apparel.
+                </p>
+
+                <a href="https://app.arts-people.com/index.php?retail=acfta" class="btn btn-primary">
+                    View Current Offerings
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- WHERE TO PURCHASE -->
+    <section class="purchase-options">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Where to Buy
+                </span>
+
+                <h2>How to Purchase</h2>
+
+                <p>
+                    Gift certificates and select merchandise
+                    are available through several convenient options.
+                </p>
+
+            </div>
+
+
+            <div class="purchase-grid">
+
+                <!-- BOX OFFICE -->
+                <div class="purchase-card">
+
+                    <h3>Box Office</h3>
+
+                    <p>
+                        Visit the AC4TA Box Office during regular
+                        business hours to purchase gift certificates
+                        and available merchandise.
+                    </p>
+
+                    <span>
+                        Tuesday–Friday · 11 AM–2 PM
+                    </span>
+
+                </div>
+
+
+                <!-- PHONE ORDERS -->
+                <div class="purchase-card">
+
+                    <h3>Phone Orders</h3>
+
+                    <p>
+                        Call the AC4TA Box Office to ask about
+                        available merchandise and place an order.
+                    </p>
+
+                    <span>
+                        (218) 736-5453
+                    </span>
+
+                </div>
+
+
+                <!-- EVENT NIGHTS -->
+                <div class="purchase-card">
+
+                    <h3>Event Nights</h3>
+
+                    <p>
+                        Select merchandise may be available
+                        for purchase during performances and
+                        special events.
+                    </p>
+
+                    <span>
+                        Availability varies
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SUPPORT THE ARTS CTA -->
+    <section class="support-arts-cta">
+
+        <div class="container">
+
+            <div class="support-arts-content">
+
+                <span class="section-tag">
+                    Support the Arts
+                </span>
+
+                <h2>Your Purchase Supports the Arts</h2>
+
+                <p>
+                    Every gift certificate and merchandise purchase
+                    helps support performances, educational programs,
+                    community events, and future artistic opportunities.
+                </p>
+
+                <a href="https://app.arts-people.com/index.php?donation=acfta" class="btn btn-primary" target="_blank"
+                    rel="noopener noreferrer">
+                    Support AC4TA
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ BASE ------->
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/typography.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!------ LAYOUT ------>
+    <link rel="stylesheet" href="../assets/css/layout/container.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/layout/hero.css">
+    <link rel="stylesheet" href="../assets/css/layout/footer.css">
+
+    <!------ COMPONENTS ------>
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/section-heading.css">
+
+    <!------ PAGE ------->
+    <link rel="stylesheet" href="../assets/css/pages/announcements.css">
+
+    <!-- ==========================
+     RESPONSIVE
+     (Temporary)
+========================== -->
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="../index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="../images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta" target="_blank"
+                        rel="noopener noreferrer">Calendar</a>
+                    <a href="../support/membership_appeal.html">Membership Appeal</a>
+                    <a href="../support/curtain_appeal.html">Curtain Appeal</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="featured_events.html">Featured Events</a>
+                    <a href="list_events.html">List of Events</a>
+                    <a href="ticket_policies.html">Ticketing Policies</a>
+                    <a href="plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href="../about/mission_vision.html">Mission/Vision</a>
+                    <a href="../about/staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="../about/history.html">History <i
+                                class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="../about/history_building.html">Building</a>
+                            <a href="../about/history_organ.html">Theatre Organ</a>
+                            <a href="../about/history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../support/sponsorship.html">Sponsorship</a>
+                    <a href="../support/membership.html">Membership</a>
+                    <a href="../support/volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--RENTALS-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="../rentals/rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="../rentals/rental_rates.html">Rental Rates</a>
+                            <a href="../rentals/rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="../rentals/bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates/Merchandise-->
+            <div class="nav-item">
+                <a class="dropbtn" href="../storegift_certificates.html">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="../contact/contact_info.html">Address & Contact Information</a>
+                    <a href="../contact/box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="../contact/email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ANNOUNCEMENTS HERO -->
+    <section class="announcements-hero">
+        <div class="container announcements-hero-content">
+
+            <span class="section-tag">Latest Updates</span>
+
+            <h1>Announcements & Updates</h1>
+
+            <p>
+                Stay informed about upcoming performances, ticket releases,
+                community programs, fundraising efforts, and important updates
+                from A Center for the Arts.
+            </p>
+
+            <a href="#announcements-feed" class="btn btn-primary">
+                View Announcements
+            </a>
+
+        </div>
+    </section>
+
+    <!-- FEATURED ANNOUNCEMENT -->
+    <section class="featured-announcement">
+        <div class="container">
+
+            <div class="featured-card">
+
+                <div class="featured-image">
+                    <img src="../images/Season-Package-Square.jpg" alt="Featured Announcement">
+                </div>
+
+                <div class="featured-content">
+
+                    <span class="announcement-category">
+                        Featured Update
+                    </span>
+
+                    <h2>
+                        2026–2027 Performance Season Tickets Now Available
+                    </h2>
+
+                    <p>
+                        Experience an unforgettable season of concerts,
+                        theatre productions, educational programming,
+                        and community events. Early ticket access is now open
+                        for members and season subscribers.
+                    </p>
+
+                    <div class="announcement-meta">
+                        Posted May 27, 2026
+                    </div>
+
+                    <a href="../events/list_events.html" class="btn btn-primary">
+                        Learn More
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FILTER BAR -->
+    <section class="announcement-filters">
+
+        <div class="container">
+
+            <div class="filter-heading">
+
+                <span class="section-tag">
+                    Browse Updates
+                </span>
+
+                <h2>
+                    Explore Announcements
+                </h2>
+
+                <p>
+                    Browse the latest news and updates by category.
+                </p>
+
+            </div>
+
+            <div class="container filter-buttons">
+
+                <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">
+                    All
+                </button>
+
+                <button type="button" class="filter-btn" data-filter="events" aria-pressed="false">
+                    Events
+                </button>
+
+                <button type="button" class="filter-btn" data-filter="ticketing" aria-pressed="false">
+                    Ticketing
+                </button>
+
+                <button type="button" class="filter-btn" data-filter="community" aria-pressed="false">
+                    Community
+                </button>
+
+                <button type="button" class="filter-btn" data-filter="education" aria-pressed="false">
+                    Education
+                </button>
+
+                <button type="button" class="filter-btn" data-filter="fundraising" aria-pressed="false">
+                    Fundraising
+                </button>
+
+                <button type="button" class="filter-btn" data-filter="youth" aria-pressed="false">
+                    Youth
+                </button>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ANNOUNCEMENT GRID -->
+    <section id="announcements-feed" class="announcements-feed">
+
+        <div class="container">
+
+            <div class="announcements-grid">
+
+                <!-- CARD 1 -->
+                <article class="announcement-card" data-category="events">
+
+                    <div class="announcement-image">
+                        <img src="../images/Non Series Events/Voices-Rise-Logo-8-2026-002.png" alt="Voices Rise">
+                    </div>
+
+                    <div class="announcement-content">
+
+                        <span class="announcement-category">
+                            Events
+                        </span>
+
+                        <h3>
+                            Voices Rise!
+                        </h3>
+
+                        <p>
+                            A welcoming choral experience for individuals living with Memory Loss and their care partner
+                            as well as other “Choral Companions”.
+                        </p>
+
+                        <div class="announcement-meta">
+                            Begins Friday, September 18th
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?class_id=acfta~163265" class="announcement-link"
+                            target="_blank" rel="noopener noreferrer">
+                            More Info & Registration →
+                        </a>
+
+                    </div>
+                </article>
+
+                <!-- CARD 2 -->
+                <article class="announcement-card" data-category="youth">
+
+                    <div class="announcement-image">
+                        <img src="../images/Non Series Events/PBJ-Logo_Small-480x345.jpg" alt="PB & J Logo">
+                    </div>
+
+                    <div class="announcement-content">
+
+                        <span class="announcement-category">
+                            Youth
+                        </span>
+
+                        <h3>
+                            PB & J Camp Canceled
+                        </h3>
+
+                        <p>
+                            The PB & J Singers fall session has been canceled.
+                            We apologize for any inconvenience and appreciate your understanding.
+                        </p>
+
+                        <div class="announcement-meta">
+                            Fall 2026 Session
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- CARD 3 -->
+                <article class="announcement-card" data-category="fundraising">
+
+                    <div class="announcement-image">
+                        <img src="../images/stage_curtains.jpg" alt="Curtains Fundraiser">
+                    </div>
+
+                    <div class="announcement-content">
+
+                        <span class="announcement-category">
+                            Fundraising
+                        </span>
+
+                        <h3>
+                            Curtains Campaign Reaches 25% of Goal
+                        </h3>
+
+                        <p>
+                            Thank you to our supporters helping us restore and
+                            replace the theatre curtains.
+                        </p>
+
+                        <div class="announcement-meta">
+                            As of September 1, 2026
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?donation=acfta" class="announcement-link"
+                            target="_blank" rel="noopener noreferrer">
+                            Donate Here →
+                        </a>
+
+                    </div>
+                </article>
+
+                <!-- CARD 4 -->
+                <article class="announcement-card" data-category="events">
+
+                    <div class="announcement-image">
+                        <img src="../images/Free Events.png" alt="Free Events at A Center for the Arts">
+                    </div>
+
+                    <div class="announcement-content">
+
+                        <span class="announcement-category">
+                            Events
+                        </span>
+
+                        <h3>
+                            Discover Free Events
+                        </h3>
+
+                        <p>
+                            Explore free and freewill-donation events offered
+                            throughout the year at A Center for the Arts.
+                        </p>
+
+                        <div class="announcement-meta">
+                            Free & Freewill Donation Events
+                        </div>
+
+                        <a href="free_events.html" class="announcement-link">
+                            Explore Free Events →
+                        </a>
+
+                    </div>
+                </article>
+
+                <!-- NO ANNOUNCEMENTS MESSAGE -->
+
+                <div class="no-announcements" hidden>
+
+                    <h3>No Announcements Available</h3>
+
+                    <p>
+                        There are currently no announcements in this category.
+                        Please check back soon.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- GET INVOLVED CTA -->
+    <section class="announcement-alerts">
+        <div class="container">
+
+            <div class="alerts-box">
+
+                <div class="section-heading">
+                    <span class="section-tag">Get Involved</span>
+                    <h2>Be Part of the Center</h2>
+                </div>
+
+                <p class="alerts-intro">
+                    There are many ways to get involved at A Center for the Arts.
+                    Volunteer, participate in upcoming programs and auditions,
+                    or renew your membership and continue supporting the arts
+                    in our community.
+                </p>
+
+                <div class="alerts-grid">
+
+                    <!-- Volunteer -->
+                    <div class="alert-item">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        <h3>Volunteer</h3>
+                        <p>
+                            Share your time and talents by volunteering
+                            with A Center for the Arts.
+                        </p>
+                        <a href="../support/volunteers.html" class="btn btn-primary">
+                            Volunteer Today
+                        </a>
+                    </div>
+
+                    <!-- Auditions & Programs -->
+                    <div class="alert-item">
+                        <i class="fa-solid fa-masks-theater"></i>
+                        <h3>Auditions &amp; Programs</h3>
+                        <p>
+                            Register for upcoming auditions, classes,
+                            and arts programs.
+                        </p>
+                        <a href="https://app.arts-people.com/index.php?class=acfta" class="btn btn-primary"
+                            target="_blank" rel="noopener noreferrer">
+                            Register Now
+                        </a>
+                    </div>
+
+                    <!-- Membership -->
+                    <div class="alert-item">
+                        <i class="fa-solid fa-heart"></i>
+                        <h3>Renew Current Membership or Become a New Member</h3>
+                        <p>
+                            Continue supporting the arts and stay connected
+                            as an AC4TA member.
+                        </p>
+                        <a href="https://app.arts-people.com/index.php?membership=acfta" class="btn btn-primary"
+                            target="_blank" rel="noopener noreferrer">
+                            Membership
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/announcements.js"></script>
+
+</body>
+
+</html>

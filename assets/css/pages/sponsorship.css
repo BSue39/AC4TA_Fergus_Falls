@@ -1,0 +1,1654 @@
+/* =========================================================
+   SPONSORSHIP HERO
+   ========================================================= */
+
+.sponsorship-hero {
+    min-height: 240px;
+    padding: 3rem 2rem;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.58),
+            rgba(0, 0, 0, 0.58)),
+        url('../../../images/AC4TA-Horizontal-Sign-Night.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Hero Content */
+
+.sponsorship-hero-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+
+    opacity: 0;
+    transform: translateY(25px);
+
+    animation: sponsorshipHeroFadeIn 1s ease-out 0.15s forwards;
+}
+
+
+/* HERO FADE-IN ANIMATION */
+
+@keyframes sponsorshipHeroFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Section Tag */
+
+.sponsorship-hero .section-tag {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+}
+
+
+/* Heading */
+
+.sponsorship-hero h1 {
+
+    width: max-content;
+
+    max-width: none;
+
+    margin: 0 auto 1.25rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2.4rem, 5vw, 4rem);
+
+    font-weight: 600;
+
+    line-height: 1.1;
+
+    letter-spacing: -0.02em;
+
+    color: var(--white);
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    position: relative;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+}
+
+
+/* Description */
+
+.sponsorship-hero p {
+
+    max-width: 900px;
+
+    margin: 0 auto 2rem;
+
+    font-size: 1.05rem;
+
+    line-height: 1.7;
+
+    font-weight: 400;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    text-align: center;
+
+}
+
+
+/* HERO Button */
+
+.sponsorship-hero .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.85rem 1.75rem;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    border-radius: 999px;
+
+    background: var(--accent);
+    color: var(--white);
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.sponsorship-hero .btn-primary:hover {
+    background: var(--gold);
+    color: var(--bg-dark);
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .sponsorship-hero {
+        min-height: 38vh;
+        padding: 4rem 1.5rem;
+    }
+
+    .sponsorship-hero h1 {
+        font-size: clamp(2.1rem, 8vw, 3rem);
+    }
+
+    .sponsorship-hero p {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .sponsorship-hero {
+        min-height: 42vh;
+        padding: 3.5rem 1.25rem;
+    }
+
+    .sponsorship-hero .section-tag {
+        font-size: 0.72rem;
+        letter-spacing: 0.12em;
+    }
+
+    .sponsorship-hero h1 {
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+    .sponsorship-hero p {
+        font-size: 0.95rem;
+    }
+
+    .sponsorship-hero .btn-primary {
+        width: 100%;
+        max-width: 260px;
+    }
+}
+
+
+/* =========================================================
+   COMMUNITY IMPACT
+   ========================================================= */
+
+.impact-showcase {
+    padding: 3rem 2rem;
+    background: var(--bg-light);
+    color: var(--text);
+}
+
+
+/* Section Heading */
+
+.impact-showcase h2 {
+    max-width: 750px;
+    margin: 0 auto 3.5rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+
+    color: var(--text);
+}
+
+
+/* Impact Grid */
+
+.impact-grid {
+    max-width: 1050px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+}
+
+
+/* Individual Statistics */
+
+.impact-stat {
+    padding: 1rem 2rem;
+    text-align: center;
+    position: relative;
+}
+
+
+/* Vertical Dividers */
+
+.impact-stat:not(:last-child)::after {
+    content: "";
+    position: absolute;
+
+    top: 10%;
+    right: 0;
+    height: 80%;
+    width: 1px;
+
+    background: rgba(31, 31, 31, 0.15);
+}
+
+
+/* Numbers */
+
+.impact-stat h3 {
+    margin: 0 0 0.5rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.3rem, 4vw, 3.5rem);
+    font-weight: 600;
+    line-height: 1;
+
+    color: var(--accent);
+}
+
+
+/* Labels */
+
+.impact-stat p {
+    margin: 0;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .impact-showcase {
+        padding: 4.5rem 1.5rem;
+    }
+
+    .impact-showcase h2 {
+        margin-bottom: 3rem;
+    }
+
+    .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2.5rem;
+    }
+
+    .impact-stat:nth-child(2)::after {
+        display: none;
+    }
+
+    .impact-stat:nth-child(3)::after {
+        display: block;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .impact-showcase {
+        padding: 4rem 1.25rem;
+    }
+
+    .impact-showcase h2 {
+        margin-bottom: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .impact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .impact-stat {
+        padding: 0.75rem 1rem;
+    }
+
+    .impact-stat::after {
+        display: none !important;
+    }
+
+    .impact-stat h3 {
+        font-size: 2.75rem;
+    }
+
+    .impact-stat p {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* =========================================================
+   CURRENT SPONSORS / COMMUNITY PARTNERS
+   ========================================================= */
+
+.sponsor-wall {
+
+    padding: 3rem 0;
+
+    background: var(--white);
+
+    color: var(--text);
+
+    text-align: center;
+
+}
+
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.sponsor-wall h2 {
+
+    max-width: 750px;
+
+    margin: 0 auto 3rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2.4rem, 4vw, 3.5rem);
+
+    font-weight: 700;
+
+    line-height: 1.1;
+
+    letter-spacing: -0.025em;
+
+    color: var(--text);
+
+}
+
+
+/* =========================================================
+   SPONSOR TIER HEADINGS
+   ========================================================= */
+
+.sponsor-wall h3 {
+
+    margin: 0 0 1.75rem;
+
+    font-size: .85rem;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    letter-spacing: .14em;
+
+    text-transform: uppercase;
+
+    color: var(--accent);
+
+}
+
+
+/* =========================================================
+   MAJOR FUNDING SPONSORS
+   ========================================================= */
+
+.sponsor-tier {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 3.5rem 5rem;
+
+}
+
+
+/* FEATURED FUNDING TIER */
+
+.sponsor-tier.featured-tier {
+
+    margin-bottom: 4.5rem;
+
+    padding: 3.5rem 3rem;
+
+    background: var(--bg-light);
+
+    border-radius: 24px;
+
+    gap: 3.5rem 5rem;
+
+}
+
+
+/* FUNDING LOGOS */
+
+.sponsor-tier img {
+
+    display: block;
+
+    width: auto;
+
+    max-width: 280px;
+
+    max-height: 145px;
+
+    object-fit: contain;
+
+    opacity: 1;
+
+    filter: none;
+
+    transition:
+        transform .25s ease,
+        opacity .25s ease;
+
+}
+
+
+/* FEATURED FUNDING LOGOS */
+
+.sponsor-tier.featured-tier img {
+
+    max-width: 300px;
+
+    max-height: 160px;
+
+}
+
+
+/* LOGO HOVER */
+
+.sponsor-tier img:hover {
+
+    opacity: .9;
+
+    transform: translateY(-5px) scale(1.03);
+
+}
+
+
+/* =========================================================
+   SEASON SPONSORS
+   ========================================================= */
+
+.sponsor-list {
+
+    max-width: 1050px;
+
+    margin: 0 auto 3.5rem;
+
+}
+
+
+/* SPONSOR INTRO */
+
+.sponsor-list>p {
+
+    max-width: 800px;
+
+    margin: 0 auto 2rem;
+
+    color: var(--muted);
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+}
+
+
+/* SPONSOR NAME GRID */
+
+.sponsor-names {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: .75rem 1rem;
+
+    margin: 0;
+
+    padding: 0;
+
+    list-style: none;
+
+}
+
+
+/* INDIVIDUAL SPONSOR */
+
+.sponsor-names li {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 58px;
+
+    padding: .85rem 1rem;
+
+    background: var(--bg-light);
+
+    border: 1px solid rgba(31, 31, 31, .05);
+
+    border-radius: 12px;
+
+    color: var(--text);
+
+    font-size: .95rem;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
+
+}
+
+
+/* SPONSOR HOVER */
+
+.sponsor-names li:hover {
+
+    transform: translateY(-2px);
+
+    border-color: rgba(200, 169, 107, .35);
+
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .07);
+
+}
+
+
+/* =========================================================
+   SPONSORSHIP PACKET BUTTON
+   ========================================================= */
+
+.sponsor-wall .btn-primary {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 230px;
+
+    padding: .9rem 2.4rem;
+
+    font-size: .9rem;
+
+    font-weight: 700;
+
+    letter-spacing: .03em;
+
+    text-decoration: none;
+
+    border-radius: 999px;
+
+    background: var(--accent);
+
+    color: var(--white);
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, .12);
+
+    transition:
+        background-color .25s ease,
+        color .25s ease,
+        transform .25s ease,
+        box-shadow .25s ease;
+
+}
+
+
+/* BUTTON HOVER */
+
+.sponsor-wall .btn-primary:hover {
+
+    background: var(--gold);
+
+    color: var(--bg-dark);
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .18);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .sponsor-tier.featured-tier {
+
+        padding: 2.5rem 1.5rem;
+
+        margin-bottom: 3.5rem;
+
+        gap: 2.5rem 3.5rem;
+
+    }
+
+
+    .sponsor-tier.featured-tier img {
+
+        max-width: 200px;
+
+        max-height: 105px;
+
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    .sponsor-tier.featured-tier {
+
+        padding: 2rem 1rem;
+
+        margin-bottom: 3rem;
+
+        gap: 2rem;
+
+        border-radius: 20px;
+
+    }
+
+
+    .sponsor-tier.featured-tier img {
+
+        max-width: 160px;
+
+        max-height: 85px;
+
+    }
+
+}
+
+
+/* =========================================================
+   WHY SPONSOR AC4TA
+   ========================================================= */
+
+.why-sponsor {
+    padding: 3rem 2rem;
+    background: var(--bg-light);
+    color: var(--text);
+}
+
+
+/* Section Heading */
+
+.why-sponsor .section-heading {
+    max-width: 700px;
+    margin: 0 auto 3.5rem;
+    text-align: center;
+}
+
+.why-sponsor .section-heading h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* SPONSOR REASON GRID */
+
+.sponsor-reasons {
+    max-width: 1050px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+}
+
+
+/* Reason Cards */
+
+.reason-card {
+    padding: 2.75rem 2rem;
+
+    background: var(--white);
+    border: 1px solid rgba(31, 31, 31, 0.08);
+    border-radius: 6px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* Card Hover */
+
+.reason-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(122, 31, 43, 0.2);
+
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.09);
+}
+
+
+/* ICON */
+
+.reason-card i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 58px;
+    height: 58px;
+    margin-bottom: 1.5rem;
+
+    border-radius: 50%;
+
+    background: rgba(122, 31, 43, 0.08);
+    color: var(--accent);
+
+    font-size: 1.35rem;
+}
+
+
+/* Card Heading */
+
+.reason-card h3 {
+    margin: 0 0 0.85rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.45rem;
+    font-weight: 600;
+    line-height: 1.25;
+
+    color: var(--text);
+}
+
+
+/* Card Description */
+
+.reason-card p {
+    max-width: 260px;
+    margin: 0 auto;
+
+    font-size: 0.95rem;
+    line-height: 1.7;
+
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .why-sponsor {
+        padding: 5rem 1.5rem;
+    }
+
+    .why-sponsor .section-heading {
+        margin-bottom: 3rem;
+    }
+
+    .sponsor-reasons {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+    }
+
+    .reason-card {
+        padding: 2.5rem 2rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .why-sponsor {
+        padding: 4rem 1.25rem;
+    }
+
+    .why-sponsor .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .reason-card {
+        padding: 2.25rem 1.5rem;
+    }
+
+    .reason-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .reason-card p {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* =========================================================
+   SPONSORSHIP OPPORTUNITIES
+   ========================================================= */
+
+.opportunities {
+    padding: 3rem 2rem;
+    background: var(--white);
+    color: var(--text);
+}
+
+
+/* Section Heading */
+
+.opportunities .section-heading {
+    max-width: 700px;
+    margin: 0 auto 3.5rem;
+    text-align: center;
+}
+
+.opportunities .section-heading h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* OPPORTUNITY GRID */
+
+.opportunity-grid {
+    max-width: 1050px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+
+/* Opportunity Cards */
+
+.opportunity-card {
+    position: relative;
+
+    padding: 2.5rem 2.25rem 2.5rem;
+
+    background: var(--bg-light);
+    border: 1px solid rgba(31, 31, 31, 0.07);
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Accent Bar */
+
+.opportunity-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: var(--accent);
+}
+
+
+/* Card Hover */
+
+.opportunity-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Opportunity Heading */
+
+.opportunity-card h3 {
+    margin: 0 0 0.85rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.45rem;
+    font-weight: 600;
+    line-height: 1.25;
+
+    color: var(--text);
+}
+
+
+/* Opportunity Description */
+
+.opportunity-card p {
+    max-width: 280px;
+    margin: 0;
+
+    font-size: 0.95rem;
+    line-height: 1.7;
+
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .opportunities {
+        padding: 5rem 1.5rem;
+    }
+
+    .opportunities .section-heading {
+        margin-bottom: 3rem;
+    }
+
+    .opportunity-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+    .opportunity-card {
+        padding: 2.25rem 2rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .opportunities {
+        padding: 4rem 1.25rem;
+    }
+
+    .opportunities .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .opportunity-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .opportunity-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .opportunity-card p {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* =========================================================
+   SPONSORSHIP LEVELS
+   ========================================================= */
+
+#levels {
+    padding: 3rem 2rem;
+    background: var(--bg-dark);
+    color: var(--white);
+}
+
+
+/* Section Heading */
+
+#levels .section-heading {
+    max-width: 700px;
+    margin: 0 auto 3.5rem;
+    text-align: center;
+}
+
+#levels .section-heading h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--white);
+}
+
+
+/* LEVEL GRID */
+
+.level-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: stretch;
+    gap: 1rem;
+}
+
+
+/* LEVEL CARDS */
+
+.level-card {
+    position: relative;
+
+    padding: 2.75rem 1.75rem;
+
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 5px;
+
+    text-align: center;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Card Hover */
+
+.level-card:hover {
+    transform: translateY(-5px);
+
+    background: rgba(255, 255, 255, 0.09);
+    border-color: rgba(200, 169, 107, 0.45);
+
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Level Name */
+
+.level-card>span {
+    display: block;
+    margin-bottom: 1rem;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+
+    color: var(--gold);
+}
+
+
+/* Investment Amount */
+
+.level-card h3 {
+    margin: 0 0 1rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2rem, 3vw, 2.6rem);
+    font-weight: 600;
+    line-height: 1;
+
+    color: var(--white);
+}
+
+
+/* Description */
+
+.level-card p {
+    max-width: 190px;
+    margin: 0 auto;
+
+    font-size: 0.9rem;
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, 0.72);
+}
+
+
+/* FEATURED GOLD LEVEL */
+
+.level-card.featured {
+    background: var(--accent);
+    border-color: var(--gold);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+
+    transform: translateY(-8px);
+}
+
+
+/* Featured Hover */
+
+.level-card.featured:hover {
+    transform: translateY(-12px);
+
+    background: var(--accent);
+    border-color: var(--gold);
+}
+
+
+/* Featured Level Label */
+
+.level-card.featured>span {
+    color: var(--gold);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    #levels {
+        padding: 5rem 1.5rem;
+    }
+
+    .level-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .level-card.featured {
+        transform: none;
+    }
+
+    .level-card.featured:hover {
+        transform: translateY(-5px);
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    #levels {
+        padding: 4rem 1.25rem;
+    }
+
+    #levels .section-heading {
+        margin-bottom: 2.5rem;
+    }
+
+    #levels .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .level-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        gap: 1rem;
+    }
+
+    .level-card {
+        padding: 2.25rem 1.5rem;
+    }
+
+    .level-card.featured {
+        transform: none;
+    }
+
+    .level-card.featured:hover {
+        transform: translateY(-4px);
+    }
+}
+
+
+/* =========================================================
+   FEATURED SPONSOR STORY
+   ========================================================= */
+
+.sponsor-story {
+    padding: 3rem 2rem;
+
+    background: var(--bg-light);
+    color: var(--text);
+
+    text-align: center;
+}
+
+
+/* TESTIMONIAL CONTENT */
+
+.sponsor-story .container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+/* Decorative Quote */
+
+.sponsor-story blockquote {
+    position: relative;
+
+    margin: 0 auto 1.5rem;
+    padding: 2.5rem 2rem 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.45;
+
+    color: var(--text);
+}
+
+
+/* Large Decorative Quote Mark */
+
+.sponsor-story blockquote::before {
+    content: "\201C";
+
+    position: absolute;
+    top: -0.5rem;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-family: "Playfair Display", serif;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1;
+
+    color: var(--gold);
+
+    opacity: 0.8;
+}
+
+
+/* Sponsor Attribution */
+
+.sponsor-story p {
+    margin: 0;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .sponsor-story {
+        padding: 4.5rem 1.5rem;
+    }
+
+    .sponsor-story blockquote {
+        padding: 2.25rem 1rem 0;
+        font-size: 1.8rem;
+    }
+
+    .sponsor-story blockquote::before {
+        font-size: 4.5rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .sponsor-story {
+        padding: 4rem 1.25rem;
+    }
+
+    .sponsor-story blockquote {
+        padding: 2rem 0.5rem 0;
+        font-size: 1.55rem;
+        line-height: 1.5;
+    }
+
+    .sponsor-story blockquote::before {
+        font-size: 4rem;
+    }
+
+    .sponsor-story p {
+        font-size: 0.75rem;
+    }
+}
+
+
+/* =========================================================
+   FINAL SPONSORSHIP CTA
+   ========================================================= */
+
+.sponsor-cta {
+
+    padding: 3rem 0;
+
+    background: var(--bg-light);
+
+    color: var(--text);
+
+}
+
+
+/* CTA CARD */
+
+.sponsor-cta .container {
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    padding: 2.75rem 4rem;
+
+    background: var(--white);
+
+    border: 1px solid rgba(31, 31, 31, 0.08);
+
+    border-radius: 28px;
+
+    text-align: center;
+
+    box-shadow: 0 22px 55px rgba(0, 0, 0, 0.10);
+
+    position: relative;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    animation: sponsorCtaFadeIn 1s ease-out 0.15s forwards;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+
+/* CTA ACCENT */
+
+.sponsor-cta .container::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 5px;
+
+    background: var(--accent);
+
+}
+
+
+/* CTA FADE-IN */
+
+@keyframes sponsorCtaFadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(25px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* CTA HEADING */
+
+.sponsor-cta h2 {
+
+    max-width: 700px;
+
+    margin: 0 auto 1rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2.25rem, 4vw, 3.25rem);
+
+    font-weight: 600;
+
+    line-height: 1.15;
+
+    color: var(--text);
+
+}
+
+
+/* CTA DESCRIPTION */
+
+.sponsor-cta p {
+
+    max-width: 700px;
+
+    margin: 0 auto 1.75rem;
+
+    font-size: 1.05rem;
+
+    line-height: 1.65;
+
+    color: var(--muted);
+
+}
+
+
+/* CTA BUTTON */
+
+.sponsor-cta .btn-primary {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 230px;
+
+    padding: .9rem 2.4rem;
+
+    font-size: .9rem;
+
+    font-weight: 700;
+
+    letter-spacing: .03em;
+
+    text-decoration: none;
+
+    border-radius: 999px;
+
+    background: var(--accent);
+
+    color: var(--white);
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, .12);
+
+    transition:
+        background-color .25s ease,
+        color .25s ease,
+        transform .25s ease,
+        box-shadow .25s ease;
+
+}
+
+
+.sponsor-cta .btn-primary:hover {
+
+    background: var(--gold);
+
+    color: var(--bg-dark);
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .18);
+
+}
+
+
+/* CTA CARD HOVER */
+
+.sponsor-cta .container:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 28px 65px rgba(0, 0, 0, .14);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .sponsor-cta {
+
+        padding: 2rem 1.5rem;
+
+    }
+
+    .sponsor-cta .container {
+
+        padding: 2.75rem 2rem;
+
+        border-radius: 24px;
+
+    }
+
+    .sponsor-cta h2 {
+
+        font-size: clamp(2rem, 7vw, 2.6rem);
+
+    }
+
+    .sponsor-cta p {
+
+        font-size: 1rem;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .sponsor-cta {
+
+        padding: 2rem 1.25rem;
+
+    }
+
+    .sponsor-cta .container {
+
+        padding: 2.5rem 1.5rem;
+
+        border-radius: 22px;
+
+    }
+
+    .sponsor-cta h2 {
+
+        font-size: 2rem;
+
+    }
+
+    .sponsor-cta p {
+
+        font-size: .95rem;
+
+    }
+
+    .sponsor-cta .btn-primary {
+
+        width: 100%;
+
+        max-width: 300px;
+
+    }
+
+}

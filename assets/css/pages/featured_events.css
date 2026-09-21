@@ -1,0 +1,1056 @@
+/*********************************
+        HERO SECTION
+*********************************/
+
+.featured-events-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 240px;
+    padding: 3rem 2rem;
+
+    color: var(--white);
+    text-align: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(rgba(18, 18, 18, .60),
+            rgba(18, 18, 18, .60)),
+        url("../../../images/AC4TA-Horizontal-Sign-Night.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.featured-events-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    animation: heroFadeUp 0.9s ease-out both;
+}
+
+.featured-events-hero h1 {
+    width: 100%;
+
+    margin: 0 0 1rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2.75rem, 5vw, 4.75rem);
+
+    line-height: 1.05;
+
+    color: var(--white);
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+.featured-events-hero p {
+    max-width: 700px;
+
+    margin: 0 auto 1.75rem;
+
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, .88);
+}
+
+.featured-events-hero .btn {
+    min-width: 220px;
+}
+
+.featured-events-hero-content {
+    animation: heroFadeUp .9s ease-out both;
+}
+
+/*********************************
+        HERO ANIMATION
+*********************************/
+
+@keyframes heroFadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .featured-events-hero {
+        padding: 3rem 1.5rem;
+    }
+
+    .featured-events-hero h1 {
+        font-size: 2.5rem;
+        white-space: normal;
+    }
+
+}
+
+/*********************************
+    FEATURED EVENT SPOTLIGHT
+*********************************/
+
+.featured-spotlight {
+    padding: 3rem 0;
+    background: var(--white);
+}
+
+.featured-spotlight-card {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    min-height: 400px;
+    gap: 3rem;
+
+    background: var(--white);
+
+    border-radius: 28px;
+    overflow: hidden;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .10);
+
+    transition: .35s ease;
+}
+
+.featured-spotlight-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 28px 65px rgba(0, 0, 0, .14);
+}
+
+/* IMAGE */
+
+.featured-spotlight-image {
+    height: 500px;
+    overflow: hidden;
+}
+
+.featured-spotlight-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    object-fit: cover;
+    display: block;
+}
+
+/* CONTENT */
+
+.featured-spotlight-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 2.25rem;
+}
+
+.featured-spotlight-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.event-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+
+    padding: .5rem 1rem;
+
+    border-radius: 999px;
+
+    background: rgba(200, 169, 107, .15);
+    border: 1px solid rgba(200, 169, 107, .35);
+
+    color: var(--gold);
+
+    font-size: .82rem;
+    font-weight: 700;
+
+    letter-spacing: .08em;
+    text-transform: uppercase;
+
+    margin-bottom: 1.5rem;
+}
+
+.spotlight-content h2 {
+    margin-bottom: 0.75rem;
+
+    font-size: clamp(2.2rem, 4vw, 3.3rem);
+
+    line-height: 1.15;
+}
+
+.spotlight-content p {
+    color: var(--muted);
+
+    line-height: 1.8;
+
+    margin-bottom: 2rem;
+}
+
+/* EVENT DETAILS */
+
+.spotlight-meta {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 1rem;
+
+    margin-bottom: 1.25rem;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    color: var(--text);
+
+    font-weight: 600;
+}
+
+.meta-item i {
+    color: var(--gold);
+}
+
+/* BUTTONS */
+
+.spotlight-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .spotlight-card {
+        grid-template-columns: 1fr;
+    }
+
+    .spotlight-image img {
+        min-height: 320px;
+    }
+
+    .spotlight-content {
+        padding: 2rem;
+    }
+
+}
+
+/*********************************
+    FEATURED EVENTS SECTION
+*********************************/
+
+.featured-events-list {
+    padding: 3rem 0;
+    background: var(--bg-light);
+}
+
+.featured-events-heading {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 4rem;
+}
+
+.featured-events-heading h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 55px;
+    line-height: 1.1;
+    margin: 1rem 0;
+}
+
+.featured-events-heading p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: var(--muted);
+    line-height: 1.8;
+    font-size: 1.08rem;
+}
+
+/* GRID */
+
+.featured-events-grid {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+
+}
+
+/* EVENT CARD */
+
+.featured-event-card {
+
+    display: flex;
+    flex-direction: column;
+
+    background: var(--white);
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 14px 35px rgba(0, 0, 0, .08);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.featured-event-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 26px 60px rgba(0, 0, 0, .14);
+
+}
+
+/* EVENT IMAGES */
+
+.featured-event-card img {
+
+    width: 100%;
+
+    height: 440px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+/* CARD CONTENT */
+
+.featured-event-content {
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+
+    padding: 2rem;
+
+}
+
+/* EVENT TAG */
+
+.event-tag {
+
+    display: inline-flex;
+
+    align-self: flex-start;
+
+    padding: .45rem 1rem;
+
+    margin-bottom: 1rem;
+
+    border-radius: 999px;
+
+    background: rgba(200, 169, 107, .15);
+
+    border: 1px solid rgba(200, 169, 107, .35);
+
+    color: var(--gold);
+
+    font-size: .8rem;
+
+    font-weight: 700;
+
+    letter-spacing: .06em;
+
+    text-transform: uppercase;
+
+}
+
+/* EVENT TITLE */
+
+.featured-event-content h3 {
+
+    color: var(--text);
+    line-height: 1.25;
+    margin-bottom: 1rem;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+
+    overflow: hidden;
+
+    min-height: 2.5em;
+
+}
+
+/* EVENT DESCRIPTION */
+
+.featured-event-content p {
+
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 1.75rem;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+
+    overflow: hidden;
+    flex: 1;
+}
+
+/* EVENT META */
+
+.event-meta {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 1.2rem;
+
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+
+    color: var(--accent);
+
+    font-weight: 600;
+
+    font-size: .95rem;
+
+}
+
+.event-meta span {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: .45rem;
+
+}
+
+.event-meta i {
+
+    color: var(--gold);
+
+}
+
+/* EVENT BUTTONS */
+
+.featured-event-content .btn {
+
+    margin-top: 1.5rem;
+
+    width: 100%;
+
+}
+
+/*********************************
+    SEASON HIGHLIGHTS
+*********************************/
+
+.season-highlights {
+    padding: 3rem 0;
+    background: var(--white);
+}
+
+.season-highlights-heading {
+    max-width: 760px;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.season-highlights-heading h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    line-height: 1.1;
+    margin: 1rem 0;
+}
+
+.season-highlights-heading p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: var(--muted);
+    line-height: 1.8;
+    font-size: 1.08rem;
+}
+
+/* TIMELINE LAYOUT */
+
+.season-highlights-timeline {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    position: relative;
+
+}
+
+/* CONNECTING LINE */
+
+.season-highlights-timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 38px;
+    left: 12%;
+    right: 12%;
+
+    height: 2px;
+
+    background: rgba(200, 169, 107, .35);
+
+    z-index: 0;
+
+}
+
+/* HIGHLIGHT CARD */
+
+.season-highlight-card {
+
+    position: relative;
+
+    background: var(--bg-light);
+
+    padding: 2.5rem;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, .08);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+    z-index: 2;
+
+}
+
+/* HOVER EFFECT */
+
+.season-highlight-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, .12);
+
+}
+
+/* TIMELINE CIRCLE */
+
+.season-highlight-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -18px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+    background: var(--gold);
+
+    border: 5px solid var(--white);
+
+    box-shadow:
+        0 0 0 4px rgba(200, 169, 107, .25);
+
+}
+
+/* SEASON LABEL */
+
+.season-highlight-card span {
+
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    color: var(--accent);
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: .08em;
+
+    font-size: .85rem;
+
+}
+
+/* HEADING */
+
+.season-highlight-card h3 {
+
+    margin-bottom: 1rem;
+
+    line-height: 1.3;
+
+    color: var(--text);
+
+}
+
+/* DESCRIPTION */
+
+.season-highlight-card p {
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+    margin: 0;
+
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .season-highlights-timeline {
+
+        grid-template-columns: 1fr;
+        gap: 3rem;
+
+    }
+
+    .season-highlights-timeline::before {
+
+        display: none;
+
+    }
+
+    .season-highlight-card::before {
+
+        left: 2rem;
+        transform: none;
+
+    }
+
+}
+
+/*********************************
+        EVENT CATEGORIES
+*********************************/
+
+.event-categories {
+    background: var(--bg-light);
+    padding: 3rem 0;
+}
+
+.event-categories .section-heading p {
+    max-width: 650px;
+    margin: 1rem auto 0;
+    text-align: center;
+}
+
+.event-category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.event-category-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background: var(--white);
+    border-radius: 24px;
+    padding: 2.75rem 2rem;
+    text-align: center;
+
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .08);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.event-category-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 24px 55px rgba(0, 0, 0, .15);
+}
+
+.event-category-card::before {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 4px;
+
+    margin: 0 auto 2rem;
+
+    border-radius: 999px;
+
+    background: var(--gold);
+}
+
+/* ICONS */
+
+.event-category-card i {
+    font-size: 3rem;
+    color: var(--gold);
+
+    margin-bottom: 1.5rem;
+
+    transition: transform .3s ease;
+}
+
+.event-category-card:hover i {
+    transform: scale(1.15) rotate(6deg);
+}
+
+
+/* HEADINGS */
+
+.event-category-card h3 {
+    color: var(--text);
+    font-size: 1.45rem;
+    margin: 0;
+    margin-bottom: .75rem;
+    line-height: 1.35;
+}
+
+/* DESCRIPTIONS */
+
+.event-category-card p {
+    color: var(--muted);
+    line-height: 1.7;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    min-height: 95px;
+}
+
+/* BUTTONS */
+
+.category-link {
+    margin-top: auto;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: .45rem;
+
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: color .3s ease;
+}
+
+.category-link:hover {
+
+    color: var(--gold);
+
+}
+
+.category-link i {
+
+    font-size: .85rem;
+
+    transition: transform .3s ease;
+
+}
+
+.category-link:hover i {
+
+    transform: translateX(4px);
+
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+
+    .event-category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 640px) {
+
+    .event-category-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/*********************************
+        WHY ATTEND
+*********************************/
+
+.why-attend {
+    padding: 3rem 0;
+    background: var(--white);
+}
+
+.why-attend .section-heading {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 4rem;
+}
+
+.why-attend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* MAIN FEATURE CARDS */
+
+.why-attend-card {
+    background: var(--bg-light);
+    border-radius: 24px;
+    padding: 2.5rem;
+    text-align: center;
+
+    box-shadow: 0 18px 45px rgba(0, 0, 0, .08);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+.why-attend-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 28px 60px rgba(0, 0, 0, .14);
+}
+
+/* ICONS */
+
+.why-icon {
+
+    width: 80px;
+    height: 80px;
+
+    margin: 0 auto 1.5rem;
+
+    border-radius: 50%;
+
+    background: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2.3rem;
+}
+
+/* TYPOGRAPHY */
+
+.why-attend-card h3 {
+
+    margin-bottom: 1rem;
+
+    font-size: 1.55rem;
+
+    color: var(--text);
+
+    font-family: "Playfair Display", serif;
+}
+
+.why-attend-card p {
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+    font-size: 1rem;
+}
+
+/*=========================
+  STATISTICS ROW 
+=========================*/
+
+.stats-grid {
+ 
+    margin-top: 1rem;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 2rem;
+}
+
+.stats-grid .why-attend-card {
+
+    background: var(--accent);
+
+    color: var(--white);
+
+    padding: 2rem;
+
+    box-shadow: 0 20px 50px rgba(122, 31, 43, .25);
+}
+
+.stats-grid h3 {
+
+    color: var(--gold);
+
+    font-size: 3rem;
+
+    margin-bottom: .5rem;
+
+    font-family: "Playfair Display", serif;
+}
+
+.stats-grid p {
+
+    color: rgba(255, 255, 255, .9);
+
+    margin: 0;
+
+    font-size: 1rem;
+
+    letter-spacing: .5px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px) {
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/*********************************
+        FINAL CTA
+*********************************/
+
+.featured-events-cta {
+
+    padding: 3rem 0;
+
+    background: var(--bg-light);
+
+}
+
+/* CARD */
+
+.featured-events-cta-content {
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    padding: 2.75rem 4rem;
+
+    background: var(--white);
+
+    border-radius: 30px;
+
+    box-shadow: 0 22px 55px rgba(0, 0, 0, .10);
+
+    text-align: center;
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+/* HEADING */
+
+.featured-events-cta h2 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2.5rem, 5vw, 3.75rem);
+
+    color: var(--text);
+
+    margin: 0 0 1rem;
+
+}
+
+/* PARAGRAPH */
+
+.featured-events-cta p {
+
+    max-width: 700px;
+
+    margin: 0 auto 1.75rem;
+
+    font-size: 1.05rem;
+
+    line-height: 1.65;
+
+    color: var(--muted);
+
+}
+
+/* BUTTON */
+
+.featured-events-cta .btn {
+
+    min-width: 230px;
+
+    padding: .9rem 2.4rem;
+
+}
+
+/* ADDING A LITTLE POLISH */
+/* with subtle hover*/
+
+.featured-events-cta-content {
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+.featured-events-cta-content:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 28px 65px rgba(0, 0, 0, .14);
+
+}

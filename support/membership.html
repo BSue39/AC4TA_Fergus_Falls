@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images\favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ Base ------>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/typography.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!------ Layout ------>
+    <link rel="stylesheet" href="../assets/css/layout/container.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/layout/footer.css">
+
+    <!------ Components ------>
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/section-heading.css">
+
+    <!------ Page ------>
+    <link rel="stylesheet" href="../assets/css/pages/membership.css">
+
+    <!-- ==========================
+     RESPONSIVE
+========================== -->
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="../index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="../images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="../events/announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta">Calendar</a>
+                    <a href="../support/membership_appeal.html">Membership Appeal</a>
+                    <a href="../support/curtain_appeal.html">Curtain Appeal</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../events/featured_events.html">Featured Events</a>
+                    <a href="../events/list_events.html">List of Events</a>
+                    <a href="../events/ticket_policies.html">Ticketing Policies</a>
+                    <a href="../events/plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href="../about/mission_vision.html">Mission/Vision</a>
+                    <a href="../about/staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="../about/history.html">History <i
+                                class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="../about/history_building.html">Building</a>
+                            <a href="../about/history_organ.html">Theatre Organ</a>
+                            <a href="../about/history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="sponsorship.html">Sponsorship</a>
+                    <a href="membership.html">Membership</a>
+                    <a href="volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--Rentals-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="../rentals/rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="../rentals/rental_rates.html">Rental Rates</a>
+                            <a href="../rentals/rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="../rentals/bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates/Merchandise-->
+            <div class="nav-item">
+                <a class="dropbtn" href="../store/gift_certificates.html">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="../contact/contact_info.html">Address & Contact Information</a>
+                    <a href="../contact/box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="../contact/email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MEMBERSHIP HERO -->
+    <section class="membership-hero">
+        <div class="container membership-hero-content">
+
+            <span class="section-tag">Support the Arts</span>
+
+            <h1>Become Part of the AC4TA Family</h1>
+
+            <p>
+                Membership helps sustain performances,
+                arts education, community programs, and
+                the preservation of our historic theatre.
+            </p>
+
+            <div class="membership-hero-actions">
+
+                <a href="#membership-levels" class="btn btn-primary">
+                    Join Today
+                </a>
+
+                <a href="#benefits" class="btn btn-secondary">
+                    Explore Benefits
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WHY MEMBERSHIP MATTERS -->
+    <section class="membership-purpose">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Why Membership Matters</h2>
+            </div>
+
+            <div class="purpose-grid">
+
+                <div class="purpose-card">
+                    <i class="fa fa-ticket"></i>
+                    <h3>Support Performances</h3>
+                    <p>
+                        Help bring artists, musicians,
+                        and theatre productions to our stage.
+                    </p>
+                </div>
+
+                <div class="purpose-card">
+                    <i class="fa fa-graduation-cap"></i>
+                    <h3>Invest in Youth</h3>
+                    <p>
+                        Support educational programs
+                        and youth theatre opportunities.
+                    </p>
+                </div>
+
+                <div class="purpose-card">
+                    <i class="fa fa-building"></i>
+                    <h3>Preserve History</h3>
+                    <p>
+                        Help maintain one of the region's
+                        most treasured cultural landmarks.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MEMBER BENEFITS -->
+    <section id="benefits" class="member-benefits">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Member Benefits</h2>
+            </div>
+
+            <div class="benefits-grid">
+
+                <div class="benefit">
+                    <i class="fa fa-check-circle"></i>
+                    Priority Ticket Access
+                </div>
+
+                <div class="benefit">
+                    <i class="fa fa-check-circle"></i>
+                    Discounts on Select Events
+                </div>
+
+                <div class="benefit">
+                    <i class="fa fa-check-circle"></i>
+                    Exclusive Member Communications
+                </div>
+
+                <div class="benefit">
+                    <i class="fa fa-check-circle"></i>
+                    Invitations to Special Events
+                </div>
+
+                <div class="benefit">
+                    <i class="fa fa-check-circle"></i>
+                    Recognition in Publications
+                </div>
+
+                <div class="benefit">
+                    <i class="fa fa-check-circle"></i>
+                    Support Arts Programming
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MEMBERSHIP LEVELS -->
+    <section id="membership-levels" clas="membership-levels">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Membership Levels</h2>
+            </div>
+
+            <div class="membership-grid">
+
+                <a href="https://app.arts-people.com/index.php?membership=acfta" class="membership-card" target="_blank"
+                    rel="noopener">
+
+                    <span>Nickel</span>
+                    <h3>$35</h3>
+
+                    <p>
+                        Membership Range $35-$49
+                    </p>
+
+                </a>
+
+                <a href="https://app.arts-people.com/index.php?membership=acfta" class="membership-card" target="_blank"
+                    rel="noopener">
+
+                    <span>Bronze</span>
+                    <h3>$50</h3>
+
+                    <p>
+                        Membership Range $50-$99
+                    </p>
+
+                </a>
+
+                <a href="https://app.arts-people.com/index.php?membership=acfta" class="membership-card featured"
+                    target="_blank" rel="noopener">
+
+                    <span>Silver</span>
+                    <h3>$100</h3>
+
+                    <p>
+                        Membership Range $100-$249
+                    </p>
+
+                </a>
+
+                <a href="https://app.arts-people.com/index.php?membership=acfta" class="membership-card" target="_blank"
+                    rel="noopener">
+
+                    <span>Gold</span>
+                    <h3>$250</h3>
+
+                    <p>
+                        Membership Range $250-$499
+                    </p>
+
+                </a>
+
+                <a href="https://app.arts-people.com/index.php?membership=acfta" class="membership-card" target="_blank"
+                    rel="noopener">
+
+                    <span>Platinum</span>
+                    <h3>$500</h3>
+
+                    <p>
+                        Membership Range $500-$999
+                    </p>
+
+                </a>
+
+                <a href="https://app.arts-people.com/index.php?membership=acfta" class="membership-card" target="_blank"
+                    rel="noopener">
+
+                    <span>Diamond</span>
+                    <h3>$1000</h3>
+
+                    <p>
+                        Membership Range $1000+
+                    </p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MEMBER STORIES -->
+    <section class="member-stories">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Why Members Give</h2>
+            </div>
+
+            <div class="story-card">
+
+                <blockquote>
+
+                    "The arts have always been a part of
+                    our family. Becoming members was
+                    our way of ensuring future generations
+                    have those same opportunities."
+
+                </blockquote>
+
+                <p>
+                    — AC4TA Member
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- IMPACT OF MEMBERSHIP -->
+    <section class="membership-impact">
+
+        <div class="container">
+
+            <div class="impact-grid">
+
+                <div>
+                    <h3>150+</h3>
+                    <p>Events Annually</p>
+                </div>
+
+                <div>
+                    <h3>2,000+</h3>
+                    <p>Youth Participants</p>
+                </div>
+
+                <div>
+                    <h3>12,000+</h3>
+                    <p>Visitors Served</p>
+                </div>
+
+                <div>
+                    <h3>100%</h3>
+                    <p>Community Focused</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FAQ -->
+    <section class="membership-faq">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-list">
+
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>How do I become a member?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            You can join online through our website or
+                            visit the box office during business hours.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>Can I give a membership as a gift?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes! Gift memberships are a wonderful way
+                            to share the joy of the arts with loved ones.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>Are memberships tax-deductible?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes, your membership contribution is tax-deductible
+                            to the extent allowed by law. Please consult your
+                            tax advisor.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>How long does a membership last?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Memberships are valid for one year from the date
+                            of purchase. You will receive renewal reminders
+                            before your membership expires.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>How do I renew?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            You can renew online, by phone, or in person at
+                            the box office. We also send out renewal reminders
+                            via email.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 6 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>Do members receive ticket discounts?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes, members receive discounts on select events.
+                            Please check our website or contact the box office
+                            for details on current discounts.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FINAL CALL TO ACTION -->
+    <section class="membership-cta">
+
+        <div class="container">
+
+            <h2>
+                Join a Community That Believes in the Arts
+            </h2>
+
+            <p>
+                Your membership helps create opportunities,
+                preserve history, and inspire future generations.
+            </p>
+
+            <a href="https://app.arts-people.com/index.php?membership=acfta" class="btn btn-primary" target="_blank"
+                rel="noopener">
+                Become a Member Today
+            </a>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/membership.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,2485 @@
+/* =========================================================
+   RENTAL INFORMATION HERO SECTION
+   ========================================================= */
+
+.rental-info-hero {
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 240px;
+
+    padding: 3rem 2rem;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    color: var(--white);
+
+    background:
+        linear-gradient(rgba(18, 18, 18, 0.60),
+            rgba(18, 18, 18, 0.60)),
+        url("../../../images/AC4TA-Horizontal-Sign-Night.jpg");
+    ;
+
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* =========================================================
+   SECTION TAG
+   ========================================================= */
+
+.rental-info-hero p.section-tag {
+
+    display: inline-block;
+
+    margin: 0 0 1rem;
+
+    padding: 0.65rem 1.25rem;
+
+    border: 1px solid rgba(200, 169, 107, 0.45);
+
+    border-radius: 999px;
+
+    background: rgba(18, 18, 18, 0.25);
+
+    color: var(--gold) !important;
+
+    font-size: 0.85rem;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: 0.1em;
+
+    text-transform: uppercase;
+
+    opacity: 0;
+
+    animation:
+        rentalHeroFadeUp 0.9s ease-out 0.1s forwards;
+}
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.rental-info-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.rental-info-hero-content>* {
+    max-width: none;
+}
+
+
+/* =========================================================
+   HERO HEADING
+   ========================================================= */
+
+.rental-info-hero h1 {
+
+    width: 100%;
+
+    margin: 0 0 1rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2.75rem, 4.5vw, 4.5rem);
+
+    line-height: 1.05;
+
+    color: var(--white);
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    opacity: 0;
+
+    animation:
+        rentalHeroFadeUp 0.9s ease-out 0.25s forwards;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+   ========================================================= */
+
+.rental-info-hero .rental-info-hero-content>p {
+
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto 1.75rem;
+
+    font-size: 1.15rem;
+
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    opacity: 0;
+
+    animation:
+        rentalHeroFadeUp 0.9s ease-out 0.4s forwards;
+}
+
+.rental-info-hero-content.is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+   ========================================================= */
+
+.p-wnt5713 {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 1rem;
+
+    opacity: 0;
+
+    animation:
+        rentalHeroFadeUp 0.9s ease-out 0.55s forwards;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.rental-info-hero .hero-buttons .pagelayer-btn-holder {
+
+    border: 2px solid var(--accent) !important;
+
+    background: var(--accent) !important;
+
+    color: var(--white) !important;
+}
+
+
+.rental-info-hero .btn-primary:hover {
+
+    border-color: var(--gold);
+
+    background: var(--white);
+
+    color: var(--text);
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+   ========================================================= */
+
+.rental-info-hero .hero-buttons .btn:not(.btn-primary) {
+
+    border: 2px solid var(--gold);
+
+    background: transparent;
+
+    color: var(--white);
+}
+
+
+.rental-info-hero .hero-buttons .btn:not(.btn-primary):hover {
+
+    background: var(--gold);
+
+    color: var(--text);
+}
+
+
+/* =========================================================
+   HERO ANIMATION
+   ========================================================= */
+
+@keyframes rentalHeroFadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .rental-info-hero h1 {
+        white-space: normal;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .rental-info-hero {
+
+        padding: 3rem 1.5rem;
+    }
+
+    .rental-info-hero h1 {
+
+        font-size: 2.5rem;
+    }
+
+}
+
+
+/* =========================================================
+   RENTAL BENEFITS SECTION
+   ========================================================= */
+
+.rental-benefits {
+    padding: 3rem 2rem;
+
+    background: var(--bg-light);
+    color: var(--text);
+}
+
+
+/* SECTION HEADING */
+
+.rental-benefits .section-heading {
+    max-width: 760px;
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+.rental-benefits .section-heading h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* BENEFITS GRID */
+
+.rental-benefits .benefits-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 1.25rem;
+}
+
+
+/* BENEFIT CARD */
+
+.rental-benefits .benefit-card {
+    position: relative;
+
+    min-height: 250px;
+    padding: 2.5rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    background: var(--white);
+
+    border: 1px solid rgba(31, 31, 31, 0.08);
+    border-radius: 6px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.05);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* GOLD ACCENT */
+
+.rental-benefits .benefit-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 45px;
+    height: 3px;
+
+    background: var(--gold);
+
+    transform: translateX(-50%);
+
+    transition: width 0.35s ease;
+}
+
+
+/* CARD HOVER */
+
+.rental-benefits .benefit-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(200, 169, 107, 0.45);
+
+    box-shadow:
+        0 16px 35px rgba(0, 0, 0, 0.09);
+}
+
+.rental-benefits .benefit-card:hover::before {
+    width: 100%;
+}
+
+
+/* ICON */
+
+.rental-benefits .benefit-card i {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 1.5rem;
+
+    border-radius: 50%;
+
+    background: rgba(200, 169, 107, 0.12);
+
+    font-size: 1.35rem;
+    color: var(--accent);
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.rental-benefits .benefit-card:hover i {
+    background: var(--accent);
+    color: var(--gold);
+
+    transform: translateY(-2px);
+}
+
+
+/* CARD HEADING */
+
+.rental-benefits .benefit-card h3 {
+    margin: 0 0 0.75rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.3;
+
+    color: var(--text);
+}
+
+
+/* CARD DESCRIPTION */
+
+.rental-benefits .benefit-card p {
+    max-width: 240px;
+    margin: 0;
+
+    font-size: 0.9rem;
+    line-height: 1.65;
+
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   VENUE HIGHLIGHTS SECTION
+   ========================================================= */
+
+.venue-highlights {
+    padding: 3rem 2rem;
+
+    background: var(--white);
+    color: var(--text);
+}
+
+
+/* SECTION HEADING */
+
+.venue-highlights .section-heading {
+    max-width: 760px;
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+.venue-highlights .section-heading h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* HIGHLIGHT GRID */
+
+.venue-highlights .highlight-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: stretch;
+
+    gap: 3rem;
+}
+
+
+/* HIGHLIGHT IMAGE */
+
+.venue-highlights .highlight-image {
+    position: relative;
+
+    min-height: 450px;
+
+    overflow: hidden;
+
+    border-radius: 6px;
+
+    background: var(--bg-dark);
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+.venue-highlights .highlight-image::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(135deg,
+            rgba(0, 0, 0, 0.08),
+            transparent 60%);
+
+    pointer-events: none;
+}
+
+.venue-highlights .highlight-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.venue-highlights .highlight-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* HIGHLIGHT CONTENT */
+
+.venue-highlights .highlight-content {
+    display: flex;
+    align-items: center;
+
+    padding: 2.5rem 0;
+}
+
+
+/* HIGHLIGHT LIST */
+
+.venue-highlights .highlight-content ul {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+/* HIGHLIGHT LIST ITEM */
+
+.venue-highlights .highlight-content li {
+    position: relative;
+
+    min-height: 58px;
+    padding: 1rem 0 1rem 2.25rem;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(31, 31, 31, 0.1);
+
+    font-size: 0.98rem;
+    line-height: 1.5;
+
+    color: var(--text);
+
+    transition:
+        color 0.25s ease,
+        padding-left 0.25s ease;
+}
+
+.venue-highlights .highlight-content li:first-child {
+    border-top: 1px solid rgba(31, 31, 31, 0.1);
+}
+
+
+/* GOLD CHECK MARK */
+
+.venue-highlights .highlight-content li::before {
+    content: "✓";
+
+    position: absolute;
+    left: 0;
+
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(200, 169, 107, 0.15);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    color: var(--accent);
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+/* LIST ITEM HOVER */
+
+.venue-highlights .highlight-content li:hover {
+    padding-left: 2.5rem;
+
+    color: var(--accent);
+}
+
+.venue-highlights .highlight-content li:hover::before {
+    background: var(--accent);
+    color: var(--gold);
+
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   PERFECT FOR SECTION
+   ========================================================= */
+
+.perfect-for {
+    padding: 3rem 2rem;
+
+    background: var(--bg-light);
+    color: var(--text);
+}
+
+
+/* SECTION HEADING */
+
+.perfect-for .section-heading {
+    max-width: 760px;
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+.perfect-for .section-heading h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* EVENT TYPES GRID */
+
+.perfect-for .event-types {
+    max-width: 1050px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.25rem;
+}
+
+
+/* TYPE CARD */
+
+.perfect-for .type-card {
+    position: relative;
+
+    min-height: 150px;
+    padding: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(31, 31, 31, 0.1);
+    border-radius: 6px;
+
+    background: var(--white);
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* GOLD TOP ACCENT */
+
+.perfect-for .type-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 40px;
+    height: 3px;
+
+    background: var(--gold);
+
+    transform: translateX(-50%);
+
+    transition: width 0.35s ease;
+}
+
+
+/* CARD HOVER */
+
+.perfect-for .type-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(200, 169, 107, 0.45);
+
+    box-shadow:
+        0 16px 35px rgba(0, 0, 0, 0.09);
+}
+
+.perfect-for .type-card:hover::before {
+    width: 100%;
+}
+
+
+/* CARD HEADING */
+
+.perfect-for .type-card h3 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.3;
+
+    color: var(--text);
+
+    transition: color 0.25s ease;
+}
+
+.perfect-for .type-card:hover h3 {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   RENTAL PROCESS SECTION
+   ========================================================= */
+
+.rental-process {
+    padding: 3rem 2rem;
+
+    background: var(--white);
+    color: var(--text);
+}
+
+
+/* SECTION HEADING */
+
+.rental-process .section-heading {
+    max-width: 760px;
+    margin: 0 auto 4rem;
+
+    text-align: center;
+}
+
+.rental-process .section-heading h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* PROCESS GRID */
+
+.rental-process .process-grid {
+    position: relative;
+
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 2rem;
+}
+
+
+/* CONNECTING LINE */
+
+.rental-process .process-grid::before {
+    content: "";
+
+    position: absolute;
+
+    top: 34px;
+    left: 12.5%;
+    right: 12.5%;
+
+    height: 1px;
+
+    background: var(--gold);
+
+    opacity: 0.55;
+
+    z-index: 0;
+}
+
+
+/* PROCESS STEP */
+
+.rental-process .process-step {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    z-index: 1;
+}
+
+
+/* NUMBER CIRCLE */
+
+.rental-process .process-step>span {
+    width: 68px;
+    height: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 1.5rem;
+
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+
+    background: var(--white);
+
+    font-size: 1.15rem;
+    font-weight: 700;
+
+    color: var(--accent);
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.06);
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* PROCESS STEP HOVER */
+
+.rental-process .process-step:hover>span {
+    background: var(--accent);
+
+    border-color: var(--accent);
+
+    color: var(--gold);
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* STEP HEADING */
+
+.rental-process .process-step h3 {
+    margin: 0 0 0.65rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.3;
+
+    color: var(--text);
+
+    transition: color 0.25s ease;
+}
+
+.rental-process .process-step:hover h3 {
+    color: var(--accent);
+}
+
+
+/* STEP DESCRIPTION */
+
+.rental-process .process-step p {
+    max-width: 210px;
+    margin: 0;
+
+    font-size: 0.9rem;
+    line-height: 1.65;
+
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   RENTAL RESOURCES SECTION
+   ========================================================= */
+
+.rental-resources {
+    padding: 3rem 2rem;
+
+    background: var(--bg-light);
+    color: var(--text);
+}
+
+
+/* SECTION HEADING */
+
+.rental-resources .section-heading {
+    max-width: 700px;
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+.rental-resources .section-heading h2 {
+    margin: 0 0 1rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+.rental-resources .section-heading p {
+    max-width: 600px;
+    margin: 0 auto;
+
+    font-size: 1rem;
+    line-height: 1.7;
+
+    color: var(--muted);
+}
+
+
+/* RESOURCE GRID */
+
+.rental-resources .resource-grid {
+    max-width: 900px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1.5rem;
+}
+
+
+/* RESOURCE CARD */
+
+.rental-resources .resource-card {
+    position: relative;
+
+    min-height: 280px;
+    padding: 3rem 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(31, 31, 31, 0.1);
+    border-radius: 6px;
+
+    background: var(--white);
+
+    text-align: center;
+    text-decoration: none;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* GOLD TOP ACCENT */
+
+.rental-resources .resource-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 45px;
+    height: 3px;
+
+    background: var(--gold);
+
+    transform: translateX(-50%);
+
+    transition: width 0.35s ease;
+}
+
+
+/* CARD HOVER */
+
+.rental-resources .resource-card:hover {
+    transform: translateY(-7px);
+
+    border-color: rgba(200, 169, 107, 0.45);
+
+    box-shadow:
+        0 18px 38px rgba(0, 0, 0, 0.1);
+}
+
+.rental-resources .resource-card:hover::before {
+    width: 100%;
+}
+
+
+/* RESOURCE ICON */
+
+.rental-resources .resource-card i {
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 1.5rem;
+
+    border-radius: 50%;
+
+    background: rgba(200, 169, 107, 0.12);
+
+    font-size: 1.4rem;
+    color: var(--accent);
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.rental-resources .resource-card:hover i {
+    background: var(--accent);
+    color: var(--gold);
+
+    transform: translateY(-3px);
+}
+
+
+/* RESOURCE TITLE */
+
+.rental-resources .resource-card h3 {
+    margin: 0 0 0.75rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.45rem;
+    font-weight: 600;
+    line-height: 1.3;
+
+    color: var(--text);
+
+    transition: color 0.25s ease;
+}
+
+.rental-resources .resource-card:hover h3 {
+    color: var(--accent);
+}
+
+
+/* RESOURCE DESCRIPTION */
+
+.rental-resources .resource-card p {
+    max-width: 320px;
+    margin: 0;
+
+    font-size: 0.92rem;
+    line-height: 1.65;
+
+    color: var(--muted);
+}
+
+
+/* ACCESSIBLE FOCUS */
+
+.rental-resources .resource-card:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 4px;
+}
+
+
+/* =========================================================
+   VENUE PHOTO GALLERY SECTION
+   ========================================================= */
+
+.venue-gallery {
+    padding: 3rem 2rem;
+
+    background: var(--white);
+    color: var(--text);
+}
+
+
+/* SECTION HEADING */
+
+.venue-gallery .section-heading {
+    max-width: 760px;
+    margin: 0 auto 3.75rem;
+
+    text-align: center;
+}
+
+
+/* SECTION TAG */
+
+.venue-gallery .section-tag {
+    display: inline-block;
+
+    margin-bottom: 1rem;
+    padding: 0.45rem 1rem;
+
+    border: 1px solid rgba(200, 169, 107, 0.45);
+    border-radius: 999px;
+
+    background: rgba(200, 169, 107, 0.08);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+
+    color: var(--accent);
+}
+
+
+/* HEADING */
+
+.venue-gallery .section-heading h2 {
+    margin: 0 0 1rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* DESCRIPTION */
+
+.venue-gallery .section-heading p {
+    max-width: 680px;
+    margin: 0 auto;
+
+    font-size: 1rem;
+    line-height: 1.7;
+
+    color: var(--muted);
+}
+
+
+/* GALLERY GRID */
+
+.venue-gallery .venue-gallery-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 250px);
+
+    gap: 1rem;
+}
+
+
+/* GALLERY ITEM */
+
+.venue-gallery .venue-gallery-item {
+    position: relative;
+
+    min-width: 0;
+    min-height: 0;
+
+    overflow: hidden;
+
+    border-radius: 6px;
+
+    background: var(--bg-dark);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* FEATURED AUDITORIUM */
+
+.venue-gallery .venue-gallery-item.large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+/* STAGE */
+
+.venue-gallery .venue-gallery-item:nth-child(2) {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+
+/* LOBBY */
+
+.venue-gallery .venue-gallery-item:nth-child(3) {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+
+/* BOTTOM ROW */
+
+.venue-gallery .venue-gallery-item:nth-child(4),
+.venue-gallery .venue-gallery-item:nth-child(5),
+.venue-gallery .venue-gallery-item:nth-child(6) {
+    grid-row: 3;
+}
+
+
+/* IMAGE */
+
+.venue-gallery .venue-gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.6s ease,
+        filter 0.6s ease;
+}
+
+
+/* IMAGE HOVER */
+
+.venue-gallery .venue-gallery-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.7);
+}
+
+
+/* OVERLAY */
+
+.venue-gallery .venue-gallery-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 1.75rem;
+
+    background:
+        linear-gradient(to top,
+            rgba(0, 0, 0, 0.88),
+            rgba(0, 0, 0, 0.3) 58%,
+            transparent);
+
+    color: var(--white);
+
+    opacity: 0;
+
+    transform: translateY(8px);
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.4s ease;
+}
+
+
+/* OVERLAY HOVER */
+
+.venue-gallery .venue-gallery-item:hover .venue-gallery-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* OVERLAY HEADING */
+
+.venue-gallery .venue-gallery-overlay h3 {
+    margin: 0 0 0.5rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--white);
+}
+
+
+/* OVERLAY DESCRIPTION */
+
+.venue-gallery .venue-gallery-overlay p {
+    max-width: 400px;
+    margin: 0;
+
+    font-size: 0.88rem;
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, 0.88);
+}
+
+
+/* GOLD ACCENT */
+
+.venue-gallery .venue-gallery-item::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 45px;
+    height: 3px;
+
+    background: var(--gold);
+
+    transform: translateX(-50%);
+
+    z-index: 3;
+
+    transition: width 0.35s ease;
+}
+
+.venue-gallery .venue-gallery-item:hover::before {
+    width: 100%;
+}
+
+
+/* =========================================================
+   RENTAL FAQ
+   ========================================================= */
+
+.rental-faq {
+    padding: 3rem 2rem 1.5rem;
+
+    background: var(--bg-light);
+    color: var(--text);
+}
+
+
+/* SECTION HEADING */
+
+.rental-faq .section-heading {
+    max-width: 760px;
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+.rental-faq .section-heading h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* FAQ LIST */
+
+.rental-faq .faq-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* FAQ ITEM */
+
+.rental-faq .faq-item {
+    border-bottom: 1px solid rgba(31, 31, 31, 0.12);
+}
+
+.rental-faq .faq-item:first-child {
+    border-top: 1px solid rgba(31, 31, 31, 0.12);
+}
+
+
+/* FAQ QUESTION */
+
+.rental-faq .faq-question {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 2rem;
+
+    padding: 1.5rem 0;
+
+    border: 0;
+
+    background: transparent;
+
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+
+    text-align: left;
+
+    color: var(--text);
+
+    cursor: pointer;
+}
+
+
+/* ACCESSIBLE FOCUS */
+
+.rental-faq .faq-question:focus {
+    outline: none;
+}
+
+.rental-faq .faq-question:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 4px;
+}
+
+
+/* QUESTION HOVER */
+
+.rental-faq .faq-question:hover {
+    color: var(--accent);
+}
+
+
+/* CHEVRON */
+
+.rental-faq .faq-question i {
+    flex-shrink: 0;
+
+    font-size: 0.8rem;
+
+    color: var(--accent);
+
+    transition: transform 0.3s ease;
+}
+
+
+/* ROTATE WHEN OPEN */
+
+.rental-faq .faq-question[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+
+/* FAQ ANSWER */
+
+.rental-faq .faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+
+    opacity: 0;
+
+    transition:
+        grid-template-rows 0.35s ease,
+        opacity 0.25s ease;
+}
+
+
+/* ANSWER CONTENT */
+
+.rental-faq .faq-answer p {
+    min-height: 0;
+
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 0.95rem;
+    line-height: 1.7;
+
+    color: var(--muted);
+}
+
+
+/* OPEN FAQ */
+
+.rental-faq .faq-item:has(.faq-question[aria-expanded="true"]) .faq-answer {
+    grid-template-rows: 1fr;
+
+    padding-bottom: 1.5rem;
+
+    opacity: 1;
+}
+
+
+/* =========================================================
+   RENTAL INQUIRY CTA SECTION
+   ========================================================= */
+
+.rental-cta {
+    padding: 3rem 2rem 3rem;
+
+    background: var(--bg-light);
+}
+
+
+/* CTA CARD */
+
+.rental-cta .container {
+    position: relative;
+
+    max-width: 1050px;
+    margin: 0 auto;
+
+    padding: 3.5rem 4rem;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    background: var(--white);
+
+    border: 1px solid rgba(200, 169, 107, 0.35);
+    border-radius: 28px;
+
+    box-shadow:
+        0 22px 55px rgba(0, 0, 0, 0.1);
+}
+
+
+/* GOLD ACCENT LINE */
+
+.rental-cta .container::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 80px;
+    height: 4px;
+
+    transform: translateX(-50%);
+
+    background: var(--gold);
+
+    border-radius: 999px;
+}
+
+
+/* SECTION TAG */
+
+.rental-cta .section-tag {
+    display: inline-block;
+
+    margin-bottom: 1rem;
+}
+
+
+/* CTA HEADING */
+
+.rental-cta h2 {
+    margin: 0 0 1rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.25rem, 4vw, 3.25rem);
+    font-weight: 600;
+    line-height: 1.15;
+
+    color: var(--text);
+}
+
+
+/* CTA DESCRIPTION */
+
+.rental-cta>.container>.rental-application>p {
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   RENTAL FORM
+   ========================================================= */
+
+.rental-form {
+    max-width: 850px;
+    margin: 0 auto;
+
+    text-align: left;
+}
+
+
+/* FORM ROW
+   Scoped to rental form to prevent WordPress/plugin conflicts.
+*/
+
+.rental-form .form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1.25rem;
+
+    margin-bottom: 1.25rem;
+}
+
+
+/* FORM GROUP */
+
+.rental-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* FORM LABEL */
+
+.rental-form .form-group label {
+    margin-bottom: 0.5rem;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    color: var(--text);
+}
+
+
+/* INPUTS */
+
+.rental-form .form-group input,
+.rental-form .form-group select,
+.rental-form .form-group textarea {
+    width: 100%;
+
+    padding: 0.95rem 1rem;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    color: var(--text);
+
+    background: var(--bg-light);
+
+    border: 1px solid rgba(31, 31, 31, 0.12);
+    border-radius: 12px;
+
+    outline: none;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+}
+
+
+/* INPUT FOCUS */
+
+.rental-form .form-group input:focus,
+.rental-form .form-group select:focus,
+.rental-form .form-group textarea:focus {
+    background: var(--white);
+
+    border-color: var(--gold);
+
+    box-shadow:
+        0 0 0 3px rgba(200, 169, 107, 0.15);
+}
+
+
+/* PLACEHOLDER TEXT */
+
+.rental-form .form-group input::placeholder,
+.rental-form .form-group textarea::placeholder {
+    color: rgba(107, 107, 107, 0.75);
+}
+
+
+/* SELECT */
+
+.rental-form .form-group select {
+    cursor: pointer;
+}
+
+
+/* TEXTAREA */
+
+.rental-form .form-group textarea {
+    min-height: 170px;
+
+    resize: vertical;
+}
+
+
+/* MESSAGE GROUP */
+
+.rental-form>.form-group {
+    margin-bottom: 1.75rem;
+}
+
+
+/* FORM ACTIONS */
+
+.rental-form .rental-form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 0.5rem;
+}
+
+
+/* SUBMIT BUTTON */
+
+.rental-form .btn-primary {
+    min-width: 230px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem 2.25rem;
+
+    border-radius: 999px;
+}
+
+
+/* BUTTON HOVER */
+
+.rental-form .btn-primary:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .rental-benefits,
+    .venue-highlights,
+    .perfect-for,
+    .rental-process,
+    .rental-resources,
+    .venue-gallery,
+    .rental-faq {
+        padding: 4.25rem 1.5rem;
+    }
+
+
+    /* BENEFITS */
+
+    .rental-benefits .benefits-grid {
+        max-width: 800px;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* VENUE HIGHLIGHTS */
+
+    .venue-highlights .highlight-grid {
+        max-width: 750px;
+
+        grid-template-columns: 1fr;
+
+        gap: 2.5rem;
+    }
+
+    .venue-highlights .highlight-image {
+        min-height: 400px;
+    }
+
+    .venue-highlights .highlight-content {
+        padding: 0;
+    }
+
+
+    /* GALLERY */
+
+    .venue-gallery .venue-gallery-grid {
+        max-width: 850px;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 250px);
+
+        gap: 1rem;
+    }
+
+    .venue-gallery .venue-gallery-item.large,
+    .venue-gallery .venue-gallery-item:nth-child(2),
+    .venue-gallery .venue-gallery-item:nth-child(3),
+    .venue-gallery .venue-gallery-item:nth-child(4),
+    .venue-gallery .venue-gallery-item:nth-child(5),
+    .venue-gallery .venue-gallery-item:nth-child(6) {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .venue-gallery .venue-gallery-item.large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — 900PX
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    /* HERO */
+
+    .rental-info-hero {
+        min-height: 45vh;
+
+        padding: 4.5rem 1.5rem;
+    }
+
+    .rental-info-hero p {
+        font-size: 1rem;
+    }
+
+
+    /* PERFECT FOR */
+
+    .perfect-for .event-types {
+        max-width: 800px;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* RENTAL PROCESS */
+
+    .rental-process .process-grid {
+        max-width: 750px;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        row-gap: 3.5rem;
+    }
+
+    .rental-process .process-grid::before {
+        display: none;
+    }
+
+
+    /* FAQ */
+
+    .rental-faq .faq-list {
+        max-width: 800px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — 800PX
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .rental-resources .resource-grid {
+        max-width: 700px;
+    }
+
+    .rental-resources .resource-card {
+        min-height: 260px;
+
+        padding: 2.5rem 2rem;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — 768PX
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .rental-cta {
+        padding: 3rem 1.5rem 4rem;
+    }
+
+    .rental-cta .container {
+        padding: 3rem 2rem;
+    }
+
+    .rental-form {
+        max-width: 100%;
+    }
+
+    .rental-form .form-row {
+        gap: 1rem;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    /* GLOBAL SECTION SPACING */
+
+    .rental-benefits,
+    .venue-highlights,
+    .perfect-for,
+    .rental-process,
+    .rental-resources,
+    .venue-gallery,
+    .rental-faq {
+        padding: 4rem 1.25rem;
+    }
+
+
+    /* HERO */
+
+    .rental-info-hero {
+        min-height: 55vh;
+
+        padding: 4rem 1.25rem;
+    }
+
+    .rental-info-hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .rental-info-hero p {
+        font-size: 0.95rem;
+        line-height: 1.65;
+    }
+
+    .rental-info-hero .hero-buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .rental-info-hero .hero-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+
+        text-align: center;
+    }
+
+
+    /* SECTION HEADINGS */
+
+    .rental-benefits .section-heading,
+    .venue-highlights .section-heading,
+    .perfect-for .section-heading,
+    .rental-resources .section-heading,
+    .venue-gallery .section-heading,
+    .rental-faq .section-heading {
+        margin-bottom: 3rem;
+    }
+
+    .rental-process .section-heading {
+        margin-bottom: 3rem;
+    }
+
+
+    /* BENEFITS */
+
+    .rental-benefits .benefits-grid {
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+    }
+
+    .rental-benefits .benefit-card {
+        min-height: auto;
+
+        padding: 2.25rem 1.75rem;
+    }
+
+
+    /* VENUE HIGHLIGHTS */
+
+    .venue-highlights .highlight-grid {
+        gap: 2rem;
+    }
+
+    .venue-highlights .highlight-image {
+        min-height: 300px;
+    }
+
+    .venue-highlights .highlight-content li {
+        min-height: 54px;
+
+        padding-top: 0.9rem;
+        padding-bottom: 0.9rem;
+
+        font-size: 0.92rem;
+    }
+
+
+    /* PERFECT FOR */
+
+    .perfect-for .event-types {
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+    }
+
+    .perfect-for .type-card {
+        min-height: 125px;
+
+        padding: 1.75rem;
+    }
+
+    .perfect-for .type-card h3 {
+        font-size: 1.25rem;
+    }
+
+
+    /* RENTAL PROCESS */
+
+    .rental-process .process-grid {
+        grid-template-columns: 1fr;
+
+        gap: 2.75rem;
+    }
+
+    .rental-process .process-grid::before {
+        display: block;
+
+        top: 34px;
+        bottom: 34px;
+        left: 50%;
+        right: auto;
+
+        width: 1px;
+        height: auto;
+
+        transform: translateX(-50%);
+    }
+
+    .rental-process .process-step>span {
+        position: relative;
+
+        z-index: 2;
+    }
+
+
+    /* RESOURCES */
+
+    .rental-resources .resource-grid {
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+    }
+
+    .rental-resources .resource-card {
+        min-height: 240px;
+
+        padding: 2.5rem 1.75rem;
+    }
+
+
+    /* GALLERY */
+
+    .venue-gallery .venue-gallery-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+
+        gap: 0.85rem;
+    }
+
+    .venue-gallery .venue-gallery-item,
+    .venue-gallery .venue-gallery-item.large {
+        grid-column: span 1;
+        grid-row: auto;
+
+        height: 260px;
+    }
+
+    .venue-gallery .venue-gallery-item.large {
+        height: 350px;
+    }
+
+    /* Always show overlays on touch devices */
+
+    .venue-gallery .venue-gallery-overlay {
+        padding: 1.5rem;
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+        background:
+            linear-gradient(to top,
+                rgba(0, 0, 0, 0.82),
+                rgba(0, 0, 0, 0.15) 65%,
+                transparent);
+    }
+
+    .venue-gallery .venue-gallery-overlay h3 {
+        font-size: 1.3rem;
+    }
+
+
+    /* FAQ */
+
+    .rental-faq .faq-question {
+        gap: 1rem;
+
+        padding: 1.35rem 0;
+
+        font-size: 0.95rem;
+    }
+
+    .rental-faq .faq-answer p {
+        font-size: 0.9rem;
+    }
+
+
+    /* RENTAL CTA */
+
+    .rental-cta {
+        padding: 2.5rem 1.25rem 3.5rem;
+    }
+
+    .rental-cta .container {
+        padding: 2.75rem 1.25rem;
+
+        border-radius: 22px;
+    }
+
+    .rental-cta h2 {
+        font-size: 2rem;
+    }
+
+    .rental-cta>.container>.rental-application>p {
+        margin-bottom: 2rem;
+
+        font-size: 0.95rem;
+    }
+
+
+    /* FORM */
+
+    .rental-form .form-row {
+        grid-template-columns: 1fr;
+
+        gap: 1.25rem;
+
+        margin-bottom: 1.25rem;
+    }
+
+    .rental-form .form-group input,
+    .rental-form .form-group select,
+    .rental-form .form-group textarea {
+        padding: 0.9rem 0.95rem;
+    }
+
+    .rental-form .form-group textarea {
+        min-height: 150px;
+    }
+
+    .rental-form .btn-primary {
+        width: 100%;
+        min-width: 0;
+        max-width: 300px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    /* HERO */
+
+    .rental-info-hero {
+        min-height: 58vh;
+    }
+
+    .rental-info-hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .rental-info-hero p {
+        font-size: 0.9rem;
+    }
+
+
+    /* SECTION SPACING */
+
+    .rental-benefits,
+    .venue-highlights,
+    .perfect-for,
+    .rental-process,
+    .rental-resources,
+    .venue-gallery,
+    .rental-faq {
+        padding: 3.5rem 1.25rem;
+    }
+
+
+    /* SECTION HEADINGS */
+
+    .rental-benefits .section-heading h2,
+    .venue-highlights .section-heading h2,
+    .perfect-for .section-heading h2,
+    .rental-process .section-heading h2,
+    .rental-resources .section-heading h2,
+    .venue-gallery .section-heading h2,
+    .rental-faq .section-heading h2 {
+        font-size: 2rem;
+    }
+
+
+    /* BENEFITS */
+
+    .rental-benefits .benefit-card {
+        padding: 2rem 1.5rem;
+    }
+
+
+    /* VENUE HIGHLIGHTS */
+
+    .venue-highlights .highlight-image {
+        min-height: 260px;
+    }
+
+
+    /* PERFECT FOR */
+
+    .perfect-for .type-card {
+        min-height: 115px;
+    }
+
+
+    /* RENTAL PROCESS */
+
+    .rental-process .process-step>span {
+        width: 62px;
+        height: 62px;
+
+        margin-bottom: 1.25rem;
+    }
+
+    .rental-process .process-step h3 {
+        font-size: 1.2rem;
+    }
+
+    .rental-process .process-step p {
+        font-size: 0.88rem;
+    }
+
+
+    /* RESOURCES */
+
+    .rental-resources .section-heading p {
+        font-size: 0.92rem;
+    }
+
+    .rental-resources .resource-card {
+        min-height: 220px;
+    }
+
+    .rental-resources .resource-card h3 {
+        font-size: 1.3rem;
+    }
+
+
+    /* GALLERY */
+
+    .venue-gallery .section-heading p {
+        font-size: 0.92rem;
+    }
+
+    .venue-gallery .venue-gallery-item,
+    .venue-gallery .venue-gallery-item.large {
+        height: 230px;
+    }
+
+    .venue-gallery .venue-gallery-item.large {
+        height: 310px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    /* HERO */
+
+    .rental-info-hero .section-tag,
+    .rental-info-hero h1,
+    .rental-info-hero p,
+    .rental-info-hero .hero-buttons {
+        opacity: 1;
+
+        animation: none;
+        transform: none;
+    }
+
+
+    /* BENEFITS */
+
+    .rental-benefits .benefit-card,
+    .rental-benefits .benefit-card::before,
+    .rental-benefits .benefit-card i {
+        transition: none;
+    }
+
+    .rental-benefits .benefit-card:hover {
+        transform: none;
+    }
+
+    .rental-benefits .benefit-card:hover i {
+        transform: none;
+    }
+
+
+    /* VENUE HIGHLIGHTS */
+
+    .venue-highlights .highlight-image img,
+    .venue-highlights .highlight-content li,
+    .venue-highlights .highlight-content li::before {
+        transition: none;
+    }
+
+    .venue-highlights .highlight-image:hover img {
+        transform: none;
+    }
+
+    .venue-highlights .highlight-content li:hover {
+        padding-left: 2.25rem;
+    }
+
+    .venue-highlights .highlight-content li:hover::before {
+        transform: none;
+    }
+
+
+    /* PERFECT FOR */
+
+    .perfect-for .type-card,
+    .perfect-for .type-card::before,
+    .perfect-for .type-card h3 {
+        transition: none;
+    }
+
+    .perfect-for .type-card:hover {
+        transform: none;
+    }
+
+
+    /* RENTAL PROCESS */
+
+    .rental-process .process-step>span,
+    .rental-process .process-step h3 {
+        transition: none;
+    }
+
+    .rental-process .process-step:hover>span {
+        transform: none;
+    }
+
+
+    /* RESOURCES */
+
+    .rental-resources .resource-card,
+    .rental-resources .resource-card::before,
+    .rental-resources .resource-card i,
+    .rental-resources .resource-card h3 {
+        transition: none;
+    }
+
+    .rental-resources .resource-card:hover {
+        transform: none;
+    }
+
+    .rental-resources .resource-card:hover i {
+        transform: none;
+    }
+
+
+    /* GALLERY */
+
+    .venue-gallery .venue-gallery-item img,
+    .venue-gallery .venue-gallery-overlay,
+    .venue-gallery .venue-gallery-item::before {
+        transition: none;
+    }
+
+    .venue-gallery .venue-gallery-item:hover img {
+        transform: none;
+    }
+
+    .venue-gallery .venue-gallery-overlay {
+        transform: none;
+    }
+
+
+    /* FAQ */
+
+    .rental-faq .faq-answer,
+    .rental-faq .faq-question i {
+        transition: none;
+    }
+
+
+    /* FORM */
+
+    .rental-form .form-group input,
+    .rental-form .form-group select,
+    .rental-form .form-group textarea,
+    .rental-form .btn-primary {
+        transition: none;
+    }
+
+    .rental-form .btn-primary:hover {
+        transform: none;
+    }
+}

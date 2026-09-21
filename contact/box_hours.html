@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images\favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ Base ------>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/typography.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!------ Layout ------>
+    <link rel="stylesheet" href="../assets/css/layout/container.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/layout/footer.css">
+
+    <!------ Components ------>
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/section-heading.css">
+
+    <!------ PAGE ------>
+    <link rel="stylesheet" href="../assets/css/pages/box_hours.css">
+
+    <!------ RESPONSIVE ------>
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="../index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="../images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="../events/announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta" target="_blank"
+                        rel="noopener noreferrer">Calendar</a>
+                    <a href="../support/membership_appeal.html">Membership Appeal</a>
+                    <a href="../support/curtain_appeal.html">Curtain Appeal</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../events/featured_events.html">Featured Events</a>
+                    <a href="../events/list_events.html">List of Events</a>
+                    <a href="../events/ticket_policies.html">Ticketing Policies</a>
+                    <a href="../events/plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href="../about/mission_vision.html">Mission/Vision</a>
+                    <a href="../about/staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="../about/history.html">History <i
+                                class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="../about/history_building.html">Building</a>
+                            <a href="../about/history_organ.html">Theatre Organ</a>
+                            <a href="../about/history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../support/sponsorship.html">Sponsorship</a>
+                    <a href="../support/membership.html">Membership</a>
+                    <a href="../support/volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--Rentals-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="../rentals/rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="../rentals/rental_rates.html">Rental Rates</a>
+                            <a href="../rentals/rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="../rentals/bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates/Merchandise-->
+            <div class="nav-item">
+                <a class="dropbtn" href="../store/gift_certificates.html">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="contact_info.html">Address & Contact Information</a>
+                    <a href="box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOX OFFICE HOURS HERO -->
+    <header class="boxoffice-hero">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <span class="section-tag">
+                    Contact Us
+                </span>
+
+                <h1>Box Office Hours</h1>
+
+                <p>
+                    Purchase tickets, redeem gift certificates,
+                    inquire about events, and receive assistance
+                    from our friendly box office staff.
+                </p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- HOURS AT A GLANCE -->
+    <section class="hours-overview">
+
+        <div class="container">
+
+            <div class="hours-card">
+
+                <h2>Regular Box Office Hours</h2>
+
+                <div class="hours-grid">
+
+                    <div class="hours-item">
+                        <span>Tuesday–Friday</span>
+                        <p>11:00 AM – 2:00 PM</p>
+                    </div>
+
+                    <div class="hours-item">
+                        <span>Saturday</span>
+                        <p>Closed*</p>
+                    </div>
+
+                    <div class="hours-item">
+                        <span>Sunday</span>
+                        <p>Closed*</p>
+                    </div>
+
+                </div>
+
+                <small>
+                    *Additional hours may be available
+                    during performances and special events.
+                </small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- WAYS TO PURCHASE TICKETS -->
+    <section class="ticket-options">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Ticket Options
+                </span>
+
+                <h2>Ways to Purchase Tickets</h2>
+
+                <p>
+                    Choose the option that works best for you
+                    when purchasing tickets for upcoming events.
+                </p>
+
+            </div>
+
+            <div class="purchase-grid">
+
+                <div class="purchase-card">
+
+                    <i class="fa fa-desktop"></i>
+
+                    <h3>Online</h3>
+
+                    <p>
+                        Purchase tickets anytime
+                        through our online ticketing system.
+                    </p>
+
+                </div>
+
+                <div class="purchase-card">
+
+                    <i class="fa fa-phone"></i>
+
+                    <h3>By Phone</h3>
+
+                    <p>
+                        Call our box office during
+                        regular business hours.
+                    </p>
+
+                </div>
+
+                <div class="purchase-card">
+
+                    <i class="fa fa-ticket"></i>
+
+                    <h3>In Person</h3>
+
+                    <p>
+                        Visit our box office
+                        during operating hours.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EVENT DAY TICKETING -->
+    <section class="eventday-section">
+
+        <div class="container">
+
+            <div class="eventday-grid">
+
+                <div class="eventday-image">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Theatre Lobby">
+
+                </div>
+
+                <div class="eventday-content">
+
+                    <h2>Event Day Information</h2>
+
+                    <p>
+                        The box office typically opens
+                        one hour prior to most performances.
+                    </p>
+
+                    <p>
+                        We recommend arriving early to
+                        pick up tickets, browse merchandise,
+                        and find your seats comfortably.
+                    </p>
+
+                    <ul>
+                        <li>Ticket pickup available</li>
+                        <li>Gift certificate redemption</li>
+                        <li>Day-of-show purchases</li>
+                        <li>Performance assistance</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ACCEPTED PAYMENT METHODS -->
+    <section class="payment-methods">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Payment Options
+                </span>
+
+                <h2>Accepted Payment Methods</h2>
+
+                <p>
+                    We offer several convenient ways to pay
+                    for tickets, gift certificates, and other purchases.
+                </p>
+
+            </div>
+
+            <div class="payment-grid">
+
+                <!-- CREDIT / DEBIT -->
+                <div class="payment-card">
+
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+
+                    <h3>Credit & Debit Cards</h3>
+
+                </div>
+
+                <!-- CASH -->
+                <div class="payment-card">
+
+                    <i class="fa fa-dollar" aria-hidden="true"></i>
+
+                    <h3>Cash</h3>
+
+                </div>
+
+                <!-- GIFT CERTIFICATES -->
+                <div class="payment-card">
+
+                    <i class="fa fa-gift" aria-hidden="true"></i>
+
+                    <h3>Gift Certificates</h3>
+
+                </div>
+
+                <!-- CHECKS -->
+                <div class="payment-card">
+
+                    <i class="fa fa-check" aria-hidden="true"></i>
+
+                    <h3>Checks</h3>
+
+                </div>
+
+            </div>
+
+            <p class="payment-note">
+                Payment methods and check acceptance may be subject
+                to current box office policies.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- TICKET POLICIES -->
+    <section class="ticket-policies">
+
+        <div class="container">
+
+            <div class="policies-box">
+
+                <div class="section-heading">
+
+                    <span class="section-tag">
+                        Important Information
+                    </span>
+
+                    <h2>Ticket Policies</h2>
+
+                    <p>
+                        Please review our general ticket policies
+                        before purchasing or attending an event.
+                        Some policies may vary by performance.
+                    </p>
+
+                </div>
+
+
+                <div class="policies-grid">
+
+                    <!-- REFUNDS -->
+                    <div class="policy-item">
+
+                        <span>Refunds</span>
+
+                        <p>
+                            Please review event-specific refund
+                            policies at the time of purchase.
+                        </p>
+
+                    </div>
+
+
+                    <!-- EXCHANGES -->
+                    <div class="policy-item">
+
+                        <span>Exchanges</span>
+
+                        <p>
+                            Exchange availability may vary by
+                            event and ticket type.
+                        </p>
+
+                    </div>
+
+
+                    <!-- LOST TICKETS -->
+                    <div class="policy-item">
+
+                        <span>Lost Tickets</span>
+
+                        <p>
+                            Contact the box office for assistance
+                            with lost or misplaced tickets.
+                        </p>
+
+                    </div>
+
+
+                    <!-- ACCESSIBILITY -->
+                    <div class="policy-item">
+
+                        <span>Accessibility</span>
+
+                        <p>
+                            Accessible seating options are available.
+                            Contact the box office for assistance
+                            with seating needs.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- HELPFUL REMINDER BANNER -->
+    <section class="ticket-reminder">
+
+        <div class="container">
+
+            <div class="ticket-reminder-content">
+
+                <span class="section-tag">
+                    Plan Ahead
+                </span>
+
+                <h2>Plan Ahead For Popular Performances</h2>
+
+                <p>
+                    Many performances sell quickly.
+                    Purchasing tickets early is the best way
+                    to secure preferred seating.
+                </p>
+
+                <a href="../events/list_events.html" class="btn btn-primary">
+                    Browse Upcoming Events
+                </a>
+
+                <div class="reminder-accent"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT THE BOX OFFICE / FINAL CTA -->
+    <section class="boxoffice-cta">
+
+        <div class="container">
+
+            <div class="boxoffice-cta-content">
+
+                <span class="section-tag">
+                    We're Here to Help
+                </span>
+
+                <h2>Need Assistance?</h2>
+
+                <p>
+                    Our box office team is happy to help
+                    with ticket purchases, seating questions,
+                    gift certificates, memberships,
+                    and event information.
+                </p>
+
+                <div class="contact-actions">
+
+                    <a href="tel:2187365453" class="btn btn-primary">
+                        Call (218) 736-5453
+                    </a>
+
+                    <a href="mailto:info@ac4ta.com" class="btn btn-secondary">
+                        Email Us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

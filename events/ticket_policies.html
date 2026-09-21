@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images\favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ Base ------>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/typography.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!------ Layout ------>
+    <link rel="stylesheet" href="../assets/css/layout/container.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/layout/footer.css">
+
+    <!------ Components ------>
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/section-heading.css">
+
+    <!------ PAGE ------>
+    <link rel="stylesheet" href="../assets/css/pages/ticket_policies.css">
+
+    <!------ RESPONSIVE ------>
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="../index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="../images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta" target="_blank"
+                        rel="noopener noreferrer">Calendar</a>
+                    <a href="../support/membership_appeal.html">Membership Appeal</a>
+                    <a href="../support/curtain_appeal.html">Curtain Appeal</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="featured_events.html">Featured Events</a>
+                    <a href="list_events.html">List of Events</a>
+                    <a href="ticket_policies.html">Ticketing Policies</a>
+                    <a href="plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href=".../about/mission_vision.html">Mission/Vision</a>
+                    <a href="../about/staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="../about/history.html">History <i
+                                class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="../about/history_building.html">Building</a>
+                            <a href="../about/history_organ.html">Theatre Organ</a>
+                            <a href="../about/history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../support\sponsorship.html">Sponsorship</a>
+                    <a href="../support\membership.html">Membership</a>
+                    <a href="../support\volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--Rentals-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="../rentals/rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="../rentals/rental_rates.html">Rental Rates</a>
+                            <a href="../rentals/rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="../rentals/bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates/Merchandise-->
+            <div class="nav-item">
+                <a class="dropbtn" href="../store/gift_certificates.html">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="../contact/contact_info.html">Address & Contact Information</a>
+                    <a href="../contact/box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="../contact/email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TICKETING POLICIES HERO -->
+    <section class="ticketing-hero">
+        <div class="container ticketing-hero-content">
+
+            <span class="section-tag">Ticketing Information</span>
+
+            <h1>Ticketing Policies</h1>
+
+            <p>
+                Everything you need to know about
+                purchasing tickets, attending events,
+                and managing your reservations.
+            </p>
+
+            <a href="#frequent-questions" class="btn btn-primary">
+                Frequently Asked Questions
+            </a>
+
+        </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="ticketing-intro">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h2>Ticket Information & Policies</h2>
+
+                <p>
+                    Whether you're purchasing tickets for your first performance
+                    or you're a returning patron, we're here to make your visit
+                    simple, enjoyable, and stress-free. Review the information
+                    below before purchasing your tickets or attending an event.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUICK POLICY OVERVIEW -->
+    <section class="policy-highlights">
+
+        <div class="container">
+
+            <div class="highlights-grid">
+
+                <div class="highlight-card">
+
+                    <div class="highlight-icon">
+                        <i class="fa-solid fa-ticket"></i>
+                    </div>
+
+                    <h3>Buy Online</h3>
+
+                    <p>
+                        Avoid the line. Purchase your tickets in advance for popular performances.
+                    </p>
+
+                </div>
+
+                <div class="highlight-card">
+
+                    <div class="highlight-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+
+                    <h3>Box Office Hours</h3>
+
+                    <p>
+                        Tuesday–Friday<br>
+                        11:00 AM – 2:00 PM
+                    </p>
+
+                </div>
+
+                <div class="highlight-card">
+
+                    <div class="highlight-icon">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+
+                    <h3>Mobile Tickets</h3>
+
+                    <p>
+                        Present your ticket on your phone
+                        or bring a printed copy.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PURCHASING TICKETS -->
+    <section class="policy-section">
+
+        <div class="container">
+
+            <div class="policy-card">
+
+                <h2>Purchasing Tickets</h2>
+
+                <ul>
+
+                    <li>
+                        Tickets can be purchased online, by phone,
+                        or at the box office.
+                    </li>
+
+                    <li>
+                        Advance ticket purchases are recommended
+                        for popular performances.
+                    </li>
+
+                    <li>
+                        Seating may be assigned or general admission,
+                        depending on the event.
+                    </li>
+
+                    <li>
+                        Ticket prices and availability vary by event.
+                    </li>
+
+                    <li>
+                        There are no additional fees when purchasing online.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- REFUND & EXCHANGE POLICY -->
+    <section class="refund-policy">
+
+        <div class="container">
+
+            <div class="policy-card emphasis">
+
+                <h2>Refund & Exchange Policy</h2>
+
+                <p>
+                    Tickets are not refundable.
+                </p>
+
+                <p>
+                    All ticket sales are final unless an event is canceled
+                    by the presenter.
+                </p>
+
+                <p>
+                    Ticket exchanges may be available before the performance,
+                    depending on the event and ticket availability.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ATTENDING AN EVENT -->
+    <section class="attendance-policies">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h2>Attending an Event</h2>
+
+            </div>
+
+            <div class="attendance-grid">
+
+                <div class="attendance-card">
+
+                    <div class="attendance-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+
+                    <h3>Arrival Time</h3>
+
+                    <p>
+                        Please arrive at least 30 minutes before
+                        the performance begins.
+                    </p>
+
+                </div>
+
+                <div class="attendance-card">
+
+                    <div class="attendance-icon">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+
+                    <h3>Mobile Tickets</h3>
+
+                    <p>
+                        Printed and digital tickets are accepted
+                        for admission.
+                    </p>
+
+                </div>
+
+                <div class="attendance-card">
+
+                    <div class="attendance-icon">
+                        <i class="fa-solid fa-wheelchair"></i>
+                    </div>
+
+                    <h3>Accessibility</h3>
+
+                    <p>
+                        Accessible seating and accommodations
+                        are available upon request.
+                    </p>
+
+                </div>
+
+                <div class="attendance-card">
+
+                    <div class="attendance-icon">
+                        <i class="fa-solid fa-door-open"></i>
+                    </div>
+
+                    <h3>Late Seating</h3>
+
+                    <p>
+                        Late arrivals may be seated at an
+                        appropriate break in the performance, upon discretion of the theatre.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- AFTER YOU PURCHASE -->
+    <section class="ticket-provider">
+
+        <div class="container">
+
+            <div class="policy-card">
+
+                <div class="policy-icon">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                </div>
+
+                <h2>After You Purchase</h2>
+
+                <p>
+                    Once your purchase is complete, you'll receive
+                    a confirmation email with your order details.
+                </p>
+
+                <p>
+                    Your tickets may be printed at home or presented
+                    on your mobile device at the theater.
+                </p>
+
+                <p>
+                    If you don't receive your confirmation email,
+                    please contact the box office for assistance.
+                </p>
+
+                <p>
+                    Call: (218) 736-5453
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FREQUENTLY ASKED QUESTIONS -->
+    <section id="frequent-questions" class="faq-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h2>Frequently Asked Questions</h2>
+
+            </div>
+
+            <div class="faq-list">
+
+                <!-- FAQ ITEM 1 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" aria-expanded="false" type="button">
+                        <span>What happens if I lose my ticket?</span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Contact the box office and we'll be happy
+                            to locate your order.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ ITEM 2 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" aria-expanded="false" type="button">
+                        <span>Can I transfer my tickets?</span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Please contact the box office to discuss
+                            available options.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ ITEM 3 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" aria-expanded="false" type="button">
+                        <span>Can I buy tickets at the door?</span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes, tickets may be available at the box office
+                            before the performance, subject to availability.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ ITEM 4 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" aria-expanded="false" type="button">
+                        <span>Are children required to have a ticket?</span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Ticket requirements vary by event.
+                            Please review the event listing for details.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ ITEM 5 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" aria-expanded="false" type="button">
+                        <span>Is accessible seating available?</span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. Accessible seating is available.
+                            Please contact the box office in advance
+                            if accommodations are needed.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ ITEM 6 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" aria-expanded="false" type="button">
+                        <span>How early should I arrive?</span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            We recommend arriving at least
+                            30 minutes before the performance begins.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT CTA -->
+    <section class="ticketing-cta">
+
+        <div class="container">
+
+            <div class="cta-icon">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+
+            <h2>Questions About Your Tickets?</h2>
+
+            <p>
+                Our friendly box office staff is happy to assist with
+                ticket purchases, exchanges, accessibility seating,
+                and event information.
+            </p>
+
+            <a href="../contact/contact_info.html" class="btn btn-primary">
+
+                Contact the Box Office
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/volunteers.js"></script>
+
+</body>
+
+</html>

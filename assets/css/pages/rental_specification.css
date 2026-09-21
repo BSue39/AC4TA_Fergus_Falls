@@ -1,0 +1,1751 @@
+/* =========================================================
+   RENTAL TECHNICAL SPECIFICATIONS HERO
+   ========================================================= */
+
+.tech-specs-hero {
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 240px;
+
+    padding: 3rem 2rem;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    color: var(--white);
+
+    background:
+        linear-gradient(rgba(18, 18, 18, 0.60),
+            rgba(18, 18, 18, 0.60)),
+        url("../../../images/AC4TA-Horizontal-Sign-Night.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.tech-specs-hero .hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   SECTION TAG
+   ========================================================= */
+
+.tech-specs-hero .section-tag {
+
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    opacity: 0;
+
+    animation:
+        techSpecsFadeUp 0.9s ease-out 0.1s forwards;
+}
+
+
+/* =========================================================
+   HERO HEADING
+   ========================================================= */
+
+.tech-specs-hero h1 {
+
+    width: 100%;
+
+    margin: 0 0 1rem;
+
+    color: var(--white);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2.75rem, 4.5vw, 4.5rem);
+
+    line-height: 1.05;
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    opacity: 0;
+
+    animation:
+        techSpecsFadeUp 0.9s ease-out 0.25s forwards;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+   ========================================================= */
+
+.tech-specs-hero .hero-content p {
+
+    max-width: 700px;
+
+    margin: 0 auto 1.75rem;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    font-size: 1.15rem;
+
+    line-height: 1.7;
+
+    opacity: 0;
+
+    animation:
+        techSpecsFadeUp 0.9s ease-out 0.4s forwards;
+}
+
+
+/* =========================================================
+   HERO BUTTON
+   ========================================================= */
+
+.tech-specs-hero .btn-primary {
+
+    min-width: 220px;
+
+    opacity: 0;
+
+    animation:
+        techSpecsFadeUp 0.9s ease-out 0.55s forwards;
+}
+
+
+.tech-specs-hero .btn-primary:hover {
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   HERO ANIMATION
+   ========================================================= */
+
+@keyframes techSpecsFadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .tech-specs-hero h1 {
+        white-space: normal;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .tech-specs-hero {
+
+        padding: 3rem 1.5rem;
+    }
+
+    .tech-specs-hero h1 {
+
+        font-size: 2.5rem;
+    }
+
+}
+
+
+/* =========================================================
+   QUICK FACTS
+   ========================================================= */
+
+.tech-facts {
+    padding: 1.5rem 2rem;
+
+    color: var(--white);
+    background: var(--bg-dark);
+}
+
+.tech-facts .facts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tech-facts .fact-card {
+    position: relative;
+
+    padding: 1rem 2rem;
+    text-align: center;
+
+    transition: transform 0.3s ease;
+}
+
+.tech-facts .fact-card:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+    top: 10%;
+    right: 0;
+
+    width: 1px;
+    height: 80%;
+
+    background: rgba(200, 169, 107, 0.35);
+}
+
+.tech-facts .fact-card h3 {
+    margin: 0 0 0.4rem;
+
+    color: var(--gold);
+    font-family: "Playfair Display", serif;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 600;
+    line-height: 1.15;
+}
+
+.tech-facts .fact-card p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.tech-facts .fact-card:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   SHARED SECTION HEADING STYLES
+   ========================================================= */
+
+.stage-specifications .section-heading,
+.lighting-equipment .section-heading,
+.technical-support .section-heading,
+.technical-resources .section-heading,
+.venue-amenities .section-heading,
+.tech-faq .section-heading {
+    max-width: 760px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.stage-specifications .section-tag,
+.lighting-equipment .section-tag,
+.technical-support .section-tag,
+.technical-resources .section-tag,
+.tech-faq .section-tag {
+    display: inline-block;
+    margin-bottom: 1rem;
+
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.stage-specifications .section-heading h2,
+.lighting-equipment .section-heading h2,
+.technical-support .section-heading h2,
+.technical-resources .section-heading h2,
+.venue-amenities .section-heading h2,
+.tech-faq .section-heading h2 {
+    margin: 0;
+
+    color: var(--text);
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.technical-support .section-heading h2,
+.technical-resources .section-heading h2,
+.tech-faq .section-heading h2 {
+    margin-bottom: 1rem;
+}
+
+.technical-support .section-heading p,
+.technical-resources .section-heading p,
+.tech-faq .section-heading p {
+    max-width: 700px;
+    margin: 0 auto;
+
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SHARED CARD INTERACTION STYLES
+   ========================================================= */
+
+.stage-specifications .spec-item,
+.lighting-equipment .equipment-card,
+.audio-section .audio-item,
+.technical-support .support-card,
+.technical-resources .resource-card,
+.venue-amenities .amenity {
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.stage-specifications .spec-item:hover,
+.lighting-equipment .equipment-card:hover,
+.audio-section .audio-item:hover,
+.technical-support .support-card:hover,
+.technical-resources .resource-card:hover,
+.venue-amenities .amenity:hover {
+    transform: translateY(-4px);
+    border-color: rgba(200, 169, 107, 0.45);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   STAGE SPECIFICATIONS
+   ========================================================= */
+
+.stage-specifications {
+    padding: 3rem 2rem;
+
+    color: var(--text);
+    background: var(--bg-light);
+}
+
+.stage-specifications .section-tag {
+    margin-bottom: 0.9rem;
+}
+
+.stage-specifications .spec-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 2rem;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+}
+
+.stage-specifications .spec-item {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 110px;
+    padding: 1.5rem 1.75rem 1.5rem 2rem;
+
+    overflow: hidden;
+
+    background: var(--white);
+    border: 1px solid rgba(200, 169, 107, 0.2);
+    border-radius: 6px;
+}
+
+.stage-specifications .spec-item::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 4px;
+    height: 100%;
+
+    background: var(--gold);
+
+    transition: width 0.3s ease;
+}
+
+.stage-specifications .spec-item:hover::before {
+    width: 8px;
+}
+
+.stage-specifications .spec-item>span {
+    display: block;
+
+    color: var(--muted);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.stage-specifications .spec-item>p {
+    margin: 0 0 0 1.5rem;
+
+    color: var(--text);
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: right;
+}
+
+
+/* =========================================================
+   LIGHTING EQUIPMENT
+   ========================================================= */
+
+.lighting-equipment {
+    padding: 3rem 2rem;
+
+    color: var(--text);
+    background: var(--white);
+}
+
+.lighting-equipment .section-tag {
+    margin-bottom: 0.9rem;
+}
+
+.lighting-equipment .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.lighting-equipment .equipment-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 180px;
+    padding: 2rem 1.75rem;
+
+    overflow: hidden;
+
+    background: var(--bg-light);
+    border: 1px solid rgba(200, 169, 107, 0.2);
+    border-radius: 6px;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+}
+
+.lighting-equipment .equipment-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 4px;
+    height: 100%;
+
+    background: var(--gold);
+
+    transition: width 0.3s ease;
+}
+
+.lighting-equipment .equipment-card:hover::before {
+    width: 8px;
+}
+
+.lighting-equipment .equipment-card h3 {
+    margin: 0 0 0.65rem;
+
+    color: var(--text);
+    font-family: "Playfair Display", serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.lighting-equipment .equipment-card p {
+    margin: 0;
+
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   AUDIO & PROJECTION
+   ========================================================= */
+
+.audio-section {
+    padding: 3rem 2rem;
+
+    color: var(--text);
+    background: var(--bg-light);
+}
+
+.audio-section .audio-box {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 3rem;
+
+    background: var(--white);
+    border: 1px solid rgba(200, 169, 107, 0.2);
+    border-radius: 6px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.audio-section .audio-box h2 {
+    margin: 0 0 2.5rem;
+
+    color: var(--text);
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2rem, 3.5vw, 2.6rem);
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.audio-section .audio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.audio-section .audio-item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 105px;
+    padding: 1.5rem 1.5rem 1.5rem 1.75rem;
+
+    overflow: hidden;
+
+    background: var(--bg-light);
+    border: 1px solid rgba(200, 169, 107, 0.15);
+    border-radius: 5px;
+}
+
+.audio-section .audio-item::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 4px;
+    height: 100%;
+
+    background: var(--gold);
+
+    transition: width 0.3s ease;
+}
+
+.audio-section .audio-item:hover::before {
+    width: 8px;
+}
+
+.audio-section .audio-item>span {
+    margin-bottom: 0.4rem;
+
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.audio-section .audio-item>p {
+    margin: 0;
+
+    color: var(--text);
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+
+/* =========================================================
+   TECHNICAL SUPPORT & STAFFING
+   ========================================================= */
+
+.technical-support {
+    padding: 3rem 2rem;
+
+    color: var(--text);
+    background: var(--white);
+}
+
+.technical-support .support-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.technical-support .support-card {
+    position: relative;
+
+    padding: 2rem 2rem 2rem 2.25rem;
+
+    overflow: hidden;
+
+    background: var(--bg-light);
+    border: 1px solid rgba(200, 169, 107, 0.18);
+    border-radius: 6px;
+}
+
+.technical-support .support-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 4px;
+    height: 100%;
+
+    background: var(--gold);
+
+    transition: width 0.3s ease;
+}
+
+.technical-support .support-card:hover::before {
+    width: 8px;
+}
+
+.technical-support .support-card h3 {
+    margin: 0 0 0.65rem;
+
+    color: var(--text);
+    font-family: "Playfair Display", serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.technical-support .support-card p {
+    margin: 0 0 1.25rem;
+
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+.technical-support .support-card .support-note {
+    display: inline-block;
+
+    color: var(--accent);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.technical-support .support-note-box {
+    max-width: 1100px;
+    margin: 2rem auto 0;
+    padding: 1.25rem 1.5rem;
+
+    background: var(--bg-light);
+    border-left: 4px solid var(--gold);
+    border-radius: 4px;
+}
+
+.technical-support .support-note-box p {
+    margin: 0;
+
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+
+.technical-support .support-note-box strong {
+    color: var(--text);
+}
+
+
+/* =========================================================
+   TECHNICAL RESOURCES
+   ========================================================= */
+
+.technical-resources {
+    padding: 3rem 2rem;
+
+    color: var(--text);
+    background: var(--bg-light);
+}
+
+.technical-resources .resource-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.technical-resources .resource-card {
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+
+    min-height: 190px;
+    padding: 2rem;
+
+    overflow: hidden;
+
+    background: var(--white);
+    border: 1px solid rgba(200, 169, 107, 0.18);
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+}
+
+.technical-resources .resource-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 4px;
+    height: 100%;
+
+    background: var(--gold);
+
+    transition: width 0.3s ease;
+}
+
+.technical-resources .resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+.technical-resources .resource-card:hover::before {
+    width: 8px;
+}
+
+.technical-resources .resource-card>i {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 52px;
+    height: 52px;
+
+    color: var(--accent);
+    background: var(--bg-light);
+    border-radius: 50%;
+
+    font-size: 1.25rem;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.technical-resources .resource-content {
+    flex: 1;
+}
+
+.technical-resources .resource-content h3 {
+    margin: 0 0 0.65rem;
+
+    color: var(--text);
+    font-family: "Playfair Display", serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.3;
+
+    transition: color 0.3s ease;
+}
+
+.technical-resources .resource-content p {
+    margin: 0 0 1.25rem;
+
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.65;
+}
+
+.technical-resources .resource-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.technical-resources .resource-link i {
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+.technical-resources .resource-card:hover>i {
+    color: var(--white);
+    background: var(--accent);
+    transform: translateY(-2px);
+}
+
+.technical-resources .resource-card:hover .resource-content h3 {
+    color: var(--accent);
+}
+
+.technical-resources .resource-card:hover .resource-link i {
+    transform: translateX(4px);
+}
+
+.technical-resources .resource-card:focus-visible {
+    outline: 3px solid rgba(200, 169, 107, 0.45);
+    outline-offset: 4px;
+}
+
+
+/* =========================================================
+   VENUE AMENITIES
+   ========================================================= */
+
+.venue-amenities {
+    padding: 3rem 2rem;
+
+    color: var(--text);
+    background: var(--white);
+}
+
+.venue-amenities .section-heading {
+    max-width: 700px;
+}
+
+.venue-amenities .amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.venue-amenities .amenity {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 175px;
+    padding: 2rem 1.5rem;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    background: var(--bg-light);
+    border: 1px solid rgba(200, 169, 107, 0.18);
+    border-radius: 6px;
+}
+
+.venue-amenities .amenity::before {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: var(--gold);
+
+    transition: height 0.3s ease;
+}
+
+.venue-amenities .amenity:hover::before {
+    height: 8px;
+}
+
+.venue-amenities .amenity i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 58px;
+    height: 58px;
+    margin-bottom: 1.25rem;
+
+    color: var(--accent);
+    background: var(--white);
+    border-radius: 50%;
+
+    font-size: 1.35rem;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.venue-amenities .amenity h3 {
+    margin: 0;
+
+    color: var(--text);
+    font-family: "Playfair Display", serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.venue-amenities .amenity:hover i {
+    color: var(--white);
+    background: var(--accent);
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   TECHNICAL FAQ
+   ========================================================= */
+
+.tech-faq {
+    padding: 3rem 2rem;
+
+    color: var(--text);
+    background: var(--bg-light);
+}
+
+.tech-faq .faq-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tech-faq .faq-item {
+    border-bottom: 1px solid rgba(31, 31, 31, 0.12);
+}
+
+.tech-faq .faq-item:first-child {
+    border-top: 1px solid rgba(31, 31, 31, 0.12);
+}
+
+.tech-faq .faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    width: 100%;
+    padding: 1.5rem 0;
+
+    color: var(--text);
+    background: transparent;
+    border: 0;
+
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: left;
+
+    cursor: pointer;
+}
+
+.tech-faq .faq-question:focus {
+    outline: none;
+}
+
+.tech-faq .faq-question:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 4px;
+}
+
+.tech-faq .faq-question:hover {
+    color: var(--accent);
+}
+
+.tech-faq .faq-question i {
+    flex-shrink: 0;
+
+    color: var(--accent);
+    font-size: 0.8rem;
+
+    transition: transform 0.3s ease;
+}
+
+.tech-faq .faq-question[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+.tech-faq .faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+
+    opacity: 0;
+
+    transition:
+        grid-template-rows 0.35s ease,
+        opacity 0.25s ease;
+}
+
+.tech-faq .faq-answer p {
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.tech-faq .faq-item:has(.faq-question[aria-expanded="true"]) .faq-answer {
+    grid-template-rows: 1fr;
+    padding-bottom: 1.5rem;
+
+    opacity: 1;
+}
+
+
+/* =========================================================
+   TECHNICAL INQUIRY CTA
+   ========================================================= */
+
+.technical-contact-cta {
+    padding: 3rem 2rem;
+
+    color: var(--white);
+    background: var(--bg-dark);
+}
+
+.technical-contact-cta .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.technical-inquiry {
+    padding: 3.5rem;
+
+    background: var(--white);
+    border-radius: 10px;
+
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+}
+
+.technical-inquiry-content {
+    max-width: 760px;
+    margin: 0 auto 3rem;
+
+    text-align: center;
+}
+
+.technical-inquiry-content .section-tag {
+    display: inline-block;
+    margin-bottom: 0.9rem;
+    padding: 0.45rem 1rem;
+
+    color: var(--accent);
+    background: rgba(200, 169, 107, 0.08);
+    border: 1px solid rgba(200, 169, 107, 0.65);
+    border-radius: 999px;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.technical-inquiry-content h2 {
+    margin: 0 0 1rem;
+
+    color: var(--text);
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.technical-inquiry-content p {
+    max-width: 650px;
+    margin: 0 auto;
+
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   TECHNICAL INQUIRY FORM
+   ========================================================= */
+
+.technical-inquiry-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.technical-inquiry-form .full-width {
+    grid-column: 1 / -1;
+}
+
+.technical-inquiry-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.technical-inquiry-form label {
+    margin-bottom: 0.5rem;
+
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.technical-inquiry-form .optional {
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.technical-inquiry-form input,
+.technical-inquiry-form select,
+.technical-inquiry-form textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+
+    color: var(--text);
+    background: var(--bg-light);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.technical-inquiry-form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.technical-inquiry-form select {
+    cursor: pointer;
+}
+
+.technical-inquiry-form input::placeholder,
+.technical-inquiry-form textarea::placeholder {
+    color: rgba(107, 107, 107, 0.75);
+}
+
+.technical-inquiry-form input:focus,
+.technical-inquiry-form select:focus,
+.technical-inquiry-form textarea:focus {
+    outline: none;
+
+    background: var(--white);
+    border-color: var(--gold);
+
+    box-shadow: 0 0 0 3px rgba(200, 169, 107, 0.15);
+}
+
+.technical-inquiry-form .form-submit {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.technical-inquiry-form .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 230px;
+    padding: 0.95rem 1.8rem;
+
+    color: var(--bg-dark);
+    background: var(--gold);
+    border: 2px solid var(--gold);
+
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.technical-inquiry-form .btn-primary:hover {
+    color: var(--white);
+    background: var(--accent);
+    border-color: var(--accent);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .venue-amenities .amenities-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+    }
+
+    .tech-faq .faq-list {
+        max-width: 800px;
+    }
+}
+
+
+@media (max-width: 850px) {
+
+    .lighting-equipment .equipment-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 750px;
+    }
+
+    .lighting-equipment .equipment-card:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+
+        width: 100%;
+        max-width: calc(50% - 0.625rem);
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .tech-specs-hero {
+        min-height: 44vh;
+        padding: 5rem 1.5rem;
+    }
+
+    .tech-specs-hero .hero-content {
+        max-width: 680px;
+    }
+
+    .tech-facts,
+    .stage-specifications,
+    .lighting-equipment,
+    .audio-section,
+    .technical-support,
+    .technical-resources,
+    .venue-amenities,
+    .tech-faq {
+        padding: 4rem 1.5rem;
+    }
+
+    .stage-specifications .spec-grid,
+    .technical-support .support-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stage-specifications .spec-grid {
+        max-width: 700px;
+    }
+
+    .technical-support .support-grid,
+    .technical-support .support-note-box {
+        max-width: 650px;
+    }
+
+    .technical-resources .resource-grid {
+        grid-template-columns: 1fr;
+        max-width: 700px;
+    }
+
+    .tech-facts .facts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+    }
+
+    .tech-facts .fact-card:nth-child(2)::after {
+        display: none;
+    }
+
+    .tech-facts .fact-card:nth-child(1),
+    .tech-facts .fact-card:nth-child(2) {
+        padding-bottom: 1.5rem;
+    }
+
+    .tech-facts .fact-card:nth-child(1)::before,
+    .tech-facts .fact-card:nth-child(2)::before {
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+
+        width: 80%;
+        height: 1px;
+
+        background: rgba(200, 169, 107, 0.25);
+    }
+
+    .technical-contact-cta {
+        padding: 4.5rem 1.5rem;
+    }
+
+    .technical-inquiry {
+        padding: 3rem 2.25rem;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .audio-section .audio-box {
+        padding: 2.5rem 2rem;
+    }
+
+    .audio-section .audio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .tech-specs-hero {
+        min-height: 52vh;
+        padding: 5rem 1.25rem;
+    }
+
+    .tech-specs-hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .tech-specs-hero .hero-content p {
+        font-size: 0.95rem;
+        line-height: 1.65;
+    }
+
+    .tech-specs-hero .btn-primary {
+        width: 100%;
+    }
+
+    .tech-facts,
+    .stage-specifications,
+    .lighting-equipment,
+    .audio-section,
+    .technical-support,
+    .technical-resources,
+    .venue-amenities,
+    .tech-faq {
+        padding: 4rem 1.25rem;
+    }
+
+    .stage-specifications .section-heading,
+    .lighting-equipment .section-heading,
+    .technical-support .section-heading,
+    .technical-resources .section-heading,
+    .venue-amenities .section-heading,
+    .tech-faq .section-heading {
+        margin-bottom: 3rem;
+    }
+
+    .stage-specifications .spec-item {
+        min-height: 95px;
+        padding: 1.35rem 1.25rem 1.35rem 1.5rem;
+    }
+
+    .stage-specifications .spec-item>span {
+        font-size: 0.72rem;
+    }
+
+    .stage-specifications .spec-item>p {
+        margin-left: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .lighting-equipment .equipment-grid,
+    .venue-amenities .amenities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lighting-equipment .equipment-grid {
+        gap: 1rem;
+    }
+
+    .lighting-equipment .equipment-card {
+        min-height: 155px;
+        padding: 1.75rem 1.5rem;
+    }
+
+    .lighting-equipment .equipment-card:last-child {
+        grid-column: auto;
+        justify-self: stretch;
+        max-width: none;
+    }
+
+    .lighting-equipment .equipment-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .audio-section .audio-box {
+        padding: 2.25rem 1.25rem;
+    }
+
+    .audio-section .audio-box h2 {
+        margin-bottom: 2rem;
+    }
+
+    .audio-section .audio-item {
+        min-height: 95px;
+        padding: 1.35rem 1.25rem 1.35rem 1.5rem;
+    }
+
+    .audio-section .audio-item>p {
+        font-size: 1.1rem;
+    }
+
+    .technical-support .section-heading h2,
+    .technical-resources .section-heading h2,
+    .tech-faq .section-heading h2,
+    .venue-amenities .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .technical-support .section-heading p,
+    .technical-resources .section-heading p,
+    .tech-faq .section-heading p {
+        font-size: 0.92rem;
+    }
+
+    .technical-support .support-card {
+        padding: 1.75rem 1.5rem 1.75rem 1.75rem;
+    }
+
+    .technical-support .support-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .technical-support .support-card p {
+        font-size: 0.9rem;
+    }
+
+    .technical-support .support-note-box {
+        padding: 1.15rem 1.25rem;
+    }
+
+    .technical-resources .resource-card {
+        gap: 1.15rem;
+        min-height: auto;
+        padding: 1.5rem;
+    }
+
+    .technical-resources .resource-card>i {
+        width: 46px;
+        height: 46px;
+        font-size: 1.1rem;
+    }
+
+    .technical-resources .resource-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .technical-resources .resource-content p {
+        font-size: 0.88rem;
+    }
+
+    .venue-amenities .amenities-grid {
+        max-width: 450px;
+    }
+
+    .venue-amenities .amenity {
+        min-height: 150px;
+    }
+
+    .tech-faq .faq-question {
+        gap: 1rem;
+        padding: 1.35rem 0;
+
+        font-size: 0.95rem;
+    }
+
+    .tech-faq .faq-answer p {
+        font-size: 0.9rem;
+    }
+
+    .technical-contact-cta {
+        padding: 4rem 1.25rem;
+    }
+
+    .technical-inquiry {
+        padding: 2.5rem 1.5rem;
+        border-radius: 8px;
+    }
+
+    .technical-inquiry-content {
+        margin-bottom: 2.5rem;
+    }
+
+    .technical-inquiry-content h2 {
+        font-size: 2rem;
+    }
+
+    .technical-inquiry-content p {
+        font-size: 0.92rem;
+    }
+
+    .technical-inquiry-form {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .technical-inquiry-form .full-width {
+        grid-column: auto;
+    }
+
+    .technical-inquiry-form .btn-primary {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 550px) {
+
+    .tech-facts .facts-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .tech-facts .fact-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .tech-facts .fact-card:not(:last-child)::after {
+        display: none;
+    }
+
+    .tech-facts .fact-card:not(:last-child)::before {
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+
+        width: 70%;
+        height: 1px;
+
+        background: rgba(200, 169, 107, 0.25);
+    }
+
+    .tech-facts .fact-card h3 {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .tech-faq {
+        padding: 4rem 1.25rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .stage-specifications .spec-item {
+        display: block;
+        min-height: auto;
+        padding: 1.4rem 1.25rem 1.4rem 1.5rem;
+    }
+
+    .stage-specifications .spec-item>span {
+        margin-bottom: 0.5rem;
+    }
+
+    .stage-specifications .spec-item>p {
+        margin: 0;
+
+        font-size: 1.25rem;
+        text-align: left;
+    }
+
+    .lighting-equipment .equipment-card {
+        min-height: 145px;
+        padding: 1.5rem 1.35rem;
+    }
+
+    .lighting-equipment .equipment-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .lighting-equipment .equipment-card p {
+        font-size: 0.9rem;
+    }
+
+    .audio-section .audio-box {
+        padding: 2rem 1rem;
+    }
+
+    .audio-section .audio-item {
+        min-height: 90px;
+    }
+
+    .audio-section .audio-item>span {
+        font-size: 0.7rem;
+    }
+
+    .audio-section .audio-item>p {
+        font-size: 1rem;
+    }
+
+    .technical-resources .resource-card {
+        gap: 1rem;
+        padding: 1.35rem;
+    }
+
+    .technical-resources .resource-card>i {
+        width: 42px;
+        height: 42px;
+        font-size: 1rem;
+    }
+
+    .technical-resources .resource-content h3 {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .tech-specs-hero .section-tag,
+    .tech-specs-hero h1,
+    .tech-specs-hero .hero-content p,
+    .tech-specs-hero .btn-primary {
+        opacity: 1;
+        animation: none;
+        transform: none;
+    }
+
+    .tech-facts .fact-card,
+    .stage-specifications .spec-item,
+    .stage-specifications .spec-item::before,
+    .lighting-equipment .equipment-card,
+    .lighting-equipment .equipment-card::before,
+    .audio-section .audio-item,
+    .audio-section .audio-item::before,
+    .technical-support .support-card,
+    .technical-support .support-card::before,
+    .technical-resources .resource-card,
+    .technical-resources .resource-card::before,
+    .technical-resources .resource-card>i,
+    .technical-resources .resource-content h3,
+    .technical-resources .resource-link i,
+    .venue-amenities .amenity,
+    .venue-amenities .amenity::before,
+    .venue-amenities .amenity i,
+    .tech-faq .faq-answer,
+    .tech-faq .faq-question i,
+    .technical-inquiry-form input,
+    .technical-inquiry-form select,
+    .technical-inquiry-form textarea,
+    .technical-inquiry-form .btn-primary {
+        transition: none;
+    }
+
+    .tech-facts .fact-card:hover,
+    .stage-specifications .spec-item:hover,
+    .lighting-equipment .equipment-card:hover,
+    .audio-section .audio-item:hover,
+    .technical-support .support-card:hover,
+    .technical-resources .resource-card:hover,
+    .venue-amenities .amenity:hover,
+    .technical-inquiry-form .btn-primary:hover {
+        transform: none;
+    }
+
+    .technical-resources .resource-card:hover>i,
+    .venue-amenities .amenity:hover i {
+        transform: none;
+    }
+}

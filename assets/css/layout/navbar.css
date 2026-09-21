@@ -1,0 +1,308 @@
+/* THESE CONTROL SITE-WIDE STRUCTURE */
+
+/** NAVBAR BASE **/
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+    height: 96px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 20px;
+
+    background: linear-gradient(135deg, #7a1f2b, #5f1822);
+    border-bottom: 1px solid rgba(200, 169, 107, 0.25);
+    transition: height 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* NAVBAR LAYOUT */
+/* INNER FLEX CONTAINER FOR LOGO + CONTACT + NAV ITEMS */
+.navbar-inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+/* PUSH NAV ITEMS TO THE RIGHT */
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* SHRINK NAVBAR ON SCROLL */
+.navbar.shrink {
+    height: 78px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/** LOGO **/
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 68px;
+    width: auto;
+    transition:
+        height 0.3s ease,
+        transform 0.28s ease;
+}
+
+/** LOGO SECTION **/
+
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+
+
+/** LOGO HOME LINK **/
+
+.logo-home-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 !important;
+    margin: 0;
+    color: inherit;
+    text-decoration: none;
+    background: none;
+    border-radius: 0;
+}
+
+.logo-home-link:hover {
+    background: none !important;
+}
+
+
+/** CONTACT INFO **/
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-right: 5px;
+    padding-left: 5px;
+    white-space: nowrap;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.contact-info i {
+    font-size: 0.95rem;
+    margin-right: 4px;
+}
+
+
+/** SHRINK LOGO **/
+
+.navbar.shrink .logo img {
+    height: 52px;
+}
+
+
+/** SHRINK CONTACT INFO **/
+
+.navbar.shrink .contact-info {
+    font-size: 10px;
+    gap: 8px;
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/** NAVIGATION ITEMS **/
+.nav-item {
+    position: relative;
+}
+
+/* BUTTONS */
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    padding: 14px 18px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    border-radius: 12px;
+
+    transition: background 0.2s ease;
+}
+
+.nav-item:hover>.dropbtn {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/** NAVIGATION LINKS **/
+/* LINKS + BUTTONS */
+.navbar a,
+.dropbtn {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: white;
+    padding: 16px 20px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    transition: all 0.3s ease;
+}
+
+.navbar.shrink .dropbtn,
+.navbar.shrink a {
+    padding: 10px 16px;
+}
+
+.navbar a:hover,
+.dropbtn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+.nav-item.open>.dropbtn {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* LINKS */
+.nav-panel a {
+    display: block;
+    padding: 12px 14px;
+
+    color: white;
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    transition: background 0.18s ease;
+}
+
+.nav-panel a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/** DROPDOWN PANELS **/
+/* UNIFIED PANEL STYLE */
+
+.nav-panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    min-width: 220px;
+    max-width: min(90vw, 320px);
+    padding: 0.5rem;
+
+    background: rgba(22, 22, 22, 0.95);
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+
+    transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+/* This invisible area captures hover events above the panel */
+.nav-panel::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+}
+
+/** DROPDOWN INTERACTIONS **/
+/* SHOW PANEL */
+.nav-item:hover>.nav-panel,
+.nav-item.open>.nav-panel {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* RIGHT EDGE FIX FOR SUBMENU */
+.navbar .nav-item:last-child .nav-panel {
+    left: auto;
+    right: 0;
+}
+
+/* SUBMENU */
+
+.submenu {
+    position: relative;
+}
+
+.submenu-panel {
+    position: absolute;
+    top: 0;
+    left: calc(100% - 4px);
+    /* overlaps slightly */
+    min-width: 200px;
+    background: rgba(22, 22, 22, 0.98);
+    border-radius: 16px;
+    padding: 0.5rem;
+    opacity: 0;
+    transform: translateX(10px);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.submenu-panel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 12px;
+    height: 100%;
+}
+
+.has-submenu {
+    position: relative;
+}
+
+.has-submenu:hover>.submenu-panel {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+/* SHOW SUBMENU */
+.submenu:hover {
+    display: block;
+}

@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ Base ------>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/typography.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!------ Layout ------>
+    <link rel="stylesheet" href="../assets/css/layout/container.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/layout/footer.css">
+
+    <!------ Components ------>
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/section-heading.css">
+
+    <!------ Page ------>
+    <link rel="stylesheet" href="../assets/css/pages/curtain_appeal.css">
+
+    <!-- ==========================
+     RESPONSIVE
+========================== -->
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="../index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="../images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="../events/announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta">Calendar</a>
+                    <a href="membership_appeal.html">Membership Appeal</a>
+                    <a href="curtain_appeal.html">Curtain Upgrade</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../events/featured_events.html">Featured Events</a>
+                    <a href="../events/list_events.html">List of Events</a>
+                    <a href="../events/ticket_policies.html">Ticketing Policies</a>
+                    <a href="../events/plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href="../about/mission_vision.html">Mission/Vision</a>
+                    <a href="../about/staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="../about/history.html">History <i
+                                class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="../about/history_building.html">Building</a>
+                            <a href="../about/history_organ.html">Theatre Organ</a>
+                            <a href="../about/history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="sponsorship.html">Sponsorship</a>
+                    <a href="membership.html">Membership</a>
+                    <a href="volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--Rentals-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="../rentals/rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="../rentals/rental_rates.html">Rental Rates</a>
+                            <a href="../rentals/rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="../rentals/bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates/Merchandise-->
+            <div class="nav-item">
+                <a class="dropbtn" href="../store/gift_certificates.html">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="../contact/contact_info.html">Address & Contact Information</a>
+                    <a href="../contact/box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="../contact/email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CURTAIN APPEAL HERO -->
+    <section class="curtain-hero">
+        <div class="container curtain-hero-content">
+
+            <span class="section-tag">Curtain Campaign</span>
+
+            <h1>It's Curtains<br>
+                For Our Curtains</h1>
+
+            <p>
+                Decades of performances have taken their toll.
+                Help us replace our aging stage curtains and
+                preserve the magic of live theatre for future generations.
+            </p>
+
+            <a href="https://app.arts-people.com/index.php?donation=acfta" class="btn btn-primary" target="_blank"
+    rel="noopener noreferrer">
+                Donate Today
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- PROBLEM SECTION: Why action is needed -->
+    <section class="curtain-story">
+
+        <div class="container curtain-story-grid">
+
+            <div class="curtain-story-content">
+
+                <span class="section-tag">
+                    The Challenge
+                </span>
+
+                <h2>
+                    Time Has Taken Its Toll
+                </h2>
+
+                <p>
+                    Years of performances, rehearsals, and community
+                    events have left our stage curtains worn,
+                    faded, and damaged.
+                </p>
+
+                <p>
+                    Dry rot, tears, and age-related deterioration
+                    now threaten an essential part of the theatre
+                    experience.
+                </p>
+
+                <div class="curtain-story-details">
+
+                    <div class="story-detail">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <span>Dry Rot & Deterioration</span>
+                    </div>
+
+                    <div class="story-detail">
+                        <i class="fa-solid fa-scissors"></i>
+                        <span>Tears & Damage</span>
+                    </div>
+
+                    <div class="story-detail">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Decades of Use</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="curtain-story-image">
+                <img src="../images/stage_curtains.jpg" alt="Aging theatre curtain">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- WHY CURTAINS MATTER: Justify the Donation -->
+    <section class="curtain-benefits">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Why It Matters
+                </span>
+
+                <h2>
+                    Every Performance Begins Behind The Curtain
+                </h2>
+
+                <p>
+                    New stage curtains do more than improve appearances.
+                    They frame every performance, protect our historic theatre,
+                    and help create unforgettable experiences for audiences,
+                    performers, and future generations.
+                </p>
+
+            </div>
+
+            <div class="curtain-benefits-grid">
+
+                <article class="curtain-benefit-card">
+
+                    <i class="fa-solid fa-masks-theater"></i>
+
+                    <h3>Performance Quality</h3>
+
+                    <p>
+                        Professional stage curtains enhance lighting,
+                        acoustics, and every production.
+                    </p>
+
+                </article>
+
+                <article class="curtain-benefit-card">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <h3>Audience Experience</h3>
+
+                    <p>
+                        Beautiful curtains create anticipation and elevate
+                        every visit to the theatre.
+                    </p>
+
+                </article>
+
+                <article class="curtain-benefit-card">
+
+                    <i class="fa-solid fa-landmark"></i>
+
+                    <h3>Preserving Our Future</h3>
+
+                    <p>
+                        Investing today ensures decades of performances
+                        for our entire community.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BEFORE & AFTER COMPARISON -->
+    <section class="curtain-comparison">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Before & After
+                </span>
+
+                <h2>
+                    See the Difference Your Gift Can Make
+                </h2>
+
+                <p>
+                    Compare our current stage curtains with the vision for a
+                    beautiful restored theatre. Every donation helps bring this
+                    transformation to life.
+                </p>
+
+            </div>
+
+
+            <!-- COMPARISON IMAGES -->
+            <div class="comparison-grid">
+
+                <!-- CURRENT CURTAINS -->
+                <article class="comparison-card before">
+
+                    <span class="comparison-label">
+                        Current Curtains
+                    </span>
+
+                    <button class="comparison-image-trigger" type="button"
+                        data-full-image="../images/stage_curtains.jpg" data-alt="Current theatre curtains"
+                        aria-label="View larger image of current curtains">
+
+                        <img src="../images/stage_curtains.jpg" alt="Current curtains">
+
+                        <span class="image-zoom-hint">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            Click to enlarge
+                        </span>
+
+                    </button>
+
+                </article>
+
+
+                <!-- FUTURE VISION -->
+                <article class="comparison-card after">
+
+                    <span class="comparison-label">
+                        Future Vision
+                    </span>
+
+                    <button class="comparison-image-trigger" type="button"
+                        data-full-image="../images/stage_curtains.jpg" data-alt="Future vision for the theatre curtains"
+                        aria-label="View larger image of future curtains">
+
+                        <img src="../images/stage_curtains.jpg" alt="New curtains">
+
+                        <span class="image-zoom-hint">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            Click to enlarge
+                        </span>
+
+                    </button>
+
+                </article>
+
+            </div>
+
+        </div>
+
+
+        <!-- IMAGE LIGHTBOX -->
+        <div class="image-lightbox" id="image-lightbox" hidden role="dialog" aria-modal="true"
+            aria-labelledby="lightbox-caption">
+
+            <!-- Close Button -->
+            <button class="lightbox-close" type="button" aria-label="Close image preview">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <!-- Lightbox Image -->
+            <img id="lightbox-image" class="lightbox-image" src="" alt="">
+
+
+            <!-- Image Caption -->
+            <p id="lightbox-caption" class="lightbox-caption">
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- FUNDRAISING GOAL PROGRESS -->
+    <section class="curtain-goal">
+
+        <div class="container">
+
+            <div class="curtain-goal-heading">
+
+                <span class="section-tag">
+                    Campaign Progress
+                </span>
+
+                <h2>
+                    We're Almost There
+                </h2>
+
+                <p>
+                    Thanks to the generosity of our community,
+                    every donation brings us one step closer to reaching
+                    our fundraising goal.
+                </p>
+
+                <div class="curtain-goal-card" data-raised="8600" data-goal="25000">
+
+                    <div class="goal-status">
+                        <span id="goal-percent"></span>% Funded
+                    </div>
+
+                    <div class="goal-amount">
+                        $<span id="amount-raised"></span> Raised
+                    </div>
+
+                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
+                        aria-label="Curtain campaign fundraising progress">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+
+                    <p>
+                        $<span id="goal-raised-text"></span>
+                        of our
+                        $<span id="goal-total-text"></span>
+                        goal
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- WAYS TO HELP-->
+    <section class="curtain-help">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Ways To Help
+                </span>
+
+                <h2>
+                    Choose How You'd Like To Make An Impact
+                </h2>
+
+                <p>
+                    Every gift—large or small—helps preserve live theatre
+                    for future generations.
+                </p>
+
+            </div>
+
+            <div class="help-grid">
+
+                <article class="help-card featured">
+
+                    <div class="help-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <h3>One-Time Gift</h3>
+
+                    <p>
+                        Make an immediate contribution of any size toward
+                        replacing our historic stage curtains.
+                    </p>
+
+                    <a href="https://app.arts-people.com/index.php?donation=acfta" target="_blank"
+    rel="noopener noreferrer">
+                        Donate →
+                    </a>
+
+                </article>
+
+                <article class="help-card">
+
+                    <div class="help-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <h3>Corporate Gift</h3>
+
+                    <p>
+                        Showcase your business while helping preserve
+                        the performing arts in our community.
+                    </p>
+
+                    <a href="https://app.arts-people.com/index.php?donation=acfta" target="_blank"
+    rel="noopener noreferrer">
+                        Donate →
+                    </a>
+
+                </article>
+
+                <article class="help-card">
+
+                    <div class="help-icon">
+                        <i class="fa-solid fa-ribbon"></i>
+                    </div>
+
+                    <h3>Memorial Gift</h3>
+
+                    <p>
+                        Honor a loved one by supporting a project that
+                        will inspire audiences for years to come.
+                    </p>
+
+                    <a href="https://app.arts-people.com/index.php?donation=acfta" target="_blank"
+    rel="noopener noreferrer">
+                        Donate →
+                    </a>
+
+                </article>
+
+                <article class="help-card">
+
+                    <div class="help-icon">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+
+                    <h3>Matching Gifts</h3>
+
+                    <p>
+                        Many employers will match your donation,
+                        doubling the impact of your generosity.
+                    </p>
+
+                    <a href="https://app.arts-people.com/index.php?donation=acfta" target="_blank"
+    rel="noopener noreferrer">
+                        Donate →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- DONOR RECOGNITION -->
+    <section class="curtain-recognition">
+
+        <div class="container">
+
+            <span class="section-tag">
+                Our Community
+            </span>
+
+            <h2>
+                Thank You To Our Supporters
+            </h2>
+
+            <p>
+                Hundreds of generous donors have already helped bring this
+                project to life. Every contribution moves us closer to
+                raising the curtain on a new chapter.
+            </p>
+
+            <div class="recognition-stats">
+
+                <div class="recognition-stat">
+                    <h3>287</h3>
+                    <p>Community Donors</p>
+                </div>
+
+                <div class="recognition-stat">
+                    <h3 id="recognition-percent">34%</h3>
+                    <p>Campaign Funded</p>
+                </div>
+
+                <div class="recognition-stat">
+                    <h3>1982</h3>
+                    <p>Serving Fergus Falls Since</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--FINAL CALL TO ACTION-->
+    <section class="curtain-cta">
+
+        <div class="container">
+
+            <h2>
+                Help Raise The Curtain On The Future
+            </h2>
+
+            <p>
+                Together, we can preserve the magic of live theatre, strengthen our community, and ensure that every
+                performance begins with a curtain worthy of the stage.
+            </p>
+
+            <a href="https://app.arts-people.com/index.php?donation=acfta" class="btn btn-primary" target="_blank"
+    rel="noopener noreferrer">
+
+                Donate Today
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/" target="_blank"
+    rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank"
+    rel="noopener noreferrer">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/curtain-appeal.js"></script>
+
+</body>
+
+</html>

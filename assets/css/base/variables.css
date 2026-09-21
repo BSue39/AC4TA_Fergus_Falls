@@ -1,0 +1,28 @@
+/* Variables */
+
+ :root {
+     --bg-dark: #121212;
+     --bg-light: #f7f4ee;
+     --accent: #7a1f2b;
+     --gold: #c8a96b;
+     --text: #1f1f1f;
+     --muted: #6b6b6b;
+     --white: #ffffff;
+     --border: rgba(255, 255, 255, 0.08);
+ }
+
+ /* Eventually, we can expand this with things like:
+ --shadow-sm
+--shadow-md
+--shadow-lg
+
+--radius-sm
+--radius-md
+--radius-lg
+--radius-pill
+
+--transition-fast
+--transition-normal
+--transition-slow
+
+--container-width 

@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ BASE ------>
+    <link rel="stylesheet" href="assets/css/base/reset.css">
+    <link rel="stylesheet" href="assets/css/base/variables.css">
+    <link rel="stylesheet" href="assets/css/base/typography.css">
+    <link rel="stylesheet" href="assets/css/base/global.css">
+
+    <!------ LAYOUT ------>
+    <link rel="stylesheet" href="assets/css/layout/container.css">
+    <link rel="stylesheet" href="assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="assets/css/layout/hero.css">
+    <link rel="stylesheet" href="assets/css/layout/footer.css">
+
+    <!------ COMPONENTS ------>
+    <link rel="stylesheet" href="assets/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/css/components/cards.css">
+    <link rel="stylesheet" href="assets/css/components/carousel.css">
+    <link rel="stylesheet" href="assets/css/components/timeline.css">
+
+    <!------ PAGE ------>
+    <link rel="stylesheet" href="assets/css/pages/home.css">
+
+    <!-- ==========================
+     RESPONSIVE
+     (Temporary - we'll phase this out)
+========================== -->
+    <link rel="stylesheet" href="assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="events\announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta">Calendar</a>
+                    <a href="support/membership_appeal.html">Membership Appeal</a>
+                    <a href="support/curtain_appeal.html">Curtain Appeal</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="events/featured_events.html">Featured Events</a>
+                    <a href="events/list_events.html">List of Events</a>
+                    <a href="events/ticket_policies.html">Ticketing Policies</a>
+                    <a href="events/plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href="about/mission_vision.html">Mission/Vision</a>
+                    <a href="about/staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="about/history.html">History <i class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="about/history_building.html">Building</a>
+                            <a href="about/history_organ.html">Theatre Organ</a>
+                            <a href="about/history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="support/sponsorship.html">Sponsorship</a>
+                    <a href="support/membership.html">Membership</a>
+                    <a href="support/volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--Rentals-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="rentals/rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="rentals/rental_rates.html">Rental Rates</a>
+                            <a href="rentals/rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="rentals/bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates-->
+            <div class="nav-item">
+                <a class="dropbtn" href="store/gift_certificates.html">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="contact/contact_info.html">Address & Contact Information</a>
+                    <a href="contact/box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="contact/email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- HOME HERO -->
+    <header class="hero">
+
+        <div class="container hero-grid">
+
+            <!-- Floating Cards -->
+            <div class="hero-cards">
+
+                <!-- Featured Card -->
+                <div class="floating-card floating-card-featured">
+
+                    <span>Featured</span>
+
+                    <h3>The Music of Carole King</h3>
+
+                    <img src="images/Tribute Series/Tina Promo.png" alt="Dear Jack Dear Louise">
+
+                    <p>
+                        Single Adults $36.
+                        Single Students $15.
+                        Part of our Tribute Series..
+                    </p>
+
+                    <a href="https://app.arts-people.com/index.php?show=317546" class="btn btn-primary ticket-btn"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-ticket"></i>
+                        Buy Tickets
+                    </a>
+
+                </div>
+
+
+                <!-- Announcement Card -->
+                <div class="floating-card floating-card-announcement">
+
+                    <span>All Shows</span>
+
+                    <h3>2026-2027 Season</h3>
+
+                    <img src="images/Season-Package-Square.jpg" alt="All Season Shows">
+
+                    <p>
+                        Starting September 19th.
+                        Click below to view all shows.
+                    </p>
+
+                    <a href="events/list_events.html" class="btn btn-primary">
+                        More Information
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Hero Text Section -->
+            <div class="hero-content">
+
+                <h1>More Than A Theatre – We're A Community</h1>
+
+                <p>
+                    Prefer To Purchase In Person Or Over The Phone?<br>
+                    Our Box Office Hours Are Tuesday–Friday 11AM–2PM
+                </p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- EVENTS CENTER-MODE CAROUSEL -->
+    <section id="events" class="events-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    What's Happening
+                </span>
+
+                <h2>Upcoming Events</h2>
+
+                <p>
+                    Explore upcoming performances, workshops,
+                    and community experiences happening at the center.
+                </p>
+
+            </div>
+
+            <div class="events-wrapper">
+
+                <div class="events-viewport" id="eventsViewport" aria-label="Upcoming events carousel" tabindex="0">
+
+
+
+                    <div class="events-track" id="eventsTrack">
+
+                        <!-- EVENT 1 -->
+                        <article class="event-card">
+
+                            <div class="event-image">
+                                <img src="images/Tribute Series/Tina Promo.png"
+                                    alt="Tapestry Unraveled - The Music of Carole King">
+                            </div>
+
+                            <div class="event-content">
+
+                                <span class="tag">
+                                    Tribute Series
+                                </span>
+
+                                <h3>
+                                    Tapestry Unraveled -
+                                    The Music of Carole King
+                                </h3>
+
+                                <p class="event-meta">
+                                    October 3 • 7:30 PM
+                                </p>
+
+                                <a href="https://app.arts-people.com/index.php?show=317546" class="btn btn-primary">
+                                    View Event
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- EVENT 2 -->
+                        <article class="event-card">
+
+                            <div class="event-image">
+                                <img src="images/Performance Arts Package/Harmonic-Hijinks.jpg"
+                                    alt="FFCO Fall Harmonic Hijinks">
+                            </div>
+
+                            <div class="event-content">
+
+                                <span class="tag">
+                                    Theatre
+                                </span>
+
+                                <h3>
+                                    FFCO - Fall Harmonic Hijinks
+                                </h3>
+
+                                <p class="event-meta">
+                                    October 11 • 2:00 PM
+                                </p>
+
+                                <a href="https://app.arts-people.com/index.php?show=317538" class="btn btn-primary">
+                                    View Event
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- EVENT 3 -->
+                        <article class="event-card">
+
+                            <div class="event-image">
+                                <img src="images/Performance Arts Package/UNEARTHED for big top flat (2).jpeg"
+                                    alt="The Greatest Show Unearthed">
+                            </div>
+
+                            <div class="event-content">
+
+                                <span class="tag">
+                                    Theatre
+                                </span>
+
+                                <h3>
+                                    The Greatest Show Unearthed
+                                </h3>
+
+                                <p class="event-meta">
+                                    October 31 • 7:30 PM
+                                </p>
+
+                                <a href="https://app.arts-people.com/index.php?show=317540" class="btn btn-primary">
+                                    View Event
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- EVENT 4 -->
+                        <article class="event-card">
+
+                            <div class="event-image">
+                                <img src="images/Theatre Series/Morrie Poster-Horizontal.png"
+                                    alt="Tuesdays with Morrie">
+                            </div>
+
+                            <div class="event-content">
+
+                                <span class="tag">
+                                    Theatre Series
+                                </span>
+
+                                <h3>Tuesdays with Morrie</h3>
+
+                                <p class="event-meta">
+                                    November 6 • 7:30 PM
+                                </p>
+
+                                <a href="https://app.arts-people.com/index.php?show=317552" class="btn btn-primary">
+                                    View Event
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- EVENT 5 -->
+                        <article class="event-card">
+
+                            <div class="event-image">
+                                <img src="images/Performance Arts Package/205817_TaikoArts_ConcertTour_Social_Final-01.jpg"
+                                    alt="Taiko Arts Midwest">
+                            </div>
+
+                            <div class="event-content">
+
+                                <span class="tag">
+                                    Performance
+                                </span>
+
+                                <h3>Taiko Arts Midwest</h3>
+
+                                <p class="event-meta">
+                                    November 21 • 7:30 PM
+                                </p>
+
+                                <a href="https://app.arts-people.com/index.php?show=317541" class="btn btn-primary">
+                                    View Event
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- EVENT 6 -->
+                        <article class="event-card">
+
+                            <div class="event-image">
+                                <img src="images/Non Series Events/MickSterlingGOOC_White.jpg"
+                                    alt="Mick Sterling Grand Ole Opry Christmas">
+                            </div>
+
+                            <div class="event-content">
+
+                                <span class="tag">
+                                    Concert
+                                </span>
+
+                                <h3>Mick Sterling Presents: Grand Ole Opry Christmas</h3>
+
+                                <p class="event-meta">
+                                    November 23 • 7:30 PM
+                                </p>
+
+                                <a href="https://app.arts-people.com/index.php?show=317700" class="btn btn-primary">
+                                    View Event
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- EVENT 7 -->
+                        <article class="event-card">
+
+                            <div class="event-image">
+                                <img src="images/Non Series Events/Dance and Dessert.jpg" alt="Dance and Dessert">
+                            </div>
+
+                            <div class="event-content">
+
+                                <span class="tag">
+                                    Community
+                                </span>
+
+                                <h3>Dance & Dessert</h3>
+
+                                <p class="event-meta">
+                                    December 5 • TBD
+                                </p>
+
+                                <p class="event-meta">
+                                    December 6 • TBD
+                                </p>
+
+                                <a href="#" class="btn btn-primary">
+                                    View Event
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- EVENT 8 -->
+                        <article class="event-card">
+
+                            <div class="event-image">
+                                <img src="images/Tribute Series/Anthony Shore as Elvis.jpg"
+                                    alt="Anthony Shores Presents Christmas with Elvis">
+                            </div>
+
+                            <div class="event-content">
+
+                                <span class="tag">
+                                    Tribute
+                                </span>
+
+                                <h3>Anthony Shore Presents: Christmas with Elvis</h3>
+
+                                <p class="event-meta">
+                                    December 12 • 7:30PM
+                                </p>
+
+                                <a href="https://app.arts-people.com/index.php?show=317547" class="btn btn-primary">
+                                    View Event
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- EVENT 9 -->
+                        <article class="event-card">
+
+                            <div class="event-image">
+                                <img src="images/Non Series Events/Magical-Medora-Christmas-Tour-Logo-2026.jpg"
+                                    alt="Medora Christmas">
+                            </div>
+
+                            <div class="event-content">
+
+                                <span class="tag">
+                                    Theatre
+                                </span>
+
+                                <h3>Medora Christmas</h3>
+
+                                <p class="event-meta">
+                                    December 15 • 7:30PM
+                                </p>
+
+                                <a href="https://app.arts-people.com/index.php?show=323320" class="btn btn-primary">
+                                    View Event
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- EVENT 10 -->
+                        <article class="event-card">
+
+                            <div class="event-image">
+                                <img src="images/Non Series Events/ugly-sweater-header.jpg" alt="Ugly Sweater Soiree">
+                            </div>
+
+                            <div class="event-content">
+
+                                <span class="tag">
+                                    Theatre
+                                </span>
+
+                                <h3>Ugly Sweater Soiree</h3>
+
+                                <p class="event-meta">
+                                    December 18 • 7:30PM
+                                </p>
+
+                                <p class="event-meta">
+                                    December 19 • 2:00PM
+                                </p>
+
+                                <a href="https://app.arts-people.com/index.php?show=317704" class="btn btn-primary">
+                                    View Event
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- EVENT 11 -->
+                        <article class="event-card">
+
+                            <div class="event-image">
+                                <img src="images/Non Series Events/"
+                                    alt="Wurlizter Winter Wonderful Theatre Organ Holiday Concert">
+                            </div>
+
+                            <div class="event-content">
+
+                                <span class="tag">
+                                    Concert
+                                </span>
+
+                                <h3>Wurlizter Winter Wonderful Theatre Organ Holiday Concert</h3>
+
+                                <p class="event-meta">
+                                    December 21 • 12:00PM
+                                </p>
+
+                                <a href="#" class="btn btn-primary">
+                                    View Event
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- EVENT 11 -->
+                        <article class="event-card">
+
+                            <div class="event-image">
+                                <img src="images/Non Series Events/Toast at Ten_image.jpg" alt="Toast at Ten">
+                            </div>
+
+                            <div class="event-content">
+
+                                <span class="tag">
+                                    Concert
+                                </span>
+
+                                <h3>Toast at Ten/Shaun Johnson's Book of Buble'</h3>
+
+                                <p class="event-meta">
+                                    December 31 • 8:00PM
+                                </p>
+
+                                <a href="https://app.arts-people.com/index.php?show=317684" class="btn btn-primary">
+                                    View Event
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- EVENT 11 -->
+                        <article class="event-card">
+
+                            <div class="event-image">
+                                <img src="images/Tribute Series/Church of Cash.jpg" alt="Church of Cash">
+                            </div>
+
+                            <div class="event-content">
+
+                                <span class="tag">
+                                    Tribute
+                                </span>
+
+                                <h3>Church of Cash</h3>
+
+                                <p class="event-meta">
+                                    January 23 • 7:30PM
+                                </p>
+
+                                <a href="https://app.arts-people.com/index.php?show=317548" class="btn btn-primary">
+                                    View Event
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- EVENT 12 -->
+                        <article class="event-card">
+
+                            <div class="event-image">
+                                <img src="images/Theatre Series/GuysOnIce_Logo.jpg" alt="Guys on Ice">
+                            </div>
+
+                            <div class="event-content">
+
+                                <span class="tag">
+                                    Theatre
+                                </span>
+
+                                <h3>Guys on Ice</h3>
+
+                                <p class="event-meta">
+                                    February 20 • 7:30PM
+                                </p>
+
+                                <a href="https://app.arts-people.com/index.php?show=317662" class="btn btn-primary">
+                                    View Event
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- EVENT 13 -->
+                        <article class="event-card">
+
+                            <div class="event-image">
+                                <img src="images/Performance Arts Package/SQUARE The Sound of Julie.jpg"
+                                    alt="The Sound of Julie">
+                            </div>
+
+                            <div class="event-content">
+
+                                <span class="tag">
+                                    Performing Arts
+                                </span>
+
+                                <h3>The Sound of Julie</h3>
+
+                                <p class="event-meta">
+                                    February 26 • 7:30PM
+                                </p>
+
+                                <a href="https://app.arts-people.com/index.php?show=317542" class="btn btn-primary">
+                                    View Event
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- EVENT 14 -->
+                        <article class="event-card">
+
+                            <div class="event-image">
+                                <img src="images/Performance Arts Package/WATER STREET DANCE.jpg"
+                                    alt="Water Street Dance">
+                            </div>
+
+                            <div class="event-content">
+
+                                <span class="tag">
+                                    Dance
+                                </span>
+
+                                <h3>Water Street Dance</h3>
+
+                                <p class="event-meta">
+                                    March 20 • 7:30PM
+                                </p>
+
+                                <a href="https://app.arts-people.com/index.php?show=317543" class="btn btn-primary">
+                                    View Event
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- EVENT 15 -->
+                        <article class="event-card">
+
+                            <div class="event-image">
+                                <img src="images/Tribute Series/John-Denver-480x638.jpg"
+                                    alt="John Denver Musical Tribute">
+                            </div>
+
+                            <div class="event-content">
+
+                                <span class="tag">
+                                    Tribute
+                                </span>
+
+                                <h3>John Denver Musical Tribute</h3>
+
+                                <p class="event-meta">
+                                    April 17 • 7:30PM
+                                </p>
+
+                                <a href="https://app.arts-people.com/index.php?show=317550" class="btn btn-primary">
+                                    View Event
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <!-- EVENT 16 -->
+                        <article class="event-card">
+
+                            <div class="event-image">
+                                <img src="images/Theatre Series/LooneyLutherans.jpg" alt="The Looney Lutherans">
+                            </div>
+
+                            <div class="event-content">
+
+                                <span class="tag">
+                                    Theatre
+                                </span>
+
+                                <h3>The Looney Lutherans</h3>
+
+                                <p class="event-meta">
+                                    April 24 • 7:30PM
+                                </p>
+
+                                <a href="https://app.arts-people.com/index.php?show=317663" class="btn btn-primary">
+                                    View Event
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PREVIOUS -->
+                <button class="events-btn events-btn-prev" id="eventsPrev" type="button" aria-label="Previous event">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </button>
+
+
+                <!-- NEXT -->
+                <button class="events-btn events-btn-next" id="eventsNext" type="button" aria-label="Next event">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </button>
+
+
+                <!-- INDICATORS -->
+                <div class="events-indicator" id="eventsIndicators" aria-label="Event carousel navigation"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--THIS MONTH AT THE CENTER-->
+    <section>
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>This Month at the Center</h2>
+            </div>
+
+            <div class="timeline">
+
+                <!-- First Month -->
+
+                <div class="timeline-item">
+                    <span class="timeline-month">September</span>
+
+                    <div class="timeline-event">
+                        <p style="text-decoration: underline;">7th</p>
+                        <h4>- Labor Day</h4>
+                        <p class="time">CLOSED</p>
+                    </div>
+
+                    <div class="timeline-event">
+                        <p style="text-decoration: underline;">12th</p>
+                        <h4>- LRAC Mentor Showcase</h4>
+                        <p class="time">TBD</p>
+                    </div>
+
+                    <div class="timeline-event">
+                        <a href="https://app.arts-people.com/index.php?show=317551" class="timeline-event-link">
+                            <p style="text-decoration: underline;">19th</p>
+                            <h4>- Dear Jack, Dear Louise</h4>
+                            <p class="time">2:00PM</p>
+                        </a>
+                    </div>
+
+                    <div class="timeline-event">
+                        <p style="text-decoration: underline;">28th</p>
+                        <h4>- Brown Bag Lunch Theatre Organ Concert</h4>
+                        <p class="time">12:00PM</p>
+                    </div>
+
+                </div>
+
+                <!-- Second Month -->
+
+                <div class="timeline-item">
+                    <span class="timeline-month">October</span>
+
+                    <div class="timeline-event">
+                        <a href="https://app.arts-people.com/index.php?show=317546" class="timeline-event-link">
+                            <p style="text-decoration: underline;">3rd</p>
+                            <h4>- Tapestry Unraveled: The Music of Carole King</h4>
+                            <p class="time">7:30PM</p>
+                        </a>
+                    </div>
+
+                    <div class="timeline-event">
+                        <a href="https://app.arts-people.com/index.php?show=317538" class="timeline-event-link">
+                            <p style="text-decoration: underline;">11th</p>
+                            <h4>- FFCO: Fall Harmonic Hijinks</h4>
+                            <p class="time">2:00PM</p>
+                        </a>
+                    </div>
+
+                    <div class="timeline-event">
+                        <a href="" class="timeline-event-link">
+                            <p style="text-decoration: underline;">16th</p>
+                            <h4>- Chuck Suchy Concert</h4>
+                            <p class="time">7:30PM</p>
+                        </a>
+                    </div>
+
+                    <div class="timeline-event">
+                        <p style="text-decoration: underline;">18th & 19th</p>
+                        <h4>- Ugly Season Sweater Soiree Auditions</h4>
+                        <p class="time">Sunday 2:00 - 5:00PM</p>
+                        <p class="time">Monday 7:00 - 10:00PM</p>
+                    </div>
+
+                    <div class="timeline-event">
+                        <a href="https://app.arts-people.com/index.php?show=317540" class="timeline-event-link">
+                            <p style="text-decoration: underline;">31st</p>
+                            <h4>- The Greatest Show Unearthed</h4>
+                            <p class="time">7:30PM</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Third Month -->
+
+                <div class="timeline-item">
+                    <span class="timeline-month">November</span>
+
+                    <div class="timeline-event">
+                        <a href="https://app.arts-people.com/index.php?show=317552" class="timeline-event-link">
+                            <p style="text-decoration: underline;">6th</p>
+                            <h4>- Tuesdays with Morrie</h4>
+                            <p class="time">7:30PM</p>
+                        </a>
+                    </div>
+
+                    <div class="timeline-event">
+                        <a href="https://app.arts-people.com/index.php?show=317541" class="timeline-event-link">
+                            <p style="text-decoration: underline;">21st</p>
+                            <h4>- Taiko Arts Midwest</h4>
+                            <p class="time">7:30PM</p>
+                        </a>
+                    </div>
+
+                    <div class="timeline-event">
+                        <a href="https://app.arts-people.com/index.php?show=317700" class="timeline-event-link">
+                            <p style="text-decoration: underline;">23rd</p>
+                            <h4>- Mick Sterling's Grand Ole Opry Christmas</h4>
+                            <p class="time">7:30PM</p>
+                        </a>
+                    </div>
+
+                    <div class="timeline-event">
+                        <p style="text-decoration: underline;">26th - 27th</p>
+                        <h4>- Thanksgiving Holiday</h4>
+                        <p class="time">CLOSED</p>
+                    </div>
+
+                </div>
+
+                <!-- Fourth Month -->
+
+                <div class="timeline-item">
+                    <span class="timeline-month">December</span>
+
+                    <div class="timeline-event">
+                        <a href="" class="timeline-event-link">
+                            <p style="text-decoration: underline;">5th & 6th</p>
+                            <h4>Dance & Dessert</h4>
+                            <p class="time">TBD</p>
+                        </a>
+                    </div>
+
+                    <div class="timeline-event">
+                        <a href="https://app.arts-people.com/index.php?show=317547" class="timeline-event-link">
+                            <p style="text-decoration: underline;">12th</p>
+                            <h4>Anthony Shore Presents Christmas With Elvis</h4>
+                            <p class="time">7:30PM</p>
+                        </a>
+                    </div>
+
+                    <div class="timeline-event">
+                        <a href="https://app.arts-people.com/index.php?show=323320" class="timeline-event-link">
+                            <p style="text-decoration: underline;">15th</p>
+                            <h4>Medora Christmas</h4>
+                            <p class="time">7:30PM</p>
+                        </a>
+                    </div>
+
+                    <div class="timeline-event">
+                        <a href="https://app.arts-people.com/index.php?show=317704" class="timeline-event-link">
+                            <p style="text-decoration: underline;">18th & 19th</p>
+                            <h4>Ugly Seasonal Sweater Soiree</h4>
+                            <p class="time">Friday 7:30PM</p>
+                            <p class="time">Saturday 2:00pm</p>
+                        </a>
+                    </div>
+                    </a>
+
+
+                    <div class="timeline-event">
+                        <a href="" class="timeline-event-link">
+                            <p style="text-decoration: underline;">21st</p>
+                            <h4>Wurlitzer Winter Wonderful Theatre Organ Holiday Concert</h4>
+                            <p class="time">12:00PM</p>
+                        </a>
+                    </div>
+
+
+                    <div class="timeline-event">
+                        <a href="https://app.arts-people.com/index.php?show=317684" class="timeline-event-link">
+                            <p style="text-decoration: underline;">31st</p>
+                            <h4>Toast at Ten/Shaun Johsnon's Book of Buble'</h4>
+                            <p class="time">8:00PM</p>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--CURTAINS FUND-->
+    <section class="support" id="support">
+        <div class="container support-grid">
+
+            <div class="support-image">
+                <img src="images/stage_curtains.jpg" alt="Theatre Curtains">
+            </div>
+
+            <div class="support-content">
+                <h2>It's Curtains For Our Curtains</h2>
+
+                <p>
+                    Age, use, rips & tears, and the dreaded dry rot haven taken their toll on the stage curtains.
+                    Support our efforts to update our tired & tattered curtains through this special fundraising appeal.
+                    Any amount helps us reach our $25,000 goal. Thank you!
+                </p>
+
+                <div class="stats">
+                    <div class="stat">
+                        <h3>12K+</h3>
+                        <p>Annual Visitors</p>
+                    </div>
+
+                    <div class="stat">
+                        <h3>150+</h3>
+                        <p>Yearly Events</p>
+                    </div>
+
+                    <div class="stat">
+                        <h3>2K+</h3>
+                        <p>Youth Participants</p>
+                    </div>
+                </div>
+
+                <a href="https://app.arts-people.com/index.php?donation=acfta" class="btn btn-primary">Donate Today</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/carousel.js"></script>
+</body>
+
+</html>

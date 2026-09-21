@@ -1,0 +1,1954 @@
+/** FEATURED EVENTS STYLING **/
+/* Hero Section */
+.featured-events-hero {
+    min-height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+
+    background:
+        linear-gradient(rgba(0, 0, 0, .60),
+            rgba(0, 0, 0, .75)),
+        url("../../../images/AC4TA-Horizontal-Sign-Night.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.featured-events-hero-content {
+    max-width: 850px;
+}
+
+.featured-events-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.featured-events-hero p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    color: rgba(255, 255, 255, .85);
+    font-size: 1.1rem;
+}
+
+/* Featured Event Spotlight Section */
+.featured-spotlight {
+    padding: 3rem 0 6rem;
+}
+
+.featured-spotlight-card {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background: var(--white);
+    border-radius: 32px;
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 55px rgba(0, 0, 0, .08);
+}
+
+.featured-spotlight-image {
+    display: flex;
+}
+
+.featured-spotlight-image img {
+    width: 100%;
+    height: 460px;
+    flex: 1;
+    object-fit: cover;
+    display: block;
+}
+
+.featured-spotlight-content {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featured-spotlight-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    margin: 0.75rem 0;
+    line-height: 1.15;
+}
+
+.featured-spotlight-content p {
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Featured Events Grid */
+.featured-events-list {
+    padding: 0;
+}
+
+.featured-events-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+.featured-events-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.featured-events-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(320px, 1fr));
+
+    gap: 2rem;
+}
+
+/* Event Card Enhancements */
+.featured-event-card {
+    display: flex;
+    flex-direction: column;
+
+    background: var(--white);
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, .08);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.featured-event-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, .12);
+}
+
+.featured-event-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.featured-event-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 2rem;
+}
+
+.featured-event-content h3 {
+    margin: .75rem 0;
+}
+
+.event-meta {
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+}
+
+.featured-event-content .btn {
+    margin-top: auto;
+}
+
+/* Season Highlights Section */
+.season-highlights {
+    padding: 6rem 0;
+    background: var(--bg-light);
+}
+
+.season-highlights-heading {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.season-highlights-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--text);
+    margin-bottom: 1rem;
+}
+
+.season-highlights-timeline {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.season-highlight-card {
+    background: var(--bg-dark);
+    color: var(--white);
+    padding: 2rem;
+    border-radius: 24px;
+    min-width: 240px;
+    text-align: center;
+    transition: .3s ease;
+}
+
+.season-highlight-card:hover {
+    transform: translateY(-6px);
+}
+
+.season-highlight-card span {
+    color: var(--gold);
+    font-weight: 700;
+    display: block;
+    margin-bottom: .75rem;
+}
+
+/* Event Categories Section */
+.event-categories {
+    padding: 0;
+}
+
+.event-category-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 2rem;
+}
+
+.event-category-card {
+    background: var(--white);
+
+    padding: 2rem;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, .06);
+
+    transition: .3s ease;
+}
+
+.event-category-card:hover {
+
+    background: var(--accent);
+
+    color: var(--white);
+
+    transform: translateY(-6px);
+}
+
+/* Why Attend Section */
+.why-attend {
+    background: var(--bg-light);
+    padding: 6rem 0;
+}
+
+.why-attend-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.why-attend-card {
+    background: var(--white);
+
+    padding: 2.5rem;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+}
+
+.why-attend-card h3 {
+    color: var(--accent);
+    font-size: 3rem;
+    margin-bottom: .5rem;
+}
+
+.why-attend-card p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.why-attend-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 55px rgba(0, 0, 0, .10);
+}
+
+.why-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: var(--accent);
+    color: var(--white);
+
+    font-size: 2rem;
+}
+
+.stats-grid {
+    margin-top: 4rem;
+}
+
+.stats-grid .why-attend-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: var(--accent);
+    margin-bottom: .5rem;
+}
+
+/* Final CTA Section */
+.featured-events-cta {
+    width: min(1200px, 92%);
+    margin: 5rem auto;
+    padding: 3.5rem 2rem;
+    border-radius: 36px;
+    text-align: center;
+    color: var(--white);
+    background:
+        linear-gradient(135deg,
+            #1a1a1a,
+            #2a2a2a);
+}
+
+.featured-events-cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.featured-events-cta h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    margin-bottom: 1rem;
+}
+
+.featured-events-cta p {
+    color: rgba(255, 255, 255, .80);
+    margin-bottom: 2rem;
+}
+
+/********** CENTER SERIES PAGE **********/
+/* Hero Section */
+.center-series-hero {
+    min-height: 42vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    background-image:
+        linear-gradient(rgba(18, 18, 18, .70), rgba(18, 18, 18, .70)),
+        url("../../../images/AC4TA-Horizontal-Sign-Night.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5rem 0;
+}
+
+.center-series-hero .hero-content {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.hero-tag {
+    display: inline-block;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .85rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.center-series-hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.8rem, 5vw, 4.8rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.center-series-hero p {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, .85);
+    max-width: 650px;
+    margin: 0 auto 2rem;
+    line-height: 1.8;
+}
+
+.center-series-hero .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Season Overview Section */
+.season-overview {
+    background: var(--bg-light);
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.overview-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+    transition: .3s ease;
+}
+
+.overview-card:hover {
+    transform: translateY(-8px);
+}
+
+.overview-card h3 {
+    font-family: "Playfair Display", serif;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.overview-card p {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.section-heading p {
+    max-width: 700px;
+    margin: 1rem auto 0;
+}
+
+/* Package Includes Section */
+.package-includes {
+    background: var(--white);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.benefit-card {
+    background: var(--bg-light);
+    padding: 2.5rem 2rem;
+    border-radius: 24px;
+    text-align: center;
+    transition: .3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .10);
+}
+
+.benefit-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.5rem;
+}
+
+.benefit-card h3 {
+    font-family: "Playfair Display", serif;
+    margin-bottom: 1rem;
+}
+
+.benefit-card p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+/* Season Package Sections */
+.season-package {
+    background: var(--bg-light);
+}
+
+.season-package:nth-of-type(even) {
+    background: var(--white);
+}
+
+.package-grid {
+    display: grid;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* Performing Arts (6 cards) */
+.package-grid.performing-arts {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Tribute & Theatre (4 cards) */
+.package-grid.two-column {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Event Card */
+.event-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 22px 45px rgba(0, 0, 0, .15);
+}
+
+/* Poster Image */
+.event-card img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Event Content */
+.event-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.75rem;
+}
+
+/* Event Title */
+.event-content h3 {
+    font-family: "Playfair Display", serif;
+    color: var(--accent);
+    font-size: 1.55rem;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+}
+
+/* Event Date */
+.event-date {
+    color: var(--gold);
+    font-weight: 700;
+    margin-bottom: .75rem;
+}
+
+/* Event Description */
+.event-description {
+    color: var(--muted);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    flex: 1;
+}
+
+/* Button */
+.event-card .btn {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+/* Badge */
+.event-type {
+    display: inline-block;
+    background: rgba(122, 31, 43, .12);
+    color: var(--accent);
+    padding: .35rem .85rem;
+    border-radius: 999px;
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: .75rem;
+}
+
+/* Season Membershipt CTA */
+/*==========================================
+    SEASON MEMBERSHIP CTA
+==========================================*/
+
+.season-cta {
+    background: var(--bg-light);
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-tag {
+    display: inline-block;
+
+    background: rgba(122, 31, 43, 0.10);
+    color: var(--accent);
+
+    padding: 0.6rem 1.5rem;
+
+    border-radius: 999px;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    margin-bottom: 1.5rem;
+}
+
+.cta-content h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--text);
+
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    max-width: 700px;
+
+    margin: 0 auto 2.5rem;
+
+    color: var(--muted);
+
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/********** CALENDAR NAVIGATION PAGE **********/
+/* SCROLL STYLING */
+.calendar-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    padding: 1rem;
+
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.calendar-nav button {
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    cursor: pointer;
+
+    background: #eee;
+    transition: 0.25s ease;
+}
+
+.calendar-nav button.active {
+    background: var(--accent);
+    color: white;
+}
+
+/********** LIST OF EVENTS PAGE **********/
+/* Hero Section */
+.events-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 30vh;
+    padding: 3.5rem 2rem;
+
+    color: var(--white);
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(18, 18, 18, .60),
+            rgba(18, 18, 18, .60)),
+        url("../../../images/AC4TA-Horizontal-Sign-Night.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.events-hero-content {
+    max-width: 850px;
+}
+
+.events-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.events-hero p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    color: rgba(255, 255, 255, .85);
+    font-size: 1.1rem;
+}
+
+/* Search Bar Section */
+.event-search {
+    padding: 4rem 0 2rem;
+    background: var(--bg-light);
+}
+
+.search-bar {
+    max-width: 700px;
+    margin: 0 auto;
+
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 999px;
+    background: white;
+    font-size: 1rem;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .08);
+
+}
+
+.search-bar input:focus {
+    outline: 2px solid var(--gold);
+
+}
+
+/* Event Filters Section */
+.event-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.filter-btn {
+    padding: .75rem 1.5rem;
+    border: none;
+    border-radius: 999px;
+    background: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s ease;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, .05);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--accent);
+    color: white;
+}
+
+/* Upcoming Events Section */
+.upcoming-events {
+    padding: 6rem 0;
+}
+
+.upcoming-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem;
+}
+
+/* Event Cards */
+.event-card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, .08);
+    transition:
+        transform .3s,
+        box-shadow .3s;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, .12);
+}
+
+.event-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.event-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 2rem;
+}
+
+.event-tag {
+    display: inline-block;
+    margin-bottom: .75rem;
+    padding: .35rem .9rem;
+    border-radius: 999px;
+    background: rgba(122, 31, 43, .08);
+    color: var(--accent);
+    font-size: .85rem;
+    font-weight: 700;
+}
+
+.event-content h3 {
+    margin-bottom: 1rem;
+}
+
+.event-content p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.event-date {
+    margin: 1rem 0 1.5rem;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.event-content .btn {
+    margin-top: auto;
+}
+
+/* BROWSE ALL EVENTS SECTION */
+
+.events-grid {
+    display: grid;
+}
+
+.browse-events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+/* LOAD MORE */
+.hidden-event {
+    display: none;
+}
+
+.load-more {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* CALENDAR CTA SECTION */
+.calendar-cta {
+    width: min(1200px, 92%);
+    margin: 0 auto 5rem;
+    padding: 2rem 2rem;
+    border-radius: 36px;
+    text-align: center;
+    color: var(--white);
+    background:
+        linear-gradient(135deg,
+            #1a1a1a,
+            #2a2a2a);
+}
+
+.calendar-cta .container {
+    max-width: 700px;
+}
+
+.calendar-cta h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    margin: 1rem 0;
+}
+
+.calendar-cta p {
+    color: rgba(255, 255, 255, .80);
+    margin-bottom: 2rem;
+}
+
+/********** TICKETING POLICIES PAGE **********/
+/* TICKETING HERO */
+.ticketing-hero {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+
+    background:
+        linear-gradient(rgba(0, 0, 0, .60),
+            rgba(0, 0, 0, .75)),
+        url("../../../images/AC4TA-Horizontal-Sign-Night.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.ticketing-hero-content {
+    max-width: 850px;
+}
+
+.ticketing-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.ticketing-hero p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    color: rgba(255, 255, 255, .85);
+    font-size: 1.1rem;
+}
+
+.ticketing-hero .hero-content {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.ticketing-hero .hero-content p {
+    max-width: 700px;
+    margin: 1rem auto 0;
+}
+
+/* INTRODUCTION */
+
+.ticketing-intro {
+    padding: 2rem 0 2rem;
+}
+
+.ticketing-intro .section-heading {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.ticketing-intro p {
+    margin-top: 1rem;
+}
+
+
+/* QUICK POLICY OVERVIEW */
+
+.policy-highlights {
+    padding: 3rem 0 5rem;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+}
+
+.highlight-card {
+    background: var(--white);
+    padding: 2.25rem;
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+    transition: .3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .12);
+}
+
+.highlight-card h3 {
+    margin-bottom: .75rem;
+    color: var(--accent);
+}
+
+.highlight-card p {
+    margin: 0;
+}
+
+/* POLICY CARDS */
+
+.policy-section,
+.refund-policy,
+.ticket-provider {
+    padding: 2rem 0 5rem;
+}
+
+.policy-card {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 28px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+    max-width: 900px;
+    margin: auto;
+}
+
+.policy-card h2 {
+    margin-bottom: 1.5rem;
+}
+
+.policy-card p {
+    margin-bottom: 1rem;
+}
+
+.policy-card ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.policy-card li {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.policy-card.emphasis {
+    border-left: 8px solid var(--accent);
+}
+
+/* ATTENDING AN EVENT */
+
+.attendance-policies {
+    padding: 1rem 0 5rem;
+}
+
+.attendance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.attendance-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+    transition: .3s ease;
+}
+
+.attendance-card:hover {
+    transform: translateY(-6px);
+}
+
+.attendance-card h3 {
+    margin-bottom: .75rem;
+    color: var(--accent);
+}
+
+.attendance-card p {
+    margin: 0;
+}
+
+
+/* AFTER YOU PURCHASE */
+
+.ticket-provider {
+    background: var(--bg-light);
+}
+
+
+/* FAQ */
+
+.faq-section {
+    padding: 0;
+}
+
+.faq-list {
+    max-width: 900px;
+    margin: 1.75rem auto 0;
+}
+
+.faq-item {
+    background: var(--white);
+    margin-bottom: 1rem;
+    padding: 1.35rem 1.5rem;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .06);
+    transition: .3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .10);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    float: right;
+    font-size: 1.25rem;
+    transition: .3s;
+}
+
+.faq-item[open] summary::after {
+    content: "–";
+}
+
+.faq-item p {
+    margin-top: 1rem;
+}
+
+
+/* CONTACT CTA */
+
+.ticketing-cta {
+    width: min(1200px, 92%);
+    margin: 5rem auto;
+    padding: 0 2rem;
+    border-radius: 36px;
+    text-align: center;
+    color: var(--white);
+    background:
+        linear-gradient(135deg,
+            #1a1a1a,
+            #2a2a2a);
+}
+
+.ticketing-cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.ticketing-cta .container {
+    color: var(--white);
+    text-align: center;
+    border-radius: 36px;
+    padding: 5rem 2rem;
+}
+
+.ticketing-cta h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    margin-bottom: 1rem;
+}
+
+.ticketing-cta p {
+    max-width: 650px;
+    margin: 0 auto 2rem;
+    color: rgba(255, 255, 255, .9);
+}
+
+/********** PLAN YOUR VISIT PAGE **********/
+/* Hero Section */
+.visit-hero {
+    min-height: 50vh;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, .60),
+            rgba(0, 0, 0, .75)),
+        url("../../../images/AC4TA-Horizontal-Sign-Night.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.visit-hero .hero-content {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.visit-hero .section-tag {
+    margin-bottom: 1rem;
+}
+
+.visit-hero h1 {
+    margin-bottom: 1.25rem;
+}
+
+.visit-hero p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+/* VISIT INTRODUCTION */
+.visit-intro {
+    padding: 3.25rem 0 3rem;
+}
+
+.visit-intro-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.visit-intro-content .section-tag {
+    margin-bottom: 1rem;
+}
+
+.visit-intro-content h2 {
+    margin-bottom: 1.5rem;
+}
+
+.visit-intro-content p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--muted);
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+/* VISIT OVERVIEW */
+.visit-overview {
+    padding: 1rem 0 3rem;
+}
+
+.visit-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+}
+
+.visit-overview-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 24px;
+    text-align: center;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.visit-overview-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.visit-overview-card h3 {
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.visit-overview-card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+/* GETTING HERE SECTION */
+.visit-location {
+    padding: 6rem 0;
+}
+
+.visit-location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.visit-location-content .section-tag {
+    margin-bottom: 1rem;
+}
+
+.visit-location-content h2 {
+    margin-bottom: 1.5rem;
+}
+
+.visit-location-content p {
+    margin-bottom: 1.5rem;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.visit-location-content .btn {
+    margin-top: 1rem;
+}
+
+
+/* MAP CONTAINER */
+
+.visit-location-map {
+    min-height: 450px;
+
+    border-radius: 24px;
+    overflow: hidden;
+
+    background: var(--bg-light);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* GOOGLE MAP */
+.visit-location-map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+
+    border: 0;
+}
+
+/* PARKING INFORMATION SECTION */
+.visit-parking {
+    padding: 0;
+    background: var(--bg-light);
+}
+
+.visit-section-heading {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.visit-section-heading p {
+    max-width: 700px;
+    margin: 1.5rem auto 0;
+}
+
+.visit-parking-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.visit-parking-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 24px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.visit-parking-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.visit-parking-card h3 {
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.visit-parking-card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+/* ACCESSIBILITY SECTION */
+.visit-accessibility {
+    padding: 6rem 0;
+}
+
+.visit-accessibility-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.visit-accessibility-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 24px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.visit-accessibility-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.visit-accessibility-card h3 {
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.visit-accessibility-card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+/* Optional icon placeholder */
+
+.visit-accessibility-card::before {
+    content: "";
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 64px;
+    height: 64px;
+
+    margin: 0 auto 1.5rem;
+
+    border-radius: 50%;
+
+    background: rgba(122, 31, 43, 0.10);
+}
+
+/* DAY OF YOUR VISIT SECTION */
+.visit-day {
+    padding: 6rem 0;
+    background: var(--bg-light);
+}
+
+.visit-day-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.visit-day-card {
+    background: var(--white);
+
+    padding: 2.5rem 2rem;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.visit-day-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.visit-day-card h3 {
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.visit-day-card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+/* Optional icon placeholder */
+
+.visit-day-card::before {
+    content: "";
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 64px;
+    height: 64px;
+
+    margin: 0 auto 1.5rem;
+
+    border-radius: 50%;
+
+    background: rgba(122, 31, 43, 0.10);
+}
+
+/* BEFORE YOU GO SECTION */
+.visit-checklist {
+    padding: 6rem 0;
+}
+
+.visit-checklist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.visit-checklist-card {
+    position: relative;
+
+    background: var(--white);
+
+    padding: 2.5rem 2rem;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.visit-checklist-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.visit-checklist-card::before {
+    content: "✓";
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 1.5rem;
+
+    border-radius: 50%;
+
+    background: rgba(122, 31, 43, 0.10);
+
+    color: var(--accent);
+
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.visit-checklist-card h3 {
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.visit-checklist-card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+/* MAKE A DAY OF IT SECTION */
+.visit-downtown {
+    padding: 6rem 0;
+    background: var(--bg-light);
+}
+
+.visit-downtown-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.visit-downtown-card {
+    background: var(--white);
+
+    padding: 2.5rem 2rem;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.visit-downtown-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.visit-downtown-card::before {
+    content: "";
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 64px;
+    height: 64px;
+
+    margin: 0 auto 1.5rem;
+
+    border-radius: 50%;
+
+    background: rgba(122, 31, 43, 0.10);
+}
+
+.visit-downtown-card h3 {
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.visit-downtown-card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+/* THEATRE HIGHLIGHTS SECTION */
+.visit-highlights {
+    padding: 6rem 0;
+}
+
+.visit-highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.visit-highlight-card {
+    background: var(--white);
+
+    border-radius: 24px;
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.visit-highlight-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 22px 50px rgba(0, 0, 0, 0.14);
+}
+
+/* IMAGE */
+
+.visit-highlight-image {
+    overflow: hidden;
+}
+
+.visit-highlight-image img {
+    display: block;
+
+    width: 100%;
+    height: 260px;
+
+    object-fit: cover;
+
+    transition: transform 0.45s ease;
+}
+
+.visit-highlight-card:hover .visit-highlight-image img {
+    transform: scale(1.06);
+}
+
+/* CONTENT */
+
+.visit-highlight-content {
+    padding: 2rem;
+}
+
+.visit-highlight-content h3 {
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.visit-highlight-content p {
+    margin: 0;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+}
+
+/* EXPLORE FERGUS FALLS SECTION */
+.visit-attractions {
+    padding: 6rem 0;
+    background: var(--bg-light);
+}
+
+.visit-attractions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.visit-attraction-card {
+    background: var(--white);
+
+    border-radius: 24px;
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.visit-attraction-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 22px 50px rgba(0, 0, 0, 0.14);
+}
+
+/* IMAGE */
+
+.visit-attraction-image {
+    overflow: hidden;
+}
+
+.visit-attraction-image img {
+    display: block;
+
+    width: 100%;
+    height: 240px;
+
+    object-fit: cover;
+
+    transition: transform 0.45s ease;
+}
+
+.visit-attraction-card:hover .visit-attraction-image img {
+    transform: scale(1.06);
+}
+
+/* CONTENT */
+
+.visit-attraction-content {
+    padding: 2rem;
+}
+
+.visit-attraction-category {
+    display: inline-block;
+
+    margin-bottom: 0.75rem;
+
+    padding: 0.35rem 0.9rem;
+
+    border-radius: 999px;
+
+    background: rgba(122, 31, 43, 0.10);
+    color: var(--accent);
+
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.visit-attraction-content h3 {
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.visit-attraction-content p {
+    margin-bottom: 1.5rem;
+
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.visit-attraction-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    color: var(--accent);
+
+    font-weight: 600;
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease,
+        gap 0.3s ease;
+}
+
+.visit-attraction-link:hover {
+    color: var(--gold);
+    gap: 0.75rem;
+}
+
+/* CALL TO ACTION SECTION */
+.visit-contact-cta {
+    padding: 3rem 0;
+}
+
+.visit-contact-cta-content {
+    max-width: 1100px;
+
+    margin: 0 auto;
+    padding: 4rem 5rem;
+
+    text-align: center;
+
+    background: #111111;
+
+    border-radius: 32px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, .18);
+}
+
+/* Section Tag */
+
+.visit-contact-cta-content .section-tag {
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    color: var(--gold);
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+/* Heading */
+
+.visit-contact-cta-content h2 {
+
+    color: var(--white);
+
+    margin-bottom: 1.25rem;
+
+    font-size: clamp(2rem, 4vw, 3.25rem);
+
+    line-height: 1.2;
+}
+
+/* Paragraph */
+
+.visit-contact-cta-content p {
+
+    max-width: 720px;
+
+    margin: 0 auto 2.25rem;
+
+    color: rgba(255, 255, 255, .82);
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+}
+
+/* Buttons */
+
+.visit-contact-cta-actions {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 1rem;
+
+    flex-wrap: wrap;
+}
+
+/* Secondary Button */
+
+.visit-contact-cta .btn-secondary {
+
+    background: transparent;
+
+    color: var(--white);
+
+    border: 2px solid rgba(255, 255, 255, .25);
+}
+
+.visit-contact-cta .btn-secondary:hover {
+
+    background: var(--white);
+
+    color: #111;
+}

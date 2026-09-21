@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images\favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ Base ------>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/typography.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!------ Layout ------>
+    <link rel="stylesheet" href="../assets/css/layout/container.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/layout/footer.css">
+
+    <!------ Components ------>
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/section-heading.css">
+
+    <!------ Page ------>
+    <link rel="stylesheet" href="../assets/css/pages/rental_rates.css">
+
+    <!-- ==========================
+     RESPONSIVE
+========================== -->
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="../index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="../images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="../events/announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta">Calendar</a>
+                    <a href="../support/membership_appeal.html">Membership Appeal</a>
+                    <a href="../support/curtain_appeal.html">Curtain Appeal</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../events/featured_events.html">Featured Events</a>
+                    <a href="../events/list_events.html">List of Events</a>
+                    <a href="../events/ticket_policies.html">Ticketing Policies</a>
+                    <a href="../events/plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href="../about/mission_vision.html">Mission/Vision</a>
+                    <a href="../about/staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="../about/history.html">History <i
+                                class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="../about/history_building.html">Building</a>
+                            <a href="../about/history_organ.html">Theatre Organ</a>
+                            <a href="../about/history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../support/sponsorship.html">Sponsorship</a>
+                    <a href="../support/membership.html">Membership</a>
+                    <a href="../support/volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--Rentals-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="rental_rates.html">Rental Rates</a>
+                            <a href="rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates/Merchandise-->
+            <div class="nav-item">
+                <a class="dropbtn" href="../store/gift_certificates.html">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="../contact/contact_info.html">Address & Contact Information</a>
+                    <a href="../contact/box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="../contact/email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RENTAL RATES HERO -->
+    <header class="rental-rates-hero">
+        <div class="container">
+            <div class="hero-content">
+
+                <span class="section-tag">Facility Rentals</span>
+
+                <h1>Rental Information & Rates</h1>
+
+                <p>
+                    Rent the historic Fergus Theatre or one of our Bakken Building
+                    rehearsal spaces for performances, meetings, film screenings,
+                    special events, weddings, and more.
+                </p>
+
+                <a href="#rental-inquiry" class="btn btn-primary">
+                    Request Rental Information
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- RENTAL OVERVIEW -->
+    <section class="rental-overview">
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h2>Spaces Available for Rent</h2>
+
+                <p>
+                    A Center for the Arts offers several unique spaces for
+                    performances, rehearsals, meetings, educational programs,
+                    and special events.
+                </p>
+
+            </div>
+
+
+            <div class="rental-overview-grid">
+
+                <!-- Fergus Theatre -->
+                <div class="rental-card">
+
+                    <i class="fa fa-ticket"></i>
+
+                    <h3>Fergus Theatre</h3>
+
+                    <p>
+                        A 407-seat historic theatre available for performances,
+                        film screenings, meetings, weddings, and special events.
+                    </p>
+
+                </div>
+
+
+                <!-- Large Rehearsal Space -->
+                <div class="rental-card">
+
+                    <i class="fa fa-users"></i>
+
+                    <h3>Large Rehearsal Space</h3>
+
+                    <p>
+                        A 1,200-square-foot rehearsal space with a piano,
+                        sound reinforcement, microphones, and a sprung floor.
+                    </p>
+
+                </div>
+
+
+                <!-- Small Rehearsal Space -->
+                <div class="rental-card">
+
+                    <i class="fa fa-building"></i>
+
+                    <h3>Small Rehearsal Space</h3>
+
+                    <p>
+                        A 496-square-foot space with a piano, laminate flooring,
+                        and a dedicated carpeted area for youth activities.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FERGUS THEATRE RENTAL RATES -->
+    <section class="rates-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">Fergus Theatre</span>
+
+                <h2>Facility Rental Rates</h2>
+
+            </div>
+
+
+            <div class="rates-table-wrapper">
+
+                <table class="rates-table">
+
+                    <thead>
+                        <tr>
+                            <th>Rental Type</th>
+                            <th>8-Hour Day</th>
+                            <th>Hourly Rate</th>
+                            <th>Additional Hours</th>
+                        </tr>
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+                            <td>For-Profit Organization</td>
+                            <td>$1,200</td>
+                            <td>$150/hr</td>
+                            <td>$175/hr</td>
+                        </tr>
+
+                        <tr>
+                            <td>Non-Profit Organization</td>
+                            <td>$600</td>
+                            <td>$85/hr</td>
+                            <td>$85/hr</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <div class="rates-note">
+
+                <p>
+                    Hourly rentals have a three-hour minimum. Eight-hour facility
+                    rentals include a basic lighting wash, podium, and one microphone.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PERSONNEL FEES -->
+    <section class="additional-fees">
+
+        <div class="container">
+
+            <div class="fees-box">
+
+                <span class="section-tag">Staffing</span>
+
+                <h2>Personnel Fees</h2>
+
+                <p class="fees-intro">
+                    Depending on the needs of your event, trained AC4TA personnel
+                    may be required during your rental.
+                </p>
+
+
+                <div class="fees-grid">
+
+                    <div class="fee-item">
+
+                        <span>Stage Hands, Loaders, Lighting, Sound, Spot Light & Stage Manager</span>
+
+                        <p>
+                            For-Profit: $30/hr<br>
+                            Non-Profit: $25/hr
+                        </p>
+
+                    </div>
+
+
+                    <div class="fee-item">
+
+                        <span>House Manager & Ticket Sellers</span>
+
+                        <p>
+                            For-Profit: $20/hr<br>
+                            Non-Profit: $18/hr
+                        </p>
+
+                    </div>
+
+
+                    <div class="fee-item">
+
+                        <span>Ushers, Concessions & Merchandise Sellers</span>
+
+                        <p>
+                            For-Profit: $18/hr<br>
+                            Non-Profit: $15/hr
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ADDITIONAL EQUIPMENT & SERVICES -->
+    <section class="additional-fees">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Additional Equipment & Services</h2>
+
+                <p>
+                    Additional equipment and services are available
+                    for an additional charge.
+                </p>
+            </div>
+
+            <div class="fees-table-wrapper">
+
+                <table class="fees-table">
+
+                    <thead>
+                        <tr>
+                            <th>Equipment or Service</th>
+                            <th>For-Profit</th>
+                            <th>Non-Profit</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                Piano Tuning
+                                <span class="table-note">
+                                    Current rate + $20 for-profit / Current rate + $10 non-profit.
+                                    Current tuning rate is $190 as of October 1, 2025.
+                                </span>
+                            </td>
+
+                            <td>Current Rate + $20</td>
+                            <td>Current Rate + $10</td>
+                        </tr>
+
+                        <tr>
+                            <td>Grand Piano</td>
+                            <td>$100.00</td>
+                            <td>$50.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Nord Electric Keyboard</td>
+                            <td>$50.00</td>
+                            <td>$25.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Projector</td>
+                            <td>$25.00/hour</td>
+                            <td>$15.00/hour</td>
+                        </tr>
+
+                        <tr>
+                            <td>Follow-Spots (2)</td>
+                            <td>$40.00/show</td>
+                            <td>$20.00/show</td>
+                        </tr>
+
+                        <tr>
+                            <td>Movie Screen</td>
+                            <td>$15.00/day</td>
+                            <td>$10.00/day</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Marley Dance Floor
+                                <span class="table-note">
+                                    If damaged, the renter will be responsible
+                                    for replacing the damaged section.
+                                </span>
+                            </td>
+                            <td>$200.00</td>
+                            <td>$150.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Platforms — In-Theatre Use Only (24 Available)</td>
+                            <td>$50.00 each</td>
+                            <td>$25.00 each</td>
+                        </tr>
+
+                        <tr>
+                            <td>Podium</td>
+                            <td>$20.00</td>
+                            <td>$10.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Hazer</td>
+                            <td>$75.00</td>
+                            <td>$50.00</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <div class="assisted-listening-note">
+
+                <i class="fa fa-info-circle"></i>
+
+                <p>
+                    The Center's hearing-impaired/assisted listening system
+                    is included with facility rentals. An additional charge
+                    may apply if an Audio Describer is requested for visually
+                    impaired patrons.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BAKKEN BUILDING RENTAL RATES -->
+    <section class="bakken-rates">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">Bakken Building</span>
+
+                <h2>Rehearsal Space Rental Rates</h2>
+
+                <p>
+                    The Bakken Building offers dedicated rehearsal spaces for
+                    classes, practices, meetings, and community activities.
+                </p>
+
+            </div>
+
+
+            <div class="bakken-grid">
+
+
+                <!-- LARGE SPACE -->
+                <div class="bakken-card">
+
+                    <h3>Large Rehearsal Space</h3>
+
+                    <p class="space-details">
+                        1,200 square feet (24 × 50)
+                    </p>
+
+                    <ul>
+
+                        <li>Piano</li>
+
+                        <li>Sound reinforcement for playback</li>
+
+                        <li>Several microphones</li>
+
+                        <li>Sprung floor</li>
+
+                    </ul>
+
+
+                    <div class="space-rates">
+
+                        <div>
+
+                            <span>8-Hour Day</span>
+
+                            <strong>$150</strong>
+
+                        </div>
+
+                        <div>
+
+                            <span>Hourly Rate</span>
+
+                            <strong>$30/hr</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SMALL SPACE -->
+                <div class="bakken-card">
+
+                    <h3>Small Rehearsal Space</h3>
+
+                    <p class="space-details">
+                        496 square feet (31 × 16)
+                    </p>
+
+                    <ul>
+
+                        <li>Piano</li>
+
+                        <li>Laminate flooring</li>
+
+                        <li>12 × 12 carpeted youth area</li>
+
+                    </ul>
+
+
+                    <div class="space-rates">
+
+                        <div>
+
+                            <span>8-Hour Day</span>
+
+                            <strong>$75</strong>
+
+                        </div>
+
+                        <div>
+
+                            <span>Hourly Rate</span>
+
+                            <strong>$20/hr</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RENTAL REQUIREMENTS -->
+    <section class="rental-policies">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h2>Rental Requirements & Policies</h2>
+
+            </div>
+
+
+            <div class="policies-grid">
+
+
+                <div class="policy-card">
+
+                    <h3>$100 Date Deposit</h3>
+
+                    <p>
+                        A non-refundable $100 deposit is required
+                        to hold a requested rental date.
+                    </p>
+
+                </div>
+
+
+                <div class="policy-card">
+
+                    <h3>Reserve Early</h3>
+
+                    <p>
+                        A Center for the Arts maintains a busy schedule
+                        of performances, rehearsals, and classes and
+                        often plans events well in advance.
+                    </p>
+
+                </div>
+
+
+                <div class="policy-card">
+
+                    <h3>Required Personnel</h3>
+
+                    <p>
+                        Certain events require the use of AC4TA personnel,
+                        including House and Stage Management.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RENTAL INQUIRY CTA -->
+    <section id="rental-inquiry" class="rental-cta-section">
+
+        <div class="container">
+
+            <div class="rental-application">
+
+                <h2>Interested in Renting a Space?</h2>
+
+                <p>
+                    Contact A Center for the Arts to discuss availability,
+                    rental options, equipment needs, and staffing requirements.
+                </p>
+
+                <a href="tel:2187365453" class="btn btn-primary">
+                    Call (218) 736-5453
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

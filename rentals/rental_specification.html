@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images\favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ Base ------>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/typography.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!------ Layout ------>
+    <link rel="stylesheet" href="../assets/css/layout/container.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/layout/footer.css">
+
+    <!------ Components ------>
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/section-heading.css">
+
+    <!------ Page ------>
+    <link rel="stylesheet" href="../assets/css/pages/rental_specification.css">
+
+    <!-- ==========================
+     RESPONSIVE
+========================== -->
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="../index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="../images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="../events/announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta">Calendar</a>
+                    <a href="../support/membership_appeal.html">Membership Appeal</a>
+                    <a href="../support/curtain_appeal.html">Curtain Appeal</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../events/featured_events.html">Featured Events</a>
+                    <a href="../events/list_events.html">List of Events</a>
+                    <a href="../events/ticket_policies.html">Ticketing Policies</a>
+                    <a href="../events/plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href="../about/mission_vision.html">Mission/Vision</a>
+                    <a href="../about/staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="../about/history.html">History <i
+                                class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="../about/history_building.html">Building</a>
+                            <a href="../about/history_organ.html">Theatre Organ</a>
+                            <a href="../about/history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../support/sponsorship.html">Sponsorship</a>
+                    <a href="../support/membership.html">Membership</a>
+                    <a href="../support/volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--Rentals-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="rental_rates.html">Rental Rates</a>
+                            <a href="rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates/Merchandise-->
+            <div class="nav-item">
+                <a class="dropbtn" href="../store/gift_certificates.html">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="../contact/contact_info.html">Address & Contact Information</a>
+                    <a href="../contact/box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="../contact/email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TECHNICAL SPECIFICATIONS HERO -->
+    <header class="tech-specs-hero">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <span class="section-tag">
+                    Facility Rentals
+                </span>
+
+                <h1>Technical Specifications</h1>
+
+                <p>
+                    Detailed information about our theatre,
+                    stage, lighting, sound, projection,
+                    and facility capabilities.
+                </p>
+
+                <a href="../images/AC4TA_Technical_Specs 09-26.pdf" class="btn btn-primary" target="_blank"
+                    rel="noopener noreferrer" download="">
+                    Download Technical Packet
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- QUICK FACTS BANNER -->
+    <section class="tech-facts">
+
+        <div class="container">
+
+            <div class="facts-grid">
+
+                <div class="fact-card">
+                    <h3>730+</h3>
+                    <p>Seats</p>
+                </div>
+
+                <div class="fact-card">
+                    <h3>Proscenium</h3>
+                    <p>Stage Type</p>
+                </div>
+
+                <div class="fact-card">
+                    <h3>Full</h3>
+                    <p>Lighting System</p>
+                </div>
+
+                <div class="fact-card">
+                    <h3>Digital</h3>
+                    <p>Audio Console</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- STAGE SPECIFICATIONS -->
+    <section class="stage-specifications">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-tag">Technical Details</span>
+                <h2>Stage Specifications</h2>
+            </div>
+
+            <div class="spec-grid">
+
+                <div class="spec-item">
+                    <span>Proscenium Width</span>
+                    <p>32'</p>
+                </div>
+
+                <div class="spec-item">
+                    <span>Stage Depth</span>
+                    <p>42'</p>
+                </div>
+
+                <div class="spec-item">
+                    <span>Grid Height</span>
+                    <p>50'</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- LIGHTING SYSTEM -->
+    <section class="lighting-equipment">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Lighting System
+                </span>
+
+                <h2>Lighting Equipment</h2>
+
+            </div>
+
+            <div class="equipment-grid">
+
+                <div class="equipment-card">
+
+                    <h3>Control Console</h3>
+
+                    <p>ETC Ion XE</p>
+
+                </div>
+
+                <div class="equipment-card">
+
+                    <h3>Front Lighting</h3>
+
+                    <p>LED & Conventional Fixtures</p>
+
+                </div>
+
+                <div class="equipment-card">
+
+                    <h3>Special Effects</h3>
+
+                    <p>Moving Fixtures & Haze Support</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- AUDIO & PROJECTION -->
+    <section class="audio-section">
+
+        <div class="container">
+
+            <div class="audio-box">
+
+                <h2>Audio & Projection</h2>
+
+                <div class="audio-grid">
+
+                    <div class="audio-item">
+                        <span>Console</span>
+                        <p>Digital Mixing Console</p>
+                    </div>
+
+                    <div class="audio-item">
+                        <span>Microphones</span>
+                        <p>Wireless & Wired Options</p>
+                    </div>
+
+                    <div class="audio-item">
+                        <span>Projection</span>
+                        <p>HD Projection System</p>
+                    </div>
+
+                    <div class="audio-item">
+                        <span>Playback</span>
+                        <p>Computer & Media Inputs</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TECHNICAL SUPPORT / STAFFING -->
+    <section class="technical-support">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Production Support
+                </span>
+
+                <h2>Technical Support & Staffing</h2>
+
+                <p>
+                    Technical staffing and production support are available
+                    to help ensure your event runs smoothly from setup
+                    through completion.
+                </p>
+
+            </div>
+
+
+            <div class="support-grid">
+
+                <div class="support-card">
+
+                    <h3>Lighting Technician</h3>
+
+                    <p>
+                        Technical support for lighting setup,
+                        operation, and event production.
+                    </p>
+
+                    <span class="support-note">
+                        Available upon request
+                    </span>
+
+                </div>
+
+
+                <div class="support-card">
+
+                    <h3>Sound Technician</h3>
+
+                    <p>
+                        Assistance with audio setup,
+                        microphones, mixing, and sound operation.
+                    </p>
+
+                    <span class="support-note">
+                        Available upon request
+                    </span>
+
+                </div>
+
+
+                <div class="support-card">
+
+                    <h3>Production Support</h3>
+
+                    <p>
+                        Additional technical assistance may be
+                        available depending on event requirements.
+                    </p>
+
+                    <span class="support-note">
+                        Event dependent
+                    </span>
+
+                </div>
+
+
+                <div class="support-card">
+
+                    <h3>Event Setup</h3>
+
+                    <p>
+                        Staff can help coordinate technical
+                        setup and venue preparation.
+                    </p>
+
+                    <span class="support-note">
+                        Based on rental agreement
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="support-note-box">
+
+                <p>
+                    <strong>Planning an event?</strong>
+                    Technical staffing requirements and associated
+                    fees should be discussed with AC4TA staff when
+                    reserving your rental.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TECHNICAL RESOURCES / DOWNLOADS -->
+    <section class="technical-resources">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Rental Resources
+                </span>
+
+                <h2>Technical Resources</h2>
+
+                <p>
+                    Download technical information and venue resources
+                    to help you plan your event and determine whether
+                    AC4TA is the right fit for your needs.
+                </p>
+
+            </div>
+
+            <div class="resource-grid">
+
+                <!-- TECHNICAL PACKET -->
+                <a href="#" class="resource-card" target="_blank" rel="noopener noreferrer">
+
+                    <i class="fa fa-file-text"></i>
+
+                    <div class="resource-content">
+
+                        <h3>Technical Packet</h3>
+
+                        <p>
+                            Detailed information about stage dimensions,
+                            lighting, audio, projection, and venue capabilities.
+                        </p>
+
+                        <span class="resource-link">
+                            Download Packet
+                            <i class="fa fa-arrow-right"></i>
+                        </span>
+
+                    </div>
+
+                </a>
+
+                <!-- FLOOR PLAN -->
+                <a href="#" class="resource-card" target="_blank" rel="noopener noreferrer">
+
+                    <i class="fa fa-map"></i>
+
+                    <div class="resource-content">
+
+                        <h3>Venue Floor Plan</h3>
+
+                        <p>
+                            Review the layout of the theatre, stage,
+                            seating, and available event spaces.
+                        </p>
+
+                        <span class="resource-link">
+                            View Floor Plan
+                            <i class="fa fa-arrow-right"></i>
+                        </span>
+
+                    </div>
+
+                </a>
+
+                <!-- STAGE PLOT -->
+                <a href="#" class="resource-card" target="_blank" rel="noopener noreferrer">
+
+                    <i class="fa fa-music"></i>
+
+                    <div class="resource-content">
+
+                        <h3>Stage & Equipment Information</h3>
+
+                        <p>
+                            Explore additional information about stage
+                            equipment, technical systems, and production needs.
+                        </p>
+
+                        <span class="resource-link">
+                            View Information
+                            <i class="fa fa-arrow-right"></i>
+                        </span>
+
+                    </div>
+
+                </a>
+
+                <!-- RENTAL APPLICATION -->
+                <a href="#" class="resource-card" target="_blank" rel="noopener noreferrer">
+
+                    <i class="fa fa-file-pdf"></i>
+
+                    <div class="resource-content">
+
+                        <h3>Rental Application</h3>
+
+                        <p>
+                            Download the rental application to begin
+                            the process of reserving your event date.
+                        </p>
+
+                        <span class="resource-link">
+                            Download Application
+                            <i class="fa fa-arrow-right"></i>
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VENUE AMENITIES -->
+    <section class="venue-amenities">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Venue Amenities</h2>
+            </div>
+
+            <div class="amenities-grid">
+
+                <div class="amenity">
+                    <i class="fa fa-wheelchair"></i>
+                    <h3>Accessibility</h3>
+                </div>
+
+                <div class="amenity">
+                    <i class="fa fa-car"></i>
+                    <h3>Parking Nearby</h3>
+                </div>
+
+                <div class="amenity">
+                    <i class="fa fa-users"></i>
+                    <h3>Dressing Rooms</h3>
+                </div>
+
+                <div class="amenity">
+                    <i class="fa fa-wifi"></i>
+                    <h3>Guest Wi-Fi</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FAQ -->
+    <section class="tech-faq">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Rental Questions
+                </span>
+
+                <h2>Frequently Asked Questions</h2>
+
+                <p>
+                    Have questions about our technical capabilities,
+                    equipment, or production support? Here are some
+                    common questions from event organizers.
+                </p>
+
+            </div>
+
+
+            <div class="faq-list">
+
+
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>
+                            Can I tour the facility before my event?
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. Facility tours may be available by
+                            appointment. Contact AC4TA staff to schedule
+                            a time to view the venue and discuss your
+                            technical requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>
+                            Is a technician required for my event?
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Technical staffing requirements depend on
+                            the type and complexity of your event.
+                            Contact our staff to discuss your production
+                            needs and determine what support may be required.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>
+                            Can I bring my own production equipment?
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Outside equipment may be permitted depending
+                            on the event and venue requirements. All
+                            equipment should be discussed with AC4TA staff
+                            before your event.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>
+                            What technical equipment is included with a rental?
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Standard venue equipment may include lighting,
+                            audio, projection, and stage equipment.
+                            Available equipment depends on the rental space
+                            and event requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>
+                            Can the venue accommodate performances and concerts?
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. The venue is equipped to accommodate a
+                            variety of performances, concerts, presentations,
+                            and community events. Technical requirements
+                            should be discussed during the rental planning process.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 6 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>
+                            How do I get a complete technical packet?
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Contact AC4TA staff to request the most current
+                            technical information and available venue resources.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TECHNICAL INQUIRY FORM -->
+    <section class="technical-contact-cta">
+
+        <div class="container">
+
+            <div class="technical-inquiry">
+
+                <div class="technical-inquiry-content">
+
+                    <span class="section-tag">
+                        Technical Support
+                    </span>
+
+                    <h2>Need Additional Technical Information?</h2>
+
+                    <p>
+                        Our technical staff can provide stage plots, equipment
+                        inventories, rigging information, and production support
+                        details to help you plan your event.
+                    </p>
+
+                </div>
+
+
+                <form class="technical-inquiry-form">
+
+                    <!-- NAME -->
+
+                    <div class="form-group">
+                        <label for="technical-name">
+                            Name
+                        </label>
+
+                        <input type="text" id="technical-name" name="technical-name" placeholder="Your name" required>
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+                        <label for="technical-email">
+                            Email
+                        </label>
+
+                        <input type="email" id="technical-email" name="technical-email" placeholder="you@example.com"
+                            required>
+                    </div>
+
+
+                    <!-- EVENT / ORGANIZATION -->
+
+                    <div class="form-group">
+                        <label for="technical-event">
+                            Event or Organization
+                        </label>
+
+                        <input type="text" id="technical-event" name="technical-event"
+                            placeholder="Event name or organization">
+                    </div>
+
+
+                    <!-- EVENT DATE -->
+
+                    <div class="form-group">
+                        <label for="technical-date">
+                            Event Date
+                            <span class="optional">(Optional)</span>
+                        </label>
+
+                        <input type="date" id="technical-date" name="technical-date">
+                    </div>
+
+
+                    <!-- INFORMATION TYPE -->
+
+                    <div class="form-group full-width">
+                        <label for="technical-request">
+                            What information do you need?
+                        </label>
+
+                        <select id="technical-request" name="technical-request" required>
+                            <option value="">
+                                Select an option
+                            </option>
+
+                            <option value="stage">
+                                Stage Specifications
+                            </option>
+
+                            <option value="lighting">
+                                Lighting Information
+                            </option>
+
+                            <option value="audio">
+                                Audio / Sound Information
+                            </option>
+
+                            <option value="projection">
+                                Projection Information
+                            </option>
+
+                            <option value="rigging">
+                                Rigging Information
+                            </option>
+
+                            <option value="staffing">
+                                Technical Staffing
+                            </option>
+
+                            <option value="general">
+                                General Technical Information
+                            </option>
+
+                        </select>
+                    </div>
+
+
+                    <!-- MESSAGE -->
+
+                    <div class="form-group full-width">
+                        <label for="technical-message">
+                            Additional Details
+                        </label>
+
+                        <textarea id="technical-message" name="technical-message" rows="5"
+                            placeholder="Tell us more about your event or technical needs..."></textarea>
+                    </div>
+
+
+                    <!-- SUBMIT -->
+
+                    <div class="form-submit full-width">
+
+                        <button type="submit" class="btn btn-primary">
+                            Send Technical Inquiry
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/" target="_blank"
+                        rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank"
+                        rel="noopener noreferrer">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/volunteers.js"></script>
+
+</body>
+
+</html>

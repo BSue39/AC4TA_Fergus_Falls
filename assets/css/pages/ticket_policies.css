@@ -1,0 +1,956 @@
+/*========================================
+  TICKETING HERO
+========================================*/
+
+.ticketing-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 240px;
+    padding: 3rem 2rem;
+
+    color: var(--white);
+    text-align: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(rgba(18, 18, 18, .60),
+            rgba(18, 18, 18, .60)),
+        url("../../../images/AC4TA-Horizontal-Sign-Night.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ticketing-hero-content {
+    max-width: 820px;
+    margin: 0 auto;
+
+    position: relative;
+    z-index: 2;
+}
+
+.ticketing-hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(3rem, 6vw, 4.75rem);
+    line-height: 1.05;
+
+    margin-bottom: 1rem;
+
+    color: var(--white);
+}
+
+.ticketing-hero p {
+    max-width: 700px;
+
+    margin: 0 auto 1.75rem;
+
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, .88);
+}
+
+.ticketing-hero .btn {
+    min-width: 220px;
+}
+
+.ticketing-hero-content {
+    animation: heroFadeUp .9s ease-out both;
+}
+
+/*********************************
+        HERO ANIMATION
+*********************************/
+
+@keyframes heroFadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/*========================================
+  TICKETING INTRODUCTION
+========================================*/
+
+.ticketing-intro {
+
+    padding: 3rem 0;
+
+    background: var(--bg-light);
+
+}
+
+/* CONTAINER */
+/* The default .container should be sufficient, so no additional styling is needed here */
+
+/* SECTION HEADING */
+
+.ticketing-intro .section-heading {
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+/* HEADING */
+
+.ticketing-intro h2 {
+
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+
+    margin-bottom: 1.5rem;
+
+    color: var(--text);
+
+}
+
+.ticketing-intro h2::after {
+    /* Subtle gold divider beneath the heading */
+
+    content: "";
+
+    display: block;
+
+    width: 70px;
+
+    height: 4px;
+
+    margin: 1.25rem auto 0;
+
+    border-radius: 999px;
+
+    background: var(--gold);
+
+}
+
+/* PARAGRAPH */
+
+.ticketing-intro p {
+
+    max-width: 700px;
+    /* The narrower width makes longer paragraphs much easier to read. */
+
+    margin: 0 auto;
+
+    color: var(--muted);
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+
+}
+
+/*********************************
+      POLICY HIGHLIGHTS
+*********************************/
+
+.policy-highlights {
+    /* This alternates nicely from the light background of the introduction section */
+
+    padding: 3rem 0;
+
+    background: var(--white);
+
+}
+
+/* HIGHLIGHTS GRID */
+
+.highlights-grid {
+    /* Simple three-column layout that will stack on mobile through your responsive stylesheet. */
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 2rem;
+
+}
+
+/* HIGHLIGHT CARDS */
+
+.highlight-card {
+    /* These match the style of your membership cards, featured event cards, and other card-based sections. */
+
+    background: var(--bg-light);
+
+    padding: 2.5rem 2rem;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+/* HOVER EFFECT */
+
+.highlight-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .12);
+
+}
+
+/* GOLD ACCENT */
+
+.highlight-card::before {
+
+    content: "";
+
+    display: block;
+
+    width: 60px;
+
+    height: 4px;
+
+    margin: 0 auto 1.5rem;
+
+    background: var(--gold);
+
+    border-radius: 999px;
+
+}
+
+/* HEADINGS */
+
+.highlight-card h3 {
+
+    margin-bottom: 1rem;
+
+    color: var(--accent);
+
+    font-size: 1.45rem;
+
+}
+
+/* PARAGRAPHS */
+
+.highlight-card p {
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+    margin: 0;
+
+}
+
+/* ICONS */
+
+.highlight-icon {
+
+    font-size: 2rem;
+
+    color: var(--gold);
+
+    margin-bottom: 1.25rem;
+
+}
+
+/*********************************
+        POLICY SECTION
+*********************************/
+
+.policy-section {
+
+    padding: 3rem 0;
+
+    background: var(--bg-light);
+
+}
+
+/* POLICY CARD */
+
+.policy-card {
+    /* This keeps the content at a comfortable reading width and matches the other cards we've built across the site. */
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    background: var(--white);
+
+    border-radius: 28px;
+
+    padding: 3.5rem;
+
+    box-shadow: 0 18px 45px rgba(0, 0, 0, .08);
+
+}
+
+/* HEADING */
+
+.policy-card h2 {
+
+    margin-bottom: 2rem;
+
+    color: var(--accent);
+
+    font-size: clamp(2rem, 4vw, 2.8rem);
+
+}
+
+/* REMOVE DEFAULT BULLETS */
+
+.policy-card ul {
+    /* This gives every policy a consistent amount of breathing room. */
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+    display: grid;
+
+    gap: 1.25rem;
+
+}
+
+/* CUSTOM LIST ITEMS */
+
+.policy-card li {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 1rem;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+    font-size: 1.05rem;
+
+}
+
+/* GOLD CHECKMARK */
+
+.policy-card li::before {
+
+    content: "✓";
+
+    width: 32px;
+
+    height: 32px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--gold);
+
+    color: var(--white);
+
+    font-weight: 700;
+
+}
+
+/*********************************
+    REFUND POLICY
+*********************************/
+
+.refund-policy {
+
+    padding: 3rem 0;
+
+    background: var(--white);
+
+}
+
+/* FEATURED POLICY CARD */
+
+.policy-card.emphasis {
+
+    position: relative;
+
+    border-left: 6px solid var(--gold);
+    /*The gold border immediately tells visitors, "Pay attention to this." */
+
+    background: linear-gradient(135deg,
+            var(--white),
+            #fcfaf5);
+
+}
+
+/* HEADING */
+
+.policy-card.emphasis h2 {
+
+    color: var(--accent);
+
+    margin-bottom: 1.5rem;
+
+}
+
+/* PARAGRAPHS */
+
+.policy-card.emphasis p {
+
+    color: var(--muted);
+
+    line-height: 1.9;
+
+    margin-bottom: 1.5rem;
+
+}
+
+.policy-card.emphasis p:last-child {
+
+    margin-bottom: 0;
+
+}
+
+/* DECORATIVE BADGE */
+
+.policy-card.emphasis::after {
+
+    content: "Important";
+
+    position: absolute;
+
+    top: 1.75rem;
+
+    right: 1.75rem;
+
+    padding: .45rem 1rem;
+
+    border-radius: 999px;
+
+    background: rgba(200, 169, 107, .15);
+
+    color: var(--accent);
+
+    font-size: .8rem;
+
+    font-weight: 700;
+
+    letter-spacing: .05em;
+
+    text-transform: uppercase;
+
+}
+
+/*********************************
+      ATTENDANCE POLICIES
+*********************************/
+
+.attendance-policies {
+
+    padding: 3rem 0;
+
+    background: var(--bg-light);
+
+}
+
+/* HEADING */
+
+.attendance-policies .section-heading {
+
+    margin-bottom: 3rem;
+
+}
+
+/* GRID */
+
+.attendance-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(320px, 420px));
+
+    justify-content: center;
+
+    gap: 2rem;
+
+}
+
+/* ATTENDANCE CARDS */
+
+.attendance-card {
+    text-align: center;
+    align-items: center;
+    background: var(--white);
+
+    border-radius: 24px;
+
+    padding: 1.75rem;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+/* HOVER EFFECT */
+
+.attendance-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .12);
+
+}
+
+/* GOLD ACCENT */
+
+.attendance-card::before {
+
+    content: "";
+
+    display: block;
+
+    width: 5rem;
+    height: 4px;
+
+    background: var(--gold);
+
+    margin: 0 auto 1.5rem;
+
+    border-radius: 999px;
+
+}
+
+/* CARD HEADINGS */
+
+.attendance-card h3 {
+
+    color: var(--accent);
+
+    margin-bottom: 1rem;
+    text-align: center;
+
+    font-size: 1.4rem;
+
+}
+
+/* CARD TEXT */
+
+.attendance-card p {
+
+    color: var(--muted);
+
+    line-height: 1.8;
+    max-width: 260px;
+    margin: 0 auto;
+
+}
+
+/* ICONS */
+
+.attendance-icon {
+
+    font-size: 2rem;
+
+    color: var(--gold);
+
+    margin-bottom: 1.25rem;
+    text-align: center;
+
+}
+
+/* ==========================================
+   AFTER YOU PURCHASE
+========================================== */
+
+.ticket-provider {
+
+    padding: 1rem 0 3.75rem;
+
+}
+
+.ticket-provider .policy-card {
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    background: var(--white);
+
+    border-radius: 24px;
+
+    padding: 3rem;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.ticket-provider .policy-card::before {
+
+    content: "";
+
+    display: block;
+
+    width: 70px;
+
+    height: 4px;
+
+    margin: 0 auto 1.5rem;
+
+    background: var(--gold);
+
+    border-radius: 999px;
+
+}
+
+.ticket-provider h2 {
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(2rem, 3vw, 2.5rem);
+
+    text-align: center;
+
+    margin-bottom: 1.75rem;
+
+    color: var(--accent);
+
+}
+
+.ticket-provider p {
+
+    max-width: 760px;
+
+    margin: 0 auto 1.25rem;
+
+    text-align: center;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+}
+
+.ticket-provider p:last-child {
+
+    margin-bottom: 0;
+
+}
+
+/* ICON */
+
+.policy-icon {
+
+    text-align: center;
+
+    margin-bottom: 1.5rem;
+
+}
+
+.policy-icon i {
+
+    font-size: 2.5rem;
+
+    color: var(--gold);
+
+}
+
+/*==========================================
+    FREQUENTLY ASKED QUESTIONS
+==========================================*/
+
+.faq-section {
+
+    padding: 2rem 0;
+
+    background: var(--white);
+
+}
+
+/* FAQ CONTAINER */
+
+.faq-list {
+
+    max-width: 900px;
+
+    margin: 3rem auto 0;
+
+}
+
+/* INDIVIDUAL FAQ CARDS */
+
+.faq-item {
+
+    background: var(--white);
+
+    border-radius: 20px;
+
+    margin-bottom: 1.25rem;
+
+    overflow: hidden;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+/* HOVER EFFECT */
+
+.faq-item:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .12);
+
+}
+
+/* SUMMARY (QUESTION) */
+
+.faq-item summary {
+
+    list-style: none;
+
+    cursor: pointer;
+
+    padding: 1.5rem 2rem;
+
+    font-size: 1.15rem;
+
+    font-weight: 600;
+
+    color: var(--accent);
+
+    position: relative;
+
+    transition: background .3s ease;
+
+}
+
+/* HIDE THE DEFAULT BROWSER ARROW */
+
+.faq-item summary::-webkit-details-marker {
+
+    display: none;
+
+}
+
+/* CUSTOM PLUS ICON */
+
+.faq-item summary::after {
+
+    content: "+";
+
+    position: absolute;
+
+    right: 2rem;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 1.75rem;
+
+    color: var(--gold);
+
+    transition: transform .3s ease;
+
+}
+
+/* ROTATE WHEN OPEN */
+
+.faq-item[open] summary::after {
+
+    content: "–";
+
+}
+
+/* OPEN STATE */
+
+.faq-item[open] {
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .12);
+
+}
+
+/* ANSWER */
+
+.faq-item p {
+
+    padding: 0 2rem 1.75rem;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+}
+
+/* GOLD DIVIDER */
+
+.faq-item[open] p {
+
+    border-top: 1px solid rgba(200, 169, 107, .3);
+
+    padding-top: 1.5rem;
+
+}
+
+/*==========================================
+    TICKETING CTA
+==========================================*/
+
+.ticketing-cta {
+
+    padding: 3rem 0 3rem;
+
+    background: var(--bg-light);
+
+}
+
+/* CONTAINER */
+
+.ticketing-cta .container {
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    background: var(--white);
+
+    border-radius: 28px;
+
+    padding: 2.75rem 4rem;
+
+    text-align: center;
+
+    box-shadow: 0 22px 55px rgba(0, 0, 0, .10);
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+/* GOLD ACCENT */
+
+.ticketing-cta .container::before {
+
+    content: "";
+
+    display: block;
+
+    width: 70px;
+
+    height: 4px;
+
+    background: var(--gold);
+
+    margin: 0 auto 1.25rem;
+
+    border-radius: 999px;
+
+}
+
+/* ICON */
+
+.cta-icon {
+
+    margin-bottom: 1rem;
+
+}
+
+.cta-icon i {
+
+    font-size: 2.5rem;
+
+    color: var(--gold);
+
+}
+
+/* HEADING */
+
+.ticketing-cta h2 {
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(2.25rem, 4vw, 3.25rem);
+
+    color: var(--accent);
+
+    margin-bottom: 0 0 1rem;
+
+}
+
+/* PARAGRAPH */
+
+.ticketing-cta p {
+
+    max-width: 700px;
+
+    margin: 0 auto 1.75rem;
+
+    color: var(--muted);
+
+    line-height: 1.65;
+
+    font-size: 1.05rem;
+
+}
+
+/* BUTTON */
+
+.ticketing-cta .btn {
+
+    min-width: 240px;
+    padding: .9rem 2.4rem;
+
+}
+
+/* HOVER EFFECT */
+
+.ticketing-cta .container {
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.ticketing-cta .container:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 28px 65px rgba(0, 0, 0, .14);
+
+}

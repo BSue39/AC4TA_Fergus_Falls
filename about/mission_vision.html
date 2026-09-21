@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images\favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ Base ------>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/typography.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!------ Layout ------>
+    <link rel="stylesheet" href="../assets/css/layout/container.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/layout/footer.css">
+
+    <!------ Components ------>
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/section-heading.css">
+
+    <!------ Page ------>
+    <link rel="stylesheet" href="../assets/css/pages/mission_vision.css">
+
+    <!-- ==========================
+     RESPONSIVE
+========================== -->
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="../index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="../images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="../events/announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta" target="_blank"
+                        rel="noopener noreferrer">Calendar</a>
+                    <a href="../support/membership_appeal.html">Membership Appeal</a>
+                    <a href="../support/curtain_appeal.html">Curtain Appeal</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../events/featured_events.html">Featured Events</a>
+                    <a href="../events/list_events.html">List of Events</a>
+                    <a href="../events/ticket_policies.html">Ticketing Policies</a>
+                    <a href="../events/plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href="mission_vision.html">Mission/Vision</a>
+                    <a href="staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="history.html">History <i class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="history_building.html">Building</a>
+                            <a href="history_organ.html">Theatre Organ</a>
+                            <a href="history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../support/sponsorship.html">Sponsorship</a>
+                    <a href="../support/membership.html">Membership</a>
+                    <a href="../support/volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--Rentals-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="../rentals/rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="../rentals/rental_rates.html">Rental Rates</a>
+                            <a href="../rentals/rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="../rentals/bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates/Merchandise-->
+            <div class="nav-item">
+                <a class="dropbtn" href="../store/gift_certificates.html">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="../contact/contact_info.html">Address & Contact Information</a>
+                    <a href="../contact/box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="../contact/email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MISSION & VISION HERO -->
+    <section class="mission-hero">
+
+        <div class="container">
+
+            <div class="mission-hero-content">
+
+                <span class="section-tag">
+                    Mission & Vision
+                </span>
+
+                <h1>
+                    Enriching Lives Through The Arts
+                </h1>
+
+                <p>
+                    For generations, A Center for the Arts
+                    has inspired creativity, connected communities,
+                    and provided meaningful cultural experiences.
+                </p>
+
+                <a href="#mission-overview" class="btn btn-primary">
+                    Explore Our Mission
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MISSION STATEMENT -->
+    <section id="mission-overview" class="mission-section">
+
+        <div class="container">
+
+            <div class="mission-card">
+
+                <span class="section-tag">
+                    Our Mission
+                </span>
+
+                <h2>
+                    Bringing People Together
+                    Through Creative Experiences
+                </h2>
+
+                <p>
+                    A Center for the Arts enriches the quality
+                    of life in our region by providing access
+                    to performing arts, visual arts, arts
+                    education, and cultural opportunities
+                    for all ages.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VISION STATEMENT -->
+    <section class="vision-section">
+
+        <div class="container">
+
+            <div class="vision-content">
+
+                <h2>
+                    Our Vision
+                </h2>
+
+                <blockquote>
+
+                    To be the cultural heart of west-central
+                    Minnesota, inspiring creativity,
+                    fostering connection, and ensuring
+                    access to the arts for future generations.
+
+                </blockquote>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CORE VALUES -->
+    <section class="values-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h2>
+                    Our Core Values
+                </h2>
+
+            </div>
+
+            <div class="values-grid">
+
+                <div class="value-card">
+                    <h3>Creativity</h3>
+                    <p>
+                        Encouraging artistic expression
+                        and innovation.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <h3>Community</h3>
+                    <p>
+                        Bringing people together through
+                        shared experiences.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <h3>Accessibility</h3>
+                    <p>
+                        Making arts experiences available
+                        to everyone.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <h3>Education</h3>
+                    <p>
+                        Inspiring lifelong learning through
+                        arts engagement.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- IMPACT BY THE NUMBERS -->
+    <section class="impact-section">
+
+        <div class="container">
+
+            <div class="stats">
+
+                <div class="stat">
+                    <h3>12K+</h3>
+                    <p>Annual Visitors</p>
+                </div>
+
+                <div class="stat">
+                    <h3>150+</h3>
+                    <p>Events Per Year</p>
+                </div>
+
+                <div class="stat">
+                    <h3>2,000+</h3>
+                    <p>Youth Participants</p>
+                </div>
+
+                <div class="stat">
+                    <h3>100+</h3>
+                    <p>Volunteers</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- WHO WE SERVE-->
+    <section class="serve-section">
+
+        <div class="container">
+
+            <div class="serve-grid">
+
+                <div class="serve-image">
+
+                    <img src="../images/community-program.jpg" alt="Community Programs">
+
+                </div>
+
+                <div class="serve-content">
+
+                    <h2>
+                        Serving The Entire Community
+                    </h2>
+
+                    <p>
+                        From youth theatre and arts education
+                        to nationally touring performances,
+                        we provide opportunities for people
+                        of all ages to participate in the arts.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- COMMUNITY STORIES-->
+    <section class="stories-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h2>
+                    Community Voices
+                </h2>
+
+            </div>
+
+            <div class="stories-grid">
+
+                <div class="story-card">
+
+                    <p>
+                        "The arts center has become one of
+                        my favorite places in Fergus Falls."
+                    </p>
+
+                    <span>
+                        Community Member
+                    </span>
+
+                </div>
+
+                <div class="story-card">
+
+                    <p>
+                        "Youth theatre gave my child
+                        confidence and lifelong friendships."
+                    </p>
+
+                    <span>
+                        Parent
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- LOOKING AHEAD-->
+    <section class="future-section">
+
+        <div class="container">
+
+            <div class="future-content">
+
+                <h2>
+                    Looking Ahead
+                </h2>
+
+                <p>
+                    As we continue to grow, our commitment
+                    remains the same: creating meaningful
+                    opportunities for artistic expression,
+                    cultural engagement, and community connection.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CALL TO ACTION SECTION-->
+    <section class="mission-cta">
+
+        <div class="container">
+
+            <h2>
+                Help Sustain The Arts
+            </h2>
+
+            <p>
+                Your support helps bring arts,
+                education, and cultural opportunities
+                to our community.
+            </p>
+
+            <a href="https://app.arts-people.com/index.php?membership=acfta" class="btn btn-primary" target="_blank"
+                rel="noopener noreferrer">
+
+                Support Our Mission
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

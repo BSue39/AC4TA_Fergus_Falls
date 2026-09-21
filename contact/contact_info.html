@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images\favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ Base ------>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/typography.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!------ Layout ------>
+    <link rel="stylesheet" href="../assets/css/layout/container.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/layout/footer.css">
+
+    <!------ Components ------>
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/section-heading.css">
+
+    <!------ Page ------>
+    <link rel="stylesheet" href="../assets/css/pages/contact_info.css">
+
+    <!-- ==========================
+     RESPONSIVE
+========================== -->
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="../index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="../images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="../events/announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta" target="_blank"
+                        rel="noopener noreferrer">Calendar</a>
+                    <a href="../support/membership_appeal.html">Membership Appeal</a>
+                    <a href="../support/curtain_appeal.html">Curtain Appeal</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../events/featured_events.html">Featured Events</a>
+                    <a href="../events/list_events.html">List of Events</a>
+                    <a href="../events/ticket_policies.html">Ticketing Policies</a>
+                    <a href="../events/plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href="../about/mission_vision.html">Mission/Vision</a>
+                    <a href="../about/staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="../about/history.html">History <i
+                                class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="../about/history_building.html">Building</a>
+                            <a href="../about/history_organ.html">Theatre Organ</a>
+                            <a href="../about/history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../support/sponsorship.html">Sponsorship</a>
+                    <a href="../support/membership.html">Membership</a>
+                    <a href="../support/volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--Rentals-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="../rentals/rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="../rentals/rental_rates.html">Rental Rates</a>
+                            <a href="../rentals/rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="../rentals/bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates/Merchandise-->
+            <div class="nav-item">
+                <a class="dropbtn" href="../store/gift_certificates.html">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="contact_info.html">Address & Contact Information</a>
+                    <a href="box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT INFORMATION HERO -->
+    <header class="contact-hero">
+
+        <div class="container">
+
+            <div class="contact-hero-content">
+
+                <span class="section-tag">
+                    Contact Us
+                </span>
+
+                <h1>Address & Contact Information</h1>
+
+                <p>
+                    Whether you're purchasing tickets,
+                    planning a visit, renting a space,
+                    or simply looking for information,
+                    we're here to help.
+                </p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- QUICK CONTACT CARDS -->
+    <section class="contact-overview">
+
+        <div class="container">
+
+            <div class="contact-grid">
+
+                <div class="contact-card">
+                    <i class="fa fa-map-marker"></i>
+
+                    <h3>Address</h3>
+
+                    <p>
+                        124 West Lincoln Avenue<br>
+                        Fergus Falls, MN 56537
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fa fa-phone"></i>
+
+                    <h3>Phone</h3>
+
+                    <p>
+                        (218) 736-5453
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fa fa-envelope"></i>
+
+                    <h3>Email</h3>
+
+                    <p>
+                        info@fergusarts.org
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fa fa-clock"></i>
+
+                    <h3>Office Hours</h3>
+
+                    <p>
+                        Tuesday–Friday<br>
+                        11:00 AM – 2:00 PM
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VISIT US -->
+    <section class="visit-section">
+
+        <div class="container">
+
+            <div class="visit-grid">
+
+                <div class="visit-content">
+
+                    <span class="section-tag">
+                        Visit Us
+                    </span>
+
+                    <h2>Visit A Center for the Arts</h2>
+
+                    <p>
+                        Located in the heart of downtown
+                        Fergus Falls, our historic theatre
+                        welcomes thousands of visitors each year.
+                    </p>
+
+                    <p>
+                        Whether you're attending a concert,
+                        theatrical production, educational program,
+                        or community event, we look forward
+                        to seeing you.
+                    </p>
+
+                    <div class="visit-address">
+
+                        <strong>124 West Lincoln Avenue</strong>
+
+                        <span>
+                            Fergus Falls, MN 56537
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="visit-image">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Exterior of A Center for the Arts in Fergus Falls">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FIND US / INTERACTIVE MAP -->
+    <section class="map-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Find Us
+                </span>
+
+                <h2>Find A Center for the Arts</h2>
+
+                <p>
+                    Conveniently located in downtown Fergus Falls.
+                </p>
+
+            </div>
+
+            <div class="map-card">
+
+                <!-- Google Maps Embed -->
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2757.319377568246!2d-96.07540559999998!3d46.2836289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52c9742eb7fe2723%3A0x5703b205edf1c6da!2sFergus%20Falls%20Center%20for%20Arts!5e0!3m2!1sen!2sus!4v1782966534569!5m2!1sen!2sus"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+                <div class="map-address">
+
+                    <strong>
+                        A Center for the Arts
+                    </strong>
+
+                    <span>
+                        124 West Lincoln Avenue · Fergus Falls, MN 56537
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PARKING & ACCESSIBILITY -->
+    <section class="parking-section">
+
+        <div class="container">
+
+            <div class="parking-box">
+
+                <h2>Parking & Accessibility</h2>
+
+                <div class="parking-grid">
+
+                    <div class="parking-item">
+                        <span>Parking</span>
+
+                        <p>
+                            Street parking and nearby
+                            public parking lots available.
+                        </p>
+                    </div>
+
+                    <div class="parking-item">
+                        <span>Accessible Seating</span>
+
+                        <p>
+                            Wheelchair seating available
+                            within the theatre.
+                        </p>
+                    </div>
+
+                    <div class="parking-item">
+                        <span>Building Access</span>
+
+                        <p>
+                            Accessible entrances
+                            for patrons and guests.
+                        </p>
+                    </div>
+
+                    <div class="parking-item">
+                        <span>Assistance</span>
+
+                        <p>
+                            Staff available to assist
+                            visitors when needed.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- DEPARTMENT CONTACTS -->
+    <section class="department-contacts">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h2>Department Contacts</h2>
+
+            </div>
+
+            <div class="department-grid">
+
+                <div class="department-card">
+
+                    <h3>Box Office</h3>
+
+                    <p>(218) 736-5453</p>
+
+                    <p>
+                        Tickets, seating,
+                        and performance information.
+                    </p>
+
+                </div>
+
+                <div class="department-card">
+
+                    <h3>Rentals</h3>
+
+                    <p>ac4ta@fergusarts.org</p>
+
+                    <p>
+                        Facility rentals and event inquiries.
+                    </p>
+
+                </div>
+
+                <div class="department-card">
+
+                    <h3>Administration</h3>
+
+                    <p>info@fergusarts.org</p>
+
+                    <p>
+                        General information and assistance.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="contact-form-section">
+
+        <div class="container">
+
+            <div class="contact-form-card">
+
+                <div class="contact-form-heading">
+
+                    <span class="section-tag">
+                        Get in Touch
+                    </span>
+
+                    <h2>Send Us a Message</h2>
+
+                    <p>
+                        Have a question about tickets, rentals,
+                        events, or the theatre? Send us a message
+                        and our staff will be happy to help.
+                    </p>
+
+                </div>
+
+
+                <form class="contact-form">
+
+                    <div class="form-field">
+
+                        <label for="contact-name">
+                            Name
+                        </label>
+
+                        <input type="text" id="contact-name" name="name" placeholder="Your Name" autocomplete="name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label for="contact-email">
+                            Email
+                        </label>
+
+                        <input type="email" id="contact-email" name="email" placeholder="Your Email"
+                            autocomplete="email" required>
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label for="contact-subject">
+                            Subject
+                        </label>
+
+                        <input type="text" id="contact-subject" name="subject" placeholder="What can we help you with?"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label for="contact-message">
+                            Message
+                        </label>
+
+                        <textarea id="contact-message" name="message" rows="7" placeholder="Tell us how we can help..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="contact-final-cta">
+
+        <div class="container">
+
+            <div class="contact-final-content">
+
+                <span class="section-tag">
+                    We're Here to Help
+                </span>
+
+                <h2>Have Questions?</h2>
+
+                <p>
+                    Questions about tickets, events, rentals,
+                    memberships, or programs? Reach out anytime.
+                </p>
+
+                <a href="tel:2187365453" class="btn btn-primary">
+                    Call Our Box Office
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

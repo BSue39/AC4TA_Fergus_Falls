@@ -1,0 +1,508 @@
+ /* MOBILE */
+ @media (max-width: 640px) {
+     .event-card {
+         flex: 0 0 85vw;
+     }
+ }
+
+ @media (max-width: 960px) {
+
+     .navbar {
+         flex-wrap: wrap;
+     }
+
+     .nav-panel,
+     .submenu-panel {
+         position: static;
+         opacity: 1;
+         transform: none;
+         pointer-events: auto;
+
+         display: none;
+         margin-top: 8px;
+     }
+
+     .nav-item.open>.nav-panel {
+         display: block;
+     }
+
+     .has-submenu.open>.submenu-panel {
+         display: block;
+     }
+ }
+
+ @media (max-width: 960px) {
+
+     .hero-grid,
+     .support-grid {
+         grid-template-columns: 1fr;
+     }
+
+     .hero {
+         padding: 8rem 0 4rem;
+     }
+
+     .nav-links {
+         display: flex;
+         align-items: center;
+         gap: 8px;
+     }
+
+     .stats {
+         grid-template-columns: 1fr;
+     }
+
+     .support-image img {
+         height: 420px;
+     }
+
+     @media (max-width: 640px) {
+         .events-grid {
+             padding: 1rem 1rem 1.5rem;
+         }
+
+         .event-card {
+             min-width: 85vw;
+             max-width: 85vw;
+         }
+
+         .timeline {
+             padding: 2rem;
+         }
+     }
+ }
+
+ /** ANNOUNCEMENTS PAGE **/
+ @media (max-width: 900px) {
+
+     .featured-card {
+         grid-template-columns: 1fr;
+     }
+
+     .featured-content {
+         padding: 2rem;
+     }
+
+ }
+
+ /** CENTER SERIES PAGE **/
+ @media (max-width: 1100px) {
+
+     .package-grid.performing-arts {
+
+         grid-template-columns: repeat(2, 1fr);
+
+     }
+
+     .package-grid.two-column {
+
+         grid-template-columns: repeat(2, 1fr);
+
+     }
+
+ }
+
+ @media (max-width:768px) {
+
+     .package-grid.performing-arts,
+
+     .package-grid.two-column {
+
+         grid-template-columns: 1fr;
+
+     }
+
+ }
+
+ /*==========================================
+    RESPONSIVE
+==========================================*/
+
+ @media (max-width:992px) {
+     .membership-impact-grid {
+         grid-template-columns: 1fr;
+     }
+
+     .membership-level-grid {
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+     .membership-stats-grid {
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+     .membership-testimonial-grid {
+         grid-template-columns: 1fr;
+     }
+ }
+
+ @media (max-width:768px) {
+     .membership-level-grid {
+         grid-template-columns: 1fr;
+     }
+
+     .membership-stats-grid {
+         grid-template-columns: 1fr;
+     }
+ }
+
+ /** MEMBERSHIP PAGE **/
+ @media (max-width: 960px) {
+
+     .impact-grid {
+         grid-template-columns: 1fr;
+     }
+
+ }
+
+ /** CURTAIN APPEAL PAGE **/
+ @media (max-width:900px) {
+
+     .curtain-story-grid,
+
+     .comparison-grid {
+
+         grid-template-columns: 1fr;
+     }
+
+     .curtain-story-image {
+
+         order: -1;
+     }
+
+     .curtain-story-image img,
+
+     .comparison-card img {
+
+         height: 320px;
+     }
+ }
+
+ /* =========================
+   FEATURED EVENTS
+========================= */
+
+ @media (max-width: 960px) {
+
+     .spotlight-card {
+         grid-template-columns: 1fr;
+     }
+
+     .spotlight-content {
+         padding: 2rem;
+     }
+
+ }
+
+ /* =========================
+   LIST OF EVENTES PAGE
+========================= */
+ @media (max-width:768px) {
+
+     .event-search {
+
+         padding: 3rem 0 2rem;
+
+     }
+
+     .event-grid,
+     .upcoming-grid {
+
+         grid-template-columns: 1fr;
+
+     }
+
+     .filter-btn {
+
+         flex: 1 1 calc(50% - .5rem);
+
+     }
+
+ }
+
+ /* =========================
+   TICKETING POLICIES
+========================= */
+
+ @media (max-width: 960px) {
+
+     .policy-card {
+         padding: 2rem;
+     }
+
+ }
+
+ /* =========================
+   PLAN YOUR VISIT
+========================= */
+
+ @media (max-width: 900px) {
+
+     .visit-location-grid {
+         grid-template-columns: 1fr;
+         gap: 3rem;
+     }
+
+     .visit-location-map {
+         min-height: 350px;
+     }
+
+     .visit-location-map iframe {
+         min-height: 350px;
+     }
+
+ }
+
+ /* ========================================
+   THEATRE HIGHLIGHTS SECTION
+======================================== */
+
+ @media (max-width: 768px) {
+
+     .visit-highlights-grid {
+         grid-template-columns: 1fr;
+     }
+
+     .visit-highlight-image img {
+         height: 220px;
+     }
+ }
+
+ /* ========================================
+   EXPLORE FERGUS FALLS SECTION
+======================================== */
+
+ @media (max-width: 768px) {
+
+     .visit-attractions-grid {
+         grid-template-columns: 1fr;
+     }
+
+     .visit-attraction-image img {
+         height: 220px;
+     }
+
+ }
+
+ /* ========================================
+   PLAN_VISIT CTA SECTION
+======================================== */
+
+@media (max-width:768px){
+
+    .visit-contact-cta-content{
+
+        padding:4rem 2rem;
+
+    }
+
+    .visit-contact-cta-actions{
+
+        flex-direction:column;
+
+    }
+
+    .visit-contact-cta-actions .btn{
+
+        width:100%;
+        max-width:320px;
+    }
+
+}
+
+/*==================================================
+  STAFF & BOARD PAGE RESPONSIVE
+==================================================*/
+/* Hero Section */
+@media (max-width: 768px) {
+
+    .staff-hero {
+        min-height: 45vh;
+    }
+
+    .staff-hero p {
+        font-size: 1.05rem;
+    }
+
+}
+
+/* Staff Introduction Section */
+@media (max-width: 768px) {
+
+    .staff-intro {
+        padding: 5rem 0 2.5rem;
+    }
+
+    .staff-intro .section-heading {
+        max-width: 100%;
+    }
+
+}
+
+/* Leadership Section */
+@media (max-width: 992px) {
+
+    .leadership-card {
+
+        grid-template-columns: 1fr;
+
+        gap: 2.5rem;
+
+        text-align: center;
+    }
+
+    .leadership-photo {
+
+        max-width: 380px;
+
+        margin: 0 auto;
+    }
+
+    .leadership-content p {
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .staff-leadership {
+
+        padding: 2rem 0 5rem;
+    }
+
+    .leadership-card {
+
+        padding: 2rem;
+    }
+
+}
+
+/* Staff Directory Section */
+@media (max-width: 768px) {
+
+    .staff-directory {
+
+        padding: 2rem 0 5rem;
+
+    }
+
+    .staff-grid {
+
+        gap: 2rem;
+
+        margin-top: 3rem;
+
+    }
+
+    .staff-card-content {
+
+        padding: 1.75rem;
+
+    }
+
+}
+
+/* Board of Directors Section */
+@media (max-width: 768px) {
+
+    .board-section {
+        padding: 2rem 0 5rem;
+    }
+
+    .board-grid {
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .board-card {
+        padding: 1.75rem;
+    }
+
+}
+/* Call to Action */
+@media (max-width: 768px) {
+
+    .staff-contact-cta {
+
+        padding: 2rem 0 5rem;
+
+    }
+
+    .staff-contact-cta-content {
+
+        padding: 3rem 2rem;
+
+        border-radius: 24px;
+
+    }
+
+    .staff-contact-actions {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .staff-contact-actions .btn {
+
+        width: 100%;
+
+        max-width: 320px;
+
+    }
+
+}
+
+ /* =========================
+   MISSION & VISION
+========================= */
+
+ @media (max-width: 960px) {
+
+     .serve-grid {
+         grid-template-columns: 1fr;
+     }
+
+     .serve-image img {
+         height: 350px;
+     }
+
+     .mission-card {
+         padding: 2rem;
+     }
+
+ }
+
+ /* =========================
+    HISTORY PROGRAM PAGE
+========================= */
+
+ @media (max-width: 900px) {
+
+     .spotlight-card {
+         grid-template-columns: 1fr;
+     }
+
+     .spotlight-content {
+         padding: 2rem;
+     }
+ }
+
+ /* =========================
+    SPONSORSHIP PAGE
+========================= */
+ @media (max-width: 900px) {
+
+     .sponsor-impact-grid {
+         grid-template-columns:
+             repeat(auto-fit, minmax(180px, 1fr));
+     }
+
+     .sponsor-impact-stat h3 {
+         font-size: 3rem;
+     }
+ }

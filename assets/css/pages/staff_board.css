@@ -1,0 +1,1141 @@
+/*==========================================
+    STAFF & BOARD HERO
+==========================================*/
+
+.staff-hero {
+
+    min-height: 240px;
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, .58),
+            rgba(0, 0, 0, .58)),
+        url("../../../images/AC4TA-Horizontal-Sign-Night.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: var(--white);
+
+}
+
+
+/* HERO CONTENT */
+
+.staff-hero .hero-content {
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 5rem 0;
+
+    text-align: center;
+
+    animation: fadeUp .9s ease-out both;
+
+}
+
+
+/* SECTION TAG */
+
+.staff-hero .section-tag {
+
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+}
+
+
+/* HEADING */
+
+.staff-hero h1 {
+
+    margin-bottom: 1.25rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2.5rem, 5vw, 4rem);
+
+    line-height: 1.1;
+
+    color: var(--white);
+
+}
+
+
+/* DESCRIPTION */
+
+.staff-hero p {
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    color: rgba(255, 255, 255, .88);
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+
+}
+
+
+/*==========================================
+    FADE-UP ANIMATION
+==========================================*/
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/*==========================================
+    RESPONSIVE
+==========================================*/
+
+@media (max-width: 768px) {
+
+    .staff-hero {
+
+        min-height: 45vh;
+
+    }
+
+    .staff-hero .hero-content {
+
+        padding: 4rem 1rem;
+
+    }
+
+    .staff-hero p {
+
+        font-size: 1rem;
+
+    }
+
+}
+
+/*==========================================
+    STAFF INTRODUCTION
+==========================================*/
+
+.staff-intro {
+
+    padding: 3rem 0;
+
+    background: var(--white);
+
+}
+
+
+/* SECTION HEADING */
+
+.staff-intro .section-heading {
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+
+/* SECTION TAG */
+
+.staff-intro .section-tag {
+
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+}
+
+
+/* HEADING */
+
+.staff-intro h2 {
+
+    max-width: 800px;
+
+    margin: 0 auto 1.5rem;
+
+    font-family: var(--font-heading);
+
+    color: var(--accent);
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    line-height: 1.2;
+
+}
+
+
+/* DESCRIPTION */
+
+.staff-intro p {
+
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    color: var(--muted);
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+
+}
+
+
+/*==========================================
+    RESPONSIVE
+==========================================*/
+
+@media (max-width: 768px) {
+
+    .staff-intro {
+
+        padding: 4.5rem 0;
+
+    }
+
+    .staff-intro h2 {
+
+        font-size: clamp(1.9rem, 7vw, 2.5rem);
+
+    }
+
+    .staff-intro p {
+
+        font-size: 1rem;
+
+    }
+
+}
+
+/*==========================================
+    EXECUTIVE LEADERSHIP
+==========================================*/
+
+.staff-leadership {
+
+    padding: 3rem 0;
+
+    background: var(--bg-light);
+
+}
+
+
+/* SECTION HEADING */
+
+.staff-leadership .section-heading {
+
+    max-width: 800px;
+
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+
+}
+
+
+/* LEADERSHIP CARD */
+
+.leadership-card {
+
+    display: grid;
+
+    grid-template-columns: 360px 1fr;
+
+    align-items: stretch;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    background: var(--white);
+
+    border-radius: 28px;
+
+    overflow: hidden;
+
+    box-shadow: 0 18px 50px rgba(0, 0, 0, .09);
+
+}
+
+
+/* PHOTO */
+
+.leadership-photo {
+
+    min-height: 430px;
+
+    overflow: hidden;
+
+}
+
+
+.leadership-photo img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center top;
+
+    transition: transform .5s ease;
+
+}
+
+
+/* PHOTO HOVER */
+
+.leadership-card:hover .leadership-photo img {
+
+    transform: scale(1.03);
+
+}
+
+
+/* CONTENT */
+
+.leadership-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 3.5rem;
+
+}
+
+
+/* POSITION */
+
+.staff-position {
+
+    display: inline-block;
+
+    margin-bottom: .75rem;
+
+    color: var(--gold);
+
+    font-size: .9rem;
+
+    font-weight: 700;
+
+    letter-spacing: .08em;
+
+    text-transform: uppercase;
+
+}
+
+
+/* NAME */
+
+.leadership-content h3 {
+
+    margin-bottom: 1.25rem;
+
+    font-family: var(--font-heading);
+
+    color: var(--accent);
+
+    font-size: clamp(2rem, 4vw, 2.8rem);
+
+    line-height: 1.15;
+
+}
+
+
+/* DESCRIPTION */
+
+.leadership-content p {
+
+    max-width: 550px;
+
+    margin-bottom: 2rem;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+}
+
+
+/* BUTTON */
+
+.leadership-content .btn {
+
+    align-self: flex-start;
+
+}
+
+
+/* GOLD ACCENT */
+
+.leadership-content::before {
+
+    content: "";
+
+    width: 65px;
+
+    height: 4px;
+
+    margin-bottom: 1.5rem;
+
+    background: var(--gold);
+
+    border-radius: 2px;
+
+}
+
+
+/*==========================================
+    RESPONSIVE
+==========================================*/
+
+@media (max-width: 800px) {
+
+    .staff-leadership {
+
+        padding: 4.5rem 0;
+
+    }
+
+    .leadership-card {
+
+        grid-template-columns: 1fr;
+
+        max-width: 650px;
+
+    }
+
+    .leadership-photo {
+
+        height: 400px;
+
+        min-height: 0;
+
+    }
+
+    .leadership-content {
+
+        padding: 3rem 2rem;
+
+        text-align: center;
+
+        align-items: center;
+
+    }
+
+    .leadership-content p {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+    .leadership-content .btn {
+
+        align-self: center;
+
+    }
+
+    .leadership-content::before {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .leadership-photo {
+
+        height: 330px;
+
+    }
+
+    .leadership-content {
+
+        padding: 2.5rem 1.5rem;
+
+    }
+
+}
+
+/*==========================================
+    STAFF DIRECTORY
+==========================================*/
+
+.staff-directory {
+
+    padding: 3rem 0;
+
+    background: var(--white);
+
+}
+
+
+/* SECTION HEADING */
+
+.staff-directory .section-heading {
+
+    max-width: 800px;
+
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+
+}
+
+
+/* STAFF GRID */
+
+.staff-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 2rem;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+}
+
+
+/* STAFF CARD */
+
+.staff-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: var(--white);
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+
+/* STAFF IMAGE */
+
+.staff-card>img {
+
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    object-position: center top;
+
+}
+
+
+/* CARD CONTENT */
+
+.staff-card-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+    padding: 2rem;
+
+    text-align: center;
+
+}
+
+
+/* POSITION */
+
+.staff-card .staff-position {
+
+    display: block;
+
+    margin-bottom: .75rem;
+
+    color: var(--gold);
+
+    font-size: .82rem;
+
+    font-weight: 700;
+
+    letter-spacing: .06em;
+
+    line-height: 1.4;
+
+    text-transform: uppercase;
+
+}
+
+
+/* NAME */
+
+.staff-card h3 {
+
+    margin-bottom: 1rem;
+
+    font-family: var(--font-heading);
+
+    color: var(--accent);
+
+    font-size: 1.7rem;
+
+    line-height: 1.2;
+
+}
+
+
+/* DESCRIPTION */
+
+.staff-card p {
+
+    margin: 0 auto;
+
+    max-width: 300px;
+
+    color: var(--muted);
+
+    line-height: 1.7;
+
+}
+
+
+/* GOLD ACCENT */
+
+.staff-card-content::before {
+
+    content: "";
+
+    display: block;
+
+    width: 50px;
+
+    height: 4px;
+
+    margin: 0 auto 1.25rem;
+
+    background: var(--gold);
+
+    border-radius: 2px;
+
+}
+
+
+/* HOVER */
+
+.staff-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 24px 55px rgba(0, 0, 0, .12);
+
+}
+
+
+/* IMAGE HOVER */
+
+.staff-card>img {
+
+    transition: transform .5s ease;
+
+}
+
+.staff-card:hover>img {
+
+    transform: scale(1.03);
+
+}
+
+
+/*==========================================
+    RESPONSIVE
+==========================================*/
+
+@media (max-width: 900px) {
+
+    .staff-grid {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .staff-directory {
+
+        padding: 4.5rem 0;
+
+    }
+
+    .staff-grid {
+
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+
+    }
+
+    .staff-card-content {
+
+        padding: 1.75rem;
+
+    }
+
+}
+
+/*==========================================
+    BOARD OF DIRECTORS
+==========================================*/
+
+.board-section {
+
+    padding: 3rem 0;
+
+    background: var(--bg-light);
+
+}
+
+
+/* SECTION HEADING */
+
+.board-section .section-heading {
+
+    max-width: 800px;
+
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+
+}
+
+.board-section .section-heading p {
+
+    max-width: 700px;
+
+    margin: 1rem auto 0;
+
+}
+
+
+/*==========================================
+    BOARD PHOTO
+==========================================*/
+
+.board-photo {
+
+    width: 100%;
+
+    max-width: 950px;
+
+    margin: 0 auto 4rem;
+
+    border-radius: 28px;
+
+    overflow: hidden;
+
+    box-shadow: 0 12px 32px rgba(0, 0, 0, .08);
+
+}
+
+.board-photo img {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: cover;
+
+}
+
+
+/* BOARD GRID */
+
+.board-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 1.5rem;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+}
+
+
+/* BOARD CARD */
+
+.board-card {
+
+    position: relative;
+
+    padding: 2rem 1.5rem;
+
+    background: var(--white);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 12px 32px rgba(0, 0, 0, .07);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+
+/* GOLD ACCENT */
+
+.board-card::before {
+
+    content: "";
+
+    display: block;
+
+    width: 45px;
+
+    height: 3px;
+
+    margin: 0 auto 1.25rem;
+
+    background: var(--gold);
+
+    border-radius: 2px;
+
+}
+
+
+/* NAME */
+
+.board-card h3 {
+
+    margin: 0;
+
+    font-family: var(--font-heading);
+
+    color: var(--accent);
+
+    font-size: 1.35rem;
+
+    line-height: 1.25;
+
+}
+
+
+/* POSITION */
+
+.board-card p {
+
+    margin: .6rem 0 0;
+
+    color: var(--gold);
+
+    font-size: .85rem;
+
+    font-weight: 700;
+
+    letter-spacing: .06em;
+
+    text-transform: uppercase;
+
+}
+
+
+/* HOVER */
+
+.board-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 20px 42px rgba(0, 0, 0, .10);
+
+}
+
+
+/*==========================================
+    OFFICER CARDS
+==========================================*/
+
+.board-card:has(p) {
+
+    border: 1px solid rgba(200, 169, 107, .35);
+
+}
+
+
+/*==========================================
+    RESPONSIVE
+==========================================*/
+
+@media (max-width: 850px) {
+
+    .board-photo {
+
+        max-width: 750px;
+
+        margin-bottom: 3rem;
+
+    }
+
+    .board-grid {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        max-width: 750px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .board-section {
+
+        padding: 4.5rem 0;
+
+    }
+
+    .board-photo {
+
+        margin-bottom: 2.5rem;
+
+        border-radius: 20px;
+
+    }
+
+    .board-grid {
+
+        grid-template-columns: 1fr;
+
+        max-width: 450px;
+
+    }
+
+    .board-card {
+
+        padding: 1.75rem 1.5rem;
+
+    }
+
+}
+
+/*==========================================
+    STAFF CONTACT CTA
+==========================================*/
+
+.staff-contact-cta {
+
+    padding: 3rem 0;
+
+    background: var(--white);
+
+}
+
+
+/* CTA CARD */
+
+.staff-contact-cta-content {
+
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    padding: 4.5rem 3rem;
+
+    background: var(--bg-dark);
+
+    border-radius: 28px;
+
+    text-align: center;
+
+    box-shadow: 0 18px 50px rgba(0, 0, 0, .10);
+
+    position: relative;
+
+}
+
+
+/* GOLD ACCENT */
+
+.staff-contact-cta-content::before {
+
+    content: "";
+
+    display: block;
+
+    width: 70px;
+
+    height: 4px;
+
+    margin: 0 auto 1.75rem;
+
+    background: var(--gold);
+
+    border-radius: 2px;
+
+}
+
+
+/* SECTION TAG */
+
+.staff-contact-cta .section-tag {
+
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+}
+
+
+/* HEADING */
+
+.staff-contact-cta h2 {
+
+    margin-bottom: 1.25rem;
+
+    font-family: var(--font-heading);
+
+    color: var(--white);
+
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+
+    line-height: 1.15;
+
+}
+
+
+/* DESCRIPTION */
+
+.staff-contact-cta p {
+
+    max-width: 680px;
+
+    margin: 0 auto;
+
+    color: rgba(255, 255, 255, .78);
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+
+}
+
+
+/* BUTTON GROUP */
+
+.staff-contact-actions {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    margin-top: 2rem;
+
+}
+
+
+/*==========================================
+    RESPONSIVE
+==========================================*/
+
+@media (max-width: 600px) {
+
+    .staff-contact-cta {
+
+        padding: 4.5rem 0;
+
+    }
+
+    .staff-contact-cta-content {
+
+        padding: 3.5rem 1.5rem;
+
+        border-radius: 22px;
+
+    }
+
+    .staff-contact-actions {
+
+        flex-direction: column;
+
+    }
+
+    .staff-contact-actions .btn {
+
+        width: 100%;
+
+        max-width: 280px;
+
+    }
+
+}

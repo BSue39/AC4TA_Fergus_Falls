@@ -1,0 +1,1801 @@
+/* =========================================================
+   GIFT CERTIFICATES HERO SECTION
+   ========================================================= */
+
+.gift-hero {
+    position: relative;
+
+    min-height: 48vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 3.75rem 2rem;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.62),
+            rgba(0, 0, 0, 0.62)),
+        url("../../../images/AC4TA-Horizontal-Sign-Night.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: var(--white);
+
+    overflow: hidden;
+}
+
+
+/* HERO CONTENT */
+
+.gift-hero-content {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* SECTION TAG */
+
+.gift-hero .section-tag {
+    display: inline-block;
+
+    margin-bottom: 1.25rem;
+
+    padding: 0.45rem 1rem;
+
+    border: 1px solid rgba(200, 169, 107, 0.55);
+
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    color: var(--gold);
+
+    font-size: 0.72rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.14em;
+
+    text-transform: uppercase;
+}
+
+
+/* HERO HEADING */
+
+.gift-hero h1 {
+
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: 0 auto 1.25rem;
+
+    padding: 0 2rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2.3rem, 4.2vw, 3.8rem);
+
+    font-weight: 600;
+
+    line-height: 1.08;
+
+    color: var(--white);
+
+    text-align: center;
+
+    white-space: nowrap;
+
+}
+
+
+/* HERO DESCRIPTION */
+
+.gift-hero p {
+    max-width: 680px;
+
+    margin: 0 auto 2rem;
+
+    font-size: 1.05rem;
+
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.84);
+}
+
+
+/* HERO BUTTONS */
+
+.gift-hero .hero-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    flex-wrap: wrap;
+}
+
+
+/* Primary Button */
+
+.gift-hero .btn-primary {
+    background: var(--accent);
+
+    color: var(--white);
+
+    border: 1px solid var(--accent);
+}
+
+
+/* Primary Hover */
+
+.gift-hero .btn-primary:hover {
+    background: var(--gold);
+
+    color: var(--text);
+
+    border-color: var(--gold);
+}
+
+
+/* Secondary Button */
+
+.gift-hero .hero-buttons .btn:not(.btn-primary) {
+    background: transparent;
+
+    color: var(--white);
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+
+/* Secondary Hover */
+
+.gift-hero .hero-buttons .btn:not(.btn-primary):hover {
+    background: var(--white);
+
+    color: var(--text);
+
+    border-color: var(--white);
+}
+
+
+/* =========================================================
+   FADE-IN ANIMATION
+   ========================================================= */
+
+@keyframes giftHeroFadeUp {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Tag */
+
+.gift-hero .section-tag {
+    opacity: 0;
+
+    animation:
+        giftHeroFadeUp 0.7s ease forwards;
+
+    animation-delay: 0.15s;
+}
+
+
+/* Heading */
+
+.gift-hero h1 {
+    opacity: 0;
+
+    animation:
+        giftHeroFadeUp 0.8s ease forwards;
+
+    animation-delay: 0.3s;
+}
+
+
+/* Paragraph */
+
+.gift-hero p {
+    opacity: 0;
+
+    animation:
+        giftHeroFadeUp 0.8s ease forwards;
+
+    animation-delay: 0.45s;
+}
+
+
+/* Buttons */
+
+.gift-hero .hero-buttons {
+    opacity: 0;
+
+    animation:
+        giftHeroFadeUp 0.8s ease forwards;
+
+    animation-delay: 0.6s;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .gift-hero {
+        min-height: 46vh;
+
+        padding: 4rem 1.5rem;
+    }
+
+    .gift-hero h1 {
+        font-size: clamp(2.3rem, 7vw, 3.4rem);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .gift-hero {
+        min-height: auto;
+
+        padding: 4.5rem 1.25rem;
+    }
+
+    .gift-hero h1 {
+        font-size: 2.35rem;
+    }
+
+    .gift-hero p {
+        font-size: 0.95rem;
+    }
+
+    .gift-hero .hero-buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .gift-hero .hero-buttons .btn {
+        width: 100%;
+
+        max-width: 300px;
+
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .gift-hero .section-tag,
+    .gift-hero h1,
+    .gift-hero p,
+    .gift-hero .hero-buttons {
+        opacity: 1;
+
+        animation: none;
+    }
+
+}
+
+
+/* =========================================================
+   GIFT CERTIFICATE BENEFITS SECTION
+   ========================================================= */
+
+.gift-benefits {
+    padding: 3.5rem 2rem;
+
+    background: var(--white);
+
+    color: var(--text);
+}
+
+
+/* GIFT GRID */
+
+.gift-benefits .gift-grid {
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: 5rem;
+}
+
+
+/* ]IMAGE */
+
+.gift-benefits .gift-image {
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+
+.gift-benefits .gift-image img {
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 4 / 3;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.6s ease;
+}
+
+
+.gift-benefits .gift-image:hover img {
+    transform: scale(1.03);
+}
+
+
+/* CONTENT */
+
+.gift-benefits .gift-content {
+    max-width: 550px;
+}
+
+
+/* SECTION TAG */
+
+.gift-benefits .section-tag {
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    color: var(--accent);
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.14em;
+
+    text-transform: uppercase;
+}
+
+
+/* HEADING */
+
+.gift-benefits .gift-content h2 {
+    margin: 0 0 1.25rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* DESCRIPTION */
+
+.gift-benefits .gift-content>p {
+    margin: 0 0 1.75rem;
+
+    font-size: 1rem;
+
+    line-height: 1.75;
+
+    color: var(--muted);
+}
+
+
+/* OCCASION LIST */
+
+.gift-benefits .gift-content ul {
+    list-style: none;
+
+    margin: 0 0 2rem;
+
+    padding: 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 0.75rem 1.5rem;
+}
+
+
+.gift-benefits .gift-content li {
+    position: relative;
+
+    padding-left: 1.5rem;
+
+    font-size: 0.95rem;
+
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    color: var(--text);
+}
+
+
+/* Gold check/accent */
+
+.gift-benefits .gift-content li::before {
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    color: var(--gold);
+
+    font-size: 1rem;
+
+    font-weight: 700;
+}
+
+
+/* BUTTON */
+
+.gift-benefits .btn-primary {
+    display: inline-block;
+
+    background: var(--accent);
+
+    color: var(--white);
+
+    border: 1px solid var(--accent);
+}
+
+
+.gift-benefits .btn-primary:hover {
+    background: var(--gold);
+
+    color: var(--text);
+
+    border-color: var(--gold);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .gift-benefits {
+        padding: 5.5rem 1.5rem;
+    }
+
+    .gift-benefits .gift-grid {
+        gap: 3.5rem;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .gift-benefits {
+        padding: 4.5rem 1.25rem;
+    }
+
+    .gift-benefits .gift-grid {
+        grid-template-columns: 1fr;
+
+        gap: 3rem;
+    }
+
+    .gift-benefits .gift-content {
+        max-width: none;
+    }
+
+    .gift-benefits .gift-content ul {
+        grid-template-columns: 1fr;
+    }
+
+    .gift-benefits .gift-image {
+        order: 1;
+    }
+
+    .gift-benefits .gift-content {
+        order: 2;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .gift-benefits .gift-image img {
+        transition: none;
+    }
+
+}
+
+
+/* =========================================================
+   GIFT CERTIFICATE VALUES SECTION
+   ========================================================= */
+
+.certificate-values {
+    padding: 3.5rem 2rem;
+
+    background: var(--bg-light);
+
+    color: var(--text);
+}
+
+
+/* SECTION HEADING */
+
+.certificate-values .section-heading {
+    max-width: 750px;
+
+    margin: 0 auto 3rem;
+
+    text-align: center;
+}
+
+.certificate-values .section-heading h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2rem, 4vw, 2.75rem);
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* CERTIFICATE GRID */
+
+.certificate-values .certificate-grid {
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    align-items: stretch;
+
+    gap: 1.5rem;
+}
+
+
+/* CERTIFICATE CARD */
+
+.certificate-values .certificate-card {
+    position: relative;
+
+    padding: 2.5rem 1.75rem;
+
+    text-align: center;
+
+    background: var(--white);
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* GOLD ACCENT BAR */
+
+.certificate-values .certificate-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 45px;
+    height: 3px;
+
+    transform: translateX(-50%);
+
+    background: var(--gold);
+
+    transition: width 0.35s ease;
+}
+
+
+/* CARD HOVER */
+
+.certificate-values .certificate-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(200, 169, 107, 0.45);
+
+    box-shadow:
+        0 15px 32px rgba(0, 0, 0, 0.1);
+}
+
+
+.certificate-values .certificate-card:hover::before {
+    width: 90px;
+}
+
+
+/* GIFT CERTIFICATE VALUE */
+
+.certificate-values .certificate-card h3 {
+    margin: 0 0 0.75rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    color: var(--accent);
+}
+
+
+/* DESCRIPTION */
+
+.certificate-values .certificate-card p {
+    max-width: 220px;
+
+    margin: 0 auto;
+
+    font-size: 0.95rem;
+
+    line-height: 1.6;
+
+    color: var(--muted);
+}
+
+
+/* FEATURED CARD */
+
+.certificate-values .certificate-card.featured {
+    transform: translateY(-10px);
+
+    border: 2px solid var(--gold);
+
+    box-shadow:
+        0 18px 38px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Featured accent */
+
+.certificate-values .certificate-card.featured::before {
+    width: 75px;
+}
+
+
+/* Featured hover */
+
+.certificate-values .certificate-card.featured:hover {
+    transform: translateY(-16px);
+
+    box-shadow:
+        0 22px 42px rgba(0, 0, 0, 0.14);
+}
+
+
+.certificate-values .certificate-card.featured:hover::before {
+    width: 120px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .certificate-values {
+        padding: 5.5rem 1.5rem;
+    }
+
+    .certificate-values .certificate-grid {
+        gap: 1rem;
+    }
+
+    .certificate-values .certificate-card {
+        padding: 2.25rem 1.25rem;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .certificate-values {
+        padding: 4.5rem 1.25rem;
+    }
+
+    .certificate-values .certificate-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 400px;
+    }
+
+    .certificate-values .certificate-card.featured {
+        transform: none;
+
+        order: -1;
+    }
+
+    .certificate-values .certificate-card.featured:hover {
+        transform: translateY(-6px);
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .certificate-values .certificate-card,
+    .certificate-values .certificate-card::before {
+        transition: none;
+    }
+
+    .certificate-values .certificate-card:hover,
+    .certificate-values .certificate-card.featured:hover {
+        transform: none;
+    }
+
+}
+
+
+/* =========================================================
+   MERCHANDISE SHOWCASE SECTION
+   ========================================================= */
+
+.merchandise-showcase {
+    padding: 3.5rem 2rem;
+
+    background: var(--white);
+
+    color: var(--text);
+}
+
+
+/* SECTION HEADING */
+
+.merchandise-showcase .section-heading {
+    max-width: 700px;
+
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+
+.merchandise-showcase .section-tag {
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    color: var(--accent);
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.14em;
+
+    text-transform: uppercase;
+}
+
+
+.merchandise-showcase .section-heading h2 {
+    margin: 0 0 1rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2rem, 4vw, 2.75rem);
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+.merchandise-showcase .section-heading p {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    color: var(--muted);
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+}
+
+
+/* MERCHANDISE GRID */
+
+.merchandise-showcase .merch-grid {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.75rem;
+}
+
+
+/* MERCHANDISE CARD */
+
+.merchandise-showcase .merch-card {
+    position: relative;
+
+    overflow: hidden;
+
+    background: var(--white);
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* GOLD ACCENT BAR */
+
+.merchandise-showcase .merch-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 45px;
+    height: 3px;
+
+    transform: translateX(-50%);
+
+    background: var(--gold);
+
+    transition: width 0.35s ease;
+
+    z-index: 2;
+}
+
+
+/* CARD HOVER */
+
+.merchandise-showcase .merch-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(200, 169, 107, 0.45);
+
+    box-shadow:
+        0 16px 34px rgba(0, 0, 0, 0.1);
+}
+
+
+.merchandise-showcase .merch-card:hover::before {
+    width: 90px;
+}
+
+
+/* MERCHANDISE IMAGE */
+
+.merchandise-showcase .merch-image {
+    overflow: hidden;
+
+    background: var(--bg-light);
+}
+
+
+.merchandise-showcase .merch-image img {
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 4 / 3;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+
+.merchandise-showcase .merch-card:hover .merch-image img {
+    transform: scale(1.04);
+}
+
+
+/* MERCHANDISE CONTENT */
+
+.merchandise-showcase .merch-content {
+    padding: 1.75rem 1.5rem 2rem;
+
+    text-align: center;
+}
+
+
+.merchandise-showcase .merch-content h3 {
+    margin: 0 0 0.65rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.45rem;
+
+    font-weight: 600;
+
+    line-height: 1.25;
+
+    color: var(--text);
+}
+
+
+.merchandise-showcase .merch-content p {
+    max-width: 250px;
+
+    min-height: 3.2rem;
+
+    margin: 0 auto 1.25rem;
+
+    color: var(--muted);
+
+    font-size: 0.95rem;
+
+    line-height: 1.6;
+}
+
+
+/* PRICE */
+
+.merchandise-showcase .merch-price {
+    display: inline-block;
+
+    color: var(--accent);
+
+    font-size: 1.15rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.02em;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .merchandise-showcase {
+        padding: 5.5rem 1.5rem;
+    }
+
+    .merchandise-showcase .merch-grid {
+        gap: 1.25rem;
+    }
+
+    .merchandise-showcase .merch-content {
+        padding: 1.5rem 1.25rem 1.75rem;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .merchandise-showcase {
+        padding: 4.5rem 1.25rem;
+    }
+
+    .merchandise-showcase .merch-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 400px;
+    }
+
+    .merchandise-showcase .merch-content p {
+        min-height: auto;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .merchandise-showcase .merch-card,
+    .merchandise-showcase .merch-card::before,
+    .merchandise-showcase .merch-image img {
+        transition: none;
+    }
+
+    .merchandise-showcase .merch-card:hover {
+        transform: none;
+    }
+
+}
+
+
+/* =========================================================
+   SEASONAL MERCHANDISE SECTION
+   ========================================================= */
+
+.seasonal-merch {
+    padding: 3.5rem 2rem;
+
+    background: var(--bg-light);
+}
+
+
+/* SEASONAL FEATURE BOX */
+
+.seasonal-merch .seasonal-box {
+    position: relative;
+
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    padding: 4.5rem 3rem;
+
+    text-align: center;
+
+    background:
+        linear-gradient(135deg,
+            var(--accent),
+            #5f1822);
+
+    color: var(--white);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* GOLD ACCENT BAR */
+
+.seasonal-merch .seasonal-box::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 70px;
+    height: 4px;
+
+    transform: translateX(-50%);
+
+    background: var(--gold);
+
+    transition: width 0.4s ease;
+}
+
+
+.seasonal-merch .seasonal-box:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 22px 45px rgba(0, 0, 0, 0.18);
+}
+
+
+.seasonal-merch .seasonal-box:hover::before {
+    width: 140px;
+}
+
+
+/* SECTION TAG */
+
+.seasonal-merch .section-tag {
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    color: var(--gold);
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.15em;
+
+    text-transform: uppercase;
+}
+
+
+/* HEADING */
+
+.seasonal-merch .seasonal-box h2 {
+    max-width: 650px;
+
+    margin: 0 auto 1rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2rem, 4vw, 2.75rem);
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    color: var(--white);
+}
+
+
+/* DESCRIPTION */
+
+.seasonal-merch .seasonal-box p {
+    max-width: 600px;
+
+    margin: 0 auto 2rem;
+
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 1rem;
+
+    line-height: 1.75;
+}
+
+
+/* BUTTON */
+
+.seasonal-merch .btn-primary {
+    display: inline-block;
+
+    background: var(--white);
+
+    color: var(--accent);
+
+    border: 1px solid var(--white);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+.seasonal-merch .btn-primary:hover {
+    background: var(--gold);
+
+    color: var(--text);
+
+    border-color: var(--gold);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .seasonal-merch {
+        padding: 5rem 1.5rem;
+    }
+
+    .seasonal-merch .seasonal-box {
+        padding: 4rem 2.5rem;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .seasonal-merch {
+        padding: 4rem 1.25rem;
+    }
+
+    .seasonal-merch .seasonal-box {
+        padding: 3.5rem 1.5rem;
+
+        border-radius: 8px;
+    }
+
+    .seasonal-merch .seasonal-box p {
+        font-size: 0.95rem;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .seasonal-merch .seasonal-box,
+    .seasonal-merch .seasonal-box::before,
+    .seasonal-merch .btn-primary {
+        transition: none;
+    }
+
+    .seasonal-merch .seasonal-box:hover,
+    .seasonal-merch .btn-primary:hover {
+        transform: none;
+    }
+
+}
+
+
+/* =========================================================
+   PURCHASE OPTIONS SECTION
+   ========================================================= */
+
+.purchase-options {
+    padding: 3.5rem 2rem;
+
+    background: var(--white);
+
+    color: var(--text);
+}
+
+
+/* SECTION HEADING */
+
+.purchase-options .section-heading {
+    max-width: 700px;
+
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+
+.purchase-options .section-tag {
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    color: var(--accent);
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.14em;
+
+    text-transform: uppercase;
+}
+
+
+.purchase-options .section-heading h2 {
+    margin: 0 0 1rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2rem, 4vw, 2.75rem);
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+.purchase-options .section-heading p {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    color: var(--muted);
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+}
+
+
+/* PURCHASE GRID */
+
+.purchase-options .purchase-grid {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.75rem;
+}
+
+
+/* PURCHASE CARD */
+
+.purchase-options .purchase-card {
+    position: relative;
+
+    padding: 2rem 1.75rem 2.25rem;
+
+    background: var(--bg-light);
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* GOLD ACCENT */
+
+.purchase-options .purchase-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 45px;
+    height: 3px;
+
+    transform: translateX(-50%);
+
+    background: var(--gold);
+
+    transition: width 0.35s ease;
+}
+
+
+.purchase-options .purchase-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(200, 169, 107, 0.45);
+
+    box-shadow:
+        0 16px 32px rgba(0, 0, 0, 0.09);
+}
+
+
+.purchase-options .purchase-card:hover::before {
+    width: 90px;
+}
+
+
+/* CARD HEADING */
+
+.purchase-options .purchase-card h3 {
+    margin: 0 0 0.85rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.4rem;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    color: var(--text);
+}
+
+
+/* CARD DESCRIPTION */
+
+.purchase-options .purchase-card p {
+    max-width: 300px;
+
+    min-height: 4.8rem;
+
+    margin: 0 auto 1.25rem;
+
+    color: var(--muted);
+
+    font-size: 0.95rem;
+
+    line-height: 1.65;
+}
+
+
+/* CARD DETAIL */
+
+.purchase-options .purchase-card>span {
+    display: block;
+
+    color: var(--accent);
+
+    font-size: 0.85rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.02em;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .purchase-options {
+        padding: 5.5rem 1.5rem;
+    }
+
+    .purchase-options .purchase-grid {
+        gap: 1.25rem;
+    }
+
+    .purchase-options .purchase-card {
+        padding: 1.75rem 1.25rem 2rem;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .purchase-options {
+        padding: 4.5rem 1.25rem;
+    }
+
+    .purchase-options .purchase-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 400px;
+    }
+
+    .purchase-options .purchase-card p {
+        min-height: auto;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .purchase-options .purchase-card,
+    .purchase-options .purchase-card::before {
+        transition: none;
+    }
+
+    .purchase-options .purchase-card:hover {
+        transform: none;
+    }
+
+}
+
+
+/* =========================================================
+   SUPPORT THE ARTS CTA
+   ========================================================= */
+
+.support-arts-cta {
+    padding: 5.5rem 2rem;
+
+    background: var(--bg-light);
+
+    color: var(--text);
+}
+
+
+/* =========================================================
+   CTA CARD
+   ========================================================= */
+
+.support-arts-content {
+    position: relative;
+
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    padding: 4rem 3rem;
+
+    text-align: center;
+
+    background: var(--white);
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 14px 35px rgba(0, 0, 0, 0.08);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.support-arts-content:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 20px 42px rgba(0, 0, 0, 0.11);
+}
+
+
+/* =========================================================
+   GOLD ACCENT BAR
+   ========================================================= */
+
+.support-arts-content::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 70px;
+    height: 4px;
+
+    transform: translateX(-50%);
+
+    background: var(--gold);
+
+    transition: width 0.35s ease;
+}
+
+
+.support-arts-content:hover::before {
+    width: 140px;
+}
+
+
+/* =========================================================
+   SECTION TAG
+   ========================================================= */
+
+.support-arts-content .section-tag {
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    color: var(--accent);
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.15em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.support-arts-content h2 {
+    max-width: 700px;
+
+    margin: 0 auto 1.25rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2rem, 4vw, 2.75rem);
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.support-arts-content p {
+    max-width: 680px;
+
+    margin: 0 auto 2rem;
+
+    color: var(--muted);
+
+    font-size: 1rem;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.support-arts-content .btn-primary {
+    display: inline-block;
+
+    background: var(--accent);
+
+    color: var(--white);
+
+    border: 1px solid var(--accent);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.1);
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.support-arts-content .btn-primary:hover {
+    background: var(--gold);
+
+    color: var(--text);
+
+    border-color: var(--gold);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.14);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .support-arts-cta {
+        padding: 4rem 1.25rem;
+    }
+
+    .support-arts-content {
+        padding: 3.25rem 1.5rem;
+    }
+
+    .support-arts-content p {
+        font-size: 0.95rem;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .support-arts-content,
+    .support-arts-content::before,
+    .support-arts-content .btn-primary {
+        transition: none;
+    }
+
+    .support-arts-content:hover {
+        transform: none;
+    }
+
+}

@@ -1,0 +1,175 @@
+/** CAROUSEL WRAPPER **/
+.events-shell {
+    border-radius: 32px;
+    overflow: hidden;
+    padding-top: 0;
+}
+
+/* Wrapper for carousel and controls */
+.events-wrapper {
+    position: relative;
+}
+
+.events-track {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+    padding: 1rem 4rem;
+}
+
+.events-track::-webkit-scrollbar {
+    display: none;
+}
+
+/* Prevents carousel from bleeding outsides its container */
+.events-viewport {
+    overflow: hidden;
+    width: 100%;
+}
+
+.tag {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--white);
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.event-meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.event-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+}
+
+/** EVENT CARDS **/
+.event-card {
+    transition: transform 0.45s ease, opacity 0.45s ease, filter 0.45s ease;
+    filter: blur(2px) brightness(0.85);
+    transform: scale(0.92);
+    opacity: 0.5;
+    flex: 0 0 320px;
+    height: 420px;
+    /* fixed height for consistent layout */
+
+    /* prevents vertical jitter */
+
+    scroll-snap-align: center;
+
+    background: var(--white);
+    border-radius: 24px;
+
+    overflow: hidden;
+}
+
+/* Image Fix for Event Cards */
+.event-image {
+    height: 48%;
+    overflow: hidden;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Content section of event cards */
+.event-content {
+    padding: 1rem;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* active center styling */
+.event-card.active-center {
+    filter: blur(0);
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.18);
+}
+
+/* Side cards slightly clearer than before */
+.event-card:not(.active-center) {
+    transform: scale(0.92);
+    opacity: 0.6;
+    filter: blur(1.5px) brightness(0.9);
+}
+
+/** CAROUSEL CONTROLS **/
+/* Arrow Buttons */
+.events-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 54px;
+    height: 54px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(18, 18, 18, 0.85);
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    transition: transform 0.25s ease, background 0.25s ease, opacity 0.25s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* LEFT */
+#eventsPrev {
+    left: -25px;
+}
+
+/* RIGHT */
+#eventsNext {
+    right: -25px;
+}
+
+
+/* Arrow Hover Effect */
+.events-btn:hover {
+    transform: translateY(-50%) scale(1.08);
+    background: var(--accent);
+}
+
+/* Active State for Arrows */
+.events-btn:active {
+    transform: scale(0.96);
+}
+
+/*** MOBILE ***/
+@media (max-width: 992px) {
+
+    .hero-grid,
+    .support-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-cards {
+        flex-direction: column;
+    }
+}

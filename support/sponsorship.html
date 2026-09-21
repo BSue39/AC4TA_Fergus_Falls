@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images\favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ Base ------>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/typography.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!------ Layout ------>
+    <link rel="stylesheet" href="../assets/css/layout/container.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/layout/footer.css">
+
+    <!------ Components ------>
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/section-heading.css">
+
+    <!------ Page ------>
+    <link rel="stylesheet" href="../assets/css/pages/sponsorship.css">
+
+    <!-- ==========================
+     RESPONSIVE
+========================== -->
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="../index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="../images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="../events/announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta">Calendar</a>
+                    <a href="membership_appeal.html">Membership Appeal</a>
+                    <a href="curtain_appeal.html">Curtain Appeal</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../events/featured_events.html">Featured Events</a>
+                    <a href="../events/list_events.html">List of Events</a>
+                    <a href="../events/ticket_policies.html">Ticketing Policies</a>
+                    <a href="../events/plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href="../about/mission_vision.html">Mission/Vision</a>
+                    <a href="../about/staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="../about/history.html">History <i
+                                class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="../about/history_building.html">Building</a>
+                            <a href="../about/history_organ.html">Theatre Organ</a>
+                            <a href="../about/history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="sponsorship.html">Sponsorship</a>
+                    <a href="membership.html">Membership</a>
+                    <a href="volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--Rentals-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="../rentals/rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="../rentals/rental_rates.html">Rental Rates</a>
+                            <a href="../rentals/rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="../rentals/bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates/Merchandise-->
+            <div class="nav-item">
+                <a class="dropbtn" href="../store/gift_certificates.html">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="../contact/contact_info.html">Address & Contact Information</a>
+                    <a href="../contact/box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="../contact/email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SPONSORSHIP HERO -->
+    <section class="sponsorship-hero">
+        <div class="container sponsorship-hero-content">
+
+            <span class="section-tag">Community Partnership</span>
+
+            <h1>Invest in the Arts. Invest in Our Community.</h1>
+
+            <p>
+                Sponsorship opportunities help bring world-class
+                entertainment, youth programming, and cultural
+                experiences to Fergus Falls while providing
+                meaningful visibility for your business.
+            </p>
+
+            <a href="../images/SponsorshipPacket.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                Explore Opportunities
+            </a>
+
+        </div>
+    </section>
+
+    <!-- COMMUNITY IMPACT -->
+    <section class="impact-showcase">
+
+        <div class="container">
+
+            <h2>Arts Impact Across West Central Minnesota</h2>
+
+            <div class="impact-grid">
+
+                <div class="impact-stat">
+                    <h3>12,000+</h3>
+                    <p>Annual Visitors</p>
+                </div>
+
+                <div class="impact-stat">
+                    <h3>150+</h3>
+                    <p>Performances & Events</p>
+                </div>
+
+                <div class="impact-stat">
+                    <h3>2,000+</h3>
+                    <p>Youth Participants</p>
+                </div>
+
+                <div class="impact-stat">
+                    <h3>40+</h3>
+                    <p>Community Partners</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CURRENT SPONSORS -->
+    <section class="sponsor-wall">
+
+        <div class="container">
+
+            <h2>Community Partners</h2>
+
+            <h3>Major Funding Provided By:</h3>
+
+            <div class="sponsor-tier featured-tier">
+
+                <a href="https://www.legacy.mn.gov/" target="_blank" rel="noopener">
+                    <img src="../images/Major Funding Sponsors/legacy-1-2000x3910-57-524x1024.jpg"
+                        alt="Clean Water Land and Legacy Amendment">
+                </a>
+
+
+                <a href="https://www.arts.state.mn.us/" target="_blank" rel="noopener">
+                    <img src="../images/Major Funding Sponsors/mnsab-1-2000x3228-85-634x1024.jpg"
+                        alt="Minnesota State Arts Board">
+                </a>
+
+
+                <a href="https://www.arts.gov/" target="_blank" rel="noopener">
+                    <img src="../images/Major Funding Sponsors/nea-1-768x954.gif" alt="National Endowment for the Arts">
+                </a>
+
+            </div>
+
+            <h3>Season Sponsors</h3>
+
+            <div class="sponsor-list">
+
+                <p>
+                    <strong>
+                        Center Series, Summer Outdoor Concert Series, Youth Theatre Program
+                        &amp; Summer Community Theatre sponsored in part by:
+                    </strong>
+                </p>
+
+                <ul class="sponsor-names">
+
+                    <li>
+                        <a href="https://victorlundeens.com/" target="_blank" rel="noopener">
+                            Victor Lundeen Company
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.countryinns.com/fergus-falls-hotel-mn-56537/usaffmn" target="_blank" rel="noopener">
+                            Country Inn and Suites
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.fergusfallsmn.gov/" target="_blank" rel="noopener">
+                            City of Fergus Falls
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.servicefood.com/" target="_blank" rel="noopener">
+                            Service Food / The Market
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.northernlakesdental.com/" target="_blank" rel="noopener">
+                            Northern Lakes Dental &amp; Implant Center
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="https://www.prudential.com/advisor/kurt-nygaard" target="_blank"
+                            rel="noopener">
+                            Prudential Advisors: Kurt Nygaard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.lrhc.org/" target="_blank" rel="noopener">
+                            Lake Region Healthcare
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://bell.bank/" target="_blank" rel="noopener">
+                            Bell Bank
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.anbmn.com/" target="_blank" rel="noopener">
+                            American National Bank
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.cornerstonecounters.com/" target="_blank" rel="noopener">
+                            Cornerstone Cabinets
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.visitfergusfalls.com/" target="_blank" rel="noopener">
+                            Visit Fergus Falls
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.americanfederalbank.com/" target="_blank" rel="noopener">
+                            American Federal Bank
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="https://www.mnmotorco.com/" target="_blank" rel="noopener">
+                            Minnesota Motor Company
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.qualitytoyota.net/" target="_blank" rel="noopener">
+                            Quality Toyota
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://otterriserskiwanis.org/" target="_blank" rel="noopener">
+                            Kiwanis Club of Otter Risers
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <a href="../images/SponsorshipPacket.pdf" class="btn btn-primary" download>
+                Download Sponsorship Packet
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- WHY SPONSOR AC4TA -->
+    <section class="why-sponsor">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Why Sponsor AC4TA?</h2>
+            </div>
+
+            <div class="sponsor-reasons">
+
+                <div class="reason-card">
+                    <i class="fa fa-users"></i>
+                    <h3>Reach Local Audiences</h3>
+                    <p>
+                        Connect with thousands of engaged
+                        patrons annually.
+                    </p>
+                </div>
+
+                <div class="reason-card">
+                    <i class="fa fa-graduation-cap"></i>
+                    <h3>Support Education</h3>
+                    <p>
+                        Help provide youth theatre and
+                        arts education opportunities.
+                    </p>
+                </div>
+
+                <div class="reason-card">
+                    <i class="fa fa-building"></i>
+                    <h3>Strengthen Community</h3>
+                    <p>
+                        Invest in cultural experiences that
+                        improve quality of life.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SPONSORSHIP OPPORTUNITIES -->
+    <section class="opportunities">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Sponsorship Opportunities</h2>
+            </div>
+
+            <div class="opportunity-grid">
+
+                <div class="opportunity-card">
+                    <h3>Mainstage Shows</h3>
+                    <p>
+                        Support nationally touring artists
+                        and major productions.
+                    </p>
+                </div>
+
+                <div class="opportunity-card">
+                    <h3>Youth Theatre</h3>
+                    <p>
+                        Help inspire the next generation
+                        of performers.
+                    </p>
+                </div>
+
+                <div class="opportunity-card">
+                    <h3>Concert Series</h3>
+                    <p>
+                        Align your brand with popular
+                        music programming.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FINAL CALL TO ACTION / SPONSORSHIP INQUIRY FORM -->
+    <section class="sponsor-cta" id="contact">
+
+        <div class="container">
+
+            <!-- SECTION INTRO -->
+            <div class="sponsor-cta-intro">
+
+                <span class="section-tag">
+                    Let's Work Together
+                </span>
+
+                <h2>
+                    Become a Community Partner
+                </h2>
+
+                <p>
+                    Interested in sponsoring A Center for the Arts?
+                    Complete the form below and we'll be in touch to discuss
+                    sponsorship opportunities that fit your business,
+                    organization, or goals.
+                </p>
+
+            </div>
+
+
+            <!-- SPONSORSHIP INQUIRY FORM -->
+            <form class="sponsorship-form">
+
+                <!-- NAME -->
+                <div class="form-group">
+
+                    <label for="sponsor-name">
+                        Name <span>*</span>
+                    </label>
+
+                    <input type="text" id="sponsor-name" name="name" required>
+
+                </div>
+
+
+                <!-- BUSINESS / ORGANIZATION -->
+                <div class="form-group">
+
+                    <label for="sponsor-business">
+                        Business / Organization
+                    </label>
+
+                    <input type="text" id="sponsor-business" name="business">
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div class="form-group">
+
+                    <label for="sponsor-email">
+                        Email <span>*</span>
+                    </label>
+
+                    <input type="email" id="sponsor-email" name="email" required>
+
+                </div>
+
+
+                <!-- PHONE NUMBER -->
+                <div class="form-group">
+
+                    <label for="sponsor-phone">
+                        Phone Number
+                    </label>
+
+                    <input type="tel" id="sponsor-phone" name="phone">
+
+                </div>
+
+
+                <!-- SPONSORSHIP INTEREST -->
+                <div class="form-group full-width">
+
+                    <label for="sponsorship-interest">
+                        Sponsorship Interest
+                    </label>
+
+                    <select id="sponsorship-interest" name="sponsorship_interest">
+
+                        <option value="">
+                            Select an option
+                        </option>
+
+                        <option value="mainstage-shows">
+                            Mainstage Shows
+                        </option>
+
+                        <option value="youth-theatre">
+                            Youth Theatre
+                        </option>
+
+                        <option value="concert-series">
+                            Concert Series
+                        </option>
+
+                        <option value="season-sponsorship">
+                            Season Sponsorship
+                        </option>
+
+                        <option value="general-information">
+                            General Sponsorship Information
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- MESSAGE -->
+                <div class="form-group full-width">
+
+                    <label for="sponsor-message">
+                        Message / Questions
+                    </label>
+
+                    <textarea id="sponsor-message" name="message" rows="6"
+                        placeholder="Tell us a little about your sponsorship interests or questions..."></textarea>
+
+                </div>
+
+
+                <!-- SUBMIT -->
+                <div class="form-submit full-width">
+
+                    <button type="submit" class="btn btn-primary">
+                        Request Sponsorship Information
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

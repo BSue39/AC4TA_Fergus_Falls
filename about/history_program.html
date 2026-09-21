@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images\favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ Base ------>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/typography.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!------ Layout ------>
+    <link rel="stylesheet" href="../assets/css/layout/container.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/layout/footer.css">
+
+    <!------ Components ------>
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/section-heading.css">
+
+    <!------ Page ------>
+    <link rel="stylesheet" href="../assets/css/pages/history_program.css">
+
+    <!-- ==========================
+     RESPONSIVE
+========================== -->
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="../index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="../images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="../events/announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta" target="_blank"
+                        rel="noopener noreferrer">Calendar</a>
+                    <a href="../support/membership_appeal.html">Membership Appeal</a>
+                    <a href="../support/curtain_appeal.html">Curtain Appeal</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../events/featured_events.html">Featured Events</a>
+                    <a href="../events/list_events.html">List of Events</a>
+                    <a href="../events/ticket_policies.html">Ticketing Policies</a>
+                    <a href="../events/plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href="mission_vision.html">Mission/Vision</a>
+                    <a href="staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="history.html">History <i class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="history_building.html">Building</a>
+                            <a href="history_organ.html">Theatre Organ</a>
+                            <a href="history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../support/sponsorship.html">Sponsorship</a>
+                    <a href="../support/membership.html">Membership</a>
+                    <a href="../support/volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--Rentals-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="../rentals/rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="../rentals/rental_rates.html">Rental Rates</a>
+                            <a href="../rentals/rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="../rentals/bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates/Merchandise-->
+            <div class="nav-item">
+                <a class="dropbtn" href="../store/gift_certificates.html">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="../contact/contact_info.html">Address & Contact Information</a>
+                    <a href="../contact/box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="../contact/email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROGRAMS HERO -->
+    <section class="program-hero">
+        <div class="container program-hero-content">
+
+            <span class="section-tag">Programs</span>
+
+            <h1>Inspiring Creativity Through The Arts</h1>
+
+            <p>
+                From youth theatre and arts education
+                to community performances and outreach,
+                AC4TA helps bring the arts to life for
+                audiences and participants of all ages.
+            </p>
+            <br>
+            <a href="#programs" class="btn btn-primary">
+                Explore Our Programs
+            </a>
+
+        </div>
+    </section>
+
+    <!-- THE ARTS IN ACTION -->
+    <section class="programs-overview">
+
+        <div class="container">
+
+            <div class="overview-grid">
+
+                <img src="../images/Photo Coming Soon.png" alt="">
+
+                <div>
+
+                    <h2>
+                        Bringing People Together
+                    </h2>
+
+                    <p>
+                        Programs have always been at the
+                        heart of AC4TA's mission. Through
+                        performances, educational
+                        opportunities, and community
+                        partnerships, the arts remain
+                        accessible to people of all ages.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- HOW PROGRAMS HAVE GROWN -->
+    <section class="growth-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Growing Through The Arts</h2>
+            </div>
+
+            <div class="growth-grid">
+
+                <div class="growth-card">
+                    <h3>1980s</h3>
+                    <p>Community theatre begins.</p>
+                </div>
+
+                <div class="growth-card">
+                    <h3>1990s</h3>
+                    <p>Educational programming expands.</p>
+                </div>
+
+                <div class="growth-card">
+                    <h3>2000s</h3>
+                    <p>Regional touring artists arrive.</p>
+                </div>
+
+                <div class="growth-card">
+                    <h3>Today</h3>
+                    <p>A year-round arts destination.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROGRAM AREAS -->
+    <section class="program-areas">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Program Areas</h2>
+            </div>
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+
+                    <h3>Youth Theatre</h3>
+
+                    <p>
+                        Helping young performers build
+                        confidence, creativity, and
+                        stage experience.
+                    </p>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <h3>Arts Education</h3>
+
+                    <p>
+                        Learning opportunities for
+                        students and lifelong learners.
+                    </p>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <h3>Concerts</h3>
+
+                    <p>
+                        National, regional, and local
+                        performing artists.
+                    </p>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <h3>Community Events</h3>
+
+                    <p>
+                        Programs that bring people
+                        together through shared
+                        experiences.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- YOUTH THEATRE SPOTLIGHT -->
+    <section class="youth-spotlight">
+
+        <div class="container">
+
+            <div class="overview-grid">
+
+                <img src="../images/Photo Coming Soon.png" alt="Youth Theatre">
+
+                <div>
+
+                    <h2>
+                        Youth Theatre
+                    </h2>
+
+                    <p>
+                        Generations of young performers
+                        have discovered confidence,
+                        teamwork, and creativity through
+                        AC4TA's theatre programs.
+                    </p>
+
+                    <a href="#" class="btn btn-primary">
+                        Learn More
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- COMMUNITY IMPACT -->
+    <section class="impact-section">
+
+        <div class="container">
+
+            <div class="stats">
+
+                <div class="stat">
+                    <h3>2,000+</h3>
+                    <p>Youth Participants</p>
+                </div>
+
+                <div class="stat">
+                    <h3>150+</h3>
+                    <p>Annual Events</p>
+                </div>
+
+                <div class="stat">
+                    <h3>12,000+</h3>
+                    <p>Visitors</p>
+                </div>
+
+                <div class="stat">
+                    <h3>100+</h3>
+                    <p>Volunteers</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GENERATIONS OF CREATIVITY INTERACTIVE WALL -->
+    <section class="creativity-wall">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Generations of Creativity</h2>
+
+                <p>
+                    Explore the milestones that shaped
+                    A Center for the Arts into the
+                    regional arts destination it is today.
+                </p>
+            </div>
+
+            <div class="milestone-wrapper">
+
+                <button class="milestone-arrow" id="milestonePrev">
+
+                    <i class="fa fa-chevron-left"></i>
+
+                </button>
+
+                <div class="milestone-track">
+
+                    <article class="milestone-card active" data-target="saved">
+
+                        <img src="../images/Photo Coming Soon.png" alt="Milestone 1982">
+
+                        <div class="milestone-content">
+                            <span>1982</span>
+                            <h3>The Theatre Is Saved</h3>
+                        </div>
+
+                    </article>
+
+                    <article class="milestone-card" data-target="organ">
+
+                        <img src="../images/Photo Coming Soon.png" alt="Milestone 1994">
+
+                        <div class="milestone-content">
+                            <span>1994</span>
+                            <h3>Wurlitzer Installed</h3>
+                        </div>
+
+                    </article>
+
+                    <article class="milestone-card" data-target="reopening">
+
+                        <img src="../images/Photo Coming Soon.png" alt="Milestone 1995">
+
+                        <div class="milestone-content">
+                            <span>1995</span>
+                            <h3>Grand Reopening</h3>
+                        </div>
+
+                    </article>
+
+                    <article class="milestone-card" data-target="renovation">
+
+                        <img src="../images/Photo Coming Soon.png" alt="Milestone 2013">
+
+                        <div class="milestone-content">
+                            <span>2013</span>
+                            <h3>Auditorium Renovation</h3>
+                        </div>
+
+                    </article>
+
+                    <article class="milestone-card" data-target="today">
+
+                        <img src="../images/Photo Coming Soon.png" alt="Milestone Today">
+
+                        <div class="milestone-content">
+                            <span>Today</span>
+                            <h3>Regional Arts Hub</h3>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <button class="milestone-arrow" id="milestoneNext">
+
+                    <i class="fa fa-chevron-right"></i>
+
+                </button>
+
+            </div>
+
+            <!-- EXPANDED STORY PANEL -->
+
+            <div class="milestone-detail">
+
+                <div class="detail-panel active" id="saved">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Milestone Detail 1982">
+
+                    <div>
+
+                        <h3>The Theatre Is Saved</h3>
+
+                        <p>
+                            Community volunteers and supporters rallied together to
+                            preserve the historic theatre and restore live performances
+                            to downtown Fergus Falls.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="detail-panel" id="organ">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Milestone Detail Organ">
+
+                    <div>
+
+                        <h3>Wurlitzer Installation</h3>
+
+                        <p>
+                            The installation of the Wurlitzer theatre pipe organ added
+                            a unique musical experience to the theatre and established
+                            it as a destination for organ enthusiasts and performers.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="detail-panel" id="reopening">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Milestone Detail Grand Reopening">
+
+                    <div>
+
+                        <h3>Grand Reopening</h3>
+
+                        <p>
+                            The theatre celebrated its grand reopening, welcoming the
+                            community back through its doors and beginning a new chapter
+                            of performances, events, and arts experiences.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="detail-panel" id="renovation">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Milestone Detail Auditorium Renovation">
+
+                    <div>
+
+                        <h3>Auditorium Renovation</h3>
+
+                        <p>
+                            Improvements to the auditorium helped preserve the theatre's
+                            historic character while creating a more comfortable and
+                            welcoming environment for audiences and performers.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="detail-panel" id="today">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Milestone Detail Regional Arts Hub">
+
+                    <div>
+
+                        <h3>Regional Arts Hub</h3>
+
+                        <p>
+                            Today, A Center for the Arts serves as a regional destination
+                            for performances, arts education, community programs, and
+                            cultural experiences that bring people together.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROGRAM TIMELINE -->
+    <section class="history-timeline">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h2>
+                    Key Milestones
+                </h2>
+
+            </div>
+
+            <div class="timeline-history">
+
+                <div class="history-item">
+                    <span>1982</span>
+                    <h3>Community Theatre Returns</h3>
+                    <p>
+                        The Old Tyme Variety Players begin using the space,
+                        marking the return of live theatre to the building
+                        and laying the groundwork for what would eventually
+                        become A Center for the Arts.
+                    </p>
+                </div>
+
+                <div class="history-item">
+                    <span>1995</span>
+                    <h3>Grand Reopening</h3>
+                    <p>
+                        Following a community fundraising effort exceeding $1 million,
+                        the theatre reopens as a fully renovated, year-round arts
+                        facility with updated accessibility, backstage areas, and
+                        audience amenities.
+                    </p>
+                </div>
+
+                <div class="history-item">
+                    <span>2000s</span>
+                    <h3>Education Expansion</h3>
+                    <p>
+                        Youth theatre and arts education programs expand, providing
+                        opportunities for young people to develop confidence, creativity,
+                        and stage experience through participation in productions, classes,
+                        and workshops.
+                    </p>
+                </div>
+
+                <div class="history-item">
+                    <span>2010s</span>
+                    <h3>Youth Theatre Growth</h3>
+                    <p>
+                        Youth theatre becomes a cornerstone of AC4TA's programming, with
+                        hundreds of young performers participating in annual productions,
+                        classes, and workshops that foster creativity, teamwork, and
+                        confidence.
+                    </p>
+                </div>
+
+                <div class="history-item">
+                    <span>Today</span>
+                    <h3>Regional Arts Hub</h3>
+                    <p>
+                        AC4TA serves thousands of visitors annually through touring
+                        performances, community theatre, youth programs, arts education,
+                        concerts, film screenings, and special events that connect people
+                        to the arts and each other.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="programs" class="program-gallery">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Programs In Action</h2>
+            </div>
+
+            <div class="gallery-grid">
+
+                <img src="../images/Photo Coming Soon.png">
+                <img src="../images/Photo Coming Soon.png">
+                <img src="../images/Photo Coming Soon.png">
+                <img src="../images/Photo Coming Soon.png">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- LOOKING AHEAD -->
+    <section class="future-section">
+
+        <div class="container">
+
+            <h2>
+                Looking Ahead
+            </h2>
+
+            <p>
+                AC4TA continues to expand
+                opportunities for artistic
+                expression, education, and
+                community engagement.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SUPPORT CALL TO ACTION -->
+    <section class="programs-cta">
+
+        <div class="container">
+
+            <h2>
+                Support Arts Education
+            </h2>
+
+            <p>
+                Help future generations discover
+                the power of the arts.
+            </p>
+
+            <a href="https://app.arts-people.com/index.php?donation=acfta" class="btn btn-primary" target="_blank"
+                rel="noopener noreferrer">
+                Support Programs
+            </a>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/history-program.js"></script>
+
+</body>
+
+</html>

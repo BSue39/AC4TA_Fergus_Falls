@@ -1,0 +1,1126 @@
+/* =========================================================
+   BOX OFFICE HOURS HERO SECTION
+   ========================================================= */
+
+.boxoffice-hero {
+    min-height: 240px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.60),
+            rgba(0, 0, 0, 0.60)),
+        url("../../../images/AC4TA-Horizontal-Sign-Night.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: var(--white);
+}
+
+
+/* Hero Content */
+
+.boxoffice-hero .hero-content {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 5rem 1.5rem;
+
+    text-align: center;
+}
+
+
+/* Section Tag */
+
+.boxoffice-hero .section-tag {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+
+    opacity: 0;
+    animation: heroFadeUp 0.8s ease forwards;
+    animation-delay: 0.1s;
+}
+
+
+/* Heading */
+
+.boxoffice-hero h1 {
+    margin: 0 0 1.5rem;
+
+    color: var(--white);
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(3.5rem, 6vw, 5.5rem);
+    line-height: 1.05;
+    font-weight: 500;
+
+    opacity: 0;
+    animation: heroFadeUp 0.8s ease forwards;
+    animation-delay: 0.25s;
+}
+
+
+/* Description */
+
+.boxoffice-hero p {
+    max-width: 800px;
+    margin: 0 auto;
+
+    color: rgba(255, 255, 255, 0.92);
+
+    font-size: 1.15rem;
+    line-height: 1.7;
+
+    opacity: 0;
+    animation: heroFadeUp 0.8s ease forwards;
+    animation-delay: 0.4s;
+}
+
+
+/* =========================================================
+   HERO FADE-IN ANIMATION
+   ========================================================= */
+
+@keyframes heroFadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .boxoffice-hero {
+        min-height: 38vh;
+    }
+
+    .boxoffice-hero .hero-content {
+        padding: 4rem 1.5rem;
+    }
+
+    .boxoffice-hero h1 {
+        font-size: 3rem;
+    }
+
+    .boxoffice-hero p {
+        font-size: 1rem;
+    }
+
+}
+
+
+/* =========================================================
+   HOURS AT A GLANCE SECTION
+   ========================================================= */
+
+.hours-overview {
+    padding: 3rem 0;
+    background: var(--bg-light);
+}
+
+
+/* Hours Card */
+
+.hours-card {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    padding: 3.5rem 4rem;
+
+    background: var(--white);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+
+/* Heading */
+
+.hours-card h2 {
+    margin-bottom: 2.5rem;
+
+    color: var(--text);
+
+    font-family: "Playfair Display", serif;
+}
+
+
+/* Hours Grid */
+
+.hours-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 0;
+
+    margin-bottom: 2rem;
+}
+
+
+/* Individual Hours */
+
+.hours-item {
+    padding: 1rem 2rem;
+
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.hours-item:last-child {
+    border-right: none;
+}
+
+
+/* Day */
+
+.hours-item span {
+    display: block;
+
+    margin-bottom: 0.75rem;
+
+    color: var(--accent);
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+
+/* Time */
+
+.hours-item p {
+    margin: 0;
+
+    color: var(--text);
+
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+
+/* Additional Hours Note */
+
+.hours-card small {
+    display: block;
+
+    max-width: 650px;
+
+    margin: 2rem auto 0;
+
+    padding-top: 1.5rem;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+
+    color: var(--muted);
+
+    font-size: 0.9rem;
+
+    line-height: 1.6;
+}
+
+
+/* HOVER EFFECT */
+
+.hours-item {
+    transition: transform 0.25s ease;
+}
+
+.hours-item:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .hours-overview {
+        padding: 4.5rem 1.5rem;
+    }
+
+    .hours-card {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .hours-card h2 {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    .hours-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .hours-item {
+        padding: 1.25rem 0;
+
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .hours-item:last-child {
+        border-bottom: none;
+    }
+
+    .hours-item p {
+        font-size: 1.15rem;
+    }
+
+}
+
+
+/* =========================================================
+   TICKET OPTIONS SECTION
+   ========================================================= */
+
+.ticket-options {
+    padding: 3rem 0;
+    background: var(--white);
+}
+
+
+/* Section Heading */
+
+.ticket-options .section-heading {
+    max-width: 700px;
+    margin: 0 auto 3.5rem;
+    text-align: center;
+}
+
+.ticket-options .section-heading p {
+    max-width: 600px;
+    margin: 1rem auto 0;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+
+/* Purchase Grid */
+
+.ticket-options .purchase-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+
+/* Purchase Cards */
+
+.ticket-options .purchase-card {
+    position: relative;
+
+    padding: 2.75rem 2rem;
+
+    background: var(--bg-light);
+
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+
+    text-align: center;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* Icon */
+
+.ticket-options .purchase-card i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 64px;
+    height: 64px;
+
+    margin: 0 auto 1.5rem;
+
+    border-radius: 50%;
+
+    background: var(--accent);
+    color: var(--white);
+
+    font-size: 1.4rem;
+}
+
+
+/* Card Heading */
+
+.ticket-options .purchase-card h3 {
+    margin-bottom: 0.75rem;
+
+    color: var(--text);
+
+    font-size: 1.3rem;
+}
+
+
+/* Card Description */
+
+.ticket-options .purchase-card p {
+    max-width: 280px;
+    margin: 0 auto;
+
+    color: var(--muted);
+
+    line-height: 1.7;
+}
+
+
+/* Hover */
+
+.ticket-options .purchase-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(122, 31, 43, 0.18);
+
+    box-shadow:
+        0 16px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .ticket-options {
+        padding: 4.5rem 1.5rem;
+    }
+
+    .ticket-options .section-heading {
+        margin-bottom: 2.5rem;
+    }
+
+    .ticket-options .purchase-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .ticket-options .purchase-card {
+        padding: 2.5rem 2rem;
+    }
+
+}
+
+
+/* =========================================================
+   EVENT DAY INFORMATION SECTION
+   ========================================================= */
+
+.eventday-section {
+    padding: 3rem 0;
+    background: var(--bg-light);
+}
+
+
+/* EVENT DAY GRID */
+
+.eventday-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+}
+
+
+/* EVENT DAY IMAGE */
+
+.eventday-image {
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.eventday-image img {
+    display: block;
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.eventday-image:hover img {
+    transform: scale(1.03);
+}
+
+
+/* EVENT DAY CONTENT */
+
+.eventday-content {
+    max-width: 560px;
+}
+
+.eventday-content h2 {
+    margin-bottom: 1.5rem;
+    color: var(--text);
+}
+
+.eventday-content p {
+    margin-bottom: 1.25rem;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+
+/* EVENT DAY LIST */
+
+.eventday-content ul {
+    margin: 2rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.eventday-content li {
+    position: relative;
+    padding: 0.75rem 0 0.75rem 2rem;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.eventday-content li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+
+    color: var(--accent);
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .eventday-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .eventday-content {
+        max-width: 100%;
+    }
+
+    .eventday-image {
+        order: 1;
+    }
+
+    .eventday-content {
+        order: 2;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .eventday-section {
+        padding: 4.5rem 0;
+    }
+
+    .eventday-image img {
+        height: 320px;
+    }
+
+    .eventday-content h2 {
+        margin-bottom: 1.25rem;
+    }
+
+}
+
+
+/* =========================================================
+   ACCEPTED PAYMENT METHODS SECTION
+   ========================================================= */
+
+.payment-methods {
+    padding: 3rem 0;
+    background: var(--white);
+}
+
+
+/* SECTION HEADING */
+
+.payment-methods .section-heading {
+    max-width: 700px;
+    margin: 0 auto 3.5rem;
+    text-align: center;
+}
+
+.payment-methods .section-heading p {
+    max-width: 600px;
+    margin: 1rem auto 0;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+
+/* PAYMENT GRID */
+
+.payment-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+
+/* PAYMENT CARD */
+
+.payment-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 190px;
+    padding: 2rem 1.25rem;
+
+    background: var(--bg-light);
+
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+
+    text-align: center;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* Icon */
+
+.payment-card i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 58px;
+    height: 58px;
+
+    margin-bottom: 1.25rem;
+
+    border-radius: 50%;
+
+    background: rgba(122, 31, 43, 0.08);
+
+    color: var(--accent);
+
+    font-size: 1.35rem;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+
+/* Heading */
+
+.payment-card h3 {
+    margin: 0;
+
+    color: var(--text);
+
+    font-size: 1.05rem;
+    line-height: 1.4;
+}
+
+
+/* HOVER */
+
+.payment-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(122, 31, 43, 0.18);
+
+    box-shadow:
+        0 14px 30px rgba(0, 0, 0, 0.07);
+}
+
+.payment-card:hover i {
+    background: var(--accent);
+    color: var(--white);
+}
+
+
+/* PAYMENT NOTE */
+
+.payment-note {
+    max-width: 650px;
+
+    margin: 2rem auto 0;
+
+    text-align: center;
+
+    color: var(--muted);
+
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .payment-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .payment-methods {
+        padding: 4.5rem 1.5rem;
+    }
+
+    .payment-methods .section-heading {
+        margin-bottom: 2.5rem;
+    }
+
+    .payment-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+    }
+
+    .payment-card {
+        min-height: 160px;
+    }
+
+}
+
+
+/* =========================================================
+   TICKET POLICIES SECTION
+   ========================================================= */
+
+.ticket-policies {
+    padding: 3rem 0;
+    background: var(--bg-light);
+}
+
+
+/* SECTION HEADING */
+
+.ticket-policies .section-heading {
+    max-width: 720px;
+    margin: 0 auto 3.5rem;
+    text-align: center;
+}
+
+.ticket-policies .section-heading p {
+    max-width: 680px;
+    margin: 1rem auto 0;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+
+/* POLICY GRID */
+
+.policies-grid {
+    max-width: 1050px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+
+/* POLICY ITEM */
+
+.policy-item {
+    position: relative;
+    padding: 2rem 2.25rem;
+    background: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.045);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+/* Gold Accent */
+
+.policy-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    width: 42px;
+    height: 3px;
+    background: var(--gold);
+    transform-origin: left center;
+    transition: width 0.3s ease;
+}
+
+
+/* POLICY LABEL */
+
+.policy-item span {
+    display: block;
+
+    margin-bottom: 0.75rem;
+
+    color: var(--accent);
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+
+/* POLICY DESCRIPTION */
+
+.policy-item p {
+    margin: 0;
+
+    color: var(--muted);
+
+    line-height: 1.7;
+}
+
+
+/* HOVER */
+
+.policy-item:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 14px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* Expand Gold Accent */
+
+.policy-item:hover::before {
+    width: 70px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .ticket-policies {
+        padding: 4.5rem 1.5rem;
+    }
+
+    .ticket-policies .section-heading {
+        margin-bottom: 2.5rem;
+    }
+
+    .policies-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .policy-item {
+        padding: 1.75rem 1.5rem;
+    }
+
+    .policy-item::before {
+        left: 1.5rem;
+    }
+
+}
+
+
+/* =========================================================
+   PLAN AHEAD / HELPFUL REMINDER
+   ========================================================= */
+
+.ticket-reminder {
+    padding: 3rem 2rem;
+    background: var(--white);
+}
+
+
+/* Content */
+
+.ticket-reminder-content {
+    max-width: 850px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* Section Tag */
+
+.ticket-reminder .section-tag {
+    display: inline-block;
+    margin-bottom: 1.15rem;
+}
+
+
+/* Heading */
+
+.ticket-reminder h2 {
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+
+/* Description */
+
+.ticket-reminder p {
+    max-width: 680px;
+    margin: 0 auto 1.75rem;
+
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+
+/* Button */
+
+.ticket-reminder .btn-primary {
+    background: var(--accent);
+    color: var(--white);
+    border: 2px solid var(--accent);
+}
+
+.ticket-reminder .btn-primary:hover {
+    background: var(--gold);
+    color: var(--bg-dark);
+    border-color: var(--gold);
+}
+
+
+/* Gold Accent */
+
+.reminder-accent {
+    width: 70px;
+    height: 2px;
+
+    margin: 2.5rem auto 0;
+
+    background: var(--gold);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .ticket-reminder {
+        padding: 4rem 1.5rem;
+    }
+
+    .ticket-reminder h2 {
+        font-size: 2rem;
+    }
+
+    .ticket-reminder p {
+        font-size: 1rem;
+    }
+
+}
+
+
+/* =========================================================
+   BOX OFFICE / FINAL CTA SECTION
+   ========================================================= */
+
+.boxoffice-cta {
+    position: relative;
+    overflow: hidden;
+
+    padding: 3rem 2rem;
+
+    background: var(--bg-dark);
+    color: var(--white);
+}
+
+
+/* Decorative Circle */
+
+.boxoffice-cta::after {
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    top: -150px;
+    right: -40px;
+
+    border: 1px solid rgba(200, 169, 107, 0.22);
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* Content */
+
+.boxoffice-cta-content {
+    position: relative;
+    z-index: 1;
+
+    max-width: 800px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* Section Tag */
+
+.boxoffice-cta .section-tag {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+
+/* Heading */
+
+.boxoffice-cta h2 {
+    margin-bottom: 1rem;
+
+    color: var(--white);
+}
+
+
+/* Description */
+
+.boxoffice-cta p {
+    max-width: 680px;
+
+    margin: 0 auto 2rem;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    line-height: 1.7;
+}
+
+
+/* CTA BUTTONS */
+
+.boxoffice-cta .contact-actions {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+
+    flex-wrap: wrap;
+}
+
+
+/* Call Button */
+
+.boxoffice-cta .btn-primary {
+    background: var(--white);
+    color: var(--accent);
+
+    border: 2px solid var(--white);
+}
+
+
+/* Call Button Hover */
+
+.boxoffice-cta .btn-primary:hover {
+    background: var(--gold);
+    color: var(--bg-dark);
+
+    border-color: var(--gold);
+}
+
+
+/* Email Button */
+
+.boxoffice-cta .btn-secondary {
+    background: transparent;
+    color: var(--white);
+
+    border: 2px solid var(--gold);
+}
+
+
+/* Email Button Hover */
+
+.boxoffice-cta .btn-secondary:hover {
+    background: var(--gold);
+    color: var(--bg-dark);
+
+    border-color: var(--gold);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .boxoffice-cta {
+        padding: 4rem 1.5rem;
+    }
+
+    .boxoffice-cta h2 {
+        font-size: 2.25rem;
+    }
+
+    .boxoffice-cta p {
+        font-size: 1rem;
+    }
+
+    .boxoffice-cta .contact-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .boxoffice-cta .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+}

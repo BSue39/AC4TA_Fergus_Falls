@@ -1,0 +1,1723 @@
+/* =========================================================
+   BAKKEN BUILDING HERO SECTION
+   ========================================================= */
+
+.bakken-hero {
+    min-height: 240px;
+
+    padding: 5rem 2rem 6rem;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.58),
+            rgba(0, 0, 0, 0.58)
+        ),
+        url("../../../images/AC4TA-Horizontal-Sign-Night.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: var(--white);
+
+    overflow: hidden;
+}
+
+
+/* HERO CONTENT */
+
+.bakken-hero-content {
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    animation: bakkenHeroFadeIn 0.9s ease forwards;
+}
+
+
+/* FADE-IN ANIMATION */
+
+@keyframes bakkenHeroFadeIn {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+/* SECTION TAG */
+
+.bakken-hero .section-tag {
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+
+    color: var(--gold);
+}
+
+
+/* HERO HEADING */
+
+.bakken-hero h1 {
+    margin: 0 0 1.25rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+
+    font-weight: 600;
+
+    line-height: 1.1;
+
+    color: var(--white);
+}
+
+
+/* HERO DESCRIPTION */
+
+.bakken-hero p {
+    max-width: 680px;
+
+    margin: 0 auto 2rem;
+
+    font-size: 1.05rem;
+
+    line-height: 1.75;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* HERO BUTTONS */
+
+.bakken-hero .hero-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    flex-wrap: wrap;
+}
+
+
+/* PRIMARY BUTTON*/
+
+.bakken-hero .btn-primary {
+    background: var(--accent);
+
+    border: 2px solid var(--accent);
+
+    color: var(--white);
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.2);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.bakken-hero .btn-primary:hover {
+    transform: translateY(-3px);
+
+    background: var(--white);
+
+    border-color: var(--white);
+
+    color: var(--accent);
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.28);
+}
+
+
+/* SECONDARY BUTTON */
+
+.bakken-hero .hero-buttons .btn:not(.btn-primary) {
+    background: transparent;
+
+    border: 2px solid var(--gold);
+
+    color: var(--white);
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.bakken-hero .hero-buttons .btn:not(.btn-primary):hover {
+    background: var(--gold);
+
+    border-color: var(--gold);
+
+    color: var(--text);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .bakken-hero {
+        min-height: 50vh;
+
+        padding: 6rem 1.5rem 5rem;
+    }
+
+    .bakken-hero-content {
+        max-width: 650px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .bakken-hero {
+        min-height: 60vh;
+
+        padding: 5.5rem 1.25rem 4.5rem;
+
+        background-position: center;
+    }
+
+    .bakken-hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .bakken-hero p {
+        font-size: 0.95rem;
+
+        line-height: 1.65;
+    }
+
+    .bakken-hero .hero-buttons {
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 0.75rem;
+    }
+
+    .bakken-hero .hero-buttons .btn {
+        width: 100%;
+
+        max-width: 320px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .bakken-hero-content {
+        opacity: 1;
+
+        transform: none;
+
+        animation: none;
+    }
+
+    .bakken-hero .btn-primary,
+    .bakken-hero .hero-buttons .btn:not(.btn-primary) {
+        transition: none;
+    }
+}
+
+
+/* =========================================================
+   BAKKEN VENUE HIGHLIGHTS SECTION
+   ========================================================= */
+
+.bakken-highlights {
+    padding: 3rem 2rem;
+
+    background: var(--bg-light);
+
+    color: var(--text);
+}
+
+
+/* HIGHLIGHTS GRID */
+
+.bakken-highlights .highlights-grid {
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 1.25rem;
+}
+
+
+/* HIGHLIGHT CARD */
+
+.bakken-highlights .highlight-card {
+    position: relative;
+
+    padding: 2rem 1.75rem;
+
+    background: var(--white);
+
+    border: 1px solid rgba(0, 0, 0, 0.06);
+
+    border-radius: 6px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* GOLD ACCENT BAR */
+
+.bakken-highlights .highlight-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: var(--gold);
+
+    transition: height 0.3s ease;
+}
+
+
+/* CARD HOVER */
+
+.bakken-highlights .highlight-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+
+/* EXPANDING GOLD ACCENT */
+
+.bakken-highlights .highlight-card:hover::before {
+    height: 8px;
+}
+
+
+/* CARD HEADING */
+
+.bakken-highlights .highlight-card h3 {
+    margin: 0 0 0.75rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.35rem;
+
+    font-weight: 600;
+
+    line-height: 1.25;
+
+    color: var(--text);
+}
+
+
+/* CARD DESCRIPTION */
+
+.bakken-highlights .highlight-card p {
+    margin: 0;
+
+    font-size: 0.92rem;
+
+    line-height: 1.65;
+
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .bakken-highlights {
+        padding: 5rem 1.5rem;
+    }
+
+    .bakken-highlights .highlights-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        max-width: 750px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .bakken-highlights {
+        padding: 4.5rem 1.25rem;
+    }
+
+    .bakken-highlights .highlights-grid {
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+    }
+
+    .bakken-highlights .highlight-card {
+        padding: 1.75rem 1.5rem;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .bakken-highlights .highlight-card {
+        transition: none;
+    }
+
+    .bakken-highlights .highlight-card:hover {
+        transform: none;
+    }
+
+    .bakken-highlights .highlight-card::before {
+        transition: none;
+    }
+
+}
+
+
+/* =========================================================
+   BAKKEN — ABOUT THE BUILDING SECTION
+   ========================================================= */
+
+.bakken-story {
+    padding: 3rem 2rem;
+
+    background: var(--white);
+
+    color: var(--text);
+}
+
+
+/* STORY GRID */
+
+.bakken-story .story-grid {
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1.1fr 0.9fr;
+
+    align-items: center;
+
+    gap: 5rem;
+}
+
+
+/* STORY IMAGE */
+
+.bakken-story .story-image {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 6px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Gold accent frame */
+
+.bakken-story .story-image::after {
+    content: "";
+
+    position: absolute;
+
+    top: 1rem;
+    left: 1rem;
+
+    width: 100%;
+    height: 100%;
+
+    border: 2px solid var(--gold);
+
+    border-radius: 6px;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+/* Image */
+
+.bakken-story .story-image img {
+    display: block;
+
+    width: 100%;
+
+    height: 480px;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+
+/* Image hover */
+
+.bakken-story .story-image:hover img {
+    transform: scale(1.03);
+}
+
+
+/* STORY CONTENT */
+
+.bakken-story .story-content {
+    max-width: 520px;
+}
+
+
+/* Heading */
+
+.bakken-story .story-content h2 {
+    margin: 0 0 1.5rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* Gold divider */
+
+.bakken-story .story-content h2::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 4px;
+
+    margin-top: 1.25rem;
+
+    background: var(--gold);
+
+    transition: width 0.3s ease;
+}
+
+
+/* Expand divider when hovering content */
+
+.bakken-story .story-content:hover h2::after {
+    width: 85px;
+}
+
+
+/* Paragraphs */
+
+.bakken-story .story-content p {
+    margin: 0 0 1.25rem;
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+
+    color: var(--muted);
+}
+
+
+.bakken-story .story-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .bakken-story {
+        padding: 5.5rem 1.5rem;
+    }
+
+    .bakken-story .story-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 3rem;
+    }
+
+    .bakken-story .story-image img {
+        height: 420px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .bakken-story {
+        padding: 4.5rem 1.25rem;
+    }
+
+    .bakken-story .story-grid {
+        grid-template-columns: 1fr;
+
+        gap: 3rem;
+    }
+
+    .bakken-story .story-image img {
+        height: 350px;
+    }
+
+    .bakken-story .story-content {
+        max-width: none;
+    }
+
+    .bakken-story .story-content h2 {
+        font-size: 2.3rem;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .bakken-story .story-image img {
+        height: 300px;
+    }
+
+    .bakken-story .story-image::after {
+        top: 0.75rem;
+        left: 0.75rem;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .bakken-story .story-image img,
+    .bakken-story .story-content h2::after {
+        transition: none;
+    }
+
+    .bakken-story .story-image:hover img {
+        transform: none;
+    }
+
+}
+
+
+/* =========================================================
+   BAKKEN — EVENT POSSIBILITIES SECTION
+   ========================================================= */
+
+.bakken-event-possibilities {
+    padding: 3rem 2rem;
+
+    background: var(--bg-light);
+
+    color: var(--text);
+}
+
+
+/* SECTION HEADING */
+
+.bakken-event-possibilities .section-heading {
+    max-width: 700px;
+
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+
+.bakken-event-possibilities .section-heading h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2.2rem, 4vw, 3rem);
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* EVENT GRID */
+
+.bakken-event-possibilities .event-types {
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.25rem;
+}
+
+
+/* EVENT CARD */
+
+.bakken-event-possibilities .event-type {
+    position: relative;
+
+    padding: 2.25rem 1.5rem;
+
+    background: var(--white);
+
+    border: 1px solid rgba(0, 0, 0, 0.06);
+
+    border-radius: 6px;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* GOLD ACCENT BAR */
+
+.bakken-event-possibilities .event-type::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: var(--gold);
+
+    transition: height 0.3s ease;
+}
+
+
+/* CARD HOVER */
+
+.bakken-event-possibilities .event-type:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Expand gold accent */
+
+.bakken-event-possibilities .event-type:hover::before {
+    height: 8px;
+}
+
+
+/* ICON */
+
+.bakken-event-possibilities .event-type i {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 58px;
+    height: 58px;
+
+    margin: 0 auto 1.25rem;
+
+    border-radius: 50%;
+
+    background: rgba(200, 169, 107, 0.12);
+
+    color: var(--accent);
+
+    font-size: 1.35rem;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Icon hover */
+
+.bakken-event-possibilities .event-type:hover i {
+    background: var(--accent);
+
+    color: var(--white);
+
+    transform: translateY(-2px);
+}
+
+
+/* EVENT TITLE */
+
+.bakken-event-possibilities .event-type h3 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.25rem;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    color: var(--text);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .bakken-event-possibilities {
+        padding: 5.5rem 1.5rem;
+    }
+
+    .bakken-event-possibilities .event-types {
+        grid-template-columns: repeat(2, 1fr);
+
+        max-width: 750px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .bakken-event-possibilities {
+        padding: 4.5rem 1.25rem;
+    }
+
+    .bakken-event-possibilities .section-heading {
+        margin-bottom: 2.75rem;
+    }
+
+    .bakken-event-possibilities .event-types {
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+    }
+
+    .bakken-event-possibilities .event-type {
+        padding: 2rem 1.5rem;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .bakken-event-possibilities .event-type,
+    .bakken-event-possibilities .event-type i,
+    .bakken-event-possibilities .event-type::before {
+        transition: none;
+    }
+
+    .bakken-event-possibilities .event-type:hover {
+        transform: none;
+    }
+
+    .bakken-event-possibilities .event-type:hover i {
+        transform: none;
+    }
+
+}
+
+
+/* =========================================================
+   BAKKEN BUILDING PHOTO GALLERY SECTION
+   ========================================================= */
+
+.bakken-gallery {
+    padding: 3rem 2rem;
+
+    background: var(--white);
+
+    color: var(--text);
+}
+
+
+/* SECTION HEADING */
+
+.bakken-gallery .section-heading {
+    max-width: 760px;
+
+    margin: 0 auto 3.75rem;
+
+    text-align: center;
+}
+
+
+/* Section Tag */
+
+.bakken-gallery .section-tag {
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+
+    color: var(--accent);
+}
+
+
+/* Heading */
+
+.bakken-gallery .section-heading h2 {
+    margin: 0 0 1rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2.2rem, 4vw, 3rem);
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* Description */
+
+.bakken-gallery .section-heading p {
+    max-width: 680px;
+
+    margin: 0 auto;
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+    color: var(--muted);
+}
+
+
+/* BAKKEN GALLERY GRID */
+
+.bakken-gallery .gallery-grid {
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-rows: repeat(2, 230px) 260px;
+
+    gap: 1rem;
+}
+
+
+/* GALLERY ITEMS */
+
+.bakken-gallery .gallery-item {
+    position: relative;
+
+    min-width: 0;
+    min-height: 0;
+
+    overflow: hidden;
+
+    border-radius: 6px;
+
+    background: var(--bg-light);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+
+/* FEATURED IMAGE */
+
+.bakken-gallery .gallery-item:first-child {
+    grid-column: 1 / span 2;
+
+    grid-row: 1 / span 2;
+}
+
+
+/* SUPPORTING IMAGES */
+
+.bakken-gallery .gallery-item:nth-child(2) {
+    grid-column: 3;
+
+    grid-row: 1;
+}
+
+.bakken-gallery .gallery-item:nth-child(3) {
+    grid-column: 4;
+
+    grid-row: 1;
+}
+
+.bakken-gallery .gallery-item:nth-child(4) {
+    grid-column: 3;
+
+    grid-row: 2;
+}
+
+.bakken-gallery .gallery-item:nth-child(5) {
+    grid-column: 4;
+
+    grid-row: 2;
+}
+
+
+/* WIDE FEATURE IMAGE */
+
+.bakken-gallery .gallery-item:nth-child(6) {
+    grid-column: 1 / -1;
+
+    grid-row: 3;
+}
+
+
+/* IMAGE */
+
+.bakken-gallery .gallery-item img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.6s ease,
+        filter 0.6s ease;
+}
+
+
+/* IMAGE HOVER */
+
+.bakken-gallery .gallery-item:hover img {
+    transform: scale(1.05);
+
+    filter: brightness(0.88);
+}
+
+
+/* SUBTLE GOLD EDGE*/
+
+.bakken-gallery .gallery-item::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border: 2px solid transparent;
+
+    border-radius: 6px;
+
+    pointer-events: none;
+
+    transition:
+        border-color 0.3s ease;
+}
+
+
+.bakken-gallery .gallery-item:hover::after {
+    border-color: rgba(200, 169, 107, 0.75);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .bakken-gallery {
+        padding: 5.5rem 1.5rem;
+    }
+
+    .bakken-gallery .gallery-grid {
+        max-width: 850px;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-auto-rows: 260px;
+
+        gap: 1rem;
+    }
+
+
+    /*
+       Featured images become full-width.
+    */
+
+    .bakken-gallery .gallery-item:first-child {
+        grid-column: span 2;
+
+        grid-row: span 2;
+    }
+
+
+    .bakken-gallery .gallery-item:nth-child(6) {
+        grid-column: span 2;
+
+        grid-row: span 1;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .bakken-gallery {
+        padding: 4.5rem 1.25rem;
+    }
+
+    .bakken-gallery .section-heading {
+        margin-bottom: 3rem;
+    }
+
+    .bakken-gallery .gallery-grid {
+        grid-template-columns: 1fr;
+
+        grid-auto-rows: 260px;
+
+        gap: 0.85rem;
+    }
+
+
+    /* Reset featured spans */
+
+    .bakken-gallery .gallery-item:first-child,
+    .bakken-gallery .gallery-item:nth-child(6) {
+        grid-column: span 1;
+
+        grid-row: span 1;
+    }
+
+
+    /* Make first image the primary mobile feature */
+
+    .bakken-gallery .gallery-item:first-child {
+        height: 340px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .bakken-gallery {
+        padding: 4rem 1.25rem;
+    }
+
+    .bakken-gallery .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .bakken-gallery .section-heading p {
+        font-size: 0.92rem;
+    }
+
+    .bakken-gallery .gallery-grid {
+        grid-auto-rows: 230px;
+    }
+
+    .bakken-gallery .gallery-item:first-child {
+        height: 300px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .bakken-gallery .gallery-item img,
+    .bakken-gallery .gallery-item::after {
+        transition: none;
+    }
+
+    .bakken-gallery .gallery-item:hover img {
+        transform: none;
+    }
+
+}
+
+
+/* =======================
+    BAKKEN VENUE FEATURES 
+    =======================*/
+
+.bakken-features {
+    padding: 3rem 2rem;
+
+    background: var(--bg-light);
+
+    color: var(--text);
+}
+
+
+/* FEATURES BOX */
+
+.bakken-features .features-box {
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    padding: 3.5rem;
+
+    background: var(--white);
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.07);
+}
+
+
+/* HEADING */
+
+.bakken-features .features-box h2 {
+    margin: 0 0 2.5rem;
+
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2rem, 3.5vw, 2.6rem);
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* FEATURES GRID */
+
+.bakken-features .features-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 1rem;
+}
+
+
+/* FEATURE ITEM */
+
+.bakken-features .feature-item {
+    position: relative;
+
+    padding: 1.5rem 1.25rem 1.5rem;
+
+    text-align: center;
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    border-radius: 6px;
+
+    background: var(--bg-light);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* GOLD ACCENT */
+
+.bakken-features .feature-item::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 38px;
+    height: 3px;
+
+    transform: translateX(-50%);
+
+    background: var(--gold);
+
+    transition:
+        width 0.35s ease;
+}
+
+
+/* FEATURE HOVER */
+
+.bakken-features .feature-item:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(200, 169, 107, 0.45);
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.09);
+}
+
+
+.bakken-features .feature-item:hover::before {
+    width: 70px;
+}
+
+
+/* FEATURE TITLE */
+
+.bakken-features .feature-item span {
+    display: block;
+
+    margin-bottom: 0.5rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.15rem;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    color: var(--text);
+}
+
+
+/* FEATURE DESCRIPTION */
+
+.bakken-features .feature-item p {
+    margin: 0;
+
+    font-size: 0.88rem;
+
+    line-height: 1.55;
+
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .bakken-features {
+        padding: 5.5rem 1.5rem;
+    }
+
+    .bakken-features .features-box {
+        padding: 3rem 2rem;
+    }
+
+    .bakken-features .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .bakken-features {
+        padding: 4.5rem 1.25rem;
+    }
+
+    .bakken-features .features-box {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .bakken-features .features-box h2 {
+        margin-bottom: 2rem;
+    }
+
+    .bakken-features .features-grid {
+        grid-template-columns: 1fr;
+
+        gap: 0.85rem;
+    }
+
+    .bakken-features .feature-item {
+        padding: 1.4rem 1.25rem;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .bakken-features .feature-item {
+        transition: none;
+    }
+
+    .bakken-features .feature-item:hover {
+        transform: none;
+    }
+
+    .bakken-features .feature-item::before {
+        transition: none;
+    }
+
+}
+
+
+/* =========================================================
+   BAKKEN CTA SECTION
+   ========================================================= */
+
+.bakken-cta {
+    padding: 3rem 2rem;
+
+    background: var(--bg-light);
+
+    color: var(--text);
+}
+
+
+/* CTA CONTENT */
+
+.bakken-cta .rental-cta {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 4rem 3rem;
+
+    text-align: center;
+
+    background: var(--bg-dark);
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.12);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* GOLD ACCENT BAR */
+
+.bakken-cta .rental-cta::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 70px;
+    height: 4px;
+
+    transform: translateX(-50%);
+
+    background: var(--gold);
+
+    transition: width 0.4s ease;
+}
+
+
+/* Expand accent on hover */
+
+.bakken-cta .rental-cta:hover::before {
+    width: 140px;
+}
+
+
+/* HEADING */
+
+.bakken-cta .rental-cta h2 {
+    margin: 0 0 1rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2rem, 4vw, 2.75rem);
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    color: var(--white);
+}
+
+
+/* DESCRIPTION */
+
+.bakken-cta .rental-cta p {
+    max-width: 650px;
+
+    margin: 0 auto 2rem;
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.78);
+}
+
+
+/* BUTTONS */
+
+.bakken-cta .hero-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    flex-wrap: wrap;
+}
+
+
+/* Primary */
+
+.bakken-cta .btn-primary {
+    background: var(--accent);
+
+    color: var(--white);
+
+    border: 1px solid var(--accent);
+}
+
+
+/* Primary Hover */
+
+.bakken-cta .btn-primary:hover {
+    background: var(--gold);
+
+    color: var(--text);
+
+    border-color: var(--gold);
+}
+
+
+/* Secondary */
+
+.bakken-cta .hero-buttons .btn:not(.btn-primary) {
+    background: transparent;
+
+    color: var(--white);
+
+    border: 1px solid rgba(255, 255, 255, 0.65);
+}
+
+
+/* Secondary Hover */
+
+.bakken-cta .hero-buttons .btn:not(.btn-primary):hover {
+    background: var(--white);
+
+    color: var(--text);
+
+    border-color: var(--white);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .bakken-cta {
+        padding: 5rem 1.5rem;
+    }
+
+    .bakken-cta .rental-cta {
+        padding: 3.5rem 2rem;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    .bakken-cta {
+        padding: 4rem 1.25rem;
+    }
+
+    .bakken-cta .rental-cta {
+        padding: 3rem 1.5rem;
+    }
+
+    .bakken-cta .hero-buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .bakken-cta .hero-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .bakken-cta .rental-cta::before {
+        transition: none;
+    }
+
+}

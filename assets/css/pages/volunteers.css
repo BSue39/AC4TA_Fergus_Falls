@@ -1,0 +1,2411 @@
+/* =========================================================
+   VOLUNTEERS HERO SECTION
+   ========================================================= */
+
+.volunteers-hero {
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 240px;
+
+    padding: 3rem 2rem;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    color: var(--white);
+
+    background:
+        linear-gradient(rgba(18, 18, 18, 0.60),
+            rgba(18, 18, 18, 0.60)),
+        url("../../../images/AC4TA-Horizontal-Sign-Night.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.volunteers-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   SECTION TAG
+   ========================================================= */
+
+.volunteers-hero .section-tag {
+
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    opacity: 0;
+    transform: translateY(20px);
+
+    animation:
+        volunteersHeroFadeIn 0.9s ease-out 0.1s forwards;
+}
+
+
+/* =========================================================
+   HERO HEADING
+   ========================================================= */
+
+.volunteers-hero h1 {
+
+    width: 100%;
+
+    margin: 0 0 1rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2.75rem, 4.5vw, 4.5rem);
+
+    font-weight: 600;
+
+    line-height: 1.05;
+
+    color: var(--white);
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    opacity: 0;
+    transform: translateY(25px);
+
+    animation:
+        volunteersHeroFadeIn 0.9s ease-out 0.25s forwards;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+   ========================================================= */
+
+.volunteers-hero p {
+
+    max-width: 700px;
+
+    margin: 0 auto 1.75rem;
+
+    font-size: 1.15rem;
+
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    opacity: 0;
+    transform: translateY(25px);
+
+    animation:
+        volunteersHeroFadeIn 0.9s ease-out 0.4s forwards;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+   ========================================================= */
+
+.volunteers-hero .btn {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.75rem;
+
+    opacity: 0;
+    transform: translateY(25px);
+
+    animation:
+        volunteersHeroFadeIn 0.9s ease-out 0.55s forwards;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.volunteers-hero .btn-primary {
+
+    background: var(--accent);
+
+    color: var(--white);
+
+    border: 1px solid var(--accent);
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+
+.volunteers-hero .btn-primary:hover {
+
+    background: var(--gold);
+
+    color: var(--bg-dark);
+
+    border-color: var(--gold);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+   ========================================================= */
+
+.volunteers-hero .btn:not(.btn-primary) {
+
+    color: var(--white);
+
+    border: 1px solid var(--gold);
+
+    background: transparent;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.volunteers-hero .btn:not(.btn-primary):hover {
+
+    background: var(--white);
+
+    color: var(--bg-dark);
+
+    border-color: var(--gold);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   HERO ANIMATION
+   ========================================================= */
+
+@keyframes volunteersHeroFadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(25px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .volunteers-hero h1 {
+
+        white-space: normal;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .volunteers-hero {
+
+        padding: 3rem 1.5rem;
+    }
+
+    .volunteers-hero h1 {
+
+        font-size: 2.5rem;
+    }
+
+}
+
+
+/* =========================================================
+   WHY VOLUNTEER
+   ========================================================= */
+
+.volunteer-purpose {
+    padding: 3rem 2rem;
+
+    background: var(--bg-light);
+    color: var(--text);
+}
+
+
+/* SECTION HEADING */
+
+.volunteer-purpose .section-heading {
+    max-width: 700px;
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+.volunteer-purpose .section-heading h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* PURPOSE GRID */
+
+.volunteer-purpose .purpose-grid {
+    max-width: 1050px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+}
+
+
+/* PURPOSE CARD */
+
+.volunteer-purpose .purpose-card {
+    padding: 2.75rem 2rem;
+
+    background: var(--white);
+    border: 1px solid rgba(31, 31, 31, 0.08);
+    border-radius: 6px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.volunteer-purpose .purpose-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(122, 31, 43, 0.2);
+
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.09);
+}
+
+
+/* PURPOSE ICON */
+
+.volunteer-purpose .purpose-card i {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1.5rem;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(122, 31, 43, 0.08);
+    color: var(--accent);
+
+    font-size: 1.4rem;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.volunteer-purpose .purpose-card:hover i {
+    background: var(--accent);
+    color: var(--white);
+
+    transform: scale(1.05);
+}
+
+
+/* PURPOSE CONTENT */
+
+.volunteer-purpose .purpose-card h3 {
+    margin: 0 0 0.85rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.45rem;
+    font-weight: 600;
+    line-height: 1.25;
+
+    color: var(--text);
+}
+
+.volunteer-purpose .purpose-card p {
+    max-width: 280px;
+    margin: 0 auto;
+
+    font-size: 0.95rem;
+    line-height: 1.7;
+
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   VOLUNTEER OPPORTUNITIES
+   ========================================================= */
+
+.volunteer-opportunities {
+    padding: 3rem 2rem;
+
+    background: var(--white);
+    color: var(--text);
+}
+
+
+/* SECTION HEADING */
+
+.volunteer-opportunities .section-heading {
+    max-width: 700px;
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+.volunteer-opportunities .section-heading h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* OPPORTUNITY GRID */
+
+.volunteer-opportunities .opportunity-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+
+/* VOLUNTEER CARD */
+
+.volunteer-opportunities .volunteer-card {
+    position: relative;
+
+    padding: 2.5rem 1.75rem;
+
+    background: var(--bg-light);
+    border: 1px solid rgba(31, 31, 31, 0.08);
+    border-radius: 6px;
+
+    text-align: center;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* GOLD TOP ACCENT */
+
+.volunteer-opportunities .volunteer-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 0;
+    height: 3px;
+
+    transform: translateX(-50%);
+
+    background: var(--gold);
+
+    transition: width 0.3s ease;
+}
+
+.volunteer-opportunities .volunteer-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(122, 31, 43, 0.18);
+
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+}
+
+.volunteer-opportunities .volunteer-card:hover::before {
+    width: 55%;
+}
+
+
+/* ICON */
+
+.volunteer-opportunities .volunteer-card i {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 1.4rem;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(122, 31, 43, 0.08);
+    color: var(--accent);
+
+    font-size: 1.3rem;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.volunteer-opportunities .volunteer-card:hover i {
+    background: var(--accent);
+    color: var(--white);
+
+    transform: scale(1.05);
+}
+
+
+/* CARD CONTENT */
+
+.volunteer-opportunities .volunteer-card h3 {
+    margin: 0 0 0.8rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.25;
+
+    color: var(--text);
+}
+
+.volunteer-opportunities .volunteer-card p {
+    margin: 0;
+
+    font-size: 0.92rem;
+    line-height: 1.7;
+
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   VOLUNTEER PHOTO GALLERY
+   ========================================================= */
+
+.volunteer-gallery {
+    padding: 3.5rem 2rem;
+
+    background: var(--bg-light);
+    color: var(--text);
+}
+
+
+/* SECTION HEADING */
+
+.volunteer-gallery .section-heading {
+    max-width: 760px;
+    margin: 0 auto 3.75rem;
+
+    text-align: center;
+}
+
+.volunteer-gallery .section-tag {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.45rem 1rem;
+
+    border: 1px solid rgba(200, 169, 107, 0.5);
+    border-radius: 999px;
+
+    background: rgba(200, 169, 107, 0.08);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+
+    color: var(--accent);
+}
+
+.volunteer-gallery .section-heading h2 {
+    margin: 0 0 1rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+.volunteer-gallery .section-heading p {
+    max-width: 700px;
+    margin: 0 auto;
+
+    font-size: 1rem;
+    line-height: 1.7;
+
+    color: var(--muted);
+}
+
+
+/* GALLERY GRID */
+
+.volunteer-gallery .gallery-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 240px);
+    gap: 1rem;
+}
+
+
+/* GALLERY ITEM */
+
+.volunteer-gallery .gallery-item {
+    position: relative;
+
+    min-width: 0;
+    min-height: 0;
+
+    overflow: hidden;
+
+    border-radius: 6px;
+
+    background: var(--bg-dark);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* GALLERY LAYOUT */
+
+.volunteer-gallery .gallery-item:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.volunteer-gallery .gallery-item:nth-child(2) {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.volunteer-gallery .gallery-item:nth-child(3) {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.volunteer-gallery .gallery-item:nth-child(4) {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.volunteer-gallery .gallery-item:nth-child(5) {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.volunteer-gallery .gallery-item:nth-child(6) {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+
+/* GALLERY IMAGE */
+
+.volunteer-gallery .gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.6s ease,
+        filter 0.6s ease;
+}
+
+.volunteer-gallery .gallery-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.72);
+}
+
+
+/* GALLERY OVERLAY */
+
+.volunteer-gallery .gallery-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 1.5rem;
+
+    background:
+        linear-gradient(to top,
+            rgba(0, 0, 0, 0.86),
+            rgba(0, 0, 0, 0.28) 58%,
+            transparent);
+
+    color: var(--white);
+
+    opacity: 0;
+    transform: translateY(8px);
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.4s ease;
+}
+
+.volunteer-gallery .gallery-item:hover .gallery-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* GALLERY CONTENT */
+
+.volunteer-gallery .gallery-overlay h3 {
+    margin: 0 0 0.45rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--white);
+}
+
+.volunteer-gallery .gallery-item:nth-child(1) .gallery-overlay h3 {
+    font-size: 1.6rem;
+}
+
+.volunteer-gallery .gallery-overlay p {
+    max-width: 420px;
+    margin: 0;
+
+    font-size: 0.88rem;
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.volunteer-gallery .gallery-item:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   VOLUNTEER IMPACT
+   ========================================================= */
+
+.volunteer-impact {
+    padding: 1.75rem 2rem;
+
+    background: var(--accent);
+    color: var(--white);
+}
+
+.volunteer-impact .container {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.volunteer-impact .impact-stat {
+    position: relative;
+
+    padding: 0 2rem;
+
+    text-align: center;
+}
+
+.volunteer-impact .impact-stat:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+    top: 10%;
+    right: 0;
+
+    width: 1px;
+    height: 80%;
+
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.volunteer-impact .impact-stat h3 {
+    margin: 0 0 0.5rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 600;
+    line-height: 1;
+
+    color: var(--gold);
+}
+
+.volunteer-impact .impact-stat p {
+    max-width: 220px;
+    margin: 0 auto;
+
+    font-size: 0.9rem;
+    line-height: 1.5;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* =========================================================
+   A DAY IN THE LIFE OF A VOLUNTEER
+   ========================================================= */
+
+.volunteer-day {
+    padding: 3.25rem 2rem;
+
+    background: var(--bg-light);
+    color: var(--text);
+}
+
+
+/* SECTION HEADING */
+
+.volunteer-day .section-heading {
+    max-width: 760px;
+    margin: 0 auto 4.5rem;
+
+    text-align: center;
+}
+
+
+.volunteer-day .section-heading h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* TIMELINE */
+
+.volunteer-day .timeline {
+    position: relative;
+
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* TIMELINE CONNECTING LINE */
+
+.volunteer-day .timeline::before {
+    content: "";
+
+    position: absolute;
+
+    top: 18px;
+    left: 12.5%;
+    right: 12.5%;
+
+    height: 2px;
+
+    background: var(--gold);
+
+    opacity: 0.6;
+}
+
+
+/* TIMELINE ITEM */
+
+.volunteer-day .timeline-item {
+    position: relative;
+
+    padding: 3.5rem 1.5rem 0;
+
+    text-align: center;
+}
+
+
+/* NUMBER / TIMELINE DOT */
+
+.volunteer-day .timeline-item::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateX(-50%);
+
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+
+    background: var(--bg-light);
+
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    color: var(--accent);
+
+    z-index: 2;
+}
+
+
+/* Individual numbers */
+
+.volunteer-day .timeline-item:nth-child(1)::before {
+    content: "01";
+}
+
+.volunteer-day .timeline-item:nth-child(2)::before {
+    content: "02";
+}
+
+.volunteer-day .timeline-item:nth-child(3)::before {
+    content: "03";
+}
+
+.volunteer-day .timeline-item:nth-child(4)::before {
+    content: "04";
+}
+
+
+/* TIMELINE HEADINGS */
+
+.volunteer-day .timeline-item h4 {
+    margin: 0 0 0.65rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.25;
+
+    color: var(--text);
+}
+
+
+/* TIMELINE DESCRIPTION */
+
+.volunteer-day .timeline-item p {
+    max-width: 210px;
+
+    margin: 0 auto;
+
+    font-size: 0.92rem;
+    line-height: 1.65;
+
+    color: var(--muted);
+}
+
+
+/* HOVER EFFECT */
+
+.volunteer-day .timeline-item::before {
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.volunteer-day .timeline-item:hover::before {
+    background: var(--accent);
+    color: var(--white);
+
+    transform: translateX(-50%) scale(1.08);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .volunteer-day {
+        padding: 5.5rem 1.5rem;
+    }
+
+    .volunteer-day .timeline {
+        grid-template-columns: repeat(2, 1fr);
+
+        row-gap: 4rem;
+    }
+
+
+    /*
+       Turn the timeline into two rows.
+    */
+
+    .volunteer-day .timeline::before {
+        top: 18px;
+        left: 25%;
+        right: 25%;
+
+        width: 50%;
+    }
+
+
+    /*
+       The second row needs its own visual
+       connection.
+    */
+
+    .volunteer-day .timeline::after {
+        content: "";
+
+        position: absolute;
+
+        left: 25%;
+        right: 25%;
+        top: calc(50% + 18px);
+
+        height: 2px;
+
+        background: var(--gold);
+
+        opacity: 0.6;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .volunteer-day {
+        padding: 5rem 1.25rem;
+    }
+
+    .volunteer-day .section-heading {
+        margin-bottom: 3.5rem;
+    }
+
+
+    /*
+       Switch to a vertical timeline.
+    */
+
+    .volunteer-day .timeline {
+        display: block;
+
+        max-width: 600px;
+    }
+
+
+    /*
+       Vertical connecting line.
+    */
+
+    .volunteer-day .timeline::before {
+        top: 0;
+        bottom: 0;
+        left: 18px;
+        right: auto;
+
+        width: 2px;
+        height: auto;
+    }
+
+
+    /*
+       Remove the tablet connector.
+    */
+
+    .volunteer-day .timeline::after {
+        display: none;
+    }
+
+
+    /* Timeline items */
+
+    .volunteer-day .timeline-item {
+        min-height: 110px;
+
+        padding:
+            0.25rem 0 2.5rem 4.5rem;
+
+        text-align: left;
+    }
+
+
+    /*
+       Timeline dots move to the left.
+    */
+
+    .volunteer-day .timeline-item::before {
+        top: 0;
+        left: 18px;
+
+        width: 36px;
+        height: 36px;
+
+        transform: translateX(-50%);
+    }
+
+
+    .volunteer-day .timeline-item:hover::before {
+        transform: translateX(-50%) scale(1.08);
+    }
+
+
+    .volunteer-day .timeline-item h4 {
+        font-size: 1.3rem;
+    }
+
+
+    .volunteer-day .timeline-item p {
+        max-width: none;
+
+        margin: 0;
+
+        font-size: 0.92rem;
+    }
+
+
+    /*
+       Remove extra spacing from final item.
+    */
+
+    .volunteer-day .timeline-item:last-child {
+        padding-bottom: 0;
+        min-height: auto;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .volunteer-day {
+        padding: 4rem 1.25rem;
+    }
+
+    .volunteer-day .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .volunteer-day .timeline-item {
+        padding-left: 4rem;
+    }
+
+    .volunteer-day .timeline-item h4 {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .volunteer-day .timeline-item::before {
+        transition: none;
+    }
+
+    .volunteer-day .timeline-item:hover::before {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* =========================================================
+   VOLUNTEER BENEFITS
+   ========================================================= */
+
+.volunteer-benefits {
+    padding: 3rem 2rem;
+
+    background: var(--white);
+    color: var(--text);
+}
+
+.volunteer-benefits .section-heading {
+    max-width: 760px;
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+.volunteer-benefits .section-heading h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* BENEFITS GRID */
+
+.volunteer-benefits .benefits-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+
+/* BENEFIT */
+
+.volunteer-benefits .benefit {
+    position: relative;
+
+    min-height: 90px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 1.25rem 1.5rem 1.25rem 3.5rem;
+
+    border: 1px solid rgba(31, 31, 31, 0.1);
+    border-radius: 6px;
+
+    background: var(--bg-light);
+
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.4;
+
+    color: var(--text);
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.volunteer-benefits .benefit::before {
+    content: "✓";
+
+    position: absolute;
+    left: 1.25rem;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(200, 169, 107, 0.15);
+
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    color: var(--accent);
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.volunteer-benefits .benefit:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(200, 169, 107, 0.55);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.volunteer-benefits .benefit:hover::before {
+    background: var(--gold);
+    color: var(--white);
+}
+
+
+/* =========================================================
+   VOLUNTEER SPOTLIGHT
+   ========================================================= */
+
+.volunteer-spotlight {
+    padding: 3rem 2rem;
+
+    background: var(--bg-light);
+    color: var(--text);
+}
+
+.volunteer-spotlight .container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.volunteer-spotlight .spotlight-card {
+    min-height: 430px;
+
+    display: grid;
+    grid-template-columns: 42% 58%;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    background: var(--white);
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+/* SPOTLIGHT IMAGE */
+
+.volunteer-spotlight .spotlight-card img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* SPOTLIGHT CONTENT */
+
+.volunteer-spotlight .spotlight-card>div {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 4rem;
+}
+
+.volunteer-spotlight .spotlight-card>div::before {
+    content: "";
+
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+
+    width: 45px;
+    height: 3px;
+
+    background: var(--gold);
+}
+
+.volunteer-spotlight .spotlight-card h2 {
+    margin: 0 0 1rem;
+    padding-top: 1.25rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+.volunteer-spotlight .spotlight-card h3 {
+    margin: 0 0 1.5rem;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+
+    color: var(--accent);
+}
+
+.volunteer-spotlight .spotlight-card p {
+    max-width: 540px;
+    margin: 0;
+
+    padding-left: 1.5rem;
+
+    border-left: 2px solid var(--gold);
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(1.15rem, 2vw, 1.35rem);
+    font-style: italic;
+    line-height: 1.7;
+
+    color: var(--text);
+}
+
+
+/* =========================================================
+   VOLUNTEER FAQ
+   ========================================================= */
+
+.volunteer-faq {
+    padding: 3rem 2rem;
+
+    background: var(--white);
+    color: var(--text);
+}
+
+.volunteer-faq .section-heading {
+    max-width: 760px;
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+.volunteer-faq .section-heading h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--text);
+}
+
+
+/* FAQ LIST */
+
+.volunteer-faq .faq-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.volunteer-faq .faq-item {
+    border-bottom: 1px solid rgba(31, 31, 31, 0.12);
+}
+
+.volunteer-faq .faq-item:first-child {
+    border-top: 1px solid rgba(31, 31, 31, 0.12);
+}
+
+
+/* FAQ QUESTION */
+
+.volunteer-faq .faq-question {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 2rem;
+
+    padding: 1.5rem 0;
+
+    border: 0;
+    background: transparent;
+
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+
+    text-align: left;
+
+    color: var(--text);
+
+    cursor: pointer;
+}
+
+.volunteer-faq .faq-question:focus {
+    outline: none;
+}
+
+.volunteer-faq .faq-question:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 4px;
+}
+
+.volunteer-faq .faq-question:hover {
+    color: var(--accent);
+}
+
+
+/* FAQ CHEVRON */
+
+.volunteer-faq .faq-question i {
+    flex-shrink: 0;
+
+    font-size: 0.8rem;
+
+    color: var(--accent);
+
+    transition: transform 0.3s ease;
+}
+
+.volunteer-faq .faq-question[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+
+/* FAQ ANSWER */
+
+.volunteer-faq .faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+
+    opacity: 0;
+
+    transition:
+        grid-template-rows 0.35s ease,
+        opacity 0.25s ease;
+}
+
+.volunteer-faq .faq-answer p {
+    min-height: 0;
+
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 0.95rem;
+    line-height: 1.7;
+
+    color: var(--muted);
+}
+
+
+/* OPEN FAQ */
+
+.volunteer-faq .faq-item:has(.faq-question[aria-expanded="true"]) .faq-answer {
+    grid-template-rows: 1fr;
+
+    padding-bottom: 1.5rem;
+
+    opacity: 1;
+}
+
+
+/* =========================================================
+   VOLUNTEER SIGNUP
+   ========================================================= */
+
+.volunteer-signup {
+    padding: 3rem 2rem;
+
+    background: var(--bg-dark);
+    color: var(--white);
+}
+
+.volunteer-signup .container {
+    max-width: 900px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* HEADING */
+
+.volunteer-signup h2 {
+    margin: 0 0 1rem;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.3rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--white);
+}
+
+
+/* INTRODUCTION */
+
+.volunteer-signup>.container>p {
+    max-width: 650px;
+    margin: 0 auto 2.75rem;
+
+    font-size: 1rem;
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* FORM */
+
+.volunteer-signup .volunteer-form {
+    max-width: 760px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    padding: 2.5rem;
+
+    border-radius: 8px;
+
+    background: var(--white);
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+
+    text-align: left;
+}
+
+
+/* FORM INPUTS */
+
+.volunteer-signup .volunteer-form input,
+.volunteer-signup .volunteer-form textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 0.95rem 1rem;
+
+    border: 1px solid rgba(31, 31, 31, 0.15);
+    border-radius: 4px;
+
+    background: var(--bg-light);
+
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+
+    color: var(--text);
+
+    outline: none;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.volunteer-signup .volunteer-form input::placeholder,
+.volunteer-signup .volunteer-form textarea::placeholder {
+    color: var(--muted);
+}
+
+.volunteer-signup .volunteer-form textarea {
+    grid-column: 1 / -1;
+
+    min-height: 150px;
+
+    resize: vertical;
+}
+
+.volunteer-signup .volunteer-form input:focus,
+.volunteer-signup .volunteer-form textarea:focus {
+    border-color: var(--gold);
+
+    background: var(--white);
+
+    box-shadow:
+        0 0 0 3px rgba(200, 169, 107, 0.15);
+}
+
+
+/* SUBMIT BUTTON */
+
+.volunteer-signup .volunteer-form .btn-primary {
+    grid-column: 1 / -1;
+
+    justify-self: center;
+
+    min-width: 220px;
+
+    margin-top: 0.5rem;
+
+    border: 2px solid var(--gold);
+
+    background: var(--gold);
+    color: var(--text);
+}
+
+.volunteer-signup .volunteer-form .btn-primary:hover {
+    border-color: var(--accent);
+
+    background: var(--accent);
+    color: var(--white);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .volunteer-opportunities .opportunity-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 750px;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .volunteer-gallery,
+    .volunteer-impact,
+    .volunteer-day,
+    .volunteer-benefits,
+    .volunteer-spotlight,
+    .volunteer-faq,
+    .volunteer-signup {
+        padding: 4rem 1.5rem;
+    }
+
+
+    /* GALLERY */
+
+    .volunteer-gallery .gallery-grid {
+        max-width: 800px;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 240px);
+    }
+
+    .volunteer-gallery .gallery-item:nth-child(1) {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+    }
+
+    .volunteer-gallery .gallery-item:nth-child(2) {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .volunteer-gallery .gallery-item:nth-child(3) {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .volunteer-gallery .gallery-item:nth-child(4) {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .volunteer-gallery .gallery-item:nth-child(5) {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .volunteer-gallery .gallery-item:nth-child(6) {
+        grid-column: 1 / 3;
+        grid-row: 5;
+    }
+
+
+    /* IMPACT */
+
+    .volunteer-impact .container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 3rem;
+    }
+
+    .volunteer-impact .impact-stat::after {
+        display: none;
+    }
+
+    .volunteer-impact .impact-stat:nth-child(-n + 2)::after {
+        content: "";
+
+        display: block;
+
+        top: auto;
+        right: auto;
+        bottom: -1.5rem;
+        left: 10%;
+
+        width: 80%;
+        height: 1px;
+
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+
+    /* TIMELINE */
+
+    .volunteer-day .timeline {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 4rem;
+    }
+
+    .volunteer-day .timeline::before {
+        left: 25%;
+        right: 25%;
+    }
+
+    .volunteer-day .timeline::after {
+        content: "";
+
+        position: absolute;
+
+        top: calc(50% + 18px);
+        left: 25%;
+        right: 25%;
+
+        height: 2px;
+
+        background: var(--gold);
+
+        opacity: 0.6;
+    }
+
+
+    /* BENEFITS */
+
+    .volunteer-benefits .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+    }
+
+
+    /* SPOTLIGHT */
+
+    .volunteer-spotlight .spotlight-card {
+        grid-template-columns: 40% 60%;
+        min-height: 400px;
+    }
+
+    .volunteer-spotlight .spotlight-card>div {
+        padding: 3rem;
+    }
+
+    .volunteer-spotlight .spotlight-card>div::before {
+        top: 3rem;
+        left: 3rem;
+    }
+
+
+    /* FAQ */
+
+    .volunteer-faq .faq-list {
+        max-width: 800px;
+    }
+
+
+    /* SIGNUP */
+
+    .volunteer-signup .volunteer-form {
+        max-width: 700px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .volunteers-hero {
+        min-height: 52vh;
+        padding: 4rem 1.5rem;
+    }
+
+    .volunteers-hero h1 {
+        font-size: clamp(2.4rem, 8vw, 3.5rem);
+    }
+
+    .volunteers-hero p {
+        font-size: 0.98rem;
+    }
+
+
+    .volunteer-purpose,
+    .volunteer-opportunities {
+        padding: 4rem 1.5rem;
+    }
+
+    .volunteer-purpose .purpose-grid {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+    }
+
+    .volunteer-purpose .purpose-card {
+        padding: 2.5rem 2rem;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .volunteer-spotlight .spotlight-card {
+        display: block;
+        min-height: auto;
+    }
+
+    .volunteer-spotlight .spotlight-card img {
+        height: 300px;
+    }
+
+    .volunteer-spotlight .spotlight-card>div {
+        padding: 3rem 2rem;
+    }
+
+    .volunteer-spotlight .spotlight-card>div::before {
+        top: 2rem;
+        left: 2rem;
+    }
+
+    .volunteer-spotlight .spotlight-card h2 {
+        padding-top: 1rem;
+        font-size: 2rem;
+    }
+
+    .volunteer-spotlight .spotlight-card h3 {
+        margin-bottom: 1.25rem;
+    }
+
+    .volunteer-spotlight .spotlight-card p {
+        padding-left: 1.25rem;
+        font-size: 1.1rem;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .volunteer-gallery,
+    .volunteer-impact,
+    .volunteer-day,
+    .volunteer-benefits,
+    .volunteer-spotlight,
+    .volunteer-faq,
+    .volunteer-signup,
+    .volunteer-purpose,
+    .volunteer-opportunities {
+        padding: 4rem 1.25rem;
+    }
+
+
+    /* OPPORTUNITIES */
+
+    .volunteer-opportunities .section-heading {
+        margin-bottom: 3rem;
+    }
+
+    .volunteer-opportunities .opportunity-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+
+    /* GALLERY */
+
+    .volunteer-gallery .section-heading {
+        margin-bottom: 3rem;
+    }
+
+    .volunteer-gallery .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+
+        gap: 0.85rem;
+    }
+
+    .volunteer-gallery .gallery-item:nth-child(n) {
+        grid-column: 1;
+        grid-row: auto;
+
+        height: 260px;
+    }
+
+    .volunteer-gallery .gallery-item:nth-child(1) {
+        height: 350px;
+    }
+
+    .volunteer-gallery .gallery-overlay {
+        opacity: 1;
+        transform: translateY(0);
+
+        background:
+            linear-gradient(to top,
+                rgba(0, 0, 0, 0.82),
+                rgba(0, 0, 0, 0.12) 65%,
+                transparent);
+    }
+
+    .volunteer-gallery .gallery-overlay h3,
+    .volunteer-gallery .gallery-item:nth-child(1) .gallery-overlay h3 {
+        font-size: 1.3rem;
+    }
+
+
+    /* IMPACT */
+
+    .volunteer-impact .container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .volunteer-impact .impact-stat {
+        padding: 2rem 1rem;
+    }
+
+    .volunteer-impact .impact-stat:first-child {
+        padding-top: 0;
+    }
+
+    .volunteer-impact .impact-stat:last-child {
+        padding-bottom: 0;
+    }
+
+    .volunteer-impact .impact-stat::after {
+        display: none;
+    }
+
+    .volunteer-impact .impact-stat:not(:last-child)::after {
+        content: "";
+
+        display: block;
+
+        top: auto;
+        right: 10%;
+        bottom: 0;
+        left: 10%;
+
+        width: 80%;
+        height: 1px;
+
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+
+    /* TIMELINE */
+
+    .volunteer-day .section-heading {
+        margin-bottom: 3.5rem;
+    }
+
+    .volunteer-day .timeline {
+        display: block;
+        max-width: 600px;
+    }
+
+    .volunteer-day .timeline::before {
+        top: 0;
+        bottom: 0;
+
+        left: 18px;
+        right: auto;
+
+        width: 2px;
+        height: auto;
+    }
+
+    .volunteer-day .timeline::after {
+        display: none;
+    }
+
+    .volunteer-day .timeline-item {
+        min-height: 110px;
+
+        padding: 0.25rem 0 2.5rem 4.5rem;
+
+        text-align: left;
+    }
+
+    .volunteer-day .timeline-item::before {
+        top: 0;
+        left: 18px;
+
+        transform: translateX(-50%);
+    }
+
+    .volunteer-day .timeline-item:hover::before {
+        transform: translateX(-50%) scale(1.08);
+    }
+
+    .volunteer-day .timeline-item h4 {
+        font-size: 1.3rem;
+    }
+
+    .volunteer-day .timeline-item p {
+        max-width: none;
+        margin: 0;
+    }
+
+    .volunteer-day .timeline-item:last-child {
+        min-height: auto;
+        padding-bottom: 0;
+    }
+
+
+    /* BENEFITS */
+
+    .volunteer-benefits .section-heading {
+        margin-bottom: 3rem;
+    }
+
+    .volunteer-benefits .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 0.85rem;
+    }
+
+    .volunteer-benefits .benefit {
+        min-height: 80px;
+        padding-left: 3.4rem;
+    }
+
+
+    /* FAQ */
+
+    .volunteer-faq .section-heading {
+        margin-bottom: 3rem;
+    }
+
+    .volunteer-faq .faq-question {
+        gap: 1rem;
+
+        padding: 1.35rem 0;
+
+        font-size: 0.95rem;
+    }
+
+    .volunteer-faq .faq-answer p {
+        font-size: 0.9rem;
+    }
+
+
+    /* SIGNUP */
+
+    .volunteer-signup h2 {
+        font-size: 2.2rem;
+    }
+
+    .volunteer-signup>.container>p {
+        margin-bottom: 2.25rem;
+
+        font-size: 0.92rem;
+    }
+
+    .volunteer-signup .volunteer-form {
+        grid-template-columns: 1fr;
+
+        padding: 2rem 1.5rem;
+    }
+
+    .volunteer-signup .volunteer-form textarea,
+    .volunteer-signup .volunteer-form .btn-primary {
+        grid-column: auto;
+    }
+
+    .volunteer-signup .volunteer-form .btn-primary {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .volunteers-hero {
+        min-height: 55vh;
+        padding: 3.5rem 1.25rem;
+    }
+
+    .volunteers-hero h1 {
+        font-size: 2.35rem;
+    }
+
+    .volunteers-hero p {
+        font-size: 0.92rem;
+        line-height: 1.65;
+    }
+
+    .volunteers-hero .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .volunteers-hero .btn:not(.btn-primary) {
+        margin-top: 0.75rem;
+        margin-left: 0;
+    }
+
+
+    .volunteer-purpose,
+    .volunteer-opportunities,
+    .volunteer-gallery,
+    .volunteer-impact,
+    .volunteer-day,
+    .volunteer-benefits,
+    .volunteer-spotlight,
+    .volunteer-faq,
+    .volunteer-signup {
+        padding: 4rem 1.25rem;
+    }
+
+
+    /* SECTION HEADINGS */
+
+    .volunteer-purpose .section-heading h2,
+    .volunteer-opportunities .section-heading h2,
+    .volunteer-gallery .section-heading h2,
+    .volunteer-day .section-heading h2,
+    .volunteer-benefits .section-heading h2,
+    .volunteer-faq .section-heading h2 {
+        font-size: 2rem;
+    }
+
+
+    /* PURPOSE */
+
+    .volunteer-purpose .purpose-card {
+        padding: 2.25rem 1.5rem;
+    }
+
+    .volunteer-purpose .purpose-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .volunteer-purpose .purpose-card p {
+        font-size: 0.9rem;
+    }
+
+
+    /* OPPORTUNITIES */
+
+    .volunteer-opportunities .volunteer-card {
+        padding: 2.25rem 1.75rem;
+    }
+
+    .volunteer-opportunities .volunteer-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .volunteer-opportunities .volunteer-card p {
+        font-size: 0.9rem;
+    }
+
+
+    /* GALLERY */
+
+    .volunteer-gallery .section-heading p {
+        font-size: 0.92rem;
+    }
+
+    .volunteer-gallery .gallery-item:nth-child(1) {
+        height: 310px;
+    }
+
+    .volunteer-gallery .gallery-item:nth-child(n + 2) {
+        height: 230px;
+    }
+
+
+    /* IMPACT */
+
+    .volunteer-impact .impact-stat {
+        padding: 1.75rem 0.75rem;
+    }
+
+    .volunteer-impact .impact-stat h3 {
+        font-size: 2.5rem;
+    }
+
+    .volunteer-impact .impact-stat p {
+        font-size: 0.88rem;
+    }
+
+
+    /* TIMELINE */
+
+    .volunteer-day .timeline-item {
+        padding-left: 4rem;
+    }
+
+    .volunteer-day .timeline-item h4 {
+        font-size: 1.2rem;
+    }
+
+
+    /* BENEFITS */
+
+    .volunteer-benefits .benefit {
+        min-height: 76px;
+
+        padding: 1rem 1rem 1rem 3.25rem;
+
+        font-size: 0.9rem;
+    }
+
+    .volunteer-benefits .benefit::before {
+        left: 1rem;
+
+        width: 28px;
+        height: 28px;
+    }
+
+
+    /* SPOTLIGHT */
+
+    .volunteer-spotlight .spotlight-card img {
+        height: 260px;
+    }
+
+    .volunteer-spotlight .spotlight-card>div {
+        padding: 2.75rem 1.5rem;
+    }
+
+    .volunteer-spotlight .spotlight-card>div::before {
+        top: 1.75rem;
+        left: 1.5rem;
+    }
+
+    .volunteer-spotlight .spotlight-card h2 {
+        font-size: 1.8rem;
+    }
+
+    .volunteer-spotlight .spotlight-card p {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+
+    /* SIGNUP */
+
+    .volunteer-signup h2 {
+        font-size: 2rem;
+    }
+
+    .volunteer-signup .volunteer-form {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .volunteer-signup .volunteer-form input,
+    .volunteer-signup .volunteer-form textarea {
+        font-size: 0.88rem;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY — REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .volunteers-hero .section-tag,
+    .volunteers-hero h1,
+    .volunteers-hero p,
+    .volunteers-hero .btn {
+        opacity: 1;
+        transform: none;
+        animation: none;
+    }
+
+    .volunteer-purpose .purpose-card,
+    .volunteer-purpose .purpose-card i,
+    .volunteer-opportunities .volunteer-card,
+    .volunteer-opportunities .volunteer-card::before,
+    .volunteer-opportunities .volunteer-card i,
+    .volunteer-gallery .gallery-item,
+    .volunteer-gallery .gallery-item img,
+    .volunteer-gallery .gallery-overlay,
+    .volunteer-day .timeline-item::before,
+    .volunteer-benefits .benefit,
+    .volunteer-benefits .benefit::before,
+    .volunteer-faq .faq-answer,
+    .volunteer-faq .faq-question i,
+    .volunteer-signup .volunteer-form input,
+    .volunteer-signup .volunteer-form textarea,
+    .volunteer-signup .volunteer-form .btn-primary {
+        transition: none;
+    }
+
+    .volunteer-purpose .purpose-card:hover,
+    .volunteer-opportunities .volunteer-card:hover,
+    .volunteer-gallery .gallery-item:hover,
+    .volunteer-gallery .gallery-item:hover img,
+    .volunteer-day .timeline-item:hover::before,
+    .volunteer-benefits .benefit:hover {
+        transform: none;
+    }
+
+}

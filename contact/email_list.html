@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images\favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ Base ------>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/typography.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!------ Layout ------>
+    <link rel="stylesheet" href="../assets/css/layout/container.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/layout/footer.css">
+
+    <!------ Components ------>
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/section-heading.css">
+
+    <!------ PAGE ------>
+    <link rel="stylesheet" href="../assets/css/pages/email_list.css">
+
+    <!------ RESPONSIVE ------>
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="../index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="../images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="../events/announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta" target="_blank"
+                        rel="noopener noreferrer">Calendar</a>
+                    <a href="../support/membership_appeal.html">Membership Appeal</a>
+                    <a href="../support/curtain_appeal.html">Curtain Appeal</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../events/featured_events.html">Featured Events</a>
+                    <a href="../events/list_events.html">List of Events</a>
+                    <a href="../events/ticket_policies.html">Ticketing Policies</a>
+                    <a href="../events/plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href="../about/mission_vision.html">Mission/Vision</a>
+                    <a href="../about/staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="../about/history.html">History <i
+                                class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="../about/history_building.html">Building</a>
+                            <a href="../about/history_organ.html">Theatre Organ</a>
+                            <a href="../about/history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../support/sponsorship.html">Sponsorship</a>
+                    <a href="../support/membership.html">Membership</a>
+                    <a href="../support/volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--Rentals-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="../rentals/rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="../rentals/rental_rates.html">Rental Rates</a>
+                            <a href="../rentals/rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="../rentals/bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates/Merchandise-->
+            <div class="nav-item">
+                <a class="dropbtn" href="../store/gift_certificates.html">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="contact_info.html">Address & Contact Information</a>
+                    <a href="box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JOIN OUR EMAIL LIST HERO -->
+    <header class="email-hero">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <span class="section-tag">
+                    Stay Connected
+                </span>
+
+                <h1>Join Our Email List</h1>
+
+                <p>
+                    Be the first to hear about upcoming performances,
+                    special events, ticket announcements, educational programs,
+                    and opportunities to support the arts.
+                </p>
+
+                <a href="#signup" class="btn btn-primary">
+                    Subscribe Today
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- WHY SUBSCRIBE -->
+    <section class="email-benefits">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Stay Connected
+                </span>
+
+                <h2>Why Join?</h2>
+
+                <p>
+                    Stay informed and never miss what's happening
+                    at A Center for the Arts.
+                </p>
+
+            </div>
+
+
+            <div class="benefits-grid">
+
+                <div class="benefit-card">
+
+                    <i class="fa fa-ticket" aria-hidden="true"></i>
+
+                    <h3>Upcoming Events</h3>
+
+                    <p>
+                        Learn about performances and programs
+                        before they happen.
+                    </p>
+
+                </div>
+
+
+                <div class="benefit-card">
+
+                    <i class="fa fa-bell" aria-hidden="true"></i>
+
+                    <h3>Important Announcements</h3>
+
+                    <p>
+                        Stay informed about special events
+                        and venue updates.
+                    </p>
+
+                </div>
+
+
+                <div class="benefit-card">
+
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+
+                    <h3>Support Opportunities</h3>
+
+                    <p>
+                        Learn how you can help support
+                        arts programming in our community.
+                    </p>
+
+                </div>
+
+
+                <div class="benefit-card">
+
+                    <i class="fa fa-users" aria-hidden="true"></i>
+
+                    <h3>Community Connection</h3>
+
+                    <p>
+                        Stay connected with artists,
+                        patrons, and fellow supporters.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SAMPLE NEWSLETTER PREVIEW -->
+    <section class="newsletter-preview">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Newsletter Preview
+                </span>
+
+                <h2>What You'll Receive</h2>
+
+                <p>
+                    A closer look at the kinds of updates
+                    you'll receive when you join our email list.
+                </p>
+
+            </div>
+
+
+            <div class="preview-content">
+
+                <div class="preview-item">
+
+                    <h3>Upcoming Performances</h3>
+
+                    <p>
+                        Concerts, theatre productions,
+                        educational programs, and more.
+                    </p>
+
+                </div>
+
+
+                <div class="preview-item">
+
+                    <h3>Featured Announcements</h3>
+
+                    <p>
+                        Special events, fundraising campaigns,
+                        and community news.
+                    </p>
+
+                </div>
+
+
+                <div class="preview-item">
+
+                    <h3>Exclusive Updates</h3>
+
+                    <p>
+                        Early information about future seasons
+                        and programming.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EMAIL SIGNUP FORM -->
+    <section id="signup" class="email-signup">
+
+        <div class="container">
+
+            <div class="signup-card">
+
+                <div class="signup-heading">
+
+                    <span class="section-tag">
+                        Stay Connected
+                    </span>
+
+                    <h2>Join Our Mailing List</h2>
+
+                    <p>
+                        Complete the form below to receive
+                        updates directly in your inbox.
+                    </p>
+
+                </div>
+
+
+                <form class="email-form">
+
+                    <div class="form-field">
+
+                        <label for="signup-first-name">
+                            First Name
+                        </label>
+
+                        <input type="text" id="signup-first-name" name="first-name" placeholder="First Name"
+                            autocomplete="given-name" required>
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label for="signup-last-name">
+                            Last Name
+                        </label>
+
+                        <input type="text" id="signup-last-name" name="last-name" placeholder="Last Name"
+                            autocomplete="family-name" required>
+
+                    </div>
+
+
+                    <div class="form-field email-field">
+
+                        <label for="signup-email">
+                            Email Address
+                        </label>
+
+                        <input type="email" id="signup-email" name="email" placeholder="Email Address"
+                            autocomplete="email" required>
+
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary">
+                        Subscribe
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRIVACY & COMMUNICATION PROMISE -->
+    <section class="privacy-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Your Privacy Matters
+                </span>
+
+                <h2>Our Promise to You</h2>
+
+                <p>
+                    We respect your inbox and your information.
+                    Here's what you can expect when you join our list.
+                </p>
+
+            </div>
+
+
+            <div class="privacy-grid">
+
+                <!-- NO SPAM -->
+                <div class="privacy-item">
+
+                    <span>No Spam</span>
+
+                    <p>
+                        We only send relevant information
+                        about AC4TA programs and events.
+                    </p>
+
+                </div>
+
+
+                <!-- INFORMATION SECURITY -->
+                <div class="privacy-item">
+
+                    <span>Your Information Is Secure</span>
+
+                    <p>
+                        Your contact information
+                        will never be sold or shared.
+                    </p>
+
+                </div>
+
+
+                <!-- UNSUBSCRIBE -->
+                <div class="privacy-item">
+
+                    <span>Unsubscribe Anytime</span>
+
+                    <p>
+                        Manage your subscription
+                        whenever you choose.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SOCIAL CONNECTION -->
+    <section class="social-connect">
+
+        <div class="container">
+
+            <div class="social-connect-content">
+
+                <span class="section-tag">
+                    Stay Connected
+                </span>
+
+                <h2>Stay Connected Beyond Email</h2>
+
+                <p>
+                    Follow A Center for the Arts on social media
+                    for photos, event highlights, community stories,
+                    and announcements.
+                </p>
+
+                <div class="social-buttons">
+
+                    <a href="https://www.facebook.com/acenterforthearts" class="btn btn-primary" target="_blank"
+                        rel="noopener noreferrer">
+                        Facebook
+                    </a>
+
+                    <a href="https://www.instagram.com/acenterforthearts/" class="btn btn-secondary" target="_blank"
+                        rel="noopener noreferrer">
+                        Instagram
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="email-final-cta">
+
+        <div class="container">
+
+            <div class="email-final-cta-content">
+
+                <span class="section-tag">
+                    Stay Connected
+                </span>
+
+                <h2>Become Part of the AC4TA Community</h2>
+
+                <p>
+                    Join hundreds of patrons,
+                    volunteers, artists, and supporters
+                    who stay connected through our email updates.
+                </p>
+
+                <a href="#signup" class="btn btn-primary">
+                    Join Today
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/" target="_blank"
+                        rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

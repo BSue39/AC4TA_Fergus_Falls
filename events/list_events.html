@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images\favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ Base ------>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/typography.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!------ Layout ------>
+    <link rel="stylesheet" href="../assets/css/layout/container.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/layout/footer.css">
+
+    <!------ Components ------>
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/section-heading.css">
+
+    <!------ PAGE ------>
+    <link rel="stylesheet" href="../assets/css/pages/list_events.css">
+
+    <!------ RESPONSIVE ------>
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="../index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="../images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta" target="_blank"
+                        rel="noopener noreferrer">Calendar</a>
+                    <a href="../support/membership_appeal.html">Membership Appeal</a>
+                    <a href="../support/curtain_appeal.html">Curtain Appeal</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="featured_events.html">Featured Events</a>
+                    <a href="list_events.html">List of Events</a>
+                    <a href="ticket_policies.html">Ticketing Policies</a>
+                    <a href="plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href="../about/mission_vision.html">Mission/Vision</a>
+                    <a href="../about/staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="../about/history.html">History <i
+                                class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="../about/history_building.html">Building</a>
+                            <a href="../about/history_organ.html">Theatre Organ</a>
+                            <a href="../about/history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="support\sponsorship.html">Sponsorship</a>
+                    <a href="support\membership.html">Membership</a>
+                    <a href="support\volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--Rentals-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="rentals\rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="rentals\rental_rates.html">Rental Rates</a>
+                            <a href="rentals\rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="rentals\bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates/Merchandise-->
+            <div class="nav-item">
+                <a class="dropbtn" href="#gift">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="contact\contact_info.html">Address & Contact Information</a>
+                    <a href="contact\box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="contact\email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LIST OF EVENTS HERO -->
+    <section class="list-events-hero">
+        <div class="container list-events-hero-content">
+
+            <span class="section-tag">Upcoming Updates</span>
+
+            <h1>Find Your Next Event</h1>
+
+            <p>
+                Browse concerts, theatre productions,
+                youth programs, community events,
+                and special performances happening
+                throughout the year.
+            </p>
+
+            <a href="#all-events" class="btn btn-primary">
+                Browse Events
+            </a>
+
+        </div>
+    </section>
+
+    <!-- UPCOMING EVENTS -->
+    <section class="upcoming-events">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Happening Soon
+                </span>
+
+                <h2>
+                    Upcoming Events
+                </h2>
+
+                <p>
+                    Don't miss these upcoming performances.
+                </p>
+
+            </div>
+
+            <div class="upcoming-grid">
+
+                <!-- Featured Event Cards -->
+
+                <article class="event-card">
+
+                    <img src="../images/Tribute Series/Tina Promo.png" alt="Carole King Tribute">
+
+                    <div class="event-content">
+
+                        <span class="event-tag">
+                            Tribute Concert
+                        </span>
+
+                        <h3>
+                            Tapestry Unravelled
+                        </h3>
+
+                        <p>
+                            Celebrate the timeless music of Carole King with an evening
+                            of unforgettable songs performed by Tina Naponelli.
+                        </p>
+
+                        <div class="event-date">
+                            Saturday, October 3 • 7:30 PM
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?show=317546" class="btn btn-primary"
+                            target="_blank" rel="noopener noreferrer">
+                            Event Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="event-card">
+
+                    <img src="../images/Performance Arts Package/Harmonic-Hijinks.jpg" alt="Harmonic Hijinks">
+
+                    <div class="event-content">
+
+                        <span class="event-tag">
+                            Performing Arts
+                        </span>
+
+                        <h3>
+                            Harmonic Hijinks
+                        </h3>
+
+                        <p>
+                            The Fergus Falls Civic Orchestra celebrates Looney Tunes classics
+                            alongside the hilarious music of P.D.Q. Bach.
+                        </p>
+
+                        <div class="event-date">
+                            Sunday, October 11 • 2:00 PM
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?show=317538" class="btn btn-primary"
+                            target="_blank" rel="noopener noreferrer">
+                            Event Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+                 <article class="event-card">
+
+                    <img src="../images/Performance Arts Package/UNEARTHED for big top flat (2).jpeg"
+                        alt="The Greatest Show Unearthed">
+
+                    <div class="event-content">
+
+                        <span class="event-tag">
+                            Performing Arts
+                        </span>
+
+                        <h3>
+                            The Greatest Show Unearthed
+                        </h3>
+
+                        <p>
+                            Celebrate Halloween with an unforgettable theatrical production featuring Celtic music,
+                            mythical
+                            creatures, haunting stories, and breathtaking performances. A one-of-a-kind experience
+                            perfect
+                            for audiences looking for something truly different.
+                        </p>
+
+                        <div class="event-date">
+                            Saturday, October 31 • 7:30 PM
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?show=317540" class="btn btn-primary"
+                            target="_blank" rel="noopener noreferrer">
+                            Event Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BROWSE ALL EVENTS -->
+    <section id="all-events" class="browse-events">
+
+        <div class="container">
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Browse the Season
+                </span>
+
+                <h2>
+                    Browse All Events
+                </h2>
+
+                <p>
+                    Explore concerts, theatre productions, family entertainment,
+                    tribute shows, community events, and more happening throughout
+                    the season.
+                </p>
+            </div>
+
+            <div class="browse-events-grid">
+
+                <!-- CARD 1 -->
+                <article class="event-card">
+
+                    <img src="../images/Theatre Package/Morrie Poster-Horizontal.png" alt="Tuesdays with Morrie">
+
+                    <div class="event-content">
+
+                        <span class="event-tag">
+                            Theatre
+                        </span>
+
+                        <h3>
+                            Tuesdays with Morrie
+                        </h3>
+
+                        <p>
+                            Mitch Albom's beloved story about friendship,
+                            purpose, and the lessons learned during life's
+                            final journey.
+                        </p>
+
+                        <div class="event-date">
+                            November 6 • 7:30 PM
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?show=317552" class="btn btn-outline"
+                            target="_blank" rel="noopener noreferrer">
+
+                            Event Details
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 2 -->
+                <article class="event-card">
+
+                    <img src="../images/Performance Arts Package/205817_TaikoArts_ConcertTour_Social_Final-01.jpg"
+                        alt="Taiko Arts Midwest: The Way of the Drum">
+
+                    <div class="event-content">
+
+                        <span class="event-tag">
+                            Theatre
+                        </span>
+
+                        <h3>
+                            Taiko Arts Midwest
+                        </h3>
+
+                        <p>
+                            Experience the rhythmic power of Taiko drums in this dynamic concert tour. Witness the
+                            mesmerizing performances that blend traditional Japanese percussion with contemporary flair.
+                        </p>
+
+                        <div class="event-date">
+                            November 21 • 7:30 PM
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?show=317541" class="btn btn-outline"
+                            target="_blank" rel="noopener noreferrer">
+
+                            Event Details
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 3 -->
+                <article class="event-card">
+
+                    <img src="../images/Non Series Events/MickSterlingGOOC_White.jpg" alt="Grand Ole Opry Christmas">
+
+                    <div class="event-content">
+
+                        <span class="event-tag">
+                            Concert
+                        </span>
+
+                        <h3>
+                            Grand Ole Opry Christmas
+                        </h3>
+
+                        <p>
+                            Join us for a magical evening of holiday music and tradition at the Grand Ole Opry.
+                            Experience the rich sounds of country music while enjoying the warmth of the holiday season.
+                        </p>
+
+                        <div class="event-date">
+                            November 23 • 7:30 PM
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?show=317700" class="btn btn-outline"
+                            target="_blank" rel="noopener noreferrer">
+
+                            Event Details
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 4-->
+                <article class="event-card">
+
+                    <img src="../images/Non Series Events/Dance and Dessert.jpg" alt="Dance and Dessert">
+
+                    <div class="event-content">
+
+                        <span class="event-tag">
+                            Community
+                        </span>
+
+                        <h3>
+                            Dance & Dessert
+                        </h3>
+
+                        <p>
+                            Join us for a magical evening of holiday music and tradition at the Grand Ole Opry.
+                            Experience the rich sounds of country music while enjoying the warmth of the holiday season.
+                        </p>
+
+                        <div class="event-date">
+                            December 5th • TBD
+                            <br>
+                            December 6th • TBD
+                        </div>
+
+                        <a href="#" class="btn btn-outline">
+
+                            Event Details
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 5-->
+                <article class="event-card hidden-event">
+
+                    <img src="../images/Tribute Series/Anthony Shore as Elvis.jpg"
+                        alt="Anthony Shore Presents: Christmas with Elvis">
+
+                    <div class="event-content">
+
+                        <span class="event-tag">
+                            Tribute
+                        </span>
+
+                        <h3>
+                            Anthony Shore Presents: Christmas with Elvis
+                        </h3>
+
+                        <p>
+                            Join us for a magical evening of holiday music and tradition at the Grand Ole Opry.
+                            Experience the rich sounds of country music while enjoying the warmth of the holiday season.
+                        </p>
+
+                        <div class="event-date">
+                            December 12 • 7:30 PM
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?show=317547" class="btn btn-outline"
+                            target="_blank" rel="noopener noreferrer">
+
+                            Event Details
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 6 -->
+                <article class="event-card hidden-event">
+
+                    <img src="../images/Non Series Events/Magical-Medora-Christmas-Tour-Logo-2026.jpg"
+                        alt="Medora Christmas">
+
+                    <div class="event-content">
+
+                        <span class="event-tag">
+                            Theatre
+                        </span>
+
+                        <h3>
+                            Medora Christmas
+                        </h3>
+
+                        <p>
+                            This award winning show has proven to be a popular Christmas tradition for thousands of
+                            people across the region. The tour includes communities in North Dakota, South Dakota and
+                            Minnesota.
+                        </p>
+
+                        <div class="event-date">
+                            December 15th • 7:30 PM
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?show=323320" class="btn btn-outline"
+                            target="_blank" rel="noopener noreferrer">
+
+                            Event Details
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 7 -->
+                <article class="event-card hidden-event">
+
+                    <img src="../images/Non Series Events/ugly-sweater-header.jpg" alt="Ugly Sweater Soiree">
+
+                    <div class="event-content">
+
+                        <span class="event-tag">
+                            Theatre
+                        </span>
+
+                        <h3>
+                            Ugly Sweater Soiree
+                        </h3>
+
+                        <p>
+                            A hilarious and heartwarming holiday original musical comedy, featuring a live band and
+                            packed with festive fun.
+                        </p>
+
+                        <div class="event-date">
+                            December 18th • 7:30 PM
+                            December 19th • 2:00 PM
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?show=317704" class="btn btn-outline"
+                            target="_blank" rel="noopener noreferrer">
+
+                            Event Details
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 8 -->
+                <article class="event-card hidden-event">
+
+                    <img src="../images/Photo Coming Soon.png"
+                        alt="Wurlitzer Winter Wonderful Theatre Organ Holiday Concert">
+
+                    <div class="event-content">
+
+                        <span class="event-tag">
+                            Concert
+                        </span>
+
+                        <h3>
+                            Wurlitzer Winter Wonderful Theatre Organ Holiday Concert
+                        </h3>
+
+                        <p>
+                            ...
+                        </p>
+
+                        <div class="event-date">
+                            December 21st • 12:00 PM
+                        </div>
+
+                        <a href="#" class="btn btn-outline">
+
+                            Event Details
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 9 -->
+                <article class="event-card hidden-event">
+
+                    <img src="../images/Non Series Events/Toast at Ten_image.jpg" alt="Toast at Ten">
+
+                    <div class="event-content">
+
+                        <span class="event-tag">
+                            Concert
+                        </span>
+
+                        <h3>
+                            Toast at Ten/Shaun Johnson's Book of Buble'
+                        </h3>
+
+                        <p>
+                            Do you love the idea of celebrating New Year's Eve but hate the thought of having to stay
+                            out until midnight? Well, have we got the event for you!
+                        </p>
+
+                        <div class="event-date">
+                            December 31st • 8:00 PM
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?show=317684" class="btn btn-outline"
+                            target="_blank" rel="noopener noreferrer">
+
+                            Event Details
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 10 -->
+                <article class="event-card hidden-event">
+
+                    <img src="../images/Tribute Series/Church of Cash.jpg" alt="Church of Cash">
+
+                    <div class="event-content">
+
+                        <span class="event-tag">
+                            Tribute
+                        </span>
+
+                        <h3>
+                            Church of Cash
+                        </h3>
+
+                        <p>
+                            Join us for a magical evening of holiday music and tradition at the Grand Ole Opry.
+                            Experience the rich sounds of country music while enjoying the warmth of the holiday season.
+                        </p>
+
+                        <div class="event-date">
+                            January 23rd • 7:30 PM
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?show=317548" class="btn btn-outline"
+                            target="_blank" rel="noopener noreferrer">
+
+                            Event Details
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 11 -->
+                <article class="event-card hidden-event">
+
+                    <img src="../images/Theatre Package/GuysOnIce_Logo.jpg" alt="Guys on Ice">
+
+                    <div class="event-content">
+
+                        <span class="event-tag">
+                            Theatre
+                        </span>
+
+                        <h3>
+                            Guys on Ice
+                        </h3>
+
+                        <p>
+                            Join us for a magical evening of holiday music and tradition at the Grand Ole Opry.
+                            Experience the rich sounds of country music while enjoying the warmth of the holiday season.
+                        </p>
+
+                        <div class="event-date">
+                            February 20 • 7:30 PM
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?show=317662" class="btn btn-outline"
+                            target="_blank" rel="noopener noreferrer">
+
+                            Event Details
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 12 -->
+                <article class="event-card hidden-event">
+
+                    <img src="../images/Performance Arts Package/SQUARE The Sound of Julie.jpg"
+                        alt="The Sound of Julie">
+
+                    <div class="event-content">
+
+                        <span class="event-tag">
+                            Performing Arts
+                        </span>
+
+                        <h3>
+                            The Sound of Julie
+                        </h3>
+
+                        <p>
+                            Join us for a magical evening of holiday music and tradition at the Grand Ole Opry.
+                            Experience the rich sounds of country music while enjoying the warmth of the holiday season.
+                        </p>
+
+                        <div class="event-date">
+                            February 26 • 7:30 PM
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?show=317542" class="btn btn-outline"
+                            target="_blank" rel="noopener noreferrer">
+
+                            Event Details
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 13 -->
+                <article class="event-card hidden-event">
+
+                    <img src="../images/Performance Arts Package/WATER STREET DANCE.jpg" alt="Water Street Dance">
+
+                    <div class="event-content">
+
+                        <span class="event-tag">
+                            Dance
+                        </span>
+
+                        <h3>
+                            Water Street Dance
+                        </h3>
+
+                        <p>
+                            Join us for a magical evening of holiday music and tradition at the Grand Ole Opry.
+                            Experience the rich sounds of country music while enjoying the warmth of the holiday season.
+                        </p>
+
+                        <div class="event-date">
+                            March 20 • 7:30 PM
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?show=317543" class="btn btn-outline"
+                            target="_blank" rel="noopener noreferrer">
+
+                            Event Details
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 14 -->
+                <article class="event-card hidden-event">
+
+                    <img src="../images/Tribute Series/John-Denver-480x638.jpg" alt="John Denver Musical Tribute">
+
+                    <div class="event-content">
+
+                        <span class="event-tag">
+                            Tribute
+                        </span>
+
+                        <h3>
+                            John Denver Musical Tribute
+                        </h3>
+
+                        <p>
+                            Join us for a magical evening of holiday music and tradition at the Grand Ole Opry.
+                            Experience the rich sounds of country music while enjoying the warmth of the holiday season.
+                        </p>
+
+                        <div class="event-date">
+                            April 17th • 7:30 PM
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?show=317550" class="btn btn-outline"
+                            target="_blank" rel="noopener noreferrer">
+
+                            Event Details
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 15 -->
+                <article class="event-card hidden-event">
+
+                    <img src="../images/Theatre Package/LooneyLutherans.jpg" alt="The Looney Lutherans">
+
+                    <div class="event-content">
+
+                        <span class="event-tag">
+                            Theatre
+                        </span>
+
+                        <h3>
+                            The Looney Lutherans
+                        </h3>
+
+                        <p>
+                            Join us for a magical evening of holiday music and tradition at the Grand Ole Opry.
+                            Experience the rich sounds of country music while enjoying the warmth of the holiday season.
+                        </p>
+
+                        <div class="event-date">
+                            April 24th • 7:30 PM
+                        </div>
+
+                        <a href="https://app.arts-people.com/index.php?show=317663" class="btn btn-outline"
+                            target="_blank" rel="noopener noreferrer">
+
+                            Event Details
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+        <!-- LOAD MORE EVENTS-->
+        <div class="load-more">
+
+            <button id="loadMoreBtn" class="btn btn-secondary">
+                Load More Events
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- LIST EVENTS CTA-->
+    <section class="list-event-cta">
+
+        <div class="container">
+
+            <span class="section-tag">
+
+                Looking For Something Specific?
+
+            </span>
+
+            <h2>
+                View Our Complete Event Calendar
+            </h2>
+
+            <p>
+                Browse every upcoming performance,
+                community event, educational program,
+                and special presentation.
+            </p>
+
+            <a href="https://app.arts-people.com/index.php?calendar=acfta" class="btn btn-primary" target="_blank"
+                rel="noopener noreferrer">
+
+                Open Full Calendar
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/list_events.js"></script>
+
+</body>
+
+</html>

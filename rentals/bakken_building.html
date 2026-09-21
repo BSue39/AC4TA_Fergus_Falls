@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images\favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ Base ------>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/typography.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!------ Layout ------>
+    <link rel="stylesheet" href="../assets/css/layout/container.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/layout/footer.css">
+
+    <!------ Components ------>
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/section-heading.css">
+
+    <!------ Page ------>
+    <link rel="stylesheet" href="../assets/css/pages/bakken_building.css">
+
+    <!-- ==========================
+     RESPONSIVE
+========================== -->
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="../index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="../images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="../events/announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta" target="_blank"
+                        rel="noopener noreferrer">Calendar</a>
+                    <a href="../support/membership_appeal.html">Membership Appeal</a>
+                    <a href="../support/curtain_appeal.html">Curtain Appeal</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../events/featured_events.html">Featured Events</a>
+                    <a href="../events/list_events.html">List of Events</a>
+                    <a href="../events/ticket_policies.html">Ticketing Policies</a>
+                    <a href="../events/plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href="../about/mission_vision.html">Mission/Vision</a>
+                    <a href="../about/staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="../about/history.html">History <i
+                                class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="../about/history_building.html">Building</a>
+                            <a href="../about/history_organ.html">Theatre Organ</a>
+                            <a href="../about/history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../support/sponsorship.html">Sponsorship</a>
+                    <a href="../support/membership.html">Membership</a>
+                    <a href="../support/volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--Rentals-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="rental_rates.html">Rental Rates</a>
+                            <a href="rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates/Merchandise-->
+            <div class="nav-item">
+                <a class="dropbtn" href="../store/gift_certificates.html">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="../contact/contact_info.html">Address & Contact Information</a>
+                    <a href="../contact/box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="../contact/email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BAKKEN BUILDING HERO -->
+    <header class="bakken-hero">
+
+        <div class="container">
+
+            <div class="bakken-hero-content">
+
+                <span class="section-tag">
+                    Historic Rental Venue
+                </span>
+
+                <h1>The Bakken Building</h1>
+
+                <p>
+                    A unique and flexible space for weddings,
+                    receptions, meetings, celebrations,
+                    educational programs, and community events.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#request-rent-info" class="btn btn-primary">
+                        Request Rental Information
+                    </a>
+
+                    <a href="#bakken-gallery" class="btn">
+                        View Photo Gallery
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- VENUE HIGHLIGHTS -->
+    <section class="bakken-highlights">
+
+        <div class="container">
+
+            <div class="highlights-grid">
+
+                <div class="highlight-card">
+                    <h3>Historic Character</h3>
+                    <p>Beautiful architecture with timeless charm.</p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3>Flexible Layout</h3>
+                    <p>Adaptable for events large and small.</p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3>Downtown Location</h3>
+                    <p>Conveniently located in Fergus Falls.</p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3>Community Space</h3>
+                    <p>Perfect for gatherings and celebrations.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT THE BUILDING -->
+    <section class="bakken-story">
+
+        <div class="container">
+
+            <div class="story-grid">
+
+                <div class="story-image">
+                    <img src="../images/Photo Coming Soon.png" atl="Bakken Building Interior">
+                </div>
+
+                <div class="story-content">
+
+                    <h2>A Space Designed For Community</h2>
+
+                    <p>
+                        The Bakken Building offers a welcoming and
+                        versatile environment suitable for everything
+                        from wedding receptions and anniversary parties
+                        to business meetings, workshops, and community events.
+                    </p>
+
+                    <p>
+                        With historic character and modern flexibility,
+                        the venue can be configured to support a variety
+                        of event types and layouts.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EVENT POSSIBILITIES -->
+    <section class="bakken-event-possibilities">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Perfect For</h2>
+            </div>
+
+            <div class="event-types">
+
+                <div class="event-type">
+                    <i class="fa fa-heart"></i>
+                    <h3>Weddings</h3>
+                </div>
+
+                <div class="event-type">
+                    <i class="fa fa-birthday-cake"></i>
+                    <h3>Receptions</h3>
+                </div>
+
+                <div class="event-type">
+                    <i class="fa fa-briefcase"></i>
+                    <h3>Corporate Events</h3>
+                </div>
+
+                <div class="event-type">
+                    <i class="fa fa-users"></i>
+                    <h3>Community Gatherings</h3>
+                </div>
+
+                <div class="event-type">
+                    <i class="fa fa-graduation-cap"></i>
+                    <h3>Workshops</h3>
+                </div>
+
+                <div class="event-type">
+                    <i class="fa fa-music"></i>
+                    <h3>Performances</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PHOTO GALLERY -->
+    <section id="bakken-gallery" class="bakken-gallery">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Explore the Space
+                </span>
+
+                <h2>Explore the Bakken Building</h2>
+
+                <p>
+                    Take a closer look at the historic character,
+                    flexible spaces, and unique features of the
+                    Bakken Building.
+                </p>
+
+            </div>
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item">
+                    <img src="../images/Photo Coming Soon.png" alt="Interior of the Bakken Building">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="../images/Photo Coming Soon.png" alt="Event space inside the Bakken Building">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="../images/Photo Coming Soon.png" alt="Historic architectural details inside the Bakken Building">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="../images/Photo Coming Soon.png" alt="Gathering area inside the Bakken Building">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="../images/Photo Coming Soon.png" alt="Bakken Building interior space">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="../images/Photo Coming Soon.png" alt="Additional event space at the Bakken Building">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- AMENITIES & FEATURES -->
+    <section class="bakken-features">
+
+        <div class="container">
+
+            <div class="features-box">
+
+                <h2>Venue Features</h2>
+
+                <div class="features-grid">
+
+                    <div class="feature-item">
+                        <span>Tables & Chairs</span>
+                        <p>Available upon request</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <span>Flexible Setup</span>
+                        <p>Multiple room configurations</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <span>Accessibility</span>
+                        <p>Accessible entrances and facilities</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <span>Parking</span>
+                        <p>Nearby public parking available</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section id="request-rent-info" class="bakken-cta">
+
+        <div class="container">
+
+            <div class="rental-cta">
+
+                <h2>Interested in Renting the Bakken Building?</h2>
+
+                <p>
+                    Learn more about rental rates,
+                    availability, and event planning options.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="rental_rates.html" class="btn btn-primary">
+                        View Rental Rates
+                    </a>
+
+                    <a href="rental_info.html#contact" class="btn">
+                        Request Information
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

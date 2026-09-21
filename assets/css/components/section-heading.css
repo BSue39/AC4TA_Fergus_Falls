@@ -1,0 +1,46 @@
+.section-heading {
+     margin-bottom: 3rem;
+     text-align: center;
+ }
+
+.section-heading h2 {
+     font-family: 'Playfair Display', serif;
+     font-size: clamp(2.5rem, 4vw, 4rem);
+     margin-bottom: 1rem;
+     color: var(--bg-dark);
+ }
+
+ .section-heading p {
+     max-width: 650px;
+     color: var(--muted);
+     font-size: 1.05rem;
+ }
+
+  .bold-underline {
+     display: block;
+     /* Allows the span to take up full width for centering */
+     text-align: center;
+     /* Centers the text within the span */
+     font-weight: bold;
+     /* Makes the text bold */
+     text-decoration: underline;
+     /* Adds the underline */
+ }
+
+ .section-tag {
+    display: inline-block;
+
+    margin-bottom: 0.75rem;
+    padding: .45rem 1rem;
+
+    background: rgba(200, 169, 107, .15);
+    border: 1px solid rgba(200, 169, 107, .45);
+    border-radius: 999px;
+
+    color: var(--gold);
+
+    font-size: .85rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}

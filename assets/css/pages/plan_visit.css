@@ -1,0 +1,1640 @@
+/* =========================================================
+   PLAN YOUR VISIT HERO SECTION
+   ========================================================= */
+
+.visit-hero {
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 240px;
+
+    padding: 3rem 2rem;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    color: var(--white);
+
+    background:
+        linear-gradient(
+            rgba(18, 18, 18, 0.60),
+            rgba(18, 18, 18, 0.60)
+        ),
+        url("../../../images/AC4TA-Horizontal-Sign-Night.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.visit-hero .hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    animation: visitFadeUp 0.9s ease-out both;
+}
+
+
+/* =========================================================
+   HERO HEADING
+   ========================================================= */
+
+.visit-hero h1 {
+
+    margin: 0 0 1rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(3rem, 6vw, 4.75rem);
+
+    line-height: 1.05;
+
+    color: var(--white);
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+   ========================================================= */
+
+.visit-hero p {
+
+    max-width: 1000px;
+
+    margin: 0 auto 1.75rem;
+
+    font-size: 1.15rem;
+
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.88);
+}
+
+
+/* =========================================================
+   HERO BUTTON
+   ========================================================= */
+
+.visit-hero .btn {
+
+    min-width: 220px;
+}
+
+
+/* =========================================================
+   HERO ANIMATION
+   ========================================================= */
+
+@keyframes visitFadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(28px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .visit-hero {
+        padding: 3rem 1.5rem;
+    }
+
+    .visit-hero h1 {
+        font-size: 2.5rem;
+        white-space: normal;
+    }
+
+}
+
+
+/* =========================================================
+   VISIT INTRODUCTION
+   ========================================================= */
+
+.visit-intro {
+
+    padding: 3rem 0;
+
+    background: var(--white);
+}
+
+
+.visit-intro .section-heading {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.visit-intro .section-heading h2 {
+
+    max-width: 750px;
+
+    margin: 0 auto 1.5rem;
+}
+
+
+.visit-intro .section-heading p {
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    color: var(--muted);
+
+    font-size: 1.08rem;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   VISIT OVERVIEW
+   ========================================================= */
+
+.visit-overview {
+
+    padding: 3rem 0;
+
+    background: var(--bg-light);
+}
+
+
+/* OVERVIEW GRID */
+
+.visit-overview-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+
+    gap: 2rem;
+
+    width: 100%;
+}
+
+
+/* OVERVIEW CARD */
+
+.visit-overview-card {
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-width: 0;
+
+    padding: 2.5rem 2rem;
+
+    text-align: center;
+
+    background: var(--white);
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.visit-overview-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 22px 55px rgba(0, 0, 0, 0.12);
+}
+
+
+/* OVERVIEW ICONS */
+
+.visit-overview-card i {
+
+    font-size: 2.25rem;
+
+    color: var(--gold);
+
+    margin-bottom: 1.25rem;
+}
+
+
+/* OVERVIEW HEADINGS */
+
+.visit-overview-card h3 {
+
+    font-family: var(--font-heading);
+
+    font-size: 1.55rem;
+
+    color: var(--accent);
+
+    margin: 0 0 1rem;
+}
+
+
+/* OVERVIEW TEXT */
+
+.visit-overview-card p {
+
+    margin: 0;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   GETTING HERE
+   ========================================================= */
+
+.visit-location {
+
+    padding: 3.5rem 0;
+
+    background: var(--white);
+}
+
+
+/* LOCATION GRID */
+
+.visit-location-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 4rem;
+
+    align-items: center;
+
+    width: 100%;
+}
+
+
+/* LOCATION CONTENT */
+
+.visit-location-content {
+
+    width: 100%;
+
+    max-width: 560px;
+}
+
+
+.visit-location-content h2 {
+
+    max-width: 500px;
+
+    margin: 1rem 0 1.5rem;
+}
+
+
+.visit-location-content p {
+
+    margin-bottom: 1.5rem;
+
+    color: var(--muted);
+
+    line-height: 1.9;
+}
+
+
+.visit-location-content .btn {
+
+    margin-top: 1rem;
+}
+
+
+/* MAP */
+
+.visit-location-map {
+
+    width: 100%;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.visit-location-map:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 28px 60px rgba(0, 0, 0, 0.16);
+}
+
+
+.visit-location-map iframe {
+
+    display: block;
+
+    width: 100%;
+
+    height: 500px;
+
+    border: 0;
+}
+
+
+/* =========================================================
+   PARKING INFORMATION
+   ========================================================= */
+
+.visit-parking {
+
+    padding: 3rem 0;
+
+    background: var(--bg-light);
+}
+
+
+.visit-parking .section-heading {
+
+    text-align: center;
+}
+
+
+.visit-parking .section-heading p {
+
+    max-width: 700px;
+
+    margin: 0 auto;
+}
+
+
+/* PARKING GRID */
+
+.visit-parking-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 2rem;
+
+    width: 100%;
+
+    margin-top: 3rem;
+}
+
+
+/* PARKING CARD */
+
+.visit-parking-card {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-width: 0;
+
+    padding: 2.5rem 2rem;
+
+    text-align: center;
+
+    background: var(--white);
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.visit-parking-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 24px 55px rgba(0, 0, 0, 0.12);
+}
+
+
+.visit-parking-card i {
+
+    font-size: 2.25rem;
+
+    color: var(--gold);
+
+    margin-bottom: 1.25rem;
+}
+
+
+.visit-parking-card h3 {
+
+    font-family: var(--font-heading);
+
+    font-size: 1.55rem;
+
+    color: var(--accent);
+
+    margin: 0 0 1rem;
+}
+
+
+.visit-parking-card p {
+
+    margin: 0 auto;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.visit-accessibility {
+
+    padding: 3rem 0;
+
+    background: var(--white);
+}
+
+
+.visit-accessibility .section-heading {
+
+    max-width: 850px;
+
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+
+.visit-accessibility .section-heading p {
+
+    max-width: 720px;
+
+    margin: 0 auto;
+}
+
+
+/* ACCESSIBILITY ICON */
+
+.visit-accessibility-icon {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 78px;
+    height: 78px;
+
+    margin: 0 auto 1.5rem;
+
+    border-radius: 50%;
+
+    background:
+        rgba(200, 169, 107, 0.12);
+
+    color: var(--gold);
+
+    font-size: 2rem;
+}
+
+
+/* ACCESSIBILITY GRID */
+
+.visit-accessibility-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 2rem;
+
+    width: 100%;
+}
+
+
+/* ACCESSIBILITY CARD */
+
+.visit-accessibility-card {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-width: 0;
+
+    padding: 2.5rem;
+
+    text-align: center;
+
+    background: var(--bg-light);
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.visit-accessibility-card::before {
+
+    content: "";
+
+    display: block;
+
+    width: 60px;
+    height: 4px;
+
+    margin: 0 auto 1.5rem;
+
+    border-radius: 999px;
+
+    background: var(--gold);
+}
+
+
+.visit-accessibility-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 24px 55px rgba(0, 0, 0, 0.12);
+}
+
+
+.visit-accessibility-card h3 {
+
+    font-family: var(--font-heading);
+
+    font-size: 1.5rem;
+
+    color: var(--accent);
+
+    margin: 0 0 1rem;
+}
+
+
+.visit-accessibility-card p {
+
+    margin: 0;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   DAY OF YOUR VISIT
+   ========================================================= */
+
+.visit-day {
+
+    padding: 3rem 0;
+
+    background: var(--bg-light);
+}
+
+
+.visit-day .section-heading {
+
+    max-width: 850px;
+
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+
+.visit-day .section-heading p {
+
+    max-width: 720px;
+
+    margin: 0 auto;
+}
+
+
+/* DAY OF VISIT GRIDS */
+
+.visit-day-grid,
+.visit-day-grid-bottom {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 2rem;
+
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+
+.visit-day-grid-bottom {
+
+    margin-top: 2rem;
+}
+
+
+/* DAY OF VISIT CARD */
+
+.visit-day-card {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: min(100%, 320px);
+
+    min-height: 280px;
+
+    padding: 2rem;
+
+    text-align: center;
+
+    background: var(--white);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.visit-day-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 24px 55px rgba(0, 0, 0, 0.12);
+}
+
+
+.visit-day-card i {
+
+    font-size: 2rem;
+
+    color: var(--gold);
+
+    margin-bottom: 1.25rem;
+}
+
+
+.visit-day-card h3 {
+
+    font-family: var(--font-heading);
+
+    font-size: 1.45rem;
+
+    color: var(--accent);
+
+    margin: 0 0 1rem;
+}
+
+
+.visit-day-card p {
+
+    max-width: 250px;
+
+    margin: 0 auto;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   MAKE A DAY OF IT
+   ========================================================= */
+
+.visit-downtown {
+
+    padding: 3rem 0;
+
+    background: var(--white);
+}
+
+
+.visit-downtown .section-heading {
+
+    max-width: 850px;
+
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+
+.visit-downtown .section-heading p {
+
+    max-width: 720px;
+
+    margin: 0 auto;
+}
+
+
+/* DOWNTOWN GRID */
+
+.visit-downtown-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 2rem;
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+/* DOWNTOWN CARD */
+
+.visit-downtown-card {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-width: 0;
+
+    padding: 2.5rem 2rem;
+
+    text-align: center;
+
+    background: var(--bg-light);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.visit-downtown-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 24px 55px rgba(0, 0, 0, 0.10);
+}
+
+
+/* FIRST CHILD ICON / EMOJI */
+
+.visit-downtown-card > :first-child {
+
+    font-size: 2.25rem;
+
+    margin-bottom: 1.25rem;
+}
+
+
+.visit-downtown-card h3 {
+
+    font-family: var(--font-heading);
+
+    font-size: 1.45rem;
+
+    color: var(--accent);
+
+    margin: 0 0 1rem;
+}
+
+
+.visit-downtown-card p {
+
+    max-width: 300px;
+
+    margin: 0 auto;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   THEATRE HIGHLIGHTS
+   ========================================================= */
+
+.visit-highlights {
+
+    padding: 3rem 0;
+
+    background: var(--bg-light);
+}
+
+
+.visit-highlights .section-heading {
+
+    max-width: 850px;
+
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+
+.visit-highlights .section-heading p {
+
+    max-width: 720px;
+
+    margin: 0 auto;
+}
+
+
+/* HIGHLIGHTS GRID */
+
+.visit-highlights-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 2rem;
+
+    width: 100%;
+
+    max-width: 1150px;
+
+    margin: 0 auto;
+}
+
+
+/* HIGHLIGHT CARD */
+
+.visit-highlight-card {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-width: 0;
+
+    background: var(--white);
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.visit-highlight-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 24px 55px rgba(0, 0, 0, 0.12);
+}
+
+
+/* HIGHLIGHT IMAGE */
+
+.visit-highlight-image {
+
+    width: 100%;
+
+    height: 240px;
+
+    overflow: hidden;
+}
+
+
+.visit-highlight-image img {
+
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 1;
+
+    filter: none;
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+.visit-highlight-card:hover .visit-highlight-image img {
+
+    transform: scale(1.04);
+}
+
+
+/* HIGHLIGHT CONTENT */
+
+.visit-highlight-content {
+
+    flex: 1;
+
+    padding: 2rem;
+
+    text-align: center;
+}
+
+
+.visit-highlight-content::before {
+
+    content: "";
+
+    display: block;
+
+    width: 70px;
+    height: 4px;
+
+    margin: 0 auto 1.5rem;
+
+    border-radius: 999px;
+
+    background: var(--gold);
+}
+
+
+.visit-highlight-content h3 {
+
+    font-family: var(--font-heading);
+
+    font-size: 1.55rem;
+
+    color: var(--accent);
+
+    margin: 0 0 1rem;
+}
+
+
+.visit-highlight-content p {
+
+    max-width: 330px;
+
+    margin: 0 auto;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   EXPLORE FERGUS FALLS
+   ========================================================= */
+
+.visit-attractions {
+
+    padding: 3rem 0;
+
+    background: var(--white);
+}
+
+
+.visit-attractions .section-heading {
+
+    max-width: 850px;
+
+    margin: 0 auto 3.5rem;
+
+    text-align: center;
+}
+
+
+.visit-attractions .section-heading p {
+
+    max-width: 720px;
+
+    margin: 0 auto;
+}
+
+
+/* ATTRACTIONS GRID */
+
+.visit-attractions-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 2rem;
+
+    width: 100%;
+
+    max-width: 1150px;
+
+    margin: 0 auto;
+}
+
+
+/* ATTRACTION CARD */
+
+.visit-attraction-card {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-width: 0;
+
+    background: var(--white);
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.visit-attraction-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 24px 55px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ATTRACTION IMAGE */
+
+.visit-attraction-image {
+
+    width: 100%;
+
+    height: 240px;
+
+    overflow: hidden;
+}
+
+
+.visit-attraction-image img {
+
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 1;
+
+    filter: none;
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+.visit-attraction-card:hover .visit-attraction-image img {
+
+    transform: scale(1.04);
+}
+
+
+/* ATTRACTION CONTENT */
+
+.visit-attraction-content {
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+
+    padding: 2rem;
+
+    text-align: center;
+}
+
+
+/* CATEGORY */
+
+.visit-attraction-category {
+
+    display: inline-block;
+
+    margin-bottom: 0.75rem;
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+
+    text-transform: uppercase;
+
+    color: var(--gold);
+}
+
+
+/* HEADING */
+
+.visit-attraction-content h3 {
+
+    font-family: var(--font-heading);
+
+    font-size: 1.55rem;
+
+    color: var(--accent);
+
+    margin: 0 0 1rem;
+}
+
+
+/* DESCRIPTION */
+
+.visit-attraction-content p {
+
+    max-width: 330px;
+
+    margin: 0 auto 1.5rem;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+}
+
+
+/* ATTRACTION LINK */
+
+.visit-attraction-link {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.35rem;
+
+    margin-top: auto;
+
+    color: var(--accent);
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease,
+        gap 0.25s ease;
+}
+
+
+.visit-attraction-link:hover {
+
+    color: var(--gold);
+
+    gap: 0.6rem;
+}
+
+
+/* =========================================================
+   CONTACT CTA
+   ========================================================= */
+
+.visit-contact-cta {
+
+    padding: 3rem 0;
+
+    background: var(--bg-light);
+}
+
+
+/* CTA CARD */
+
+.visit-contact-cta-content {
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    padding: 2.75rem 4rem;
+
+    text-align: center;
+
+    background: var(--white);
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 22px 55px rgba(0, 0, 0, 0.10);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.visit-contact-cta-content::before {
+
+    content: "";
+
+    display: block;
+
+    width: 70px;
+    height: 4px;
+
+    margin: 0 auto 1.25rem;
+
+    border-radius: 999px;
+
+    background: var(--gold);
+}
+
+
+/* CTA SECTION TAG */
+
+.visit-contact-cta .section-tag {
+
+    display: inline-block;
+
+    margin-bottom: 1rem;
+}
+
+
+/* CTA HEADING */
+
+.visit-contact-cta h2 {
+
+    font-family: var(--font-heading);
+
+    font-size:
+        clamp(2.25rem, 4vw, 3.25rem);
+
+    line-height: 1.15;
+
+    color: var(--text);
+
+    margin: 0 0 1rem;
+}
+
+
+/* CTA DESCRIPTION */
+
+.visit-contact-cta p {
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: var(--muted);
+
+    font-size: 1.05rem;
+
+    line-height: 1.65;
+}
+
+
+/* CTA BUTTON GROUP */
+
+.visit-contact-cta-actions {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+
+    margin-top: 1.75rem;
+}
+
+
+.visit-contact-cta-actions .btn {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 230px;
+
+    padding: 0.9rem 2.4rem;
+
+    border-radius: 999px;
+}
+
+
+.visit-contact-cta-content:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 28px 65px rgba(0, 0, 0, 0.14);
+}
+
+
+/* =========================================================
+   RESPONSIVE STYLES
+   ========================================================= */
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    /* LOCATION */
+
+    .visit-location-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 3rem;
+    }
+
+
+    .visit-location-content {
+
+        max-width: 100%;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+
+    .visit-location-content h2 {
+
+        max-width: 100%;
+    }
+
+
+    /* PARKING */
+
+    .visit-parking-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ACCESSIBILITY */
+
+    .visit-accessibility-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    /* DAY OF VISIT */
+
+    .visit-day-grid,
+    .visit-day-grid-bottom {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .visit-day-grid-bottom {
+
+        margin-top: 2rem;
+    }
+
+
+    .visit-day-card {
+
+        width: min(100%, 500px);
+    }
+
+
+    /* DOWNTOWN */
+
+    .visit-downtown-grid {
+
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+    }
+
+
+    /* THEATRE HIGHLIGHTS */
+
+    .visit-highlights-grid {
+
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+    }
+
+
+    /* ATTRACTIONS */
+
+    .visit-attractions-grid {
+
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    /* HERO */
+
+    .visit-hero {
+
+        min-height: auto;
+
+        padding: 5rem 1.5rem;
+    }
+
+
+    .visit-hero h1 {
+
+        font-size:
+            clamp(2.75rem, 12vw, 4rem);
+    }
+
+
+    .visit-hero p {
+
+        font-size: 1rem;
+
+        line-height: 1.7;
+    }
+
+
+    /* GENERAL SPACING */
+
+    .visit-intro,
+    .visit-overview,
+    .visit-location,
+    .visit-parking,
+    .visit-accessibility,
+    .visit-day,
+    .visit-downtown,
+    .visit-highlights,
+    .visit-attractions {
+
+        padding: 3rem 0;
+    }
+
+
+    /* CARDS */
+
+    .visit-overview-card,
+    .visit-parking-card,
+    .visit-accessibility-card,
+    .visit-day-card,
+    .visit-downtown-card {
+
+        padding: 2rem 1.5rem;
+    }
+
+
+    /* MAP */
+
+    .visit-location-map iframe {
+
+        height: 350px;
+    }
+
+
+    /* HIGHLIGHTS */
+
+    .visit-highlight-image {
+
+        height: 220px;
+    }
+
+
+    /* ATTRACTIONS */
+
+    .visit-attraction-image {
+
+        height: 220px;
+    }
+
+
+    /* CTA */
+
+    .visit-contact-cta {
+
+        padding: 2rem 0;
+    }
+
+
+    .visit-contact-cta-content {
+
+        padding: 2.5rem 1.5rem;
+
+        border-radius: 22px;
+    }
+
+
+    .visit-contact-cta-actions {
+
+        flex-direction: column;
+    }
+
+
+    .visit-contact-cta-actions .btn {
+
+        width: 100%;
+
+        max-width: 280px;
+    }
+}

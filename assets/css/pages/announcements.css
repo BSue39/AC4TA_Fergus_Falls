@@ -1,0 +1,817 @@
+/* ==================================================
+   ANNOUNCEMENTS HERO
+================================================== */
+
+.announcements-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 240px;
+    padding: 3rem 2rem;
+
+    color: var(--white);
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(18,18,18,.60),
+        rgba(18,18,18,.60)),
+        url("../../../images/AC4TA-Horizontal-Sign-Night.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.announcements-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    animation: heroFadeUp 0.9s ease-out both;
+}
+
+
+/* =========================================================
+   HERO HEADING
+   ========================================================= */
+
+.announcements-hero h1 {
+
+    margin: 0 0 1rem;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(3rem, 6vw, 4.75rem);
+
+    line-height: 1.05;
+
+    color: var(--white);
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   HERO TEXT
+   ========================================================= */
+
+.announcements-hero p {
+
+    max-width: 700px;
+
+    margin: 0 auto 1.75rem;
+
+    font-size: 1.15rem;
+
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.88);
+}
+
+
+/* =========================================================
+   HERO BUTTON
+   ========================================================= */
+
+.announcements-hero .btn {
+
+    min-width: 220px;
+}
+
+
+/* =========================================================
+   HERO ANIMATION
+   ========================================================= */
+
+@keyframes heroFadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(28px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .announcements-hero h1 {
+
+        white-space: normal;
+
+        font-size: 2.5rem;
+    }
+
+}
+
+/* ==================================================
+   FEATURED ANNOUNCEMENT
+================================================== */
+
+.featured-announcement {
+    padding: 2rem 0;
+}
+
+/* Featured Announcement Card */
+.featured-card {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1.1fr 1fr;
+
+    background: var(--white);
+
+    border-radius: 28px;
+    overflow: hidden;
+
+    box-shadow: 0 20px 45px rgba(0,0,0,.10);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+.featured-card::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background: linear-gradient(
+        90deg,
+        var(--accent),
+        var(--gold)
+    );
+}
+
+.featured-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 28px 60px rgba(0,0,0,.15);
+}
+
+/* Featured Image */
+
+.featured-image {
+    overflow: hidden;
+}
+
+.featured-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform .45s ease;
+}
+
+.featured-card:hover .featured-image img {
+    transform: scale(1.05);
+}
+
+/* Featured Content */
+
+.featured-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 3rem;
+}
+
+/* Heading */
+
+.featured-content h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2rem,3vw,3rem);
+
+    line-height: 1.15;
+
+    color: var(--bg-dark);
+
+    margin-bottom: 1.5rem;
+}
+
+/* Description */
+
+.featured-content p {
+    color: var(--muted);
+
+    font-size: 1.05rem;
+
+    line-height: 1.75;
+
+    margin-bottom: 2rem;
+}
+
+/* Meta */
+
+.featured-content .announcement-meta {
+    margin-bottom: 2rem;
+
+    color: var(--muted);
+
+    font-size: .95rem;
+
+    font-weight: 600;
+}
+
+/* Button */
+
+.featured-content .btn {
+    align-self: flex-start;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+
+    .featured-card {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-image {
+        height: 340px;
+    }
+
+    .featured-content {
+        padding: 2.5rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .featured-announcement {
+        padding: 4rem 0 2rem;
+    }
+
+    .featured-image {
+        height: 260px;
+    }
+
+    .featured-content {
+        padding: 2rem;
+    }
+
+    .featured-content h2 {
+        font-size: 2rem;
+    }
+
+}
+
+/* =========================================================
+   FILTER HEADING
+   ========================================================= */
+
+.filter-heading {
+
+    max-width: 700px;
+
+    margin: 0 auto 2rem;
+
+    text-align: center;
+
+}
+
+
+.filter-heading h2 {
+ font-family: "Playfair Display", serif;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    text-align: center;
+
+    margin-bottom: 1rem;
+
+    color: var(--bg-dark);
+
+}
+
+
+.filter-heading p {
+
+    margin: 0 auto;
+
+    color: var(--muted);
+
+    line-height: 1.7;
+
+}
+
+/* =========================================================
+   FILTER BAR
+   ========================================================= */
+
+.announcement-filters {
+    padding: 2.5rem 0 1rem;
+    background: var(--bg-light);
+}
+
+
+/* FILTER BUTTON CONTAINER */
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* FILTER BUTTON */
+
+.filter-btn {
+    padding: 0.8rem 1.6rem;
+
+    border: 2px solid rgba(122, 31, 43, 0.15);
+    border-radius: 999px;
+
+    background: var(--white);
+    color: var(--text);
+
+    font: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.2;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* HOVER STATE */
+
+.filter-btn:hover {
+    background: var(--gold);
+    color: var(--bg-dark);
+    border-color: var(--gold);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 24px rgba(200, 169, 107, 0.3);
+}
+
+
+/* ACTIVE FILTER */
+
+.filter-btn.active {
+    background: var(--accent);
+    color: var(--white);
+    border-color: var(--accent);
+
+    box-shadow:
+        0 12px 30px rgba(122, 31, 43, 0.3);
+}
+
+
+/* KEYBOARD ACCESSIBILITY */
+
+.filter-btn:focus-visible {
+    outline: 3px solid rgba(200, 169, 107, 0.55);
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .announcement-filters {
+        padding: 2rem 0;
+    }
+
+    .filter-buttons {
+        gap: 0.75rem;
+    }
+
+    .filter-btn {
+        padding: 0.75rem 1.3rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .filter-buttons {
+        gap: 0.6rem;
+    }
+
+    .filter-btn {
+        padding: 0.7rem 1rem;
+    }
+}
+
+/* =========================================================
+   FILTERED ANNOUNCEMENTS
+   ========================================================= */
+
+.announcement-card.is-hidden {
+    display: none !important;
+}
+
+/* =========================================================
+   NO ANNOUNCEMENTS MESSAGE
+   ========================================================= */
+
+.no-announcements {
+    max-width: 650px;
+
+    margin: 3rem auto 0;
+    padding: 3rem 2rem;
+
+    text-align: center;
+
+    background: var(--white);
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+
+.no-announcements h3 {
+    margin: 0 0 0.75rem;
+
+    font-family: var(--font-heading);
+
+    font-size: 1.8rem;
+
+    color: var(--accent);
+}
+
+
+.no-announcements p {
+    max-width: 500px;
+
+    margin: 0 auto;
+
+    color: var(--muted);
+
+    line-height: 1.7;
+}
+
+/* ==================================================
+   ANNOUNCEMENTS FEED
+================================================== */
+
+.announcements-feed {
+    padding: 2rem 0 3rem;
+}
+
+/* Grid Layout */
+
+.announcements-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* Card Styles */
+
+.announcement-card {
+    display: flex;
+    flex-direction: column;
+
+    background: var(--white);
+
+    border-radius: 22px;
+    overflow: hidden;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+/* Card Hover State */
+
+.announcement-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 22px 45px rgba(0,0,0,.14);
+}
+
+/* Image Styles */
+
+.announcement-image {
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+}
+
+.announcement-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform .45s ease;
+}
+
+.announcement-card:hover .announcement-image img {
+    transform: scale(1.06);
+}
+
+/* Card Content */
+
+.announcement-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    padding: 1.75rem;
+}
+
+/* Category Badge */
+
+.announcement-category {
+    align-self: flex-start;
+
+    margin-bottom: 1rem;
+    padding: .35rem .85rem;
+
+    background: rgba(200,169,107,.18);
+
+    color: var(--accent);
+
+    border-radius: 999px;
+
+    font-size: .78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+/* Title */
+
+.announcement-content h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.55rem;
+    line-height: 1.25;
+
+    color: var(--bg-dark);
+
+    margin-bottom: 1rem;
+}
+
+/* Description */
+
+.announcement-content p {
+    color: var(--muted);
+
+    margin-bottom: 1.5rem;
+
+    line-height: 1.7;
+
+    flex-grow: 1;
+}
+
+/* Date */
+
+.announcement-meta {
+    font-size: .9rem;
+    color: var(--muted);
+
+    margin-bottom: 1.25rem;
+
+    font-weight: 600;
+}
+
+/* Read More Link */
+
+.announcement-link {
+    align-self: flex-start;
+
+    color: var(--accent);
+
+    font-weight: 700;
+
+    transition:
+        color .25s ease,
+        transform .25s ease;
+}
+
+.announcement-link:hover {
+    color: var(--gold);
+    transform: translateX(6px);
+}
+
+/* RESPONSIVE */
+@media (max-width:1024px){
+
+    .announcements-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media (max-width:768px){
+
+    .announcements-feed{
+        padding:2rem 0 4rem;
+    }
+
+    .announcements-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* ==================================================
+   GET INVOLVED CTA
+================================================== */
+
+.announcement-alerts {
+    padding: 2rem 0;
+}
+
+/* Main Box */
+
+.alerts-box {
+    background: linear-gradient(
+        135deg,
+        #1a1a1a,
+        #2b2b2b
+    );
+
+    color: var(--white);
+
+    border-radius: 28px;
+    padding: 3.5rem;
+
+    box-shadow: 0 24px 55px rgba(0,0,0,.18);
+
+    overflow: hidden;
+}
+
+/* Heading */
+
+.alerts-box h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2rem,4vw,3rem);
+
+    text-align: center;
+
+    margin-bottom: 2.5rem;
+
+    color: var(--white);
+}
+
+/* Intro Paragraph */
+
+.alerts-intro {
+    max-width: 1100px;
+    margin: -1rem auto 2.5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Grid Layout */
+.alerts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 2rem;
+}
+
+/* Individual CTA Card */
+
+.alert-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: rgba(255,255,255,.08);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 18px;
+    padding: 2rem 1.5rem;
+
+    text-align: center;
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        box-shadow .3s ease;
+}
+
+/* CTA Card Button */
+
+.alert-item .btn {
+    margin-top: 1.5rem;
+}
+
+/* Hover Effect */
+
+.alert-item:hover {
+    transform: translateY(-6px);
+
+    background: rgba(255,255,255,.14);
+
+    box-shadow: 0 16px 35px rgba(0,0,0,.22);
+}
+
+/* Date */
+
+.alert-item span {
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    padding: .55rem 1rem;
+
+    background: var(--gold);
+
+    color: var(--bg-dark);
+
+    border-radius: 999px;
+
+    font-weight: 700;
+
+    font-size: .9rem;
+
+    letter-spacing: .05em;
+
+    text-transform: uppercase;
+}
+
+/* Description */
+
+.alert-item p {
+    font-size: 1rem;
+
+    line-height: 1.6;
+
+    color: rgba(255,255,255,.92);
+
+    margin: 0;
+}
+
+.alert-item i{
+    display:block;
+
+    font-size:2rem;
+
+    color:var(--gold);
+
+    margin-bottom:1rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:900px){
+
+    .alerts-grid{
+        grid-template-columns:1fr;
+    }
+
+    .alerts-box{
+        padding:2.5rem;
+    }
+
+}

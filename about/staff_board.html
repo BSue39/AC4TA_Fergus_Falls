@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images\favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ Base ------>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/typography.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!------ Layout ------>
+    <link rel="stylesheet" href="../assets/css/layout/container.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/layout/footer.css">
+
+    <!------ Components ------>
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/section-heading.css">
+
+    <!------ Page ------>
+    <link rel="stylesheet" href="../assets/css/pages/staff_board.css">
+
+    <!-- ==========================
+     RESPONSIVE
+========================== -->
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="../index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="../images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="../events/announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta" target="_blank"
+                        rel="noopener noreferrer">Calendar</a>
+                    <a href="../support/membership_appeal.html">Membership Appeal</a>
+                    <a href="../support/curtain_appeal.html">Curtain Appeal</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../events/featured_events.html">Featured Events</a>
+                    <a href="../events/list_events.html">List of Events</a>
+                    <a href="../events/ticket_policies.html">Ticketing Policies</a>
+                    <a href="../events/plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href="mission_vision.html">Mission/Vision</a>
+                    <a href="staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="history.html">History <i class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="history_building.html">Building</a>
+                            <a href="history_organ.html">Theatre Organ</a>
+                            <a href="history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../support/sponsorship.html">Sponsorship</a>
+                    <a href="../support/membership.html">Membership</a>
+                    <a href="../support/volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--Rentals-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="../rentals/rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="../rentals/rental_rates.html">Rental Rates</a>
+                            <a href="../rentals/rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="../rentals/bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates/Merchandise-->
+            <div class="nav-item">
+                <a class="dropbtn" href="../store/gift_certificates.html">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="../contact/contact_info.html">Address & Contact Information</a>
+                    <a href="../contact/box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="../contact/email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STAFF & BOARD HERO -->
+    <section class="staff-hero">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <span class="section-tag">
+                    About AC4TA
+                </span>
+
+                <h1>
+                    Meet Our Staff & Board
+                </h1>
+
+                <p>
+                    Behind every performance, exhibition, and community event is a
+                    passionate team dedicated to enriching lives through the arts.
+                    Meet the people who help make A Center for the Arts a vibrant
+                    cultural destination for west-central Minnesota.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="staff-intro">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Our Team
+                </span>
+
+                <h2>
+                    Dedicated to Inspiring Our Community Through the Arts
+                </h2>
+
+                <p>
+                    From planning performances and supporting artists to welcoming
+                    guests and coordinating volunteers, our staff works together to
+                    create memorable arts experiences for everyone who visits
+                    A Center for the Arts.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- LEADERSHIP -->
+    <section class="staff-leadership">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Leadership
+                </span>
+
+                <h2>
+                    Executive Leadership
+                </h2>
+
+            </div>
+
+            <div class="leadership-card">
+
+                <div class="leadership-photo">
+
+                    <img src="../images/Staff/Ranscht_Michael-headshot.jpg" alt="Executive Director Michael Ranscht">
+
+                </div>
+
+                <div class="leadership-content">
+
+                    <span class="staff-position">
+                        Executive Director
+                    </span>
+
+                    <h3>
+                        Michael Ranscht
+                    </h3>
+
+                    <p>
+                        Michael brings extensive arts leadership experience to
+                        A Center for the Arts and is committed to strengthening
+                        community engagement while expanding opportunities for
+                        artists and audiences throughout the region.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- STAFF DIRECTORY -->
+    <section class="staff-directory">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Staff
+                </span>
+
+                <h2>
+                    Meet Our Team
+                </h2>
+
+            </div>
+
+            <div class="staff-grid">
+
+                <article class="staff-card">
+
+                    <img src="../images/Staff/Becky-Headshot.jpg" alt="Becky Sonmor">
+
+                    <div class="staff-card-content">
+
+                        <span class="staff-position">
+                            Marketing & Front of House Coordinator
+                        </span>
+
+                        <h3>
+                            Becky Sonmor
+                        </h3>
+
+                        <p>
+                            Oversees marketing efforts while helping ensure every
+                            performance runs smoothly for artists and patrons.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="staff-card">
+
+                    <img src="../images/Staff/Natalie.jpg" alt="Natalie Vogel">
+
+                    <div class="staff-card-content">
+
+                        <span class="staff-position">
+                            Technical Coordinator
+                        </span>
+
+                        <h3>
+                            Natalie Vogel
+                        </h3>
+
+                        <p>
+                            Coordinates technical operations and supports lighting,
+                            sound, and backstage production for performances.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="staff-card">
+
+                    <img src="../images/Photo Coming Soon.png" alt="">
+
+                    <div class="staff-card-content">
+
+                        <span class="staff-position">
+                            Volunteer & Box Office Coordinator
+                        </span>
+
+                        <h3>
+                            No Name
+                        </h3>
+
+                        <p>
+                            Coordinates volunteers and helps ensure guests enjoy
+                            a welcoming experience from the moment they arrive.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BOARD OF DIRECTORS -->
+    <section class="board-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Leadership
+                </span>
+
+                <h2>
+                    Board of Directors
+                </h2>
+
+                <p>
+                    Our volunteer Board of Directors provides governance, strategic
+                    leadership, and community support for A Center for the Arts.
+                </p>
+
+            </div>
+
+
+            <!-- BOARD PHOTO -->
+            <div class="board-photo">
+
+                <img src="../images/Board of Directors Photo Coming Soon.png" alt="A Center for the Arts Board of Directors">
+
+            </div>
+
+
+            <!-- BOARD MEMBERS -->
+            <div class="board-grid">
+
+                <div class="board-card">
+                    <h3>Alison Olson</h3>
+                    <p>President</p>
+                </div>
+
+                <div class="board-card">
+                    <h3>Jennifer Heglund</h3>
+                    <p>President Elect</p>
+                </div>
+
+                <div class="board-card">
+                    <h3>Edmund Bujalski</h3>
+                    <p>Secretary</p>
+                </div>
+
+                <div class="board-card">
+                    <h3>Jean Bowman</h3>
+                </div>
+
+                <div class="board-card">
+                    <h3>Dee Bujalski</h3>
+                </div>
+
+                <div class="board-card">
+                    <h3>Brett Delage</h3>
+                </div>
+
+                <div class="board-card">
+                    <h3>Heather Raynor Hubert</h3>
+                </div>
+
+                <div class="board-card">
+                    <h3>Kendra Olson</h3>
+                </div>
+
+                <div class="board-card">
+                    <h3>Mary Pettit</h3>
+                </div>
+
+                <div class="board-card">
+                    <h3>Matt Solin</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="staff-contact-cta">
+
+        <div class="container">
+
+            <div class="staff-contact-cta-content">
+
+                <span class="section-tag">
+                    Connect With Us
+                </span>
+
+                <h2>
+                    We'd Love to Hear From You
+                </h2>
+
+                <p>
+                    Have questions about our organization, upcoming events,
+                    volunteer opportunities, or community partnerships? Our team
+                    is always happy to help.
+                </p>
+
+                <div class="staff-contact-actions">
+
+                    <a href="../contact/contact.html" class="btn btn-primary">
+                        Contact Us
+                    </a>
+
+                    <a href="../support/volunteer.html" class="btn btn-secondary">
+                        Volunteer
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

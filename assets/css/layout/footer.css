@@ -1,0 +1,53 @@
+/** FOOTER **/
+/* Controls site-wide structure */
+footer {
+    background: linear-gradient(135deg, #7a1f2b, #5f1822);
+    backdrop-filter: blur(18px);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 2rem 0 1rem;
+    text-align: center;
+    border-top: 1px solid rgba(200, 169, 107, 0.35);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    justify-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.footer-column {
+    max-width: 260px;
+}
+
+.footer-column h4 {
+    color: var(--white);
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.footer-column p,
+.footer-column a {
+    color: rgba(255, 255, 255, 0.65);
+    display: block;
+    margin-bottom: 0.35rem;
+    transition: 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: var(--gold);
+}
+
+.footer-column:nth-child(2) {
+    max-width: 450px;
+}
+
+.footer-bottom {
+    padding-top: 0.85rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    font-size: 0.82rem;
+}

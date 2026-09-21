@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images\favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ Base ------>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/typography.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!------ Layout ------>
+    <link rel="stylesheet" href="../assets/css/layout/container.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/layout/footer.css">
+
+    <!------ Components ------>
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/section-heading.css">
+
+    <!------ Page ------>
+    <link rel="stylesheet" href="../assets/css/pages/rental_info.css">
+
+    <!-- ==========================
+     RESPONSIVE
+========================== -->
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="../index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="../images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="../events/announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta" target="_blank"
+                        rel="noopener noreferrer">Calendar</a>
+                    <a href="../support/membership_appeal.html">Membership Appeal</a>
+                    <a href="../support/curtain_appeal.html">Curtain Appeal</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../events/featured_events.html">Featured Events</a>
+                    <a href="../events/list_events.html">List of Events</a>
+                    <a href="../events/ticket_policies.html">Ticketing Policies</a>
+                    <a href="../events/plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href="../about/mission_vision.html">Mission/Vision</a>
+                    <a href="../about/staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="../about/history.html">History <i
+                                class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="../about/history_building.html">Building</a>
+                            <a href="../about/history_organ.html">Theatre Organ</a>
+                            <a href="../about/history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../support/sponsorship.html">Sponsorship</a>
+                    <a href="../support/membership.html">Membership</a>
+                    <a href="../support/volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--Rentals-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="rental_rates.html">Rental Rates</a>
+                            <a href="rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates/Merchandise-->
+            <div class="nav-item">
+                <a class="dropbtn" href="../store/gift_certificates.html">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="../contact/contact_info.html">Address & Contact Information</a>
+                    <a href="../contact/box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="../contact/email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RENTAL INFORMATION HERO -->
+    <section class="rental-info-hero">
+
+        <div class="container rental-info-hero-content">
+
+            <span class="section-tag">Venue Rentals</span>
+
+            <h1>A Historic Venue for Memorable Events</h1>
+
+            <p>
+                From concerts and theatrical productions
+                to corporate meetings, weddings, and
+                community celebrations, AC4TA provides
+                a unique and inspiring setting.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#resources" class="btn btn-primary">
+                    Explore Rental Options
+                </a>
+
+                <a href="#contact" class="btn">
+                    Request Information
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- WHY RENT AC4TA -->
+    <section class="rental-benefits">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Why Rent AC4TA?</h2>
+            </div>
+
+            <div class="benefits-grid">
+
+                <div class="benefit-card">
+
+                    <i class="fa fa-building"></i>
+
+                    <h3>Historic Atmosphere</h3>
+
+                    <p>
+                        A beautifully restored venue with
+                        character and charm.
+                    </p>
+
+                </div>
+
+                <div class="benefit-card">
+
+                    <i class="fa fa-music"></i>
+
+                    <h3>Professional Stage</h3>
+
+                    <p>
+                        Ideal for performances,
+                        presentations, and productions.
+                    </p>
+
+                </div>
+
+                <div class="benefit-card">
+
+                    <i class="fa fa-users"></i>
+
+                    <h3>Flexible Spaces</h3>
+
+                    <p>
+                        Suitable for gatherings of
+                        many sizes and purposes.
+                    </p>
+
+                </div>
+
+                <div class="benefit-card">
+
+                    <i class="fa fa-wrench"></i>
+
+                    <h3>Technical Support</h3>
+
+                    <p>
+                        Lighting, audio, projection,
+                        and production assistance.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- VENUE HIGHLIGHTS -->
+    <section class="venue-highlights">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Venue Highlights</h2>
+            </div>
+
+            <div class="highlight-grid">
+
+                <div class="highlight-image">
+                    <img src="../images/Photo Coming Soon.png">
+                </div>
+
+                <div class="highlight-content">
+
+                    <ul>
+
+                        <li>Historic theatre setting</li>
+
+                        <li>Professional performance stage</li>
+
+                        <li>Audience seating</li>
+
+                        <li>Lobby and gathering areas</li>
+
+                        <li>Audio & lighting systems</li>
+
+                        <li>Projection capabilities</li>
+
+                        <li>Accessible facilities</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PERFECT FOR... -->
+    <section class="perfect-for">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Perfect For</h2>
+            </div>
+
+            <div class="event-types">
+
+                <div class="type-card">
+                    <h3>Concerts</h3>
+                </div>
+
+                <div class="type-card">
+                    <h3>Theatre Productions</h3>
+                </div>
+
+                <div class="type-card">
+                    <h3>Corporate Events</h3>
+                </div>
+
+                <div class="type-card">
+                    <h3>Conferences</h3>
+                </div>
+
+                <div class="type-card">
+                    <h3>Weddings</h3>
+                </div>
+
+                <div class="type-card">
+                    <h3>Community Gatherings</h3>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RENTAL PROCESS -->
+    <section class="rental-process">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>How Rentals Work</h2>
+            </div>
+
+            <div class="process-grid">
+
+                <div class="process-step">
+
+                    <span>1</span>
+
+                    <h3>Submit Inquiry</h3>
+
+                    <p>
+                        Tell us about your event.
+                    </p>
+
+                </div>
+
+                <div class="process-step">
+
+                    <span>2</span>
+
+                    <h3>Venue Consultation</h3>
+
+                    <p>
+                        Discuss dates, spaces,
+                        and requirements.
+                    </p>
+
+                </div>
+
+                <div class="process-step">
+
+                    <span>3</span>
+
+                    <h3>Reserve Your Date</h3>
+
+                    <p>
+                        Confirm availability
+                        and complete agreements.
+                    </p>
+
+                </div>
+
+                <div class="process-step">
+
+                    <span>4</span>
+
+                    <h3>Host Your Event</h3>
+
+                    <p>
+                        Bring your vision to life.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RENTAL RESOURCES SECTION -->
+    <section id="resources" class="rental-resources">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Rental Resources</h2>
+
+                <p>
+                    Explore detailed information
+                    about pricing and venue capabilities.
+                </p>
+
+            </div>
+
+            <div class="resource-grid">
+
+                <a href="rental-rates.html" class="resource-card">
+
+                    <i class="fa fa-usd"></i>
+
+                    <h3>Rental Rates</h3>
+
+                    <p>
+                        View pricing information,
+                        packages, and fees.
+                    </p>
+
+                </a>
+
+                <a href="technical-specifications.html" class="resource-card">
+
+                    <i class="fa fa-sliders"></i>
+
+                    <h3>Technical Specifications</h3>
+
+                    <p>
+                        Review stage dimensions,
+                        lighting, sound, and equipment.
+                    </p>
+
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- VENUE PHOTO GALLERY -->
+    <section class="venue-gallery">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Explore the Venue
+                </span>
+
+                <h2>See AC4TA in Action</h2>
+
+                <p>
+                    Take a closer look at the spaces,
+                    facilities, and historic character
+                    available for your next event.
+                </p>
+
+            </div>
+
+
+            <div class="venue-gallery-grid">
+
+                <!-- AUDITORIUM -->
+                <div class="venue-gallery-item large">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Auditorium seating at A Center for the Arts">
+
+                    <div class="venue-gallery-overlay">
+
+                        <h3>Auditorium</h3>
+
+                        <p>
+                            Historic theatre seating
+                            for performances and events.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STAGE -->
+                <div class="venue-gallery-item">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Stage at A Center for the Arts">
+
+                    <div class="venue-gallery-overlay">
+
+                        <h3>Stage</h3>
+
+                        <p>
+                            Professional performance
+                            space for productions and events.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LOBBY -->
+                <div class="venue-gallery-item">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Lobby at A Center for the Arts">
+
+                    <div class="venue-gallery-overlay">
+
+                        <h3>Lobby</h3>
+
+                        <p>
+                            Welcoming gathering space
+                            for guests and receptions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BACKSTAGE -->
+                <div class="venue-gallery-item">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Backstage area at A Center for the Arts">
+
+                    <div class="venue-gallery-overlay">
+
+                        <h3>Backstage</h3>
+
+                        <p>
+                            Behind-the-scenes space
+                            supporting performers and productions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BALCONY -->
+                <div class="venue-gallery-item">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Balcony seating at A Center for the Arts">
+
+                    <div class="venue-gallery-overlay">
+
+                        <h3>Balcony</h3>
+
+                        <p>
+                            Additional seating with
+                            a unique view of the stage.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BAKKEN BUILDING -->
+                <div class="venue-gallery-item">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Bakken Building at A Center for the Arts">
+
+                    <div class="venue-gallery-overlay">
+
+                        <h3>Bakken Building</h3>
+
+                        <p>
+                            Additional event space,
+                            if available for rental.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- RENTAL FAQ -->
+    <section class="rental-faq">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+
+            <div class="faq-list">
+
+                <!-- FAQ ITEM 1 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>What is included with a rental?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Rental packages may include use of the selected
+                            venue spaces, standard seating, and access to
+                            available facility amenities. Specific inclusions
+                            depend on the type of event and rental agreement.
+                            Contact AC4TA for details about what is included
+                            with your rental.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ ITEM 2 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>How far in advance should I book?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            We recommend contacting AC4TA as early as possible
+                            to discuss your preferred date and event needs.
+                            Availability can vary depending on the season,
+                            performances, and other scheduled activities.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ ITEM 3 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>Can I sell tickets?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Ticketing arrangements may be available for
+                            qualifying events. Please contact AC4TA to discuss
+                            ticketing options, box office services, and any
+                            applicable policies for your event.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ ITEM 4 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>Can I bring outside catering?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Outside catering may be permitted depending on
+                            the event and rental arrangement. Please discuss
+                            your catering plans with AC4TA before finalizing
+                            your rental agreement.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ ITEM 5 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>Is technical support available?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Technical support may be available for lighting,
+                            audio, projection, and other production needs.
+                            Technical requirements should be discussed during
+                            the rental planning process.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ ITEM 6 -->
+                <div class="faq-item">
+
+                    <button class="faq-question" type="button" aria-expanded="false">
+                        <span>Can I tour the venue before booking?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. A venue tour can help you determine whether
+                            AC4TA is the right setting for your event. Contact
+                            us to arrange a time to visit the facility and
+                            discuss your rental needs.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- RENTAL INQUIRY CTA -->
+    <!-- RENTAL INQUIRY -->
+    <section id="contact" class="rental-cta">
+
+        <div class="container">
+
+            <div class="rental-application">
+
+                <span class="section-tag">Rental Inquiry</span>
+
+                <h2>Ready to Reserve Your Date?</h2>
+
+                <p>
+                    Complete the form below to inquire about availability,
+                    rental requirements, and technical needs. A member of our
+                    staff will follow up with you.
+                </p>
+
+
+                <!-- RENTAL INQUIRY FORM -->
+
+                <form class="rental-form" action="#" method="POST">
+
+                    <!-- NAME + EMAIL -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="rental-name">Name</label>
+
+                            <input type="text" id="rental-name" name="name" placeholder="Your Name" required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="rental-email">Email Address</label>
+
+                            <input type="email" id="rental-email" name="email" placeholder="Your Email Address"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RENTAL TYPE + DATE -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="rental-type">Rental Type / Space</label>
+
+                            <select id="rental-type" name="rental_type" required>
+
+                                <option value="" disabled selected>
+                                    Select a rental option
+                                </option>
+
+                                <option value="theatre">
+                                    Theatre
+                                </option>
+
+                                <option value="rehearsal-space">
+                                    Rehearsal Space
+                                </option>
+
+                                <option value="meeting-space">
+                                    Meeting / Event Space
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="rental-date">Preferred Date</label>
+
+                            <input type="date" id="rental-date" name="preferred_date" required>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+
+                    <div class="form-group">
+
+                        <label for="rental-message">Message</label>
+
+                        <textarea id="rental-message" name="message" rows="6"
+                            placeholder="Tell us about your event, rental needs, or any questions you have..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <!-- SUBMIT -->
+
+                    <div class="rental-form-actions">
+
+                        <!--Goes to info@fergusarts.org-->
+                        <button type="submit" class="btn btn-primary">
+                            Submit Rental Inquiry
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/volunteers.js"></script> <!--Existing Accordion Code-->
+
+</body>
+
+</html>

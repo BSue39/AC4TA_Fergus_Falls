@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Center For The Arts | Fergus Falls, MN</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../images\favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!------ Base ------>
+    <link rel="stylesheet" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" href="../assets/css/base/typography.css">
+    <link rel="stylesheet" href="../assets/css/base/global.css">
+
+    <!------ Layout ------>
+    <link rel="stylesheet" href="../assets/css/layout/container.css">
+    <link rel="stylesheet" href="../assets/css/layout/navbar.css">
+    <link rel="stylesheet" href="../assets/css/layout/footer.css">
+
+    <!------ Components ------>
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/components/cards.css">
+    <link rel="stylesheet" href="../assets/css/components/section-heading.css">
+
+    <!------ Page ------>
+    <link rel="stylesheet" href="../assets/css/pages/history_organ.css">
+
+    <!-- ==========================
+     RESPONSIVE
+========================== -->
+    <link rel="stylesheet" href="../assets/css/responsive/responsive.css">
+
+</head>
+
+<body>
+    <!-----NAVBAR----->
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <!-- LOGO -->
+            <div class="logo-section">
+                <a href="../index.html" class="logo-home-link">
+                    <div class="logo">
+                        <img src="../images/c4artswhitelogo.png" alt="Logo">
+                    </div>
+
+                    <div class="contact-info">
+                        <span><i class="fa fa-phone"></i> (218) 736-5453</span>
+                        <span><i class="fa fa-clock-o"></i> Tues–Fri: 11AM–2PM</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- HOME -->
+            <div class="nav-item">
+                <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+
+                <div class="nav-panel">
+                    <a href="../events/announcements.html">Announcements</a>
+                    <a href="https://app.arts-people.com/index.php?calendar=acfta" target="_blank"
+                        rel="noopener noreferrer">Calendar</a>
+                    <a href="../support/membership_appeal.html">Membership Appeal</a>
+                    <a href="../support/curtain_appeal.html">Curtain Appeal</a>
+                </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="nav-item">
+                <button class="dropbtn">Events <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../events/featured_events.html">Featured Events</a>
+                    <a href="../events/list_events.html">List of Events</a>
+                    <a href="../events/ticket_policies.html">Ticketing Policies</a>
+                    <a href="../events/plan_visit.html">Plan Your Visit</a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="nav-item">
+                <button class="dropbtn">About Us <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+
+                    <a href="mission_vision.html">Mission/Vision</a>
+                    <a href="staff_board.html">Staff/Board</a>
+
+                    <!-- SUBMENU -->
+                    <div class="nav-item has-submenu">
+                        <a class="submenu-btn" href="history.html">History <i class="fa fa-caret-right"></i></a>
+
+                        <div class="submenu-panel">
+                            <a href="history_building.html">Building</a>
+                            <a href="history_organ.html">Theatre Organ</a>
+                            <a href="history_program.html">Programs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SUPPORT -->
+            <div class="nav-item">
+                <button class="dropbtn">Support AC4TA <i class="fa fa-caret-down"></i></button>
+
+                <div class="nav-panel">
+                    <a href="../support/sponsorship.html">Sponsorship</a>
+                    <a href="../support/membership.html">Membership</a>
+                    <a href="../support/volunteers.html">Volunteers</a>
+                </div>
+            </div>
+
+            <!--Rentals-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Rentals <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+
+                    <div class="nav-item submenu">
+                        <a href="../rentals/rental_info.html">
+                            Rental Information <i class="fa fa-caret-right"></i>
+                        </a>
+
+                        <div class="nav-panel submenu-panel">
+                            <a href="../rentals/rental_rates.html">Rental Rates</a>
+                            <a href="../rentals/rental_specification.html">Technical Specifications</a>
+                        </div>
+                    </div>
+
+                    <a href="../rentals/bakken_building.html">Bakken Building</a>
+
+                </div>
+            </div>
+
+            <!--Gift Certificates/Merchandise-->
+            <div class="nav-item">
+                <a class="dropbtn" href="../store/gift_certificates.html">Gift Certificates</a>
+            </div>
+
+            <!--Contact Us-->
+            <div class="nav-item">
+                <button class="dropbtn">
+                    Contact Us <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="nav-panel">
+                    <a href="../contact/contact_info.html">Address & Contact Information</a>
+                    <a href="../contact/box_hours.html">Box Office Hours</a>
+                    <a href="https://www.facebook.com/acenterforthearts" target="_blank" rel="noopener">Facebook</a>
+                    <a href="../contact/email_list.html">Join Our Email List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ORGAN HERO -->
+    <section class="organ-hero">
+        <div class="container organ-hero-content">
+
+            <span class="section-tag">Theatre Organ</span>
+
+            <h1>History of the Mighty Wurlitzer Organ</h1>
+
+            <p>
+                One of the most distinctive musical
+                treasures in West Central Minnesota.
+            </p>
+
+            <a href="#organ-history" class="btn btn-primary">
+                Explore Its History
+            </a>
+
+        </div>
+    </section>
+
+    <!-- MEET THE MIGHTY WURLITZER ORGAN -->
+    <section class="organ-overview">
+
+        <div class="container">
+
+            <div class="organ-overview-grid">
+                <div class="organ-overview-image">
+
+                    <img src="../images/Photo Coming Soon.png" alt="Theatre Organ Console">
+                </div>
+
+                <div class="organ-overview-content">
+                    <span class="section-tag">
+                        Meet The Organ
+                    </span>
+
+                    <h2>
+                        A Historic Wurlitzer Theatre Organ
+                    </h2>
+
+                    <p>
+                        Installed in the 1990s,
+                        the Geneva Eschweiler
+                        Wurlitzer transformed the
+                        theater into a destination
+                        for organ enthusiasts.
+                        The theatre organ was designed to bring
+                        silent films to life, providing music,
+                        sound effects, and dramatic accompaniment
+                        for audiences before motion pictures
+                        included synchronized sound.
+                    </p>
+
+                    <p>
+                        Today, the organ remains one of the most
+                        treasured features of the theatre and
+                        continues to be showcased during special
+                        performances and community events.
+                    </p>
+
+                    <div class="organ-facts">
+
+                        <div class="organ-fact">
+                            <strong>Installed:</strong>
+                            1990s
+                        </div>
+
+                        <div class="organ-fact">
+                            <strong>Type:</strong>
+                            Wurlitzer Theatre Organ
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- WHAT IS A THEATRE ORGAN -->
+    <section class="organ-explainer">
+
+        <div class="container">
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+                    <h3>Silent Films</h3>
+                    <p>Originally accompanied motion pictures.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Full Orchestra</h3>
+                    <p>One musician could imitate dozens of instruments.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Sound Effects</h3>
+                    <p>Birds, bells, drums, whistles and more.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Pipe Chambers</h3>
+                    <p>Hundreds of pipes hidden behind walls.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ORGAN AT AC4TA -->
+    <section class="organ-stats">
+
+        <div class="container">
+
+            <div class="stats">
+
+                <div class="stat">
+                    <h3>3</h3>
+                    <p>Manuals</p>
+                </div>
+
+                <div class="stat">
+                    <h3>12</h3>
+                    <p>Ranks</p>
+                </div>
+
+                <div class="stat">
+                    <h3>400+</h3>
+                    <p>Pipes</p>
+                </div>
+
+                <div class="stat">
+                    <h3>1994</h3>
+                    <p>Installed</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- INTERACTIVE ORGAN EXPLORER -->
+    <section class="organ-explorer">
+
+        <div class="container">
+
+            <h2>
+                Explore The Organ
+            </h2>
+
+            <div class="organ-layout">
+
+                <!-- STOP BUTTONS -->
+                <div class="stop-buttons">
+
+                    <button type="button" class="active" data-stop="tibia">
+                        <span class="stop-icon">▶</span>
+                        <span class="stop-name">Tibia</span>
+                    </button>
+
+                    <button type="button" data-stop="trumpet">
+                        <span class="stop-icon">▶</span>
+                        <span class="stop-name">Trumpet</span>
+                    </button>
+
+                    <button type="button" data-stop="flute">
+                        <span class="stop-icon">▶</span>
+                        <span class="stop-name">Flute</span>
+                    </button>
+
+                    <button type="button" data-stop="clarinet">
+                        <span class="stop-icon">▶</span>
+                        <span class="stop-name">Clarinet</span>
+                    </button>
+
+                </div>
+
+
+                <!-- STOP INFORMATION -->
+                <div class="stop-info">
+
+                    <!-- TIBIA -->
+                    <div id="tibia" class="stop-panel active">
+
+                        <h3>
+                            Tibia
+                        </h3>
+
+                        <p>
+                            The signature theatre organ sound, producing
+                            the rich and powerful tone associated with
+                            classic theatre organs.
+                        </p>
+
+                    </div>
+
+
+                    <!-- TRUMPET -->
+                    <div id="trumpet" class="stop-panel">
+
+                        <h3>
+                            Trumpet
+                        </h3>
+
+                        <p>
+                            A bright brass tone that adds energy,
+                            brilliance, and dramatic character to
+                            the organ's sound.
+                        </p>
+
+                    </div>
+
+
+                    <!-- FLUTE -->
+                    <div id="flute" class="stop-panel">
+
+                        <h3>
+                            Flute
+                        </h3>
+
+                        <p>
+                            A warm and gentle tone that can create
+                            softer musical passages and add depth
+                            to the organ's overall sound.
+                        </p>
+
+                    </div>
+
+
+                    <!-- CLARINET -->
+                    <div id="clarinet" class="stop-panel">
+
+                        <h3>
+                            Clarinet
+                        </h3>
+
+                        <p>
+                            A distinctive reed tone that adds
+                            character, contrast, and expressive
+                            color to the organ's music.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- LISTEN TO THE ORGAN -->
+    <section class="organ-media">
+
+        <div class="container">
+
+            <h2>
+                Hear The Wurlitzer
+            </h2>
+
+            <div class="media-grid">
+
+                <iframe src="youtube-video" title="Hear the Mighty Wurlitzer at A Center for the Arts" allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RESTORATION STORY -->
+    <section id="organ-history" class="history-timeline">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h2>
+                    Key Milestones
+                </h2>
+
+            </div>
+
+            <div class="timeline-history">
+
+                <div class="history-item">
+                    <span>1994</span>
+                    <h3>Installation Begins</h3>
+                    <p>
+                        The Geneva Eschweiler Theatre Pipe Organ is installed,
+                        marking a major milestone in the theatre's restoration
+                        and establishing a new identity as a regional arts
+                        destination with a unique musical attraction.
+                    </p>
+                </div>
+
+                <div class="history-item">
+                    <span>1995</span>
+                    <h3>Dedication Concert</h3>
+                    <p>
+                        The Mighty Wurlitzer is officially dedicated with a
+                        concert by renowned organist Mark Herman, drawing
+                        a large audience and generating excitement for the
+                        theatre's future programming.
+                    </p>
+                </div>
+
+                <div class="history-item">
+                    <span>2005</span>
+                    <h3>Restoration Work</h3>
+                    <p>
+                        Ongoing maintenance and restoration efforts are
+                        undertaken to preserve the organ's sound quality
+                        and mechanical reliability, ensuring it remains a
+                        cherished part of the theatre experience for years
+                        to come.
+                    </p>
+                </div>
+
+                <div class="history-item">
+                    <span>2024</span>
+                    <h3>Ongoing Maintenance</h3>
+                    <p>
+                        Regular tuning, cleaning, and repairs are performed
+                        by a dedicated team of volunteers and technicians,
+                        helping to keep the organ in top condition and
+                        ensuring it continues to delight audiences for
+                        generations to come.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EXPERIENCE THE ORGAN -->
+    <section class="organ-experiences">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Experience The Wurlitzer
+                </span>
+
+                <h2>
+                    More Ways to Hear the Organ
+                </h2>
+
+                <p>
+                    The Mighty Wurlitzer comes alive through concerts,
+                    films, and special performances throughout the year.
+                </p>
+
+            </div>
+
+            <div class="organ-experience-grid">
+
+                <article class="organ-experience-card">
+
+                    <div class="organ-experience-icon">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+
+                    <h3>
+                        Organ Concerts
+                    </h3>
+
+                    <p>
+                        Experience the full power and versatility of the
+                        Wurlitzer during live organ performances.
+                    </p>
+
+                    <a href="../events/events.html">
+                        View Events →
+                    </a>
+
+                </article>
+
+
+                <article class="organ-experience-card">
+
+                    <div class="organ-experience-icon">
+                        <i class="fa-solid fa-film"></i>
+                    </div>
+
+                    <h3>
+                        Silent Films
+                    </h3>
+
+                    <p>
+                        Watch classic films accompanied by the dramatic
+                        sounds of a live theatre organ.
+                    </p>
+
+                    <a href="../events/events.html">
+                        View Events →
+                    </a>
+
+                </article>
+
+
+                <article class="organ-experience-card">
+
+                    <div class="organ-experience-icon">
+                        <i class="fa-solid fa-masks-theater"></i>
+                    </div>
+
+                    <h3>
+                        Special Performances
+                    </h3>
+
+                    <p>
+                        Discover special concerts, community events, and
+                        other performances featuring the Mighty Wurlitzer.
+                    </p>
+
+                    <a href="../events/events.html">
+                        Explore Events →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FUN FACTS -->
+    <section class="building-facts">
+
+        <div class="container">
+
+            <div class="facts-box">
+
+                <h2>
+                    Did You Know?
+                </h2>
+
+                <ul>
+
+                    <li>
+                        Some pipes are smaller than a pencil, while others are taller than a person.
+                    </li>
+
+                    <li>
+                        Many pipes are hidden behind walls, creating a magical sound that seems to come from everywhere.
+                    </li>
+
+                    <li>
+                        One organist can imitate an orchestra of dozens of instruments, from flutes to trumpets to
+                        drums.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SUPPORT THE ORGAN CTA-->
+    <section class="organ-support">
+
+        <div class="container">
+
+            <h2>
+                Help Preserve A Musical Treasure
+            </h2>
+
+            <p>
+                Support ongoing maintenance
+                and restoration efforts.
+            </p>
+
+            <a href="https://app.arts-people.com/index.php?donation=acfta" class="btn btn-primary" target="_blank"
+    rel="noopener noreferrer">
+                Support The Organ
+            </a>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>Visit</h4>
+                    <p>124 W Lincoln Ave</p>
+                    <p>Fergus Falls, MN</p>
+                    <p>(218) 736-5453</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Our Mission</h4>
+                    <p>
+                        The mission of A Center for the Arts
+                        in Fergus Falls is to connect artists,
+                        patrons and community by providing the
+                        best possible arts experiences that
+                        inspire creativity, curiosity, imagination,
+                        and learning.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Follow</h4>
+                    <a href="https://www.instagram.com/acenterforthearts/">Instagram</a>
+                    <a href="https://www.facebook.com/acenterforthearts">Facebook</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 A Center for the Arts — Modern Concept Redesign
+            </div>
+
+        </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/history_organ.js"></script>
+
+</body>
+
+</html>
