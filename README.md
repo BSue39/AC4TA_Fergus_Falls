@@ -59,9 +59,6 @@ AC4TA/
 │       ├── layout/
 │       ├── pages/
 │       ├── responsive/
-│       │
-│       ├── style.css
-│       └── style2.css
 │
 ├── js/
 │
